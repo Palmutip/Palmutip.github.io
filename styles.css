@@ -1,13 +1,14 @@
 .e1_2 {
-    margin: auto;
     overflow: hidden;
     background-color: rgba(255, 255, 255, 1);
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     height: 5143px;
     position: absolute;
 }
 
-.e18_11 {
+.barra_rodape {
     background-color: rgba(45.00000111758709, 62.00000010430813, 80.00000283122063, 1);
     width: 100%;
     height: 179.54248046875px;
@@ -16,7 +17,7 @@
     top: 4961px;
 }
 
-.e18_10 {
+.contato_background {
     background-color: rgba(241.18749797344208, 255, 254.17124927043915, 1);
     width: 100%;
     height: 810px;
@@ -25,7 +26,7 @@
     top: 4151px;
 }
 
-.e22_32 {
+.contato_corpo_completo {
     width: 995px;
     height: 794px;
     position: absolute;
@@ -33,7 +34,7 @@
     top: 4151px;
 }
 
-.e22_30 {
+.contato_enviar_margens {
     width: 995px;
     height: 70px;
     position: absolute;
@@ -41,7 +42,7 @@
     top: 688px;
 }
 
-.ei22_30_22_26 {
+.contato_enviar_botao {
     background-color: rgba(94.2420794069767, 69.13776129484177, 103.06250810623169, 1);
     width: 995px;
     height: 40px;
@@ -50,7 +51,7 @@
     top: 15px;
 }
 
-.ei22_30_22_27 {
+.contato_enviar_texto {
     color: rgba(255, 255, 255, 1);
     width: 88px;
     height: 70px;
@@ -63,7 +64,7 @@
     letter-spacing: 0;
 }
 
-.e22_31 {
+.contato_formulario {
     width: 995px;
     height: 535px;
     position: absolute;
@@ -71,20 +72,17 @@
     top: 136px;
 }
 
-.ei22_31_22_24 {
+.contato_input_mensagem {
     background-color: rgba(255, 255, 255, 1);
     width: 995px;
     height: 248px;
     position: absolute;
     left: 0px;
     top: 287px;
-}
-
-.i22_31_22_24 {
     border: 1px solid rgba(0, 0, 0, 1);
 }
 
-.ei22_31_22_25 {
+.contato_label_mensagem {
     color: rgba(0, 0, 0, 1);
     width: 101px;
     height: 23px;
@@ -97,20 +95,17 @@
     letter-spacing: 0;
 }
 
-.ei22_31_22_22 {
+.contato_input_assunto {
     background-color: rgba(255, 255, 255, 1);
     width: 995px;
     height: 40px;
     position: absolute;
     left: 0px;
     top: 199px;
-}
-
-.i22_31_22_22 {
     border: 1px solid rgba(0, 0, 0, 1);
 }
 
-.ei22_31_22_23 {
+.contato_label_assunto {
     color: rgba(0, 0, 0, 1);
     width: 76px;
     height: 23px;
@@ -123,20 +118,17 @@
     letter-spacing: 0;
 }
 
-.ei22_31_22_20 {
+.contato_input_email {
     background-color: rgba(255, 255, 255, 1);
     width: 995px;
     height: 40px;
     position: absolute;
     left: 0px;
     top: 111px;
-}
-
-.i22_31_22_20 {
     border: 1px solid rgba(0, 0, 0, 1);
 }
 
-.ei22_31_22_21 {
+.contato_label_email {
     color: rgba(0, 0, 0, 1);
     width: 56px;
     height: 23px;
@@ -149,20 +141,17 @@
     letter-spacing: 0;
 }
 
-.ei22_31_21_18 {
+.contato_input_nome {
     background-color: rgba(255, 255, 255, 1);
     width: 995px;
     height: 40px;
     position: absolute;
     left: 0px;
     top: 23px;
-}
-
-.i22_31_21_18 {
     border: 1px solid rgba(0, 0, 0, 1);
 }
 
-.ei22_31_22_19 {
+.contato_label_nome {
     color: rgba(0, 0, 0, 1);
     width: 145px;
     height: 23px;
@@ -175,7 +164,7 @@
     letter-spacing: 0;
 }
 
-.e18_12 {
+.contato_titulo {
     color: rgba(0, 0, 0, 1);
     width: 177px;
     height: 94.25927734375px;
@@ -188,7 +177,7 @@
     letter-spacing: 0;
 }
 
-.e18_13 {
+.texto_footer {
     color: rgba(255, 255, 255, 1);
     width: 885px;
     height: 122px;
@@ -201,7 +190,7 @@
     letter-spacing: 0;
 }
 
-.e18_7 {
+.noticia_background {
     background-color: rgba(45.00000111758709, 62.00000010430813, 80.00000283122063, 1);
     width: 100%;
     height: 810px;
@@ -210,7 +199,7 @@
     top: 3341px;
 }
 
-.e22_57 {
+.noticia_livro {
     color: rgba(255, 255, 255, 1);
     width: 395px;
     height: 90px;
@@ -223,7 +212,21 @@
     letter-spacing: 0;
 }
 
-.e22_56 {
+.noticia_livro:hover {
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 1);
+    width: 395px;
+    height: 90px;
+    position: absolute;
+    left: 906px;
+    top: 3520px;
+    font-family: Sunflower;
+    text-align: left;
+    font-size: 24px;
+    letter-spacing: 0;
+}
+
+.noticia_mestrado {
     color: rgba(255, 255, 255, 1);
     width: 395px;
     height: 120px;
@@ -236,7 +239,21 @@
     letter-spacing: 0;
 }
 
-.e18_8 {
+.noticia_mestrado:hover {
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 1);
+    width: 395px;
+    height: 120px;
+    position: absolute;
+    left: 214px;
+    top: 3513px;
+    font-family: Sunflower;
+    text-align: left;
+    font-size: 24px;
+    letter-spacing: 0;
+}
+
+.noticia_titulo {
     color: rgba(255, 255, 255, 1);
     width: 172px;
     height: 105px;
@@ -249,7 +266,7 @@
     letter-spacing: 0;
 }
 
-.e18_6 {
+.portfolio_background {
     background-color: rgba(241.18749797344208, 255, 254.17124927043915, 1);
     width: 100%;
     height: 810px;
@@ -258,7 +275,7 @@
     top: 2531px;
 }
 
-.e22_53 {
+.portfolio_6 {
     background-color: rgba(255, 255, 255, 1);
     width: 305px;
     height: 242px;
@@ -268,7 +285,7 @@
     border: 1px solid rgba(0, 0, 0, 1);
 }
 
-.e22_54 {
+.portfolio_5 {
     background-color: rgba(255, 255, 255, 1);
     width: 305px;
     height: 242px;
@@ -278,7 +295,7 @@
     border: 1px solid rgba(0, 0, 0, 1);
 }
 
-.e22_55 {
+.portfolio_4 {
     background-color: rgba(255, 255, 255, 1);
     width: 305px;
     height: 242px;
@@ -288,7 +305,7 @@
     border: 1px solid rgba(0, 0, 0, 1);
 }
 
-.e22_51 {
+.portfolio_3 {
     background-color: rgba(255, 255, 255, 1);
     width: 305px;
     height: 242px;
@@ -298,7 +315,7 @@
     border: 1px solid rgba(0, 0, 0, 1);
 }
 
-.e22_50 {
+.portfolio_2 {
     background-color: rgba(255, 255, 255, 1);
     width: 305px;
     height: 242px;
@@ -308,7 +325,7 @@
     border: 1px solid rgba(0, 0, 0, 1);
 }
 
-.e22_49 {
+.portfolio_1 {
     background-color: rgba(255, 255, 255, 1);
     width: 305px;
     height: 242px;
@@ -318,7 +335,7 @@
     border: 1px solid rgba(0, 0, 0, 1);
 }
 
-.e22_48 {
+.portfolio_filtro_sites {
     color: rgba(0, 140.25000303983688, 30.855005532503128, 1);
     width: 52px;
     height: 23px;
@@ -331,7 +348,7 @@
     letter-spacing: 0;
 }
 
-.e22_47 {
+.portfolio_filtro_outros {
     color: rgba(0, 0, 0, 1);
     width: 73px;
     height: 23px;
@@ -344,7 +361,7 @@
     letter-spacing: 0;
 }
 
-.e22_46 {
+.portfolio_filtro_apps {
     color: rgba(0, 0, 0, 1);
     width: 118px;
     height: 23px;
@@ -357,7 +374,7 @@
     letter-spacing: 0;
 }
 
-.e22_45 {
+.portfolio_filtro_apis {
     color: rgba(0, 0, 0, 1);
     width: 44px;
     height: 23px;
@@ -370,7 +387,7 @@
     letter-spacing: 0;
 }
 
-.e22_44 {
+.portfolio_filtro_desktop {
     color: rgba(0, 0, 0, 1);
     width: 189px;
     height: 23px;
@@ -383,7 +400,7 @@
     letter-spacing: 0;
 }
 
-.e18_9 {
+.portfolio_titulo {
     color: rgba(0, 0, 0, 1);
     width: 206px;
     height: 94.260009765625px;
@@ -396,7 +413,7 @@
     letter-spacing: 0;
 }
 
-.e18_2 {
+.servicos_background {
     background-color: rgba(45.00000111758709, 62.00000010430813, 80.00000283122063, 1);
     width: 100%;
     height: 810px;
@@ -405,7 +422,9 @@
     top: 1721px;
 }
 
-.e21_17 {
+.servicos_desktop {
+    text-align: justify;
+    text-justify: inter-word;
     color: rgba(255, 255, 255, 1);
     width: 274px;
     height: 156px;
@@ -418,7 +437,7 @@
     letter-spacing: 0;
 }
 
-.e20_16 {
+.servicos_backend {
     color: rgba(255, 255, 255, 1);
     width: 309px;
     height: 156px;
@@ -431,7 +450,7 @@
     letter-spacing: 0;
 }
 
-.e20_14 {
+.servicos_aplicativos {
     color: rgba(255, 255, 255, 1);
     width: 360px;
     height: 156px;
@@ -444,7 +463,7 @@
     letter-spacing: 0;
 }
 
-.e20_15 {
+.servicos_sites {
     color: rgba(255, 255, 255, 1);
     width: 326px;
     height: 156px;
@@ -457,7 +476,7 @@
     letter-spacing: 0;
 }
 
-.e18_5 {
+.servicos_titulo {
     color: rgba(255, 255, 255, 1);
     width: 176px;
     height: 105px;
@@ -470,7 +489,7 @@
     letter-spacing: 0;
 }
 
-.e8_0 {
+.sobre_background {
     background-color: rgba(241.18749797344208, 255, 254.17124927043915, 1);
     width: 100%;
     height: 810px;
@@ -479,7 +498,7 @@
     top: 911px;
 }
 
-.e18_3 {
+.sobre_conteudo {
     width: 1330px;
     height: 584px;
     position: absolute;
@@ -487,7 +506,7 @@
     top: 976px;
 }
 
-.e16_36 {
+.sobre_texto {
     color: rgba(0, 0, 0, 1);
     width: 993px;
     height: 500px;
@@ -501,7 +520,7 @@
     line-height: 25px;
 }
 
-.e13_1 {
+.sobre_foto {
     width: 289px;
     height: 313px;
     position: absolute;
@@ -512,7 +531,7 @@
     background-size: cover;
 }
 
-.e16_33 {
+.sobre_nome {
     color: rgba(0, 0, 0, 1);
     width: 225px;
     height: 105px;
@@ -525,7 +544,7 @@
     letter-spacing: 0;
 }
 
-.e18_4 {
+.sobre_titulo {
     color: rgba(0, 0, 0, 1);
     width: 117px;
     height: 105px;
@@ -538,7 +557,7 @@
     letter-spacing: 0;
 }
 
-.e5_23 {
+.background_home {
     width: 100%;
     height: 810px;
     position: absolute;
@@ -549,7 +568,7 @@
     background-size: cover;
 }
 
-.e16_34 {
+.wallpaper_home {
     width: 542px;
     height: 148px;
     position: absolute;
@@ -557,7 +576,7 @@
     top: 358px;
 }
 
-.e16_31 {
+.wallpaper_home_interna {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background-color: rgba(175.1354143023491, 195.49999594688416, 189.39062297344208, 1);
     width: 542px;
@@ -567,7 +586,7 @@
     top: 0px;
 }
 
-.e5_26 {
+.texto_wallpaper_home {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     color: rgba(0, 0, 0, 1);
     width: 457px;
@@ -581,7 +600,7 @@
     letter-spacing: 0;
 }
 
-.e15_9 {
+.wallpaper_html {
     width: 50px;
     height: 50px;
     position: absolute;
@@ -592,7 +611,7 @@
     background-size: cover;
 }
 
-.e15_13 {
+.wallpaper_php {
     width: 50px;
     height: 50px;
     position: absolute;
@@ -603,7 +622,7 @@
     background-size: cover;
 }
 
-.e15_17 {
+.wallpaper_cplus {
     width: 50px;
     height: 50px;
     position: absolute;
@@ -614,7 +633,7 @@
     background-size: cover;
 }
 
-.e15_21 {
+.wallpaper_csharp {
     width: 50px;
     height: 50px;
     position: absolute;
@@ -625,7 +644,7 @@
     background-size: cover;
 }
 
-.e15_25 {
+.wallpaper_css {
     width: 50px;
     height: 50px;
     position: absolute;
@@ -636,7 +655,7 @@
     background-size: cover;
 }
 
-.e15_29 {
+.wallpaper_sql {
     width: 50px;
     height: 50px;
     position: absolute;
@@ -647,7 +666,7 @@
     background-size: cover;
 }
 
-.e7_5 {
+.wallpaper_js {
     width: 50px;
     height: 50px;
     position: absolute;
@@ -658,7 +677,7 @@
     background-size: cover;
 }
 
-.e16_35 {
+.header_head {
     width: 100%;
     height: 100px;
     position: absolute;
@@ -666,7 +685,7 @@
     top: 2px;
 }
 
-.e3_2 {
+.header_barra {
     background-color: rgba(45.00000111758709, 62.00000010430813, 80.00000283122063, 1);
     width: 100%;
     height: 100px;
@@ -675,7 +694,7 @@
     top: 0px;
 }
 
-.e3_3 {
+.header_titulo {
     color: rgba(255, 255, 255, 1);
     width: 152px;
     height: 35px;
@@ -688,7 +707,7 @@
     letter-spacing: 0;
 }
 
-.e4_0 {
+.header_home {
     color: rgba(255, 255, 255, 1);
     width: 48px;
     height: 26px;
@@ -701,7 +720,7 @@
     letter-spacing: 0;
 }
 
-.e4_4 {
+.header_noticias {
     color: rgba(255, 255, 255, 1);
     width: 64px;
     height: 26px;
@@ -714,7 +733,7 @@
     letter-spacing: 0;
 }
 
-.e4_2 {
+.header_servicos {
     color: rgba(255, 255, 255, 1);
     width: 69px;
     height: 26px;
@@ -727,7 +746,7 @@
     letter-spacing: 0;
 }
 
-.e4_3 {
+.header_portfolio {
     color: rgba(255, 255, 255, 1);
     width: 67px;
     height: 26px;
@@ -740,7 +759,7 @@
     letter-spacing: 0;
 }
 
-.e15_2 {
+.header_contato {
     color: rgba(255, 255, 255, 1);
     width: 63px;
     height: 26px;
@@ -753,7 +772,7 @@
     letter-spacing: 0;
 }
 
-.e4_1 {
+.header_sobre {
     color: rgba(255, 255, 255, 1);
     width: 48px;
     height: 26px;
@@ -766,7 +785,7 @@
     letter-spacing: 0;
 }
 
-.e3_4 {
+.header_subtitulo {
     color: rgba(255, 255, 255, 1);
     width: 259px;
     height: 19px;
@@ -779,7 +798,7 @@
     letter-spacing: 0;
 }
 
-.e3_6 {
+.header_logo {
     width: 90px;
     height: 65px;
     position: absolute;
@@ -790,7 +809,7 @@
     background-size: cover;
 }
 
-.e5_3 {
+.instagram {
     width: 23.71794891357422px;
     height: 25px;
     position: absolute;
@@ -801,7 +820,7 @@
     background-size: cover;
 }
 
-.e5_7 {
+.whatsapp {
     width: 25px;
     height: 25px;
     position: absolute;
@@ -812,7 +831,7 @@
     background-size: cover;
 }
 
-.e5_11 {
+.linkedin {
     width: 25px;
     height: 25px;
     position: absolute;
@@ -823,7 +842,7 @@
     background-size: cover;
 }
 
-.e5_15 {
+.facebook {
     width: 25px;
     height: 25px;
     position: absolute;
@@ -834,7 +853,7 @@
     background-size: cover;
 }
 
-.e5_19 {
+.github {
     width: 25px;
     height: 25px;
     position: absolute;
@@ -845,7 +864,7 @@
     background-size: cover;
 }
 
-.e22_43 {
+.portfolio_filtro_todos {
     color: rgba(0, 0, 0, 1);
     width: 59px;
     height: 23px;
