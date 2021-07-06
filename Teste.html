@@ -16,7 +16,13 @@
 
 </head>
 
-<body>
+<body onload="carregacombos()">
+
+    <select onchange="funcaoChange(this)" id="AlimentosMN">
+        <option value="0"></option>
+    </select>
+    <p></p>
+    <p id="ProximosAlimentos"></p>
 
 </body>
 
