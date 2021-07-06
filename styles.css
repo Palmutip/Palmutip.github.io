@@ -1,6 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+.corpo_principal {
+    /*display: block;*/
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
 .barra_rodape {
     background-color: rgba(45.00000111758709, 62.00000010430813, 80.00000283122063, 1);
-    width: 1500px;
+    width: 100%;
     height: 179.54248046875px;
     position: absolute;
     left: 0px;
