@@ -1,6 +1,6 @@
 .barra_rodape {
     background-color: rgba(45.00000111758709, 62.00000010430813, 80.00000283122063, 1);
-    width: 100%;
+    width: 1500px;
     height: 179.54248046875px;
     position: absolute;
     left: 0px;
@@ -9,7 +9,7 @@
 
 .contato_background {
     background-color: rgba(241.18749797344208, 255, 254.17124927043915, 1);
-    width: 100%;
+    width: 1500px;
     height: 810px;
     position: absolute;
     left: -1px;
@@ -182,7 +182,7 @@
 
 .noticia_background {
     background-color: rgba(45.00000111758709, 62.00000010430813, 80.00000283122063, 1);
-    width: 100%;
+    width: 1500px;
     height: 410px;
     position: absolute;
     left: -1px;
@@ -258,7 +258,7 @@
 
 .portfolio_background {
     background-color: rgba(241.18749797344208, 255, 254.17124927043915, 1);
-    width: 100%;
+    width: 1500px;
     height: 810px;
     position: absolute;
     left: 0px;
@@ -405,7 +405,7 @@
 
 .servicos_background {
     background-color: rgba(45.00000111758709, 62.00000010430813, 80.00000283122063, 1);
-    width: 100%;
+    width: 1500px;
     height: 810px;
     position: absolute;
     left: 0px;
@@ -481,7 +481,7 @@
 
 .sobre_background {
     background-color: rgba(241.18749797344208, 255, 254.17124927043915, 1);
-    width: 100%;
+    width: 1500px;
     height: 810px;
     position: absolute;
     left: 0px;
@@ -548,11 +548,11 @@
 }
 
 .background_home {
-    width: 100%;
-    height: 810px;
+    width: 1480px;
+    height: 812px;
     position: absolute;
     left: 0px;
-    top: 101px;
+    top: 99px;
     background-image: url(images/fundohome.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -668,11 +668,11 @@
 }
 
 .header_head {
-    width: 100%;
+    width: 4800px;
     height: 100px;
     position: absolute;
     left: 0px;
-    top: 2px;
+    top: 0px;
 }
 
 .header_barra {
