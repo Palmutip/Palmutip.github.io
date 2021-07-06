@@ -661,7 +661,7 @@ console.log(alimentosmn);
 
 function funcaoChange(elemento) {
     var identificacao = elemento.id;
-    if (identificacao.substring(11) = contador_global || identificacao.substring(11) == "") {
+    if (identificacao.substring(11) <= contador_global || identificacao.substring(11) == "") {
         console.log(identificacao.substring(11));
         let geral = 0;
         while (geral < contador_global) {
