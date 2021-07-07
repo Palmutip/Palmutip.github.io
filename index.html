@@ -1,167 +1,197 @@
 <!DOCTYPE html>
-<!-- 
-	Author: Pedro Palmuti
-	Year: 2021
- -->
-<html lang="pt-br">
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
-    <meta charset="utf-8">
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-    <title>Portfolio - Pedro Palmuti</title>
-    <link rel="icon" type="image/ico" href="favicon.ico" />
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Sumana&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Wellfleet&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Sunflower&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=TharLon&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Sedan&display=swap" rel="stylesheet">
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-    <style>
-        /*body {
-            margin: 0px;
-            background: #d62222;
-        }*/
-    </style>
+        <title>Portfolio Pedro Palmuti</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Pedro Palmuti</a>
+                </div>
 
-</head>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
 
-<body>
-    <div class="corpo_principal">
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
 
-        <!-- HEADER -->
-        <div class=header_head>
-            <div class="header_barra"></div>
-            <span class="header_titulo">Pedro Palmuti</span>
-            <a href="#home"><span class="header_home">Home</span></a>
-            <a href="#noticias"><span class="header_noticias">Noticias</span></a>
-            <a href="#servicos"><span class="header_servicos">Servicos</span></a>
-            <a href="Teste.html"><span class="header_portfolio">Portfólio</span></a>
-            <a href="#contato"><span class="header_contato">Contato</span></a>
-            <a href="#sobre"><span class="header_sobre">Sobre</span></a>
-            <span class="header_subtitulo">Consultor de TI e Desenvolvedor Fullstack</span>
-            <div class="header_logo"></div>
-            <a href="https://www.instagram.com/palmutip" target="_blank">
-                <span class="instagram"></span></a>
-            <a href="https://wa.me/5535992507665" target="_blank">
-                <span class="whatsapp"></span></a>
-            <a href="https://www.linkedin.com/in/palmutip/" target="_blank">
-                <span class="linkedin"></span></a>
-            <a href="https://www.facebook.com/palmutip" target="_blank">
-                <span class="facebook"></span></a>
-            <a href="https://github.com/Palmutip" target="_blank">
-                <span class="github"></span></a>
-        </div>
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Pedro Palmuti</span><br> Full stack Developer</h1>
 
-        <!-- BODY -->
-        <!-- Home -->
-        <div class="background_home"></div>
-        <div class=wallpaper_home>
-            <div class="wallpaper_home_interna"></div>
-            <span class="texto_wallpaper_home">Consultor de TI e Desenvolvedor Fullstack</span>
-            <div class="wallpaper_html"></div>
-            <div class="wallpaper_php"></div>
-            <div class="wallpaper_cplus"></div>
-            <div class="wallpaper_csharp"></div>
-            <div class="wallpaper_css"></div>
-            <div class="wallpaper_sql"></div>
-            <div class="wallpaper_js"></div>
-        </div>
+                    <a href="#" class="button">Contact</a>
+                </div>
 
-        <!-- Sobre-->
-        <div class="sobre_background"></div>
+                <div class="home__social">
+                    <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
 
-        <div class=sobre_conteudo>
-            <div class="sobre_foto"></div>
-            <span class="sobre_nome">Pedro Palmuti</span>
-            <a name="sobre"></a><span class="sobre_titulo">SOBRE</span></a>
+                <div class="home__img">    
+                    <img src="assets/img/perfil.png" alt="">
+                </div>
+            </section>
 
-            <span class="sobre_texto">Bacharel em Ciência da Computação no UNIS/MG-Varginha em 2021.<br>
-        Aluno ativo do mestrado de Engenharia de Software e Banco de dados na UFLA.<br><br>
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
 
-        Analista de suporte por 3 anos atuando na indústria metalurgica.<br>
-        Programador e desenvolvedor há 2 anos atuando com energia solar sistema WMS. <br>
-        Também conhecido na área por dar aulas de informática para a 3ª idade como voluntário.<br><br>
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/about.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I'am Pedro Palmuti</h2>
+                        <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat ut voluptates soluta, aut earum nemo recusandae cumque perferendis! Recusandae alias accusamus atque.</p>           
+                    </div>                                   
+                </div>
+            </section>
 
-        Teve início na carreira em 2017 quando ingressou pela primeira vez no setor de TI de uma indústria metalurgica da região.<br>
-        Durante a graduação, participou como competidor em 2 Maratonas de Programação realizadas pelo ICPC, realizou projetos de<br>
-        iniciação científica e concluiu o curso de extensão “Aceleração de Novos Negócios” da Wadhwani Foundation.<br><br>
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
 
-        Durante sua atuação na empresa de energia solar, desenvolveu seu site e tambem um software capaz de controlar estoque <br>
-        e cliente além de gerar orçamentos e projetos: <a href="https://drive.google.com/file/d/1ENdRrbCRz2QDFokMp7yCP9p4jdoPUeGj/view?usp=sharing" target="_blank">Link.</a><br><br>
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Profesional Skills</h2>
+                        <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <span class="skills__name">HTML5</span>
+                            </div>
+                            <div class="skills__bar skills__html">
 
-        Atualmente é Desenvolvedor C# em uma software house da região. Trabalha em projetos mobile com Xamarim e Java,<br>
-        desenvolve API’s utilizando protocolo SOAP e realiza manutenção em sites com HTML + CSS + PHP.<br><br>
+                            </div>
+                            <div>
+                                <span class="skills__percentage">95%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">CSS3</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon' ></i>
+                                <span class="skills__name">JAVASCRIPT</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">65%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-paint skills__icon'></i>
+                                <span class="skills__name">UX/UI</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>              
+                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
 
-        Continua gostando de desafio e ideias inovadoras.<br><br>
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Work</h2>
 
-        Telefone / <a href="https://wa.me/5535992507665" target="_blank">Whatsapp : (35) 99250-7665</a></span>
-        </div>
+                <div class="work__container bd-grid">
+                    <div class="work__img">
+                        <img src="assets/img/work1.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/work2.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/work3.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/work4.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/work5.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/work6.jpg" alt="">
+                    </div>
+                </div>
+            </section>
 
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
 
-        <!-- Serviços -->
-        <div class="servicos_background"></div>
-        <span class="servicos_desktop">Aplicação Desktop<br>
-        Aplicações multiplataformas exclusivas, para sistemas operacionais Windows, onde o usuário necessita instalar o software em sua máquina.
-    </span>
-        <span class="servicos_backend">Desenvolvedor Back-End<br>
-        Desenvolvimento de API’s com ASP .NET utilizando protocolo SOAP, e API’s com Spring Boot utilizando REST.
-    </span>
-        <span class="servicos_aplicativos">Desenvolvimento de Aplicativos<br>
-        Desenvolvimento de aplicações híbridas ou nativas em multiplataformas para dispositivos móveis com Android, iOS ou Windows.
-    </span>
-        <span class="servicos_sites">Criação de Sites<br>
-        Desenvolvimento de Sites,  em HTML, CSS, JavaScript, PHP, MySql. Criação de landpages, sites pessoais ou comerciais
-    </span>
-        <a name="servicos"><span class="servicos_titulo">SERVIÇOS</span></a>
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="button" value="Enviar" class="contact__button button">
+                    </form>
+                </div>
+            </section>
+        </main>
 
-        <!-- Noticias -->
-        <a name="noticias"></a>
-        <div class="noticia_background"></div>
-        </a>
-        <a href="https://doi.org/10.29327/529598" target="_blank"><span class="noticia_livro">Capítulo escrito em livro: Coletânea Educação 4.0: tecnologias educacionais – Vol. 05</span></a>
-        <a href="https://noticias.unis.edu.br/aluno-de-ciencia-da-computacao-do-unis-e-aprovado-em-primeiro-lugar-no-mestrado-em-banco-de-dados-e-engenharia-de-software-da-ufla/" target="_blank"><span class="noticia_mestrado">Aluno de Ciência da Computação do Unis é aprovado em primeiro lugar no  Mestrado em Banco de Dados e Engenharia de Software da UFLA</span></a>
-        <span class="noticia_titulo">NOTÍCIAS</span>
-
-        <!-- Portfólio -->
-        <div class="portfolio_background"></div>
-        <div class="portfolio_6"></div>
-        <div class="portfolio_5"></div>
-        <div class="portfolio_4"></div>
-        <div class="portfolio_3"></div>
-        <div class="portfolio_2"></div>
-        <div class="portfolio_1"></div>
-        <span class="portfolio_filtro_sites">SITES</span>
-        <span class="portfolio_filtro_outros">OUTROS</span>
-        <span class="portfolio_filtro_apps">APLICATIVOS</span>
-        <span class="portfolio_filtro_apis">API’s</span>
-        <span class="portfolio_filtro_desktop">APLICAÇÃO DESKTOP</span>
-        <span class="portfolio_filtro_todos">TODOS</span>
-        <a name="portfolio"></a><span class="portfolio_titulo">PORTFÓLIO</span></a>
-
-
-        <!-- Contato -->
-        <div class="contato_background"></div>
-        <div class=contato_corpo_completo>
-            <div class=contato_enviar_margens>
-                <div class="contato_enviar_botao"></div><span class="contato_enviar_texto">ENVIAR</span>
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Pedro Palmuti</p>
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
             </div>
-            <div class=contato_formulario>
-                <div class="contato_input_mensagem"></div><span class="contato_label_mensagem">Mensagem:</span>
-                <div class="contato_input_assunto"></div><span class="contato_label_assunto">Assunto:</span>
-                <div class="contato_input_email"></div><span class="contato_label_email">Email:</span>
-                <div class="contato_input_nome"></div><span class="contato_label_nome">Nome Completo:</span>
-            </div>
-            <a name="contato"><span class="contato_titulo">CONTATO</span></a>
-        </div>
+            <p>&#169; 2021 copyright all right reserved</p>
+        </footer>
 
 
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
 
-        <!-- FOOTER -->
-        <div class="barra_rodape"></div>
-        <span class="texto_footer">© Todos os Diretos Reservados - Pedro Henrique Palmuti Freitas.  2021   Design by palmutip@hotmail.com</span>
-    </div>
-</body>
-
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
