@@ -13,7 +13,7 @@
     <!--link rel="stylesheet" href="styles.css"-->
     <!-- ===== CSS ===== -->
     <link rel="stylesheet" href="assets/css/styles.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript" src="json/alimentosmn.json"></script>
     <script type="text/javascript" src="js/funcoes.js"></script>
 
@@ -21,13 +21,38 @@
 
 <body onload="carregaCombos()">
     <!--div id="alimentos_e_valores"-->
-    <select onchange="funcaoChange(this)" id="AlimentosMN0" class="contact__input">
+    <!--select onchange="funcaoChange(this)" id="AlimentosMN0" class="contact__input">
         <option value="0"></option>
     </select>
     <input onchange="somaInclusao(this)" type="number" step=".01" placeholder="% de inclusão" class="contact__input" id="val_inclusao0">
     <p></p>
     <p id="ProximosAlimentos"></p>
 
+    <h3>Total = <span id="Total_Inclusao"></span></h3-->
+    <table class="table">
+        <thead>
+            <th>Id</th>
+            <th>Alimento</th>
+            <th>% Inclusão</th>
+        </thead>
+        <tbody id="table_body">
+            <tr>
+                <td data-label="Id">1</td>
+                <td data-label="Alimento">
+                    <select onchange="funcaoChange(this)" id="AlimentosMN0" class="contact__input">
+                        <option value="0"></option>
+                    </select>
+                </td>
+                <td data-label="% Inclusão">
+                    <input onchange="somaInclusao(this)" type="number" step=".01" placeholder="% de inclusão" class="contact__input" id="val_inclusao0">
+                    <p id="ProximosAlimentos"></p>
+                </td>
+            </tr>
+            <!--tr id="Linha_Total">
+                <td colspan="3" data-label="Total = "><span id="Total_Inclusao"></span>%</td>
+            </tr-->
+        </tbody>
+    </table>
     <h3>Total = <span id="Total_Inclusao"></span></h3>
 </body>
 

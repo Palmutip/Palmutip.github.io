@@ -677,9 +677,34 @@ function funcaoChange(elemento) { // Nome da função que será chamada ao troca
                 select.id = "AlimentosMN" + contador_global; // Insere o atributo 'id' para o <select> recém criado
                 input.id = "val_inclusao" + contador_global; // Insere o atributo 'id' para o <input> recém criado
 
-                let ProximosAlimentos = document.getElementById("ProximosAlimentos"); // Pega o parágrafo 'ProximosAlimentos' para ser usado de referência
-                document.body.insertBefore(select, ProximosAlimentos); // Utilizando o parágrafo de referência, iremos instanciar o <select> recém criado antes do parágrafo
-                document.body.insertBefore(input, ProximosAlimentos); // Utilizando o parágrafo de referência, iremos instanciar o <input> recém criado antes do parágrafo
+                let b = document.createElement('b')
+                let tr = document.createElement('tr');
+                let tdid = document.createElement('td');
+                let tdalimento = document.createElement('td');
+                let tdinclusao = document.createElement('td');
+                let ProximosAlimentos = document.getElementById("table_body");
+                ProximosAlimentos.appendChild(tr);
+                tr.appendChild(tdid);
+                tr.appendChild(tdalimento);
+                tr.appendChild(tdinclusao);
+                tdalimento.appendChild(select);
+                tdinclusao.appendChild(input);
+
+                /*tr.id = "tr" + contador_global;
+                
+                tdid.id = "tdid" + contador_global;
+                tdid.appendChild(b);
+                b.innerHTML = "<b>Alterado o texto pelo JS<b>"
+                
+                tdalimento.id = "tdalimento" + contador_global;
+                tdalimento.appendChild(select);
+                
+                tdinclusao.id = "tdinclusao" + contador_global;
+                tdinclusao.appendChild(input);*/
+
+                //let ProximosAlimentos = document.getElementById("ProximosAlimentos"); // Pega o parágrafo 'ProximosAlimentos' para ser usado de referência
+                //document.body.insertBefore(select, ProximosAlimentos); // Utilizando o parágrafo de referência, iremos instanciar o <select> recém criado antes do parágrafo
+                //document.body.insertBefore(input, ProximosAlimentos); // Utilizando o parágrafo de referência, iremos instanciar o <input> recém criado antes do parágrafo
 
                 option = document.createElement("option"); // Irá criar um novo <option> (<option> significa um novo valor dentro da lista do <select>) para o primeiro elemento
                 option.value = 0; // Insere o atributo 'value' para o <option> recém criado. Sendo ele o primeiro elemento
@@ -698,17 +723,19 @@ function funcaoChange(elemento) { // Nome da função que será chamada ao troca
                     count++; // Atribui mais um no terceiro contador para seguir a lógica
                 } // Finaliza o while
 
-                //Adicionando atributos ao Select
+                //Adicionando atributos ao <select>
                 select.setAttribute('onchange', 'funcaoChange(this)'); // Adiciona o atributo 'onchange' para o <select> recém criado.
                 select.setAttribute('class', 'contact__input'); // Adiciona o atributo 'class' para o <select> recém criado.
 
-                //Adicionando atributos ao Input
+                //Adicionando atributos ao <input>
                 input.setAttribute('class', 'contact__input'); // Adiciona o atributo 'class' para o <input> recém criado.
                 input.setAttribute('placeholder', '% de inclusão'); // Adiciona o atributo 'placeholder' para o <input> recém criado.
                 input.setAttribute('step', '.01'); // Adiciona o atributo 'step' para o <input> recém criado.
                 input.setAttribute('onchange', 'somaInclusao(this)'); // Adiciona o atributo 'onchange' para o <input> recém criado.
                 input.setAttribute('type', 'number'); // Adiciona o atributo 'type' para o <input> recém criado.
                 contador_global++; // Atribui +1 no contador global
+
+                somaInclusao("val_inclusao" + identificacao); // Para atualizar o total
 
                 break; // Comando para parar o laço
 
@@ -721,7 +748,6 @@ function funcaoChange(elemento) { // Nome da função que será chamada ao troca
 } // Finaliza function funcaoChange
 
 function somaInclusao(elemento) { // Função que irá somar os valores digitados no <input>
-
     totalInclusao = 0; // Irá zerar a variavel global para que a conta inicie
     var InclusaoTotal = document.getElementById("Total_Inclusao"); // Pega o <span> 'Total_Inclusao' para ser usado de referencia
     while (InclusaoTotal.firstChild) InclusaoTotal.removeChild(InclusaoTotal.firstChild); // Limpa todo o conteúdo do <span>
@@ -729,13 +755,20 @@ function somaInclusao(elemento) { // Função que irá somar os valores digitado
 
     for (i = 0; i < contador_global; i++) { // Enquanto o contador auxiliar for menor que o contador global
         var myElement = document.getElementById("val_inclusao" + i); // Procure pelo <input> que possui a identificação igual ao contador local
-        if (myElement) { // Ao encontrar o <input>
-            totalInclusao += parseFloat(myElement.value); // Some o valor que está no <input> à variavel global responsavel por recebê-la.
-            //console.log(totalInclusao);
-        } // Finaliza If
-    } // Finaliza For
+        var select = document.getElementById("AlimentosMN" + i); // Procure pelo <select> que possui a identificação igual ao contador local
+        var value = select.options[select.selectedIndex].value; // Procure pela <option> selecionada atualmente no <select>
+        if (value != 0) { // Se estiver selecionado qualquer opção que não seja a primeira (em branco)
+            if (myElement) { // Ao encontrar o <input>
+                totalInclusao += parseFloat(myElement.value); // Some o valor que está no <input> à variavel global responsavel por recebê-la.
+            } // Finaliza If
+        }
 
-    InclusaoTotal.innerHTML = totalInclusao; // Altera o conteúdo interno do <span> para inserir o valor calculado anteriormente
+    } // Finaliza For
+    console.log(totalInclusao);
+
+    if (isNaN(totalInclusao)) { InclusaoTotal.innerHTML = "0" } // Altera o conteúdo interno do <span> para inserir o valor calculado anteriormente
+    else { InclusaoTotal.innerHTML = totalInclusao; } // Altera o conteúdo interno do <span> para inserir o valor calculado anteriormente
+
 
 } // Finaliza function somaInclusao
 
