@@ -657,6 +657,8 @@ var alimentosms = [{ Id: "1", Alimento: "Ab?bora moranga crua", Energia: "207,31
 
 
 var contador_global = 1;
+var totalInclusao = 0.00;
+//var InclusaoTotal = document.getElementById("Total_Inclusao");
 
 //console.log(alimentosmn);
 
@@ -665,25 +667,40 @@ function funcaoChange(elemento) { // Nome da função que será chamada ao troca
     console.log(contador_global);
     if (identificacao.substring(11) == (contador_global - 1) || (identificacao.substring(11) == "" && contador_global == 1)) {
         console.log(identificacao.substring(11));
+
         let geral = 0;
         while (geral < contador_global) {
             if (document.getElementById("AlimentosMN" + geral) != true) {
                 let select = document.createElement('select');
+                let input = document.createElement('input');
+
+                //var alimento0 = document.getElementById("AlimentosMN0");
+                //var divAlimento = alimento0.parentNode;
 
                 select.id = "AlimentosMN" + contador_global;
+                input.id = "val_inclusao" + contador_global;
 
                 let count = 0;
 
                 if (contador_global == 1) {
                     let ProximosAlimentos = document.getElementById("ProximosAlimentos");
+                    //let ProximosAlimentos = document.getElementById("Total_Inclusao");
                     document.body.insertBefore(select, ProximosAlimentos);
+                    document.body.insertBefore(input, ProximosAlimentos);
+                    /*document.divAlimento.insertBefore(select, ProximosAlimentos);
+                    document.divAlimento.insertBefore(input, ProximosAlimentos);*/
                     //ProximosAlimentos.appendChild(select);
                 } else {
                     let ProximosAlimentos2 = document.createElement('p');
                     ProximosAlimentos2.id = "ProximosAlimentos" + contador_global;
                     let ProximosAlimentos = document.getElementById("ProximosAlimentos" + contador_global);
+                    //let ProximosAlimentos = document.getElementById("Total_Inclusao");
                     document.body.insertBefore(ProximosAlimentos2, ProximosAlimentos);
                     document.body.insertBefore(select, ProximosAlimentos);
+                    document.body.insertBefore(input, ProximosAlimentos);
+                    /*document.divAlimento.insertBefore(ProximosAlimentos2, ProximosAlimentos);
+                    document.divAlimento.insertBefore(select, ProximosAlimentos);
+                    document.divAlimento.insertBefore(input, ProximosAlimentos);*/
                     //ProximosAlimentos.appendChild(select);
                 }
 
@@ -701,7 +718,17 @@ function funcaoChange(elemento) { // Nome da função que será chamada ao troca
 
                     count++;
                 }
+
+                //Adicionando atributos ao Select
                 select.setAttribute('onchange', 'funcaoChange(this)');
+                select.setAttribute('class', 'contact__input');
+
+                //Adicionando atributos ao Input
+                input.setAttribute('class', 'contact__input');
+                input.setAttribute('placeholder', '% de inclusão');
+                input.setAttribute('step', '.01');
+                input.setAttribute('onchange', 'somaInclusao(this)');
+                input.setAttribute('type', 'number');
                 contador_global++;
 
                 break;
@@ -712,8 +739,40 @@ function funcaoChange(elemento) { // Nome da função que será chamada ao troca
     //console.log("Deu ruim");
 }
 
+function somaInclusao(elemento) {
+    totalInclusao = 0;
+    var InclusaoTotal = document.getElementById("Total_Inclusao");
+    while (InclusaoTotal.firstChild) InclusaoTotal.removeChild(InclusaoTotal.firstChild);
+    //var identificacao = elemento.id;
+    //let val_total = "";
+    var i = 0;
+    //.innerHTML = "0.00";
+    for (i = 0; i < contador_global; i++) {
+        var myElement = document.getElementById("val_inclusao" + i);
+        if (myElement) {
+            totalInclusao += parseFloat(myElement.value);
+            console.log(totalInclusao);
+            /*val_total = parseFloat(myElement.value + val_total);
+            console.log(val_total);
+            console.log("está no DOM");
+            console.log("val_inclusao" + i);
+            console.log(myElement.value);
+        } else {
+            console.log("NÃO está no DOM");
+            console.log("val_inclusao" + i);*/
+        }
+    }
+    //InclusaoTotal.innerHTML.clear
+    InclusaoTotal.innerHTML = totalInclusao;
+}
+
+function atualizaValor(elemento) {
+    console.log(totalInclusao);
+    //elemento.innerHTML = totalInclusao;
+}
+
 function carregacombos() {
-    var alimento_ = document.getElementById("AlimentosMN");
+    var alimento_ = document.getElementById("AlimentosMN0");
 
     let count = 0;
 

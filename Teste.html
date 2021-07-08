@@ -10,20 +10,25 @@
 
     <title>FormulaNEM</title>
     <link rel="icon" type="image/ico" href="favicon.ico" />
-    <link rel="stylesheet" href="styles.css">
+    <!--link rel="stylesheet" href="styles.css"-->
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
     <script type="text/javascript" src="json/alimentosmn.json"></script>
     <script type="text/javascript" src="js/funcoes.js"></script>
 
 </head>
 
 <body onload="carregacombos()">
-
-    <select onchange="funcaoChange(this)" id="AlimentosMN">
+    <!--div id="alimentos_e_valores"-->
+    <select onchange="funcaoChange(this)" id="AlimentosMN0" class="contact__input">
         <option value="0"></option>
     </select>
+    <input onchange="somaInclusao(this)" type="number" step=".01" placeholder="% de inclusão" class="contact__input" id="val_inclusao0">
     <p></p>
     <p id="ProximosAlimentos"></p>
 
+    <h3>Total = <span id="Total_Inclusao" onchange="atualizaValor(this)"></span></h3>
 </body>
 
 </html>
