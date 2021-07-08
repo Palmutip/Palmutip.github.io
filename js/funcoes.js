@@ -687,8 +687,10 @@ function funcaoChange(elemento) { // Nome da função que será chamada ao troca
                 tr.appendChild(tdid);
                 tr.appendChild(tdalimento);
                 tr.appendChild(tdinclusao);
+                tdid.appendChild(b);
                 tdalimento.appendChild(select);
                 tdinclusao.appendChild(input);
+                b.innerHTML = contador_global + 1;
 
                 /*tr.id = "tr" + contador_global;
                 
