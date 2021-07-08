@@ -10,10 +10,13 @@
     <!-- ===== CSS ===== -->
     <link rel="stylesheet" href="assets/css/styles.css">
 
+    <!-- ===== JAVASCRIPT ===== -->
+    <script type="text/javascript" src="../../js/funcoes.js"></script>
+
     <title>Formulação e Fornecimento - FormulaNEM</title>
 </head>
 
-<body>
+<body onload="carregaCombos()">
     <!--===== HEADER =====-->
     <header class="l-header">
         <nav class="nav bd-grid">
@@ -66,6 +69,31 @@
             <h2 class="section-title">Formulação e Fornecimento</h2>
             <div class="formulacao__container bd-grid">
                 <div class="formulacao__img">
+                    <table class="table">
+                        <thead>
+                            <th>Id</th>
+                            <th>Alimento</th>
+                            <th>% Inclusão</th>
+                        </thead>
+                        <tbody id="table_body">
+                            <tr>
+                                <td data-label="Id"><b>1</b></td>
+                                <td data-label="Alimento">
+                                    <select onchange="funcaoChange(this)" id="AlimentosMN0" class="contact__input">
+                                        <option value="0"></option>
+                                    </select>
+                                </td>
+                                <td data-label="% Inclusão">
+                                    <input onchange="somaInclusao(this)" type="number" step=".01" placeholder="% de inclusão" class="contact__input" id="val_inclusao0">
+                                    <p id="ProximosAlimentos"></p>
+                                </td>
+                            </tr>
+                            <!--tr id="Linha_Total">
+                                <td colspan="3" data-label="Total = "><span id="Total_Inclusao"></span>%</td>
+                            </tr-->
+                        </tbody>
+                    </table>
+                    <h3>Total = <span id="Total_Inclusao"></span></h3>
                     <!--img src="assets/img/about.jpg" alt=""-->
                 </div>
 

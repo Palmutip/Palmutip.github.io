@@ -677,33 +677,22 @@ function funcaoChange(elemento) { // Nome da função que será chamada ao troca
                 select.id = "AlimentosMN" + contador_global; // Insere o atributo 'id' para o <select> recém criado
                 input.id = "val_inclusao" + contador_global; // Insere o atributo 'id' para o <input> recém criado
 
-                let b = document.createElement('b')
-                let tr = document.createElement('tr');
-                let tdid = document.createElement('td');
-                let tdalimento = document.createElement('td');
-                let tdinclusao = document.createElement('td');
-                let ProximosAlimentos = document.getElementById("table_body");
-                ProximosAlimentos.appendChild(tr);
-                tr.appendChild(tdid);
-                tr.appendChild(tdalimento);
-                tr.appendChild(tdinclusao);
-                tdid.appendChild(b);
-                tdalimento.appendChild(select);
-                tdinclusao.appendChild(input);
-                b.innerHTML = contador_global + 1;
+                let b = document.createElement('b') // Criado um elemento <b> para ser usado de referencia na hora de atribuir o contador da tabela
+                let tr = document.createElement('tr'); // Criando uma Table Row <tr> para ser usada de referencia na hora de atribuir uma Table Data <td>
+                let tdid = document.createElement('td'); // Criado uma Table Data <td> para ser usada como referencia na hora de inserir o numero de sequencia da tabela
+                let tdalimento = document.createElement('td'); // Criado uma <td> para ser usada como referencia na hora de escolher um alimento pelo <select>
+                let tdinclusao = document.createElement('td'); // Criado uma <td> para ser usada como referencia na hora de definir uma % de inclusão no <input>
+                let ProximosAlimentos = document.getElementById("table_body"); // Procura pelo <tbody> para ser usado como referencia na hora de inserir as demais linhas da tabela
+                ProximosAlimentos.appendChild(tr); // Insere uma nova linha <tr> conforme o <tbody> passado
+                tr.appendChild(tdid); // Insere um novo dado na linha <td> conforme o <tr> passado
+                tr.appendChild(tdalimento); // Insere um novo dado na linha <td> conforme o <tr> passado
+                tr.appendChild(tdinclusao); // Insere um novo dado na linha <td> conforme o <tr> passado
+                tdid.appendChild(b); // Insere o conteudo do <td>, neste caso é um <b>
+                tdalimento.appendChild(select); // Insere o conteudo do <td>, neste caso é um <select>
+                tdinclusao.appendChild(input); // Insere o conteudo do <td>, neste caso é um <input>
+                b.innerHTML = contador_global + 1; // Atribuindo o contador da tabela atraves de um elemento <b>
 
-                /*tr.id = "tr" + contador_global;
-                
-                tdid.id = "tdid" + contador_global;
-                tdid.appendChild(b);
-                b.innerHTML = "<b>Alterado o texto pelo JS<b>"
-                
-                tdalimento.id = "tdalimento" + contador_global;
-                tdalimento.appendChild(select);
-                
-                tdinclusao.id = "tdinclusao" + contador_global;
-                tdinclusao.appendChild(input);*/
-
+                //Esses códigos foram suprimidos pois não existe mais a necessidade de criar um grupo de elementos logo abaixo do outro. Agora está em formato de tabela.
                 //let ProximosAlimentos = document.getElementById("ProximosAlimentos"); // Pega o parágrafo 'ProximosAlimentos' para ser usado de referência
                 //document.body.insertBefore(select, ProximosAlimentos); // Utilizando o parágrafo de referência, iremos instanciar o <select> recém criado antes do parágrafo
                 //document.body.insertBefore(input, ProximosAlimentos); // Utilizando o parágrafo de referência, iremos instanciar o <input> recém criado antes do parágrafo
@@ -766,7 +755,7 @@ function somaInclusao(elemento) { // Função que irá somar os valores digitado
         }
 
     } // Finaliza For
-    console.log(totalInclusao);
+    console.log(totalInclusao); // Mostra no console o valor da soma
 
     if (isNaN(totalInclusao)) { InclusaoTotal.innerHTML = "0" } // Altera o conteúdo interno do <span> para inserir o valor calculado anteriormente
     else { InclusaoTotal.innerHTML = totalInclusao; } // Altera o conteúdo interno do <span> para inserir o valor calculado anteriormente
