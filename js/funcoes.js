@@ -656,133 +656,98 @@ var alimentosms = [{ Id: "1", Alimento: "Ab?bora moranga crua", Energia: "207,31
 ]
 
 
-var contador_global = 1;
-var totalInclusao = 0.00;
-//var InclusaoTotal = document.getElementById("Total_Inclusao");
-
-//console.log(alimentosmn);
+var contador_global = 1; // Um contador global que irá auxiliar durante a criação dos <select> e <input>
+var totalInclusao = 0.00; // Uma variável global que terá seu valor alterado conforme os valores que forem inseridos nos <input> criados
 
 function funcaoChange(elemento) { // Nome da função que será chamada ao trocar a opção selecionada de um <select> (ComboBox)
-    var identificacao = elemento.id; // Pegando o texto do atributo id do select passado como parametro.
-    console.log(contador_global);
+    var identificacao = elemento.id; // Pegando o texto do atributo id do <select> passado como parametro.
+
+    // Se o numero de identificação do <select> for igual ao (contador atual -1) OU se for o primeiro <select>
     if (identificacao.substring(11) == (contador_global - 1) || (identificacao.substring(11) == "" && contador_global == 1)) {
-        console.log(identificacao.substring(11));
 
-        let geral = 0;
-        while (geral < contador_global) {
-            if (document.getElementById("AlimentosMN" + geral) != true) {
-                let select = document.createElement('select');
-                let input = document.createElement('input');
+        //console.log(identificacao.substring(11));
 
-                //var alimento0 = document.getElementById("AlimentosMN0");
-                //var divAlimento = alimento0.parentNode;
+        let geral = 0; // Variavel auxiliar apenas para identificar os selects da lista
 
-                select.id = "AlimentosMN" + contador_global;
-                input.id = "val_inclusao" + contador_global;
+        while (geral < contador_global) { // Enquanto o contador atual for menor que o contador global
+            if (document.getElementById("AlimentosMN" + geral) != true) { // Se existir o <select> com o numero do contador atual
+                let select = document.createElement('select'); // Irá criar um novo <select>
+                let input = document.createElement('input'); // Irá criar um novo <input>
 
-                let count = 0;
+                select.id = "AlimentosMN" + contador_global; // Insere o atributo 'id' para o <select> recém criado
+                input.id = "val_inclusao" + contador_global; // Insere o atributo 'id' para o <input> recém criado
 
-                if (contador_global == 1) {
-                    let ProximosAlimentos = document.getElementById("ProximosAlimentos");
-                    //let ProximosAlimentos = document.getElementById("Total_Inclusao");
-                    document.body.insertBefore(select, ProximosAlimentos);
-                    document.body.insertBefore(input, ProximosAlimentos);
-                    /*document.divAlimento.insertBefore(select, ProximosAlimentos);
-                    document.divAlimento.insertBefore(input, ProximosAlimentos);*/
-                    //ProximosAlimentos.appendChild(select);
-                } else {
-                    let ProximosAlimentos2 = document.createElement('p');
-                    ProximosAlimentos2.id = "ProximosAlimentos" + contador_global;
-                    let ProximosAlimentos = document.getElementById("ProximosAlimentos" + contador_global);
-                    //let ProximosAlimentos = document.getElementById("Total_Inclusao");
-                    document.body.insertBefore(ProximosAlimentos2, ProximosAlimentos);
-                    document.body.insertBefore(select, ProximosAlimentos);
-                    document.body.insertBefore(input, ProximosAlimentos);
-                    /*document.divAlimento.insertBefore(ProximosAlimentos2, ProximosAlimentos);
-                    document.divAlimento.insertBefore(select, ProximosAlimentos);
-                    document.divAlimento.insertBefore(input, ProximosAlimentos);*/
-                    //ProximosAlimentos.appendChild(select);
-                }
+                let ProximosAlimentos = document.getElementById("ProximosAlimentos"); // Pega o parágrafo 'ProximosAlimentos' para ser usado de referência
+                document.body.insertBefore(select, ProximosAlimentos); // Utilizando o parágrafo de referência, iremos instanciar o <select> recém criado antes do parágrafo
+                document.body.insertBefore(input, ProximosAlimentos); // Utilizando o parágrafo de referência, iremos instanciar o <input> recém criado antes do parágrafo
 
-                option = document.createElement("option");
-                option.value = 0;
-                option.text = "";
-                select.add(option);
+                option = document.createElement("option"); // Irá criar um novo <option> (<option> significa um novo valor dentro da lista do <select>) para o primeiro elemento
+                option.value = 0; // Insere o atributo 'value' para o <option> recém criado. Sendo ele o primeiro elemento
+                option.text = ""; // Insere o atributo 'text' para o <option> recém criado. Sendo ele vazio
+                select.add(option); // Insere o <option> dentro do <select> criado anteriormente
 
-                while (alimentosmn.length > count) {
+                let count = 0; // Um terceiro contador, apenas para atribuir os valores que irão aparecer como opção dentro do <select>
 
-                    option = document.createElement("option");
-                    option.value = count + 1;
-                    option.text = alimentosmn[count].Alimento;
-                    select.add(option);
+                while (alimentosmn.length > count) { // Enquanto o tamanho do Array do JSON Alimentos Matéria Natural for maior que o terceiro contador
 
-                    count++;
-                }
+                    option = document.createElement("option"); // Irá criar um novo <option> (<option> significa um novo valor dentro da lista do <select>)
+                    option.value = count + 1; // Insere o atributo 'value' para o <option> recém criado. Sendo ele igual ao (terceiro contador + 1)
+                    option.text = alimentosmn[count].Alimento; // Insere o atributo 'text' para o <option> recém criado. Sendo ele o valor do campo "Alimento" de acordo com o contador do JSON
+                    select.add(option); // Insere o <option> dentro do <select> criado anteriormente
+
+                    count++; // Atribui mais um no terceiro contador para seguir a lógica
+                } // Finaliza o while
 
                 //Adicionando atributos ao Select
-                select.setAttribute('onchange', 'funcaoChange(this)');
-                select.setAttribute('class', 'contact__input');
+                select.setAttribute('onchange', 'funcaoChange(this)'); // Adiciona o atributo 'onchange' para o <select> recém criado.
+                select.setAttribute('class', 'contact__input'); // Adiciona o atributo 'class' para o <select> recém criado.
 
                 //Adicionando atributos ao Input
-                input.setAttribute('class', 'contact__input');
-                input.setAttribute('placeholder', '% de inclusão');
-                input.setAttribute('step', '.01');
-                input.setAttribute('onchange', 'somaInclusao(this)');
-                input.setAttribute('type', 'number');
-                contador_global++;
+                input.setAttribute('class', 'contact__input'); // Adiciona o atributo 'class' para o <input> recém criado.
+                input.setAttribute('placeholder', '% de inclusão'); // Adiciona o atributo 'placeholder' para o <input> recém criado.
+                input.setAttribute('step', '.01'); // Adiciona o atributo 'step' para o <input> recém criado.
+                input.setAttribute('onchange', 'somaInclusao(this)'); // Adiciona o atributo 'onchange' para o <input> recém criado.
+                input.setAttribute('type', 'number'); // Adiciona o atributo 'type' para o <input> recém criado.
+                contador_global++; // Atribui +1 no contador global
 
-                break;
-            }
-            geral++;
-        }
-    }
-    //console.log("Deu ruim");
-}
+                break; // Comando para parar o laço
 
-function somaInclusao(elemento) {
-    totalInclusao = 0;
-    var InclusaoTotal = document.getElementById("Total_Inclusao");
-    while (InclusaoTotal.firstChild) InclusaoTotal.removeChild(InclusaoTotal.firstChild);
-    //var identificacao = elemento.id;
-    //let val_total = "";
-    var i = 0;
-    //.innerHTML = "0.00";
-    for (i = 0; i < contador_global; i++) {
-        var myElement = document.getElementById("val_inclusao" + i);
-        if (myElement) {
-            totalInclusao += parseFloat(myElement.value);
-            console.log(totalInclusao);
-            /*val_total = parseFloat(myElement.value + val_total);
-            console.log(val_total);
-            console.log("está no DOM");
-            console.log("val_inclusao" + i);
-            console.log(myElement.value);
-        } else {
-            console.log("NÃO está no DOM");
-            console.log("val_inclusao" + i);*/
-        }
-    }
-    //InclusaoTotal.innerHTML.clear
-    InclusaoTotal.innerHTML = totalInclusao;
-}
+            } // Finaliza o if
 
-function atualizaValor(elemento) {
-    console.log(totalInclusao);
-    //elemento.innerHTML = totalInclusao;
-}
+            geral++; // Atribui +1 no contador auxiliar
 
-function carregacombos() {
-    var alimento_ = document.getElementById("AlimentosMN0");
+        } // Finaliza while
+    } // Finaliza if
+} // Finaliza function funcaoChange
 
-    let count = 0;
+function somaInclusao(elemento) { // Função que irá somar os valores digitados no <input>
 
-    while (alimentosmn.length > count) {
+    totalInclusao = 0; // Irá zerar a variavel global para que a conta inicie
+    var InclusaoTotal = document.getElementById("Total_Inclusao"); // Pega o <span> 'Total_Inclusao' para ser usado de referencia
+    while (InclusaoTotal.firstChild) InclusaoTotal.removeChild(InclusaoTotal.firstChild); // Limpa todo o conteúdo do <span>
+    var i = 0; // Cria uma variavel contadora auxiliar
 
-        option = document.createElement("option");
-        option.value = count + 1;
-        option.text = alimentosmn[count].Alimento;
-        alimento_.add(option);
+    for (i = 0; i < contador_global; i++) { // Enquanto o contador auxiliar for menor que o contador global
+        var myElement = document.getElementById("val_inclusao" + i); // Procure pelo <input> que possui a identificação igual ao contador local
+        if (myElement) { // Ao encontrar o <input>
+            totalInclusao += parseFloat(myElement.value); // Some o valor que está no <input> à variavel global responsavel por recebê-la.
+            //console.log(totalInclusao);
+        } // Finaliza If
+    } // Finaliza For
 
-        count++;
-    }
-}
+    InclusaoTotal.innerHTML = totalInclusao; // Altera o conteúdo interno do <span> para inserir o valor calculado anteriormente
+
+} // Finaliza function somaInclusao
+
+function carregaCombos(count = 0) { // Alimenta o primeiro <select> criado
+    var alimento_ = document.getElementById("AlimentosMN0"); // Pega o primeiro <select> criado para ser usado como referência
+
+    while (alimentosmn.length > count) { // Enquanto o tamanho do Array do JSON Alimentos Matéria Natural for maior que o terceiro contador
+        option = document.createElement("option"); // Irá criar um novo <option> (<option> significa um novo valor dentro da lista do <select>)
+        option.value = count + 1; // Insere o atributo 'value' para o <option> recém criado. Sendo ele igual ao (terceiro contador + 1)
+        option.text = alimentosmn[count].Alimento; // Insere o atributo 'text' para o <option> recém criado. Sendo ele o valor do campo "Alimento" de acordo com o contador do JSON
+        alimento_.add(option); // Insere o <option> dentro do <select> criado anteriormente
+
+        count++; // Atribui mais um no terceiro contador para seguir a lógica
+    } // Finaliza while
+} // Finaliza function carregacombos
