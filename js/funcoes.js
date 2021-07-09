@@ -723,6 +723,11 @@ function funcaoChange(elemento) { // Nome da função que será chamada ao troca
                 input.setAttribute('step', '.01'); // Adiciona o atributo 'step' para o <input> recém criado.
                 input.setAttribute('onchange', 'somaInclusao(this)'); // Adiciona o atributo 'onchange' para o <input> recém criado.
                 input.setAttribute('type', 'number'); // Adiciona o atributo 'type' para o <input> recém criado.
+
+                //Adicionando Identificação nas <td> linhas Tabela
+                tdalimento.setAttribute('data-label', 'Alimento');
+                tdinclusao.setAttribute('data-label', '% Inclusão');
+
                 contador_global++; // Atribui +1 no contador global
 
                 somaInclusao("val_inclusao" + identificacao); // Para atualizar o total
