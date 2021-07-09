@@ -53,6 +53,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: var(--header-height) 0 0 0;
     padding: 0;
@@ -325,6 +329,17 @@ img {
     .contact__container {
         justify-items: center;
     }
+    .section {
+        padding-top: 4rem;
+        padding-bottom: 3rem;
+    }
+    .section-title {
+        margin-bottom: var(--mb-6);
+    }
+    .section-title::after {
+        width: 80px;
+        top: 3rem;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -441,7 +456,7 @@ img {
 .table th {
     padding: 12px 15px;
     border: 1px solid #ddd;
-    text-align: center;
+    text-align: left;
     font-size: 16px;
 }
 
@@ -496,6 +511,7 @@ img {
         padding-left: 15px;
         font-size: 15px;
         font-weight: bold;
+        text-align: center;
     }
 }
 

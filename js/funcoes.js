@@ -725,6 +725,7 @@ function funcaoChange(elemento) { // Nome da função que será chamada ao troca
                 input.setAttribute('type', 'number'); // Adiciona o atributo 'type' para o <input> recém criado.
 
                 //Adicionando Identificação nas <td> linhas Tabela
+                tdid.setAttribute('data-label', 'Id');
                 tdalimento.setAttribute('data-label', 'Alimento');
                 tdinclusao.setAttribute('data-label', '% Inclusão');
 

@@ -38,6 +38,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: var(--header-height) 0 0 0;
     padding: 0;
@@ -153,6 +157,34 @@ img {
 
 .show {
     right: 0;
+}
+
+
+/* === SECTION === */
+
+.section-title {
+    position: relative;
+    font-size: var(--h2-font-size);
+    color: var(--first-color);
+    margin-top: var(--mb-2);
+    margin-bottom: var(--mb-4);
+    text-align: center;
+    &::after {
+        position: absolute;
+        content: '';
+        width: 64px;
+        height: 0.18rem;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 2rem;
+        background-color: var(--first-color);
+    }
+}
+
+.section {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
 }
 
 
