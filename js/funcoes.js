@@ -655,7 +655,6 @@ var alimentosms = [{ Id: "1", Alimento: "Ab?bora moranga crua", Energia: "207,31
     { Id: "326", Alimento: "birijin", Energia: "132", Umidade: "132", MS: "132", PB: "123", Arg: "3", His: "32", Iso: "321", Leu: "321", Lis: "321", Met: "321", Met_Cis: "3", Fen: "321", Fen_Tir: "3", Treo: "321", Tri: "321", Val: "321", Tau: "321", EE: "132", Ac_Linoleico6: "321", Ac_Araquidonico: "321", Ac_Linolenico3: "21", EPA_DHA: "321", MM: "132", Ca: "132", P: "132", K: "132", Na: "1", Cl: "321", Mg: "231", Cu: "321", I: "321", Fe: "3213", Mn: "2132", Se: "132", Zn: "13", S: "212", Carboidratos: "", FB: "132", ENN: "13", FDN: "321", FDA: "321", CNF: "321", Vit_A: "321", Vit_D: "231", Vit_E: "321", Tiamina: "1", Riboflavina: "31", Ac_Pantotenico: "321", Vit_B6: "231", Vit_B12: "321", Niacina: "321", Ac_Folico: "321", Biotina: "32", Colina: "321", Vit_K: "231", Vit_C: "231", Preco: null }
 ]
 
-
 var contador_global = 1; // Um contador global que irá auxiliar durante a criação dos <select> e <input>
 var totalInclusao = 0.00; // Uma variável global que terá seu valor alterado conforme os valores que forem inseridos nos <input> criados
 
@@ -764,14 +763,30 @@ function somaInclusao(elemento) { // Função que irá somar os valores digitado
 } // Finaliza function somaInclusao
 
 function carregaCombos(count = 0) { // Alimenta o primeiro <select> criado
-    var alimento_ = document.getElementById("AlimentosMN0"); // Pega o primeiro <select> criado para ser usado como referência
+    var alimento_ = document.getElementById("AlimentosMN0"); // Pega o primeiro <select> criado para ser usado como referênciavar infoAlimento_ = document.getElementById("InfoAlimento"); // Pega o primeiro <select> criado para ser usado como referência
+    var infoAlimento_ = document.getElementById("InfoAlimento"); // Pega o primeiro <select> criado para ser usado como referência
 
     while (alimentosmn.length > count) { // Enquanto o tamanho do Array do JSON Alimentos Matéria Natural for maior que o terceiro contador
         option = document.createElement("option"); // Irá criar um novo <option> (<option> significa um novo valor dentro da lista do <select>)
         option.value = count + 1; // Insere o atributo 'value' para o <option> recém criado. Sendo ele igual ao (terceiro contador + 1)
         option.text = alimentosmn[count].Alimento; // Insere o atributo 'text' para o <option> recém criado. Sendo ele o valor do campo "Alimento" de acordo com o contador do JSON
+        option2 = document.createElement("option"); // Irá criar um novo <option> (<option> significa um novo valor dentro da lista do <select>)
+        option2.value = count + 1; // Insere o atributo 'value' para o <option> recém criado. Sendo ele igual ao (terceiro contador + 1)
+        option2.text = alimentosmn[count].Alimento; // Insere o atributo 'text' para o <option> recém criado. Sendo ele o valor do campo "Alimento" de acordo com o contador do JSON
         alimento_.add(option); // Insere o <option> dentro do <select> criado anteriormente
+        infoAlimento_.add(option2);
 
         count++; // Atribui mais um no terceiro contador para seguir a lógica
     } // Finaliza while
+
+    /*var infoAlimento_ = document.getElementById("InfoAlimento"); // Pega o primeiro <select> criado para ser usado como referência
+
+    while (alimentosmn.length > count) { // Enquanto o tamanho do Array do JSON Alimentos Matéria Natural for maior que o terceiro contador
+        option = document.createElement("option"); // Irá criar um novo <option> (<option> significa um novo valor dentro da lista do <select>)
+        option.value = count + 1; // Insere o atributo 'value' para o <option> recém criado. Sendo ele igual ao (terceiro contador + 1)
+        option.text = alimentosmn[count].Alimento; // Insere o atributo 'text' para o <option> recém criado. Sendo ele o valor do campo "Alimento" de acordo com o contador do JSON
+        infoAlimento_.add(option); // Insere o <option> dentro do <select> criado anteriormente
+
+        count++; // Atribui mais um no terceiro contador para seguir a lógica
+    }*/ // Finaliza while
 } // Finaliza function carregacombos

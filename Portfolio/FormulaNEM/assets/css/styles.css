@@ -13,7 +13,9 @@
     --second-color: #7da453;
     --second-color-light: #add47f;
     --second-color-dark: #4d7425;
+    --black-color: #090909;
     --white-color: #FCF8F8;
+    --grey-color: #f0f0f0;
     /*===== Font and typography =====*/
     --body-font: 'Poppins', sans-serif;
     --big-font-size: 2.5rem;
@@ -30,7 +32,7 @@
     --mb-1: 0.5rem;
     --mb-2: 1rem;
     --mb-3: 1.5rem;
-    --mb-4: 2rem;
+    --mb-4: 0.5rem;
     --mb-5: 2.5rem;
     --mb-6: 3rem;
 }
@@ -84,7 +86,7 @@ img {
 
 .button {
     display: inline-block;
-    background-color: var(--first-color);
+    background-color: var(--first-color-darken);
     color: #fff;
     padding: .75rem 2.5rem;
     font-weight: var(--font-semi);
@@ -157,11 +159,23 @@ img {
 .nav__link,
 .nav__logo,
 .nav__toggle {
-    color: var(--white-color);
+    /*color: var(--white-color);--black-color*/
+    color: var(--black-color);
 }
 
 .nav__link:hover {
+    position: relative;
     color: var(--first-color-dark);
+}
+
+.nav__link:hover::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0.18rem;
+    left: 0;
+    top: 2rem;
+    background-color: var(--first-color);
 }
 
 .nav__toggle {
@@ -205,7 +219,7 @@ img {
 }
 
 .home__data {
-    color: var(--white-color);
+    color: var(--black-color);
 }
 
 .home__title {
@@ -412,6 +426,7 @@ img {
     font-size: var(--normal-font-size);
     cursor: pointer;
     margin-left: auto;
+    text-align: center;
 }
 
 
@@ -436,7 +451,11 @@ img {
 }
 
 .table tbody tr:nth-child(even) {
-    background-color: var(--second-color);
+    background-color: var(--grey-color);
+}
+
+.table tbody tr {
+    background-color: var(--white-color);
 }
 
 @media screen and (min-width: 1024px) {
@@ -478,4 +497,20 @@ img {
         font-size: 15px;
         font-weight: bold;
     }
+}
+
+
+/* ===== ALIMENTOS =====*/
+
+.mostra__button {
+    display: inline-block;
+    /*background-color: var(--first-color-dark);
+    color: var(--white-color);*/
+    padding: 1.125rem 2rem;
+    /*border-radius: .5rem;*/
+    border: none;
+    outline: none;
+    font-size: var(--normal-font-size);
+    cursor: pointer;
+    margin-left: auto;
 }
