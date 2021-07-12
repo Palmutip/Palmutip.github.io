@@ -839,3 +839,201 @@ function carregaCombos(count = 0) { // Alimenta o primeiro <select> criado
         count++; // Atribui mais um no terceiro contador para seguir a lógica
     }*/ // Finaliza while
 } // Finaliza function carregacombos
+
+/*function Clica(elemento) {
+    document.getElementById('contatoForm').addEventListener('submit', function() {
+        var nome = this.querySelector('input[name=nome]'),
+            nome = nome.value;
+        var email = this.querySelector('input[name=email]'),
+            email = email.value;
+        var texto = 'Olá destinatário, \nMeu nome é ' + nome + ' e meu email é ' + email;
+        this.querySelector('input[name=Body]').setAttribute('value', texto);
+    });
+}
+
+function sendEmail() {
+    var link = "mailto:" +
+        document.getElementById("email").value +
+        "&subject=" + encodeURIComponent(document.getElementById("subject").value) +
+        "&body=" + encodeURIComponent(document.getElementById('myText').value);
+
+    window.location.href = link;
+}*/
+
+function MostraDados(elemento) {
+    var identificacao = elemento.value;
+
+    let tbodymn = document.getElementById("table_alimentos_mn");
+    while (tbodymn.firstChild) tbodymn.removeChild(tbodymn.firstChild);
+    let tbodyms = document.getElementById("table_alimentos_ms");
+    while (tbodymn.firstChild) tbodyms.removeChild(tbodyms.firstChild);
+
+    if (identificacao == 0 || identificacao == "0") {
+
+    } else {
+        for (let [key, value] of Object.entries(alimentosmn[identificacao - 1])) {
+            console.log(`${key}: ${value}`);
+            if (key == "Id" || key == "Alimento") {
+                console.log("Opa ID aqui");
+            } else {
+                if (value == null || value == 0 || value == "0") {
+
+                } else {
+                    console.log(`${key}: ${value}`);
+
+                    let tr = document.createElement('tr');
+                    let tdnutriente = document.createElement('td');
+                    let tdmedida = document.createElement('td');
+                    let bnutriente = document.createElement('b');
+                    let bmedida = document.createElement('b');
+
+                    tbodymn.appendChild(tr);
+                    tr.appendChild(tdnutriente);
+                    tr.appendChild(tdmedida);
+                    tdnutriente.appendChild(bnutriente);
+                    tdmedida.appendChild(bmedida);
+
+                    bnutriente.innerHTML = key; // Atribuindo o contador da tabela atraves de um elemento <b>
+
+                    if (key == "Energia") {
+                        bmedida.innerHTML = value + " (kcal)"; // Atribuindo o contador da tabela atraves de um elemento <b>
+                    } else if (key == "Ac_Araquidonico" || key == "Ca" || key == "P" || key == "K" || key == "Na" || key == "Cl" || key == "Mg" || key == "Cu" || key == "I" || key == "Fe" || key == "Mn" || key == "Se" || key == "Zn" || key == "S" || key == "Tiamina" || key == "Riboflavina" || key == "Ac_Pantotenico" || key == "Vit_B6" || key == "Niacina" || key == "Biotina" || key == "Colina" || key == "Vit_K" || key == "Vit_C") {
+                        bmedida.innerHTML = value + " (mg)"; // Atribuindo o contador da tabela atraves de um elemento <b>
+                    } else if (key == "Ac_Folico" || key == "Vit_B12") {
+                        bmedida.innerHTML = value + " (mcg)"; // Atribuindo o contador da tabela atraves de um elemento <b>
+                    } else if (key == "Vit_A" || key == "Vit_D" || key == "Vit_E") {
+                        bmedida.innerHTML = value + " (UI)"; // Atribuindo o contador da tabela atraves de um elemento <b>
+                    } else if (key == "Preco") {
+                        bmedida.innerHTML = value + " (R$)"; // Atribuindo o contador da tabela atraves de um elemento <b>
+                    } else {
+                        bmedida.innerHTML = value + " (%)"; // Atribuindo o contador da tabela atraves de um elemento <b>
+                    }
+
+                }
+            }
+        }
+        for (let [key, value] of Object.entries(alimentosms[identificacao - 1])) {
+            console.log(`${key}: ${value}`);
+            if (key == "Id" || key == "Alimento" || key == "Umidade" || key == "MS") {
+                console.log("Opa ID aqui");
+            } else {
+                if (value == null || value == 0 || value == "0") {
+
+                } else {
+                    console.log(`${key}: ${value}`);
+
+                    let tr = document.createElement('tr');
+                    let tdnutriente = document.createElement('td');
+                    let tdmedida = document.createElement('td');
+                    let bnutriente = document.createElement('b');
+                    let bmedida = document.createElement('b');
+
+                    tbodyms.appendChild(tr);
+                    tr.appendChild(tdnutriente);
+                    tr.appendChild(tdmedida);
+                    tdnutriente.appendChild(bnutriente);
+                    tdmedida.appendChild(bmedida);
+
+                    bnutriente.innerHTML = key; // Atribuindo o contador da tabela atraves de um elemento <b>
+
+                    if (key == "Energia") {
+                        bmedida.innerHTML = value + " (kcal)"; // Atribuindo o contador da tabela atraves de um elemento <b>
+                    } else if (key == "Ac_Araquidonico" || key == "Ca" || key == "P" || key == "K" || key == "Na" || key == "Cl" || key == "Mg" || key == "Cu" || key == "I" || key == "Fe" || key == "Mn" || key == "Se" || key == "Zn" || key == "S" || key == "Tiamina" || key == "Riboflavina" || key == "Ac_Pantotenico" || key == "Vit_B6" || key == "Niacina" || key == "Biotina" || key == "Colina" || key == "Vit_K" || key == "Vit_C") {
+                        bmedida.innerHTML = value + " (mg)"; // Atribuindo o contador da tabela atraves de um elemento <b>
+                    } else if (key == "Ac_Folico" || key == "Vit_B12") {
+                        bmedida.innerHTML = value + " (mcg)"; // Atribuindo o contador da tabela atraves de um elemento <b>
+                    } else if (key == "Vit_A" || key == "Vit_D" || key == "Vit_E") {
+                        bmedida.innerHTML = value + " (UI)"; // Atribuindo o contador da tabela atraves de um elemento <b>
+                    } else if (key == "Preco") {
+                        bmedida.innerHTML = value + " (R$)"; // Atribuindo o contador da tabela atraves de um elemento <b>
+                    } else {
+                        bmedida.innerHTML = value + " (%)"; // Atribuindo o contador da tabela atraves de um elemento <b>
+                    }
+
+                }
+            }
+        }
+    }
+
+
+    /*for (var i = 0; i < alimentosmn.length; i++) {
+        if (alimentosmn[i].Id != "" || alimentosmn[i].Id != 0 || alimentosmn[i].Id != "0") {
+
+        }
+        for (let [key, value] of Object.entries(alimentosmn[i])) {
+            //console.log(`${key}: ${value}`);
+            if (key == "Id") {
+                console.log("Opa ID aqui");
+            }
+            if (key == "Alimento") {
+                console.log("Opa Alimento aqui");
+            }
+            if (value == null || value == 0) {
+                console.log(`${key}: ${value}`);
+                saia = true;
+                break;
+            }
+            //console.log(`${key}: ${value}`);
+        }
+
+        if (saia)
+            break;
+        /*var jsonMN = JSON.parse(alimentosmn[i]);
+
+        jsonMN.forEach((entry) => {
+            const [key, value] = entry;
+            console.log(`${key}: ${value}`);
+        });
+    } */
+}
+
+/*
+function mudadata() {
+    let a = new Date(document.getElementById("teste_data").value)
+    var result = a.toLocaleDateString('pt-BR', { timeZone: 'UTC' });
+    console.log(result);
+}
+*/
+
+/*
+<table class="table">
+                        <thead>
+                            <th>Nutriente</th>
+                            <th>Medida</th>
+                        </thead>
+                        <tbody id="table_body">
+                            <tr>
+                                <td data-label="Nutriente">
+                                    <b>Energia</b>
+                                </td>
+                                <td data-label="Medida">
+                                    <b>0</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Nutriente">
+                                    <b>Umidade</b>
+                                </td>
+                                <td data-label="Medida">
+                                    <b>0</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Nutriente">
+                                    <b>Matéria Seca</b>
+                                </td>
+                                <td data-label="Medida">
+                                    <b>0</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Nutriente">
+                                    <b>Proteína Bruta</b>
+                                </td>
+                                <td data-label="Medida">
+                                    <b>0</b>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    */

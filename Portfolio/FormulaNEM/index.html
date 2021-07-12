@@ -48,11 +48,6 @@
             <div class="home__container bd-grid">
                 <div class="home__img">
                     <img src="assets/img/img1.png" alt="" data-speed="-2" class="move">
-                    <!--img src="assets/img/img2.png" alt="" data-speed="2" class="move">
-                        <img src="assets/img/img3.png" alt="" data-speed="2" class="move">
-                        <img src="assets/img/img4.png" alt="" data-speed="-2" class="move">
-                        <img src="assets/img/img5.png" alt="" data-speed="-2" class="move">
-                        <img src="assets/img/img6.png" alt="" data-speed="2" class="move"-->
                 </div>
 
                 <div class="home__data">
@@ -78,6 +73,8 @@
                     <select id="Ajuste" class="contact__input">
                         <option value="0">Ajuste</option>
                     </select>
+                    <!--button onclick="geraTabela()"></button-->
+                    <!--input type="date" onchange="mudadata()" id="teste_data"-->
                 </div>
                 <div class="formulacao__img">
                     <br><br>
@@ -122,7 +119,7 @@
                         <th>Nutriente</th>
                         <th>Medida</th>
                     </thead>
-                    <tbody id="table_body">
+                    <tbody id="table_resultados">
                         <tr>
                             <td data-label="Nutriente">
                                 <b>Energia</b>
@@ -178,7 +175,7 @@
                             <th>Alimento</th>
                             <th>Qtd. MN (g)</th>
                         </thead>
-                        <tbody id="table_body" class="table__body">
+                        <tbody id="table_dieta" class="table__body">
                             <tr>
                                 <td data-label="Id"><b>1</b></td>
                                 <td data-label="Alimento">
@@ -245,7 +242,7 @@
         <!--===== Mostra Alimentos =====-->
         <section class="formulacao" id="alimentos">
             <h2 class="section-title">Alimentos Cadastrados</h2>
-            <div class="formulacao__container bd-grid">
+            <div class="mostra_alimentos__container bd-grid">
                 <div>
                     <h2 class="formulacao__subtitle">Valor Nutricional na Matéria Natural</h2>
                     <table class="table">
@@ -253,8 +250,8 @@
                             <th>Nutriente</th>
                             <th>Medida</th>
                         </thead>
-                        <tbody id="table_body">
-                            <tr>
+                        <tbody id="table_alimentos_mn">
+                            <!--tr>
                                 <td data-label="Nutriente">
                                     <b>Energia</b>
                                 </td>
@@ -285,7 +282,7 @@
                                 <td data-label="Medida">
                                     <b>0</b>
                                 </td>
-                            </tr>
+                            </tr-->
                         </tbody>
                     </table>
                 </div>
@@ -296,8 +293,8 @@
                             <th>Nutriente</th>
                             <th>Medida</th>
                         </thead>
-                        <tbody id="table_body">
-                            <tr>
+                        <tbody id="table_alimentos_ms">
+                            <!--tr>
                                 <td data-label="Nutriente">
                                     <b>Energia</b>
                                 </td>
@@ -328,7 +325,7 @@
                                 <td data-label="Medida">
                                     <b>0</b>
                                 </td>
-                            </tr>
+                            </tr-->
                         </tbody>
                     </table>
                 </div>
@@ -345,11 +342,12 @@
                     <br>
                 </div>
                 <div class="contact__container bd-grid ">
-                    <form action=" " class="contact__form ">
-                        <input type="text " placeholder="Nome " class="contact__input ">
-                        <input type="mail " placeholder="Email " class="contact__input ">
-                        <textarea name=" " placeholder="Mensagem " id=" " cols="0 " rows="10 " class="contact__input "></textarea>
-                        <input type="button " value="Enviar " class="contact__button button ">
+                    <form action="" class="contact__form " method="get" target="_blank" id="contatoForm">
+                        <input type="text " placeholder="Nome " class="contact__input " name="Nome">
+                        <input type="mail " placeholder="Email " class="contact__input " name="email" id="email">
+                        <input type="text " placeholder="Assunto " class="contact__input " name="Subject" id="subject">
+                        <textarea name="Body" placeholder="Mensagem " id="myText" cols="0 " rows="10 " class="contact__input "></textarea>
+                        <input type="button" value="Enviar " class="contact__button button ">
                     </form>
                 </div>
             </div>
@@ -368,10 +366,10 @@
     </footer>
 
     <!--===== SCROLL REVEAL =====-->
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--script src="https://unpkg.com/scrollreveal"></script-->
 
     <!--===== GSAP =====-->
-    <!--script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js "></script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js "></script>
 
     <!--===== MAIN JS =====-->
     <script src="assets/js/main.js "></script>
