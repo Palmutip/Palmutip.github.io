@@ -295,6 +295,18 @@ img {
             }
         }
     }
+    .resultados {
+        &__container {
+            /*grid-template-columns: repeat(2, 1fr);*/
+            align-items: center;
+            text-align: initial;
+        }
+        &__img {
+            & img {
+                width: 300px;
+            }
+        }
+    }
     .contact {
         &__form {
             width: 360px;
@@ -353,6 +365,27 @@ img {
 /* ===== FORMULACAO =====*/
 
 .formulacao {
+    background-color: var(--second-color);
+    &__container {
+        row-gap: 2rem;
+        text-align: center;
+    }
+    &__subtitle {
+        margin-bottom: var(--mb-2);
+    }
+    &__img {
+        justify-self: center;
+        & img {
+            width: 200px;
+            border-radius: .5rem;
+        }
+    }
+}
+
+
+/* ===== RESULTADOS FORMULACAO =====*/
+
+.resultados {
     background-color: var(--second-color);
     &__container {
         row-gap: 2rem;

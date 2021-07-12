@@ -13,10 +13,11 @@
     <!-- ===== JAVASCRIPT ===== -->
     <script type="text/javascript" src="../../js/funcoes.js"></script>
 
-    <title>Formulação e Fornecimento - FormulaNEM</title>
+    <title>FormulaNEM - Formulação e Fornecimento</title>
 </head>
 
 <body onload="carregaCombos()">
+
     <!--===== HEADER =====-->
     <header class="l-header">
         <nav class="nav bd-grid">
@@ -70,6 +71,13 @@
                     <h2 class="formulacao__subtitle">Calcule a Necessidade Energética de Manutenção</h2>
                     <p class="formulacao__text">Abaixo segue uma tabela com todos os nosso alimentos cadastrados atualmente.<br>Para utilizar corretamente a ferramenta, primeiramente selecione um alimento, em seguida escolha sua % de inclusão (O valor total deve ser igual a 100%).
                     </p>
+                    <input type="number" step=".01" placeholder="Peso do Animal (Kg)" class="contact__input" id="peso_animal">
+                    <select id="Requerimento" class="contact__input">
+                        <option value="0">Requerimento</option>
+                    </select>
+                    <select id="Ajuste" class="contact__input">
+                        <option value="0">Ajuste</option>
+                    </select>
                 </div>
                 <div class="formulacao__img">
                     <br><br>
@@ -103,6 +111,112 @@
             </div>
         </section>
 
+        <!--===== Resultados Formulação =====-->
+        <section class="resultados" id="resultados">
+            <br>
+            <h2 class="section-title">Valor Nutricional da Dieta</h2>
+            <br>
+            <div class="resultados__container bd-grid">
+                <table class="table">
+                    <thead>
+                        <th>Nutriente</th>
+                        <th>Medida</th>
+                    </thead>
+                    <tbody id="table_body">
+                        <tr>
+                            <td data-label="Nutriente">
+                                <b>Energia</b>
+                            </td>
+                            <td data-label="Medida">
+                                <b>0</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-label="Nutriente">
+                                <b>Umidade</b>
+                            </td>
+                            <td data-label="Medida">
+                                <b>0</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-label="Nutriente">
+                                <b>Matéria Seca</b>
+                            </td>
+                            <td data-label="Medida">
+                                <b>0</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-label="Nutriente">
+                                <b>Proteína Bruta</b>
+                            </td>
+                            <td data-label="Medida">
+                                <b>0</b>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!--===== Resultados Finais =====-->
+        <section class="resultados" id="resultadosfinais">
+            <div class="formulacao__container bd-grid">
+                <div>
+                    <h2 class="formulacao__subtitle">Transformação de MS para MN direta</h2>
+                    <p class="formulacao__text">Essa tabela serve para descobrirmos quanto de cada ingrediente o animal deve consumir em matéria seca, e depois em matéria natural. Então ela tem duas regras de três. A primeira é na coluna Q. Essa conta é uma regra de três com a quantidade
+                        que o animal deve ingerir de matéria seca (na tabela anterior) com as porcentagens de inclusão do alimento. No caso, a quantidade que o animal deve ingerir é 100%, e a porcentagem de inclusão de tal alimento é X. E assim funciona
+                        para todos os alimentos escolhidos e suas porcentagens de inclusão na dieta.
+                    </p>
+                </div>
+                <div class="formulacao__img">
+                    <br><br>
+                    <table class="table">
+                        <thead>
+                            <th>Id</th>
+                            <th>Alimento</th>
+                            <th>Qtd. MN (g)</th>
+                        </thead>
+                        <tbody id="table_body" class="table__body">
+                            <tr>
+                                <td data-label="Id"><b>1</b></td>
+                                <td data-label="Alimento">
+                                    Acelga
+                                </td>
+                                <td data-label="Qtd. MN">
+                                    10
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Id"><b>2</b></td>
+                                <td data-label="Alimento">
+                                    Beterraba
+                                </td>
+                                <td data-label="Qtd. MN">
+                                    8
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Id"><b>3</b></td>
+                                <td data-label="Alimento">
+                                    Cenoura
+                                </td>
+                                <td data-label="Qtd. MN">
+                                    24
+                                </td>
+                            </tr>
+                            <!--tr id="Linha_Total">
+                                        <td colspan="3" data-label="Total = "><span id="Total_Inclusao"></span>%</td>
+                                    </tr-->
+                        </tbody>
+                    </table>
+                    <h3 class="formulacao__text">Total = <span id="Total_Inclusao"></span>(g)</h3>
+                    <!--img src="assets/img/about.jpg" alt=""-->
+                </div>
+            </div>
+        </section>
+
         <!--===== Alimentos Cadastrados =====-->
         <section class="formulacao" id="alimentos">
             <h2 class="section-title">Alimentos Cadastrados</h2>
@@ -124,6 +238,99 @@
                     </select>
                     <br><br>
                     <input type="button" value="Mostrar" class="mostra__button button">
+                </div>
+            </div>
+        </section>
+
+        <!--===== Mostra Alimentos =====-->
+        <section class="formulacao" id="alimentos">
+            <h2 class="section-title">Alimentos Cadastrados</h2>
+            <div class="formulacao__container bd-grid">
+                <div>
+                    <h2 class="formulacao__subtitle">Valor Nutricional na Matéria Natural</h2>
+                    <table class="table">
+                        <thead>
+                            <th>Nutriente</th>
+                            <th>Medida</th>
+                        </thead>
+                        <tbody id="table_body">
+                            <tr>
+                                <td data-label="Nutriente">
+                                    <b>Energia</b>
+                                </td>
+                                <td data-label="Medida">
+                                    <b>0</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Nutriente">
+                                    <b>Umidade</b>
+                                </td>
+                                <td data-label="Medida">
+                                    <b>0</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Nutriente">
+                                    <b>Matéria Seca</b>
+                                </td>
+                                <td data-label="Medida">
+                                    <b>0</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Nutriente">
+                                    <b>Proteína Bruta</b>
+                                </td>
+                                <td data-label="Medida">
+                                    <b>0</b>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <h2 class="formulacao__subtitle">Valor Nutricional na Matéria Seca</h2>
+                    <table class="table">
+                        <thead>
+                            <th>Nutriente</th>
+                            <th>Medida</th>
+                        </thead>
+                        <tbody id="table_body">
+                            <tr>
+                                <td data-label="Nutriente">
+                                    <b>Energia</b>
+                                </td>
+                                <td data-label="Medida">
+                                    <b>0</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Nutriente">
+                                    <b>Umidade</b>
+                                </td>
+                                <td data-label="Medida">
+                                    <b>0</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Nutriente">
+                                    <b>Matéria Seca</b>
+                                </td>
+                                <td data-label="Medida">
+                                    <b>0</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Nutriente">
+                                    <b>Proteína Bruta</b>
+                                </td>
+                                <td data-label="Medida">
+                                    <b>0</b>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </section>

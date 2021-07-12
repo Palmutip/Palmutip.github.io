@@ -733,6 +733,26 @@ function funcaoChange(elemento) { // Nome da função que será chamada ao troca
 
                 somaInclusao("val_inclusao" + identificacao); // Para atualizar o total
 
+
+                /////////////////////////////////////////////////////////////////////////////
+                /////////////////////////////////////////////////////////////////////////////
+                /////////// DAQUI PRA BAIXO APENAS VISUALIZAÇÃO DE RESULTADOS ///////////////
+                /////////////////////////////////////////////////////////////////////////////
+                /////////////////////////////////////////////////////////////////////////////
+
+                let MostraResultados = document.getElementById("resultados");
+                let MostraResultadosFinais = document.getElementById("resultadosfinais");
+
+                if (document.getElementById("Total_Inclusao").innerText == "" || document.getElementById("Total_Inclusao").innerText == "0") {
+                    MostraResultados.style.display = "none";
+                    MostraResultadosFinais.style.display = "none";
+                    console.log("none");
+                } else {
+                    MostraResultados.style.display = "inherit";
+                    MostraResultadosFinais.style.display = "inherit";
+                    console.log("inherit");
+                }
+
                 break; // Comando para parar o laço
 
             } // Finaliza o if
@@ -765,10 +785,31 @@ function somaInclusao(elemento) { // Função que irá somar os valores digitado
     if (isNaN(totalInclusao)) { InclusaoTotal.innerHTML = "0" } // Altera o conteúdo interno do <span> para inserir o valor calculado anteriormente
     else { InclusaoTotal.innerHTML = totalInclusao; } // Altera o conteúdo interno do <span> para inserir o valor calculado anteriormente
 
+    /////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////
+    /////////// DAQUI PRA BAIXO APENAS VISUALIZAÇÃO DE RESULTADOS ///////////////
+    /////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////
+
+    let MostraResultados = document.getElementById("resultados");
+    let MostraResultadosFinais = document.getElementById("resultadosfinais");
+
+    if (document.getElementById("Total_Inclusao").innerText == "" || document.getElementById("Total_Inclusao").innerText == "0") {
+        MostraResultados.style.display = "none";
+        MostraResultadosFinais.style.display = "none";
+        console.log("none");
+    } else {
+        MostraResultados.style.display = "inherit";
+        MostraResultadosFinais.style.display = "inherit";
+        console.log("inherit");
+    }
 
 } // Finaliza function somaInclusao
 
 function carregaCombos(count = 0) { // Alimenta o primeiro <select> criado
+    //document.getElementById("resultados").style.display = "none";
+    //document.getElementById("resultadosfinais").style.display = "none";
+
     var alimento_ = document.getElementById("AlimentosMN0"); // Pega o primeiro <select> criado para ser usado como referênciavar infoAlimento_ = document.getElementById("InfoAlimento"); // Pega o primeiro <select> criado para ser usado como referência
     var infoAlimento_ = document.getElementById("InfoAlimento"); // Pega o primeiro <select> criado para ser usado como referência
 
@@ -784,6 +825,8 @@ function carregaCombos(count = 0) { // Alimenta o primeiro <select> criado
 
         count++; // Atribui mais um no terceiro contador para seguir a lógica
     } // Finaliza while
+
+    //document.getElementById("Total_Inclusao").style.display = "none";
 
     /*var infoAlimento_ = document.getElementById("InfoAlimento"); // Pega o primeiro <select> criado para ser usado como referência
 

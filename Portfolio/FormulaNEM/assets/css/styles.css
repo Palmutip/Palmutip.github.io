@@ -281,6 +281,29 @@ img {
 }
 
 
+/* ===== RESULTADOS FORMULACAO =====*/
+
+.resultados {
+    background-color: var(--second-color-light);
+    overflow: hidden;
+}
+
+.resultados__container {
+    /*row-gap: 2rem;*/
+    text-align: center;
+}
+
+.resultados__subtitle {
+    color: var(--white-color);
+    margin-bottom: var(--mb-2);
+}
+
+.resultados__text {
+    color: var(--white-color);
+    text-align: justify;
+}
+
+
 /* ===== MEDIA QUERIES =====*/
 
 @media screen and (min-width: 768px) {
