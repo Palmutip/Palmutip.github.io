@@ -866,7 +866,7 @@ function MostraDados(elemento) {
     let tbodymn = document.getElementById("table_alimentos_mn");
     while (tbodymn.firstChild) tbodymn.removeChild(tbodymn.firstChild);
     let tbodyms = document.getElementById("table_alimentos_ms");
-    while (tbodymn.firstChild) tbodyms.removeChild(tbodyms.firstChild);
+    while (tbodyms.firstChild) tbodyms.removeChild(tbodyms.firstChild);
 
     if (identificacao == 0 || identificacao == "0") {
 
