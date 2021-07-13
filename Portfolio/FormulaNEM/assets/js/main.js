@@ -28,29 +28,33 @@ function linkAction() {
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
 /*===== SCROLL REVEAL ANIMATION =====*/
+/*
 const sr = ScrollReveal({
     origin: 'top',
     distance: '80px',
     duration: 1200,
     reset: true
-});
+});*/
 
 /*SCROLL HOME*/
+/*
 sr.reveal('.home__title', {});
 sr.reveal('.home__description', { delay: 200 });
 sr.reveal('.home__img', { delay: 400 });
-sr.reveal('.home__button', { interval: 200 });
+sr.reveal('.home__button', { interval: 200 });*/
 
 /*SCROLL ABOUT*/
+/*
 
 sr.reveal('.about__img', {});
 sr.reveal('.table', { delay: 400 });
 sr.reveal('.formulacao__subtitle', { delay: 400 });
-sr.reveal('.formulacao__text', { delay: 400 });
+sr.reveal('.formulacao__text', { delay: 400 });*/
 
 /*SCROLL CONTACT*/
+/*
 sr.reveal('.contact__input', { interval: 200 });
-sr.reveal('.contact__button', { interval: 200 });
+sr.reveal('.contact__button', { interval: 200 });*/
 
 /*===== MENU SHOW Y HIDDEN =====*/
 /*
