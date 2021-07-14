@@ -98,12 +98,14 @@
                                     <p id="ProximosAlimentos"></p>
                                 </td>
                             </tr>
-                            <!--tr id="Linha_Total">
-                                <td colspan="3" data-label="Total = "><span id="Total_Inclusao"></span>%</td>
-                            </tr-->
                         </tbody>
                     </table>
-                    <h3 class="formulacao__text">Total = <span id="Total_Inclusao"></span>%</h3>
+                    <div>
+                        <h3 class="formulacao__text">Total = <span id="Total_Inclusao"></span>%</h3>
+                    </div>
+                    <div>
+                        <a onclick="LimpaDados()" class="mostra__button button">Limpar Dieta</a>
+                    </div>
                     <!--img src="assets/img/about.jpg" alt=""-->
                 </div>
             </div>
@@ -174,10 +176,10 @@
                         <thead>
                             <th>Id</th>
                             <th>Alimento</th>
-                            <th>Qtd. MN (g)</th>
+                            <th>Qtd. MS (g)</th>
                         </thead>
                         <tbody id="table_dieta" class="table__body">
-                            <tr>
+                            <!--tr>
                                 <td data-label="Id"><b>1</b></td>
                                 <td data-label="Alimento">
                                     Acelga
@@ -204,7 +206,7 @@
                                     24
                                 </td>
                             </tr>
-                            <!--tr id="Linha_Total">
+                            <tr id="Linha_Total">
                                         <td colspan="3" data-label="Total = "><span id="Total_Inclusao"></span>%</td>
                                     </tr-->
                         </tbody>

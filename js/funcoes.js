@@ -655,16 +655,16 @@ var alimentosms = [{ Id: "1", Alimento: "Ab?bora moranga crua", Energia: "207,31
     { Id: "326", Alimento: "birijin", Energia: "132", Umidade: "132", MS: "132", PB: "123", Arg: "3", His: "32", Iso: "321", Leu: "321", Lis: "321", Met: "321", Met_Cis: "3", Fen: "321", Fen_Tir: "3", Treo: "321", Tri: "321", Val: "321", Tau: "321", EE: "132", Ac_Linoleico6: "321", Ac_Araquidonico: "321", Ac_Linolenico3: "21", EPA_DHA: "321", MM: "132", Ca: "132", P: "132", K: "132", Na: "1", Cl: "321", Mg: "231", Cu: "321", I: "321", Fe: "3213", Mn: "2132", Se: "132", Zn: "13", S: "212", Carboidratos: "", FB: "132", ENN: "13", FDN: "321", FDA: "321", CNF: "321", Vit_A: "321", Vit_D: "231", Vit_E: "321", Tiamina: "1", Riboflavina: "31", Ac_Pantotenico: "321", Vit_B6: "231", Vit_B12: "321", Niacina: "321", Ac_Folico: "321", Biotina: "32", Colina: "321", Vit_K: "231", Vit_C: "231", Preco: null }
 ]
 
-var NEM = [{ nome: "Mamíferos placentários", formula: "(peso ** 0,75)*140" }, { nome: "Mamíferos marsupiais", formula: "100*(peso**0,75)" }, { nome: "Aves não passeriformes", formula: "160*(peso**0,75)" }, { nome: "Aves passeriformes", formula: "240*(peso**0,75)" }, { nome: "Répteis", formula: "32*(peso**0,75)" }, { nome: "Cães", formula: "110*(peso**0,75)" }];
+var NEM = [{ nome: "Mamíferos placentários", formula: "(pesoAnimal ** 0,75)*140" }, { nome: "Mamíferos marsupiais", formula: "100*(pesoAnimal**0,75)" }, { nome: "Aves não passeriformes", formula: "160*(pesoAnimal**0,75)" }, { nome: "Aves passeriformes", formula: "240*(pesoAnimal**0,75)" }, { nome: "Répteis", formula: "32*(pesoAnimal**0,75)" }, { nome: "Cães", formula: "110*(pesoAnimal**0,75)" }];
 
 var soma = { Energia: "0", PB: "0", Arg: "0", His: "0", Iso: "0", Leu: "0", Lis: "0", Met: "0", Met_Cis: "0", Fen: "0", Fen_Tir: "0", Treo: "0", Tri: "0", Val: "0", Tau: "0", EE: "0", Ac_Linoleico6: "0", Ac_Araquidonico: "0", Ac_Linolenico3: "0", EPA_DHA: "0", MM: "0", Ca: "0", P: "0", K: "0", Na: "0", Cl: "0", Mg: "0", Cu: "0", I: "0", Fe: "0", Mn: "0", Se: "0", Zn: "0", S: "0", Carboidratos: "0", FB: "0", ENN: "0", FDN: "0", FDA: "0", CNF: "0", Vit_A: "0", Vit_D: "0", Vit_E: "0", Tiamina: "0", Riboflavina: "0", Ac_Pantotenico: "0", Vit_B6: "0", Vit_B12: "0", Niacina: "0", Ac_Folico: "0", Biotina: "0", Colina: "0", Vit_K: "0", Vit_C: "0", Preco: "0" };
 
-var Ajuste = [{ nome: "Manutenção", formula: "NEM*1" }, { nome: "Crescimento", formula: "NEM*2" }];
+var Ajuste = [{ nome: "Manutenção", formula: "ReqNem*1" }, { nome: "Crescimento", formula: "ReqNem*2" }];
 
 var contador_global = 1; // Um contador global que irá auxiliar durante a criação dos <select> e <input>
 var totalInclusao = 0.00; // Uma variável global que terá seu valor alterado conforme os valores que forem inseridos nos <input> criados
-
-
+var ResultadoNEM = 0.00;
+var energiaDieta = 0.00;
 
 function funcaoChange(elemento) { // Nome da função que será chamada ao trocar a opção selecionada de um <select> (ComboBox)
     var identificacao = elemento.id; // Pegando o texto do atributo id do <select> passado como parametro.
@@ -677,6 +677,7 @@ function funcaoChange(elemento) { // Nome da função que será chamada ao troca
 
         while (geral < contador_global) { // Enquanto o contador atual for menor que o contador global
             if (document.getElementById("AlimentosMN" + geral) != true) { // Se existir o <select> com o numero do contador atual
+                console.log("foi");
                 let select = document.createElement('select'); // Irá criar um novo <select>
                 let input = document.createElement('input'); // Irá criar um novo <input>
 
@@ -738,12 +739,14 @@ function funcaoChange(elemento) { // Nome da função que será chamada ao troca
                 break; // Comando para parar o laço
 
             } // Finaliza o if 
-
+            console.log("foi metade");
             geral++; // Atribui +1 no contador auxiliar
 
         } // Finaliza while
 
     } // Finaliza if
+
+    console.log("nao foi");
 
     somaInclusao("val_inclusao" + identificacao); // Para atualizar o total
 
@@ -791,9 +794,10 @@ function funcaoChange(elemento) { // Nome da função que será chamada ao troca
                 let perInclusao = document.getElementById("val_inclusao" + identificacao.substring(11));
 
                 soma[key] = parseFloat(((parseFloat(value.replace(",", ".")).toFixed(2) * parseFloat(perInclusao.value)) / 100) + parseFloat(soma[key])).toFixed(2);
-                console.log(soma[key]);
+                //console.log(soma[key]);
 
                 if (key == "Energia") {
+                    energiaDieta = soma[key];
                     bmedida.innerHTML = soma[key] /*((parseFloat(value.replace(",", ".")).toFixed(2) * parseFloat(perInclusao.value)) / 100)*/ + " (kcal)"; // Atribuindo o contador da tabela atraves de um elemento <b>
                 } else if (key == "Ac_Araquidonico" || key == "Ca" || key == "P" || key == "K" || key == "Na" || key == "Cl" || key == "Mg" || key == "Cu" || key == "I" || key == "Fe" || key == "Mn" || key == "Se" || key == "Zn" || key == "S" || key == "Tiamina" || key == "Riboflavina" || key == "Ac_Pantotenico" || key == "Vit_B6" || key == "Niacina" || key == "Biotina" || key == "Colina" || key == "Vit_K" || key == "Vit_C") {
                     bmedida.innerHTML = soma[key] /*((parseFloat(value.replace(",", ".")).toFixed(2) * parseFloat(perInclusao.value)) / 100)*/ + " (mg)"; // Atribuindo o contador da tabela atraves de um elemento <b>
@@ -809,10 +813,56 @@ function funcaoChange(elemento) { // Nome da função que será chamada ao troca
             }
         }
     }
+    calculaNutrientes();
 } // Finaliza function funcaoChange
 
-function calculaNutrientes(identificacao, valor) {
+function calculaNutrientes(identificacao = 0, valor = 0) {
+    /*if (energiaDieta == 0 || ResultadoNEM == 0) {
 
+    } else {*/
+    let Finalmente = (100 * ResultadoNEM) / energiaDieta;
+
+    let tbodydieta = document.getElementById("table_dieta");
+    while (tbodydieta.firstChild) tbodydieta.removeChild(tbodydieta.firstChild);
+
+    let geral = 0; // Variavel auxiliar apenas para identificar os selects da lista
+
+    while (geral < contador_global) { // Enquanto o contador atual for menor que o contador global
+        let alimentoAtual = document.getElementById("AlimentosMN" + geral); // Procura pelo <tbody> para ser usado como referencia na hora de inserir as demais linhas da tabela
+        let posicaooAtual = document.getElementById("AlimentosMN" + geral).value;
+        let proporcaoAtual = document.getElementById("val_inclusao" + geral).value; // Procura pelo <tbody> para ser usado como referencia na hora de inserir as demais linhas da tabela
+
+        let balimento = document.createElement('b'); // Irá criar um novo <select>
+        let bqtd = document.createElement('b'); // Irá criar um novo <input>
+        let bid = document.createElement('b') // Criado um elemento <b> para ser usado de referencia na hora de atribuir o contador da tabela
+        let tr = document.createElement('tr'); // Criando uma Table Row <tr> para ser usada de referencia na hora de atribuir uma Table Data <td>
+        let tdid = document.createElement('td'); // Criado uma Table Data <td> para ser usada como referencia na hora de inserir o numero de sequencia da tabela
+        let tdalimento = document.createElement('td'); // Criado uma <td> para ser usada como referencia na hora de escolher um alimento pelo <select>
+        let tdinclusao = document.createElement('td'); // Criado uma <td> para ser usada como referencia na hora de definir uma % de inclusão no <input>
+        //let ProximosAlimentos = document.getElementById("table_body"); // Procura pelo <tbody> para ser usado como referencia na hora de inserir as demais linhas da tabela
+        //ProximosAlimentos.appendChild(tr); // Insere uma nova linha <tr> conforme o <tbody> passado
+        tbodydieta.appendChild(tr);
+        tr.appendChild(tdid); // Insere um novo dado na linha <td> conforme o <tr> passado
+        tr.appendChild(tdalimento); // Insere um novo dado na linha <td> conforme o <tr> passado
+        tr.appendChild(tdinclusao); // Insere um novo dado na linha <td> conforme o <tr> passado
+        tdid.appendChild(bid); // Insere o conteudo do <td>, neste caso é um <b>
+        tdalimento.appendChild(balimento); // Insere o conteudo do <td>, neste caso é um <select>
+        tdinclusao.appendChild(bqtd); // Insere o conteudo do <td>, neste caso é um <input>
+        bid.innerHTML = geral + 1; // Atribuindo o contador da tabela atraves de um elemento <b>
+        balimento.innerHTML = alimentoAtual[posicaooAtual].innerHTML;
+        bqtd.innerHTML = Math.round((parseFloat(proporcaoAtual) * Finalmente) / 100) + "(g)";
+
+
+
+        //Adicionando Identificação nas <td> linhas Tabela
+        tdid.setAttribute('data-label', 'Id');
+        tdalimento.setAttribute('data-label', 'Alimento');
+        tdinclusao.setAttribute('data-label', 'Qtd. MS (g)');
+
+        geral++; // Atribui +1 no contador auxiliar
+
+    } // Finaliza while
+    //}
 }
 
 function somaInclusao(elemento) { // Função que irá somar os valores digitados no <input>
@@ -1008,31 +1058,90 @@ function MostraDados(elemento) {
     }
 }
 
-function calculaNEM(elemento, count = 0) {
+function calculaNEM(elemento) {
     let peso = document.getElementById("peso_animal");
     let requerimento = document.getElementById("Requerimento");
     let ajuste = document.getElementById("Ajuste");
 
     if (elemento.id == "peso_animal") {
         if (requerimento.innerText == "NEM" || ajuste.innerText == "Ajuste") {
-
+            ResultadoNEM = 0;
         } else {
-            let peso = elemento.value;
-            for (let [key, value] of Object.entries(NEM[count])) {
-                console.log(`${key}: ${value}`);
+            let pesoAnimal = elemento.value;
+            for (let [key, value] of Object.entries(NEM[requerimento.value - 1])) {
                 if (key == "formula") {
                     let nemCalculada = document.getElementById("NemCalculada");
-                    nemCalculada.innerHTML = eval(value.replace(",", ".")).toFixed(0);
-                    console.log(eval(value.replace(",", ".")));
+                    let ReqNem = eval(value.replace(",", ".")).toFixed(2);
+                    for (let [key, value] of Object.entries(Ajuste[ajuste.value - 1])) {
+                        if (key == "formula") {
+                            let valor = eval(value.replace(",", ".")).toFixed(0);
+                            nemCalculada.innerHTML = valor;
+                            ResultadoNEM = valor;
+                        }
+                    }
                 }
-
             }
         }
     } else if (elemento.id == "Requerimento") {
-
+        if (peso.value == "" || ajuste.innerText == "Ajuste") {
+            ResultadoNEM = 0;
+        } else {
+            let pesoAnimal = peso.value;
+            for (let [key, value] of Object.entries(NEM[requerimento.value - 1])) {
+                if (key == "formula") {
+                    let nemCalculada = document.getElementById("NemCalculada");
+                    let ReqNem = eval(value.replace(",", ".")).toFixed(2);
+                    for (let [key, value] of Object.entries(Ajuste[ajuste.value - 1])) {
+                        if (key == "formula") {
+                            let valor = eval(value.replace(",", ".")).toFixed(0);
+                            nemCalculada.innerHTML = valor;
+                            ResultadoNEM = valor;
+                        }
+                    }
+                }
+            }
+        }
     } else {
-
+        if (peso.value == "" || requerimento.innerText == "NEM") {
+            ResultadoNEM = 0;
+        } else {
+            let pesoAnimal = peso.value;
+            for (let [key, value] of Object.entries(NEM[requerimento.value - 1])) {
+                if (key == "formula") {
+                    let nemCalculada = document.getElementById("NemCalculada");
+                    let ReqNem = eval(value.replace(",", ".")).toFixed(2);
+                    for (let [key, value] of Object.entries(Ajuste[ajuste.value - 1])) {
+                        if (key == "formula") {
+                            let valor = eval(value.replace(",", ".")).toFixed(0);
+                            nemCalculada.innerHTML = valor;
+                            ResultadoNEM = valor;
+                        }
+                    }
+                }
+            }
+        }
     }
+}
 
+function LimpaDados() {
+    energiaDieta = 0;
+    ResultadoNEM = 0;
+    contador_global = 1; // Um contador global que irá auxiliar durante a criação dos <select> e <input>
+    totalInclusao = 0.00;
+    soma = { Energia: "0", PB: "0", Arg: "0", His: "0", Iso: "0", Leu: "0", Lis: "0", Met: "0", Met_Cis: "0", Fen: "0", Fen_Tir: "0", Treo: "0", Tri: "0", Val: "0", Tau: "0", EE: "0", Ac_Linoleico6: "0", Ac_Araquidonico: "0", Ac_Linolenico3: "0", EPA_DHA: "0", MM: "0", Ca: "0", P: "0", K: "0", Na: "0", Cl: "0", Mg: "0", Cu: "0", I: "0", Fe: "0", Mn: "0", Se: "0", Zn: "0", S: "0", Carboidratos: "0", FB: "0", ENN: "0", FDN: "0", FDA: "0", CNF: "0", Vit_A: "0", Vit_D: "0", Vit_E: "0", Tiamina: "0", Riboflavina: "0", Ac_Pantotenico: "0", Vit_B6: "0", Vit_B12: "0", Niacina: "0", Ac_Folico: "0", Biotina: "0", Colina: "0", Vit_K: "0", Vit_C: "0", Preco: "0" };
 
+    document.getElementById("resultados").style.display = "none";
+    document.getElementById("resultadosfinais").style.display = "none";
+
+    let tbodyms = document.getElementById("table_resultados");
+    while (tbodyms.firstChild) tbodyms.removeChild(tbodyms.firstChild);
+
+    let tbodymn = document.getElementById("table_alimentos_mn");
+    while (tbodymn.firstChild) tbodymn.removeChild(tbodymn.firstChild);
+
+    let tbodyms1 = document.getElementById("table_alimentos_ms");
+    while (tbodyms1.firstChild) tbodyms1.removeChild(tbodyms1.firstChild);
+
+    let tbodydieta = document.getElementById("table_dieta");
+    while (tbodydieta.firstChild) tbodydieta.removeChild(tbodydieta.firstChild);
 }
