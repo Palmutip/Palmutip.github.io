@@ -655,7 +655,7 @@ var alimentosms = [{ Id: "1", Alimento: "Ab?bora moranga crua", Energia: "207,31
     { Id: "326", Alimento: "birijin", Energia: "132", Umidade: "132", MS: "132", PB: "123", Arg: "3", His: "32", Iso: "321", Leu: "321", Lis: "321", Met: "321", Met_Cis: "3", Fen: "321", Fen_Tir: "3", Treo: "321", Tri: "321", Val: "321", Tau: "321", EE: "132", Ac_Linoleico6: "321", Ac_Araquidonico: "321", Ac_Linolenico3: "21", EPA_DHA: "321", MM: "132", Ca: "132", P: "132", K: "132", Na: "1", Cl: "321", Mg: "231", Cu: "321", I: "321", Fe: "3213", Mn: "2132", Se: "132", Zn: "13", S: "212", Carboidratos: "", FB: "132", ENN: "13", FDN: "321", FDA: "321", CNF: "321", Vit_A: "321", Vit_D: "231", Vit_E: "321", Tiamina: "1", Riboflavina: "31", Ac_Pantotenico: "321", Vit_B6: "231", Vit_B12: "321", Niacina: "321", Ac_Folico: "321", Biotina: "32", Colina: "321", Vit_K: "231", Vit_C: "231", Preco: null }
 ]
 
-var NEM = [{nome: "Mamíferos placentários", formula: "140*(peso^0,75)"}, {nome: "Mamíferos marsupiais", formula: "100*(peso^0,75)"}, {nome: "Aves não passeriformes", formula: "160*(peso^0,75)"}, {nome: "Aves passeriformes", formula: "240*(peso^0,75)"}, {nome: "Répteis", formula: "32*(peso^0,75)"}, {nome: "Cães", formula: "110*(peso^0,75)"}];
+var NEM = [{nome: "Mamíferos placentários", formula: "(peso ** 0,75)*140"}, {nome: "Mamíferos marsupiais", formula: "100*(peso^0,75)"}, {nome: "Aves não passeriformes", formula: "160*(peso^0,75)"}, {nome: "Aves passeriformes", formula: "240*(peso^0,75)"}, {nome: "Répteis", formula: "32*(peso^0,75)"}, {nome: "Cães", formula: "110*(peso^0,75)"}];
 
 var soma = { Energia: "0", PB: "0", Arg: "0", His: "0", Iso: "0", Leu: "0", Lis: "0", Met: "0", Met_Cis: "0", Fen: "0", Fen_Tir: "0", Treo: "0", Tri: "0", Val: "0", Tau: "0", EE: "0", Ac_Linoleico6: "0", Ac_Araquidonico: "0", Ac_Linolenico3: "0", EPA_DHA: "0", MM: "0", Ca: "0", P: "0", K: "0", Na: "0", Cl: "0", Mg: "0", Cu: "0", I: "0", Fe: "0", Mn: "0", Se: "0", Zn: "0", S: "0", Carboidratos: "0", FB: "0", ENN: "0", FDN: "0", FDA: "0", CNF: "0", Vit_A: "0", Vit_D: "0", Vit_E: "0", Tiamina: "0", Riboflavina: "0", Ac_Pantotenico: "0", Vit_B6: "0", Vit_B12: "0", Niacina: "0", Ac_Folico: "0", Biotina: "0", Colina: "0", Vit_K: "0", Vit_C: "0", Preco: "0" };
 
@@ -1026,6 +1026,11 @@ function calculaNEM(elemento, count=0){
             let peso = elemento.value;
             for (let [key, value] of Object.entries(NEM[count])) {
                 console.log(`${key}: ${value}`);
+                if(key=="formula")
+                {
+                    console.log(eval(value.replace(",", "."))); 
+                }
+                
             }
         }
     }
