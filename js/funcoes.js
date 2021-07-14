@@ -1144,4 +1144,69 @@ function LimpaDados() {
 
     let tbodydieta = document.getElementById("table_dieta");
     while (tbodydieta.firstChild) tbodydieta.removeChild(tbodydieta.firstChild);
+
+    let tbody = document.getElementById("table_body");
+    while (tbody.firstChild) tbody.removeChild(tbody.firstChild);
+
+    document.getElementById("Total_Inclusao").innerText = "";
+    document.getElementById("peso_animal").value = "";
+    document.getElementById("NemCalculada").innerHTML = "";
+    document.getElementById("Requerimento").selectedIndex = 0;
+    document.getElementById("Ajuste").selectedIndex = 0;
+
+
+    let b = document.createElement('b') // Criado um elemento <b> para ser usado de referencia na hora de atribuir o contador da tabela
+    let select = document.createElement('select'); // Irá criar um novo <select>
+    let input = document.createElement('input'); // Irá criar um novo <input>
+
+    select.id = "AlimentosMN0"; // Insere o atributo 'id' para o <select> recém criado
+    input.id = "val_inclusao0"; // Insere o atributo 'id' para o <input> recém criado
+
+
+    let tr = document.createElement('tr'); // Criando uma Table Row <tr> para ser usada de referencia na hora de atribuir uma Table Data <td>
+    let tdid = document.createElement('td'); // Criado uma Table Data <td> para ser usada como referencia na hora de inserir o numero de sequencia da tabela
+    let tdalimento = document.createElement('td'); // Criado uma <td> para ser usada como referencia na hora de escolher um alimento pelo <select>
+    let tdinclusao = document.createElement('td'); // Criado uma <td> para ser usada como referencia na hora de definir uma % de inclusão no <input>
+    let ProximosAlimentos = document.getElementById("table_body"); // Procura pelo <tbody> para ser usado como referencia na hora de inserir as demais linhas da tabela
+    ProximosAlimentos.appendChild(tr); // Insere uma nova linha <tr> conforme o <tbody> passado
+    tr.appendChild(tdid); // Insere um novo dado na linha <td> conforme o <tr> passado
+    tr.appendChild(tdalimento); // Insere um novo dado na linha <td> conforme o <tr> passado
+    tr.appendChild(tdinclusao); // Insere um novo dado na linha <td> conforme o <tr> passado
+    tdid.appendChild(b); // Insere o conteudo do <td>, neste caso é um <b>
+    tdalimento.appendChild(select); // Insere o conteudo do <td>, neste caso é um <select>
+    tdinclusao.appendChild(input); // Insere o conteudo do <td>, neste caso é um <input>
+    b.innerHTML = 1; // Atribuindo o contador da tabela atraves de um elemento <b>
+
+    option = document.createElement("option"); // Irá criar um novo <option> (<option> significa um novo valor dentro da lista do <select>) para o primeiro elemento
+    option.value = 0; // Insere o atributo 'value' para o <option> recém criado. Sendo ele o primeiro elemento
+    option.text = ""; // Insere o atributo 'text' para o <option> recém criado. Sendo ele vazio
+    select.add(option); // Insere o <option> dentro do <select> criado anteriormente
+
+    let count = 0; // Um terceiro contador, apenas para atribuir os valores que irão aparecer como opção dentro do <select>
+
+    while (alimentosmn.length > count) { // Enquanto o tamanho do Array do JSON Alimentos Matéria Natural for maior que o terceiro contador
+
+        option = document.createElement("option"); // Irá criar um novo <option> (<option> significa um novo valor dentro da lista do <select>)
+        option.value = count + 1; // Insere o atributo 'value' para o <option> recém criado. Sendo ele igual ao (terceiro contador + 1)
+        option.text = alimentosmn[count].Alimento; // Insere o atributo 'text' para o <option> recém criado. Sendo ele o valor do campo "Alimento" de acordo com o contador do JSON
+        select.add(option); // Insere o <option> dentro do <select> criado anteriormente
+
+        count++; // Atribui mais um no terceiro contador para seguir a lógica
+    } // Finaliza o while
+
+    //Adicionando atributos ao <select>
+    select.setAttribute('onchange', 'funcaoChange(this)'); // Adiciona o atributo 'onchange' para o <select> recém criado.
+    select.setAttribute('class', 'contact__input'); // Adiciona o atributo 'class' para o <select> recém criado.
+
+    //Adicionando atributos ao <input>
+    input.setAttribute('class', 'contact__input'); // Adiciona o atributo 'class' para o <input> recém criado.
+    input.setAttribute('placeholder', '% de inclusão'); // Adiciona o atributo 'placeholder' para o <input> recém criado.
+    input.setAttribute('step', '.01'); // Adiciona o atributo 'step' para o <input> recém criado.
+    input.setAttribute('onchange', 'somaInclusao(this)'); // Adiciona o atributo 'onchange' para o <input> recém criado.
+    input.setAttribute('type', 'number'); // Adiciona o atributo 'type' para o <input> recém criado.
+
+    //Adicionando Identificação nas <td> linhas Tabela
+    tdid.setAttribute('data-label', 'Id');
+    tdalimento.setAttribute('data-label', 'Alimento');
+    tdinclusao.setAttribute('data-label', '% Inclusão');
 }
