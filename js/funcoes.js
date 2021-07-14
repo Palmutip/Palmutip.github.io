@@ -1010,6 +1010,33 @@ function MostraDados(elemento) {
     }
 }
 
-function calculaNEM(elemento){
-    let pesoAnimal = elemento.value;
+function calculaNEM(elemento, count=0){
+    let peso = document.getElementById("peso_animal");
+    let requerimento = document.getElementById("Requerimento");
+    let ajuste = document.getElementById("Ajuste");
+
+    if (elemento.id == "peso_animal")
+    {
+        if (requerimento.innerText == "NEM" || ajuste.innerText == "Ajuste")
+        {
+
+        }
+        else
+        {
+            let peso = elemento.value;
+            for (let [key, value] of Object.entries(NEM[count])) {
+                console.log(`${key}: ${value}`);
+            }
+        }
+    }
+    else if (elemento.id == "Requerimento")
+    {
+
+    }
+    else
+    {
+
+    }
+    
+
 }

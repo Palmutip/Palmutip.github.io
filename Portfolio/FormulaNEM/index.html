@@ -67,10 +67,10 @@
                     <p class="formulacao__text">Abaixo segue uma tabela com todos os nosso alimentos cadastrados atualmente.<br>Para utilizar corretamente a ferramenta, primeiramente selecione um alimento, em seguida escolha sua % de inclusão (O valor total deve ser igual a 100%).
                     </p>
                     <input onchange="calculaNEM(this)" type="number" step=".01" placeholder="Peso do Animal (Kg)" class="contact__input" id="peso_animal">
-                    <select id="Requerimento" class="contact__input">
+                    <select onchange="calculaNEM(this)" id="Requerimento" class="contact__input">
                         <option value="0">NEM</option>
                     </select>
-                    <select id="Ajuste" class="contact__input">
+                    <select onchange="calculaNEM(this)" id="Ajuste" class="contact__input">
                         <option value="0">Ajuste</option>
                     </select>
                     <!--button onclick="geraTabela()"></button-->
