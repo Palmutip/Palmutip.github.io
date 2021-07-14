@@ -66,9 +66,9 @@
                     <h2 class="formulacao__subtitle">Calcule a Necessidade Energética de Manutenção</h2>
                     <p class="formulacao__text">Abaixo segue uma tabela com todos os nosso alimentos cadastrados atualmente.<br>Para utilizar corretamente a ferramenta, primeiramente selecione um alimento, em seguida escolha sua % de inclusão (O valor total deve ser igual a 100%).
                     </p>
-                    <input type="number" step=".01" placeholder="Peso do Animal (Kg)" class="contact__input" id="peso_animal">
+                    <input onchange="calculaNEM(this)" type="number" step=".01" placeholder="Peso do Animal (Kg)" class="contact__input" id="peso_animal">
                     <select id="Requerimento" class="contact__input">
-                        <option value="0">Requerimento</option>
+                        <option value="0">NEM</option>
                     </select>
                     <select id="Ajuste" class="contact__input">
                         <option value="0">Ajuste</option>
