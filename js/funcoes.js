@@ -655,11 +655,11 @@ var alimentosms = [{ Id: "1", Alimento: "Ab?bora moranga crua", Energia: "207,31
     { Id: "326", Alimento: "birijin", Energia: "132", Umidade: "132", MS: "132", PB: "123", Arg: "3", His: "32", Iso: "321", Leu: "321", Lis: "321", Met: "321", Met_Cis: "3", Fen: "321", Fen_Tir: "3", Treo: "321", Tri: "321", Val: "321", Tau: "321", EE: "132", Ac_Linoleico6: "321", Ac_Araquidonico: "321", Ac_Linolenico3: "21", EPA_DHA: "321", MM: "132", Ca: "132", P: "132", K: "132", Na: "1", Cl: "321", Mg: "231", Cu: "321", I: "321", Fe: "3213", Mn: "2132", Se: "132", Zn: "13", S: "212", Carboidratos: "", FB: "132", ENN: "13", FDN: "321", FDA: "321", CNF: "321", Vit_A: "321", Vit_D: "231", Vit_E: "321", Tiamina: "1", Riboflavina: "31", Ac_Pantotenico: "321", Vit_B6: "231", Vit_B12: "321", Niacina: "321", Ac_Folico: "321", Biotina: "32", Colina: "321", Vit_K: "231", Vit_C: "231", Preco: null }
 ]
 
-var NEM = [{nome: "Mamíferos placentários", formula: "(peso ** 0,75)*140"}, {nome: "Mamíferos marsupiais", formula: "100*(peso^0,75)"}, {nome: "Aves não passeriformes", formula: "160*(peso^0,75)"}, {nome: "Aves passeriformes", formula: "240*(peso^0,75)"}, {nome: "Répteis", formula: "32*(peso^0,75)"}, {nome: "Cães", formula: "110*(peso^0,75)"}];
+var NEM = [{ nome: "Mamíferos placentários", formula: "(peso ** 0,75)*140" }, { nome: "Mamíferos marsupiais", formula: "100*(peso**0,75)" }, { nome: "Aves não passeriformes", formula: "160*(peso**0,75)" }, { nome: "Aves passeriformes", formula: "240*(peso**0,75)" }, { nome: "Répteis", formula: "32*(peso**0,75)" }, { nome: "Cães", formula: "110*(peso**0,75)" }];
 
 var soma = { Energia: "0", PB: "0", Arg: "0", His: "0", Iso: "0", Leu: "0", Lis: "0", Met: "0", Met_Cis: "0", Fen: "0", Fen_Tir: "0", Treo: "0", Tri: "0", Val: "0", Tau: "0", EE: "0", Ac_Linoleico6: "0", Ac_Araquidonico: "0", Ac_Linolenico3: "0", EPA_DHA: "0", MM: "0", Ca: "0", P: "0", K: "0", Na: "0", Cl: "0", Mg: "0", Cu: "0", I: "0", Fe: "0", Mn: "0", Se: "0", Zn: "0", S: "0", Carboidratos: "0", FB: "0", ENN: "0", FDN: "0", FDA: "0", CNF: "0", Vit_A: "0", Vit_D: "0", Vit_E: "0", Tiamina: "0", Riboflavina: "0", Ac_Pantotenico: "0", Vit_B6: "0", Vit_B12: "0", Niacina: "0", Ac_Folico: "0", Biotina: "0", Colina: "0", Vit_K: "0", Vit_C: "0", Preco: "0" };
 
-var Ajuste = [{nome: "Manutenção", formula: "NEM*1"}, {nome: "Crescimento", formula: "NEM*2"}];
+var Ajuste = [{ nome: "Manutenção", formula: "NEM*1" }, { nome: "Crescimento", formula: "NEM*2" }];
 
 var contador_global = 1; // Um contador global que irá auxiliar durante a criação dos <select> e <input>
 var totalInclusao = 0.00; // Uma variável global que terá seu valor alterado conforme os valores que forem inseridos nos <input> criados
@@ -769,8 +769,7 @@ function funcaoChange(elemento) { // Nome da função que será chamada ao troca
     while (tbodyms.firstChild) tbodyms.removeChild(tbodyms.firstChild);
 
     for (let [key, value] of Object.entries(alimentosms[valoridentificacao - 1])) {
-        if (key == "Id" || key == "Alimento" || key == "Umidade" || key == "MS") {
-        } else {
+        if (key == "Id" || key == "Alimento" || key == "Umidade" || key == "MS") {} else {
 
             if (value == null || value == 0 || value == "0") {
                 //console.log("Valor zero ou vazio");
@@ -875,10 +874,10 @@ function carregaCombos(count = 0) { // Alimenta o primeiro <select> criado
 
         count++; // Atribui mais um no terceiro contador para seguir a lógica
     } // Finaliza while
-    
+
     let aux = 0;
 
-    while(NEM.length > aux){
+    while (NEM.length > aux) {
         option3 = document.createElement("option"); // Irá criar um novo <option> (<option> significa um novo valor dentro da lista do <select>)
         option3.value = aux + 1; // Insere o atributo 'value' para o <option> recém criado. Sendo ele igual ao (terceiro contador + 1)
         option3.text = NEM[aux].nome; // Insere o atributo 'text' para o <option> recém criado. Sendo ele o valor do campo "Alimento" de acordo com o contador do JSON
@@ -886,7 +885,7 @@ function carregaCombos(count = 0) { // Alimenta o primeiro <select> criado
         aux++;
     }
     let proxaux = 0;
-    while(Ajuste.length > proxaux){
+    while (Ajuste.length > proxaux) {
         option4 = document.createElement("option"); // Irá criar um novo <option> (<option> significa um novo valor dentro da lista do <select>)
         option4.value = proxaux + 1; // Insere o atributo 'value' para o <option> recém criado. Sendo ele igual ao (terceiro contador + 1)
         option4.text = Ajuste[proxaux].nome; // Insere o atributo 'text' para o <option> recém criado. Sendo ele o valor do campo "Alimento" de acordo com o contador do JSON
@@ -928,8 +927,7 @@ function MostraDados(elemento) {
     } else {
         for (let [key, value] of Object.entries(alimentosmn[identificacao - 1])) {
             console.log(`${key}: ${value}`);
-            if (key == "Id" || key == "Alimento") {
-            } else {
+            if (key == "Id" || key == "Alimento") {} else {
                 if (value == null || value == 0 || value == "0") {
 
                 } else {
@@ -1010,38 +1008,31 @@ function MostraDados(elemento) {
     }
 }
 
-function calculaNEM(elemento, count=0){
+function calculaNEM(elemento, count = 0) {
     let peso = document.getElementById("peso_animal");
     let requerimento = document.getElementById("Requerimento");
     let ajuste = document.getElementById("Ajuste");
 
-    if (elemento.id == "peso_animal")
-    {
-        if (requerimento.innerText == "NEM" || ajuste.innerText == "Ajuste")
-        {
+    if (elemento.id == "peso_animal") {
+        if (requerimento.innerText == "NEM" || ajuste.innerText == "Ajuste") {
 
-        }
-        else
-        {
+        } else {
             let peso = elemento.value;
             for (let [key, value] of Object.entries(NEM[count])) {
                 console.log(`${key}: ${value}`);
-                if(key=="formula")
-                {
-                    console.log(eval(value.replace(",", "."))); 
+                if (key == "formula") {
+                    let nemCalculada = document.getElementById("NemCalculada");
+                    nemCalculada.innerHTML = eval(value.replace(",", ".")).toFixed(0);
+                    console.log(eval(value.replace(",", ".")));
                 }
-                
+
             }
         }
-    }
-    else if (elemento.id == "Requerimento")
-    {
+    } else if (elemento.id == "Requerimento") {
+
+    } else {
 
     }
-    else
-    {
 
-    }
-    
 
 }
