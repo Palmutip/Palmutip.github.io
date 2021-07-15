@@ -1,19 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+<!-- 
+	Author: Pedro Palmuti
+	Year: 2021
+ -->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormulaNEM - Formulação e Fornecimento</title>
+
     <!-- =====BOX ICONS===== -->
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- ===== CSS ===== -->
     <link rel="stylesheet" href="assets/css/styles.css">
 
-    <!-- ===== JAVASCRIPT ===== -->
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js "></script>
+
+    <!-- ===== FUNCOES JS ===== -->
     <script type="text/javascript" src="../../js/funcoes.js"></script>
 
-    <title>FormulaNEM - Formulação e Fornecimento</title>
+    <!--===== GSAP =====-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js "></script>
+
+    <!--===== SCROLL REVEAL =====-->
+    <!--script src="https://unpkg.com/scrollreveal"></script-->
 </head>
 
 <body onload="carregaCombos()">
@@ -74,8 +87,6 @@
                         <option value="0">Ajuste</option>
                     </select>
                     <h4 class="formulacao__text">Necessidade Energética de Manutenção = <span id="NemCalculada"></span> (kcal)</h4>
-                    <!--button onclick="geraTabela()"></button-->
-                    <!--input type="date" onchange="mudadata()" id="teste_data"-->
                 </div>
                 <div class="formulacao__img">
                     <br><br>
@@ -106,7 +117,6 @@
                     <div>
                         <a onclick="LimpaDados()" class="mostra__button button">Limpar Dieta</a>
                     </div>
-                    <!--img src="assets/img/about.jpg" alt=""-->
                 </div>
             </div>
         </section>
@@ -123,38 +133,6 @@
                         <th>Medida</th>
                     </thead>
                     <tbody id="table_resultados">
-                        <!--tr>
-                            <td data-label="Nutriente">
-                                <b>Energia</b>
-                            </td>
-                            <td data-label="Medida">
-                                <b>0</b>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td data-label="Nutriente">
-                                <b>Umidade</b>
-                            </td>
-                            <td data-label="Medida">
-                                <b>0</b>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td data-label="Nutriente">
-                                <b>Matéria Seca</b>
-                            </td>
-                            <td data-label="Medida">
-                                <b>0</b>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td data-label="Nutriente">
-                                <b>Proteína Bruta</b>
-                            </td>
-                            <td data-label="Medida">
-                                <b>0</b>
-                            </td>
-                        </tr-->
                     </tbody>
                 </table>
             </div>
@@ -179,40 +157,9 @@
                             <th>Qtd. MS (g)</th>
                         </thead>
                         <tbody id="table_dieta" class="table__body">
-                            <!--tr>
-                                <td data-label="Id"><b>1</b></td>
-                                <td data-label="Alimento">
-                                    Acelga
-                                </td>
-                                <td data-label="Qtd. MN">
-                                    10
-                                </td>
-                            </tr>
-                            <tr>
-                                <td data-label="Id"><b>2</b></td>
-                                <td data-label="Alimento">
-                                    Beterraba
-                                </td>
-                                <td data-label="Qtd. MN">
-                                    8
-                                </td>
-                            </tr>
-                            <tr>
-                                <td data-label="Id"><b>3</b></td>
-                                <td data-label="Alimento">
-                                    Cenoura
-                                </td>
-                                <td data-label="Qtd. MN">
-                                    24
-                                </td>
-                            </tr>
-                            <tr id="Linha_Total">
-                                        <td colspan="3" data-label="Total = "><span id="Total_Inclusao"></span>%</td>
-                                    </tr-->
                         </tbody>
                     </table>
                     <h3 class="formulacao__text">Total = <span id="Total_Inclusao"></span>(g)</h3>
-                    <!--img src="assets/img/about.jpg" alt=""-->
                 </div>
             </div>
         </section>
@@ -221,11 +168,6 @@
         <section class="formulacao" id="alimentos">
             <h2 class="section-title">Alimentos Cadastrados</h2>
             <div class="formulacao__container bd-grid">
-                <!--div class="formulacao__img">
-                    <--img src="assets/img/about.jpg" alt=""->
-                </div-->
-
-
                 <div>
                     <h2 class="formulacao__subtitle">Nutrientes e Medidas</h2>
                     <p class="formulacao__text">Nosso site provém um banco de dados de alimentos na matéria seca e na materia natural. Esses dados vêm de livros, onde se pode encontrar as referências bibliográficas por esse LINK.<br> Para visualizar informações sobre o alimento
@@ -254,38 +196,6 @@
                             <th>Medida</th>
                         </thead>
                         <tbody id="table_alimentos_mn">
-                            <!--tr>
-                                <td data-label="Nutriente">
-                                    <b>Energia</b>
-                                </td>
-                                <td data-label="Medida">
-                                    <b>0</b>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td data-label="Nutriente">
-                                    <b>Umidade</b>
-                                </td>
-                                <td data-label="Medida">
-                                    <b>0</b>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td data-label="Nutriente">
-                                    <b>Matéria Seca</b>
-                                </td>
-                                <td data-label="Medida">
-                                    <b>0</b>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td data-label="Nutriente">
-                                    <b>Proteína Bruta</b>
-                                </td>
-                                <td data-label="Medida">
-                                    <b>0</b>
-                                </td>
-                            </tr-->
                         </tbody>
                     </table>
                 </div>
@@ -297,38 +207,6 @@
                             <th>Medida</th>
                         </thead>
                         <tbody id="table_alimentos_ms">
-                            <!--tr>
-                                <td data-label="Nutriente">
-                                    <b>Energia</b>
-                                </td>
-                                <td data-label="Medida">
-                                    <b>0</b>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td data-label="Nutriente">
-                                    <b>Umidade</b>
-                                </td>
-                                <td data-label="Medida">
-                                    <b>0</b>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td data-label="Nutriente">
-                                    <b>Matéria Seca</b>
-                                </td>
-                                <td data-label="Medida">
-                                    <b>0</b>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td data-label="Nutriente">
-                                    <b>Proteína Bruta</b>
-                                </td>
-                                <td data-label="Medida">
-                                    <b>0</b>
-                                </td>
-                            </tr-->
                         </tbody>
                     </table>
                 </div>
@@ -363,19 +241,9 @@
         <div class="footer__social ">
             <a href="https://www.facebook.com/palmutip/ " target="_blank " class="footer__icon "><i class='bx bxl-facebook' ></i></a>
             <a href="https://www.instagram.com/palmutip/ " target="_blank " class="footer__icon "><i class='bx bxl-instagram' ></i></a>
-            <!--a href="# " class="footer__icon "><i class='bx bxl-twitter' ></i></a-->
         </div>
         <p>&#169; 2021 copyright all right reserved</p>
     </footer>
-
-    <!--===== SCROLL REVEAL =====-->
-    <!--script src="https://unpkg.com/scrollreveal"></script-->
-
-    <!--===== GSAP =====-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js "></script>
-
-    <!--===== MAIN JS =====-->
-    <script src="assets/js/main.js "></script>
 </body>
 
 </html>

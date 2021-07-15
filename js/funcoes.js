@@ -1210,3 +1210,4 @@ function LimpaDados() {
     tdalimento.setAttribute('data-label', 'Alimento');
     tdinclusao.setAttribute('data-label', '% Inclusão');
 }
+//

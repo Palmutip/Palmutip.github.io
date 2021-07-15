@@ -57,6 +57,9 @@ html {
     scroll-behavior: smooth;
 }
 
+
+/**/
+
 body {
     margin: var(--header-height) 0 0 0;
     padding: 0;
