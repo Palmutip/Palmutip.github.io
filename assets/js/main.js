@@ -57,3 +57,37 @@ sr.reveal('.work__img', { interval: 200 });
 
 /*SCROLL CONTACT*/
 sr.reveal('.contact__input', { interval: 200 });
+
+
+
+// Exemplo de requisição GET
+var ajax = new XMLHttpRequest();
+
+// Seta tipo de requisição e URL com os parâmetros
+ajax.open("GET", "https://jsonplaceholder.typicode.com/todos/", true);
+
+// Envia a requisição
+ajax.send();
+
+// Cria um evento para receber o retorno.
+ajax.onreadystatechange = function() {
+    // Caso o state seja 4 e o http.status for 200, é porque a requisiçõe deu certo.
+    if (ajax.readyState == 4 && ajax.status == 200) {
+        var data = ajax.responseText;
+        var objeto = JSON.parse(data);
+
+        // Retorno do Ajax
+        //console.log(objeto);
+
+        let i = 0;
+        while (objeto.length > i) {
+            for (let [key, value] of Object.entries(objeto[i])) {
+                if (key == "completed" && value == true) {
+                    console.log(objeto[i]);
+                }
+
+            }
+            i++;
+        }
+    }
+}
