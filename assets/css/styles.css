@@ -365,16 +365,20 @@ img {
     z-index: var(--z-back);
 }
 
-.skills__html {
+.skills__csharp {
     width: 95%;
 }
 
-.skills__css {
+.skills__html {
     width: 85%;
 }
 
-.skills__js {
+.skills__css {
     width: 65%;
+}
+
+.skills__js {
+    width: 35%;
 }
 
 .skills__ux {
