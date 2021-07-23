@@ -418,6 +418,8 @@ img {
 .work__img img {
     transition: 1s;
     cursor: pointer;
+    height: 100%;
+    width: 100%;
 }
 
 .work__img img:hover {
@@ -567,7 +569,7 @@ img {
         width: 300px;
     }
     .work__container {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         column-gap: 2rem;
     }

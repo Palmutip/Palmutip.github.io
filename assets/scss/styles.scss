@@ -363,6 +363,8 @@ img {
         box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
         border-radius: .5rem;
         overflow: hidden;
+        height: 100%;
+        width: 100%;
         & img {
             transition: 1s;
             cursor: pointer;
@@ -496,7 +498,7 @@ img {
     }
     .work {
         &__container {
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(2, 1fr);
             column-gap: 2rem;
         }
