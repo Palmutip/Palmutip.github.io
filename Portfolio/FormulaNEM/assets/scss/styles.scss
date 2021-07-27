@@ -83,6 +83,16 @@ img {
     margin-right: 1rem;
 }
 
+.button-grid {
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 3rem;
+    width: calc(100% - 2rem);
+    margin-left: 0rem;
+    margin-right: 0rem;
+}
+
 .l-header {
     width: 100%;
     position: fixed;
@@ -286,7 +296,7 @@ img {
     /**/
     .formulacao {
         &__container {
-            /*grid-template-columns: repeat(2, 1fr);*/
+            grid-template-columns: repeat(2, 1fr);
             align-items: center;
             text-align: initial;
         }

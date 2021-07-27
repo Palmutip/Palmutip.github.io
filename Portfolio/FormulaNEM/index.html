@@ -76,46 +76,53 @@
             <h2 class="section-title">Formulação e Fornecimento</h2>
             <div class="formulacao__container bd-grid">
                 <div>
-                    <h2 class="formulacao__subtitle">Calcule a Necessidade Energética de Manutenção</h2>
-                    <p class="formulacao__text">Abaixo segue uma tabela com todos os nosso alimentos cadastrados atualmente.<br>Para utilizar corretamente a ferramenta, primeiramente selecione um alimento, em seguida escolha sua % de inclusão (O valor total deve ser igual a 100%).
+                    <h2 class="formulacao__subtitle">Necessidade Energética de Manutenção</h2>
+                    <p class="formulacao__text">Coloque o peso do animal em quilos e em seguida escolha a espécie ou grupo de espécies desejado. Após isso escolha o ajuste para a NEM ser calculada automaticamente. Selecione os alimentos desejados e sua porcentagem de inclusão na
+                        matéria seca dentro da dieta. Lembrando que a soma deve fechar em 100%.
                     </p>
+                    <br>
                     <input onchange="calculaNEM(this)" type="number" step=".01" placeholder="Peso do Animal (Kg)" class="contact__input" id="peso_animal">
                     <select onchange="calculaNEM(this)" id="Requerimento" class="contact__input">
                         <option value="0">NEM</option>
                     </select>
-                    <select onchange="calculaNEM(this)" id="Ajuste" class="contact__input">
+                    <select onchange="calculaNEM(this)" id="Ajuste" class="contact__input"> 
                         <option value="0">Ajuste</option>
                     </select>
                     <h4 class="formulacao__text">Necessidade Energética de Manutenção = <span id="NemCalculada"></span> (kcal)</h4>
                 </div>
-                <div class="formulacao__img">
-                    <br><br>
-                    <table class="table">
-                        <thead>
-                            <th>Id</th>
-                            <th>Alimento</th>
-                            <th>% Inclusão</th>
-                        </thead>
-                        <tbody id="table_body" class="table__body">
-                            <tr>
-                                <td data-label="Id"><b>1</b></td>
-                                <td data-label="Alimento">
-                                    <select onchange="funcaoChange(this)" id="AlimentosMN0" class="contact__input">
+                <div>
+                    <div>
+                        <table class="table">
+                            <thead>
+                                <th>Id</th>
+                                <th>Alimento</th>
+                                <th>% Inclusão</th>
+                            </thead>
+                            <tbody id="table_body" class="table__body">
+                                <tr>
+                                    <td data-label="Id"><b>1</b></td>
+                                    <td data-label="Alimento">
+                                        <select onchange="funcaoChange(this)" id="AlimentosMN0" class="contact__input">
                                         <option value="0"></option>
                                     </select>
-                                </td>
-                                <td data-label="% Inclusão">
-                                    <input onchange="somaInclusao(this)" type="number" step=".01" placeholder="% de inclusão" class="contact__input" id="val_inclusao0">
-                                    <p id="ProximosAlimentos"></p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div>
+                                    </td>
+                                    <td data-label="% Inclusão">
+                                        <input onchange="somaInclusao(this)" type="number" step=".01" placeholder="%" class="contact__input" id="val_inclusao0">
+                                        <p id="ProximosAlimentos"></p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                         <h3 class="formulacao__text">Total = <span id="Total_Inclusao"></span>%</h3>
                     </div>
-                    <div>
-                        <a onclick="LimpaDados()" class="mostra__button button">Limpar Dieta</a>
+                    <div class="formulacao__container button-grid">
+                        <div>
+                            <a onclick="calculaNutrientes()" class="mostra__button button">Calcular</a>
+                        </div>
+
+                        <div>
+                            <a onclick="LimpaDados()" class="mostra__button button">Limpar</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -178,15 +185,12 @@
                     <select onchange="MostraDados(this)" id="InfoAlimento" class="contact__input">
                         <option value="0"></option>
                     </select>
-                    <br><br>
-                    <input type="button" value="Mostrar" class="mostra__button button">
                 </div>
             </div>
         </section>
 
         <!--===== Mostra Alimentos =====-->
         <section class="formulacao" id="alimentos">
-            <h2 class="section-title">Alimentos Cadastrados</h2>
             <div class="mostra_alimentos__container bd-grid">
                 <div>
                     <h2 class="formulacao__subtitle">Valor Nutricional na Matéria Natural</h2>
@@ -241,7 +245,10 @@
         <div class="footer__social ">
             <a href="https://www.facebook.com/palmutip/ " target="_blank " class="footer__icon "><i class='bx bxl-facebook' ></i></a>
             <a href="https://www.instagram.com/palmutip/ " target="_blank " class="footer__icon "><i class='bx bxl-instagram' ></i></a>
+            <a href="https://wa.me/5535992507665" target="_blank" class="footer__icon"><i class='bx bxl-whatsapp' ></i></a>
         </div>
+        <p>Celular / Whatsapp : +55 (35) 99250-7665</p>
+        <br>
         <p>&#169; 2021 copyright all right reserved</p>
     </footer>
 </body>
