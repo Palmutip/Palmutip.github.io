@@ -8,7 +8,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FormulaNEM</title>
+    <title>FormulaNEM - Formulação e Fornecimento</title>
 
     <!-- =====BOX ICONS===== -->
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
@@ -24,15 +24,12 @@
 
     <!--===== GSAP =====-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js "></script>
-
-    <!--===== SCROLL REVEAL =====-->
-    <!--script src="https://unpkg.com/scrollreveal"></script-->
 </head>
 
 <body onload="carregaCombos()">
 
     <!--===== HEADER =====-->
-    <header class="l-header">
+    <header class="A-header">
         <nav class="nav bd-grid">
             <div>
                 <a href="#" class="nav__logo">FormulaNEM</a>
@@ -46,8 +43,8 @@
                     <i class='bx bx-x'></i>
                 </div>
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                    <li class="nav__item"><a href="Formulacao.html" class="nav__link">Formular</a></li>
+                    <li class="nav__item"><a href="index.html" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Formular</a></li>
                     <li class="nav__item"><a href="Avaliacao.html" class="nav__link">Avaliação</a></li>
                     <li class="nav__item"><a href="#alimentos" class="nav__link">Alimentos Cadastrados</a></li>
                     <li class="nav__item"><a href="#contato" class="nav__link">Fale Conosco</a></li>
@@ -168,73 +165,6 @@
                         </tbody>
                     </table>
                     <h3 class="formulacao__text">Total = <span id="Total_Inclusao"></span>(g)</h3>
-                </div>
-            </div>
-        </section>
-
-        <!--===== Alimentos Cadastrados =====-->
-        <section class="formulacao" id="alimentos">
-            <h2 class="section-title">Alimentos Cadastrados</h2>
-            <div class="formulacao__container bd-grid">
-                <div>
-                    <h2 class="formulacao__subtitle">Nutrientes e Medidas</h2>
-                    <p class="formulacao__text">Nosso site provém um banco de dados de alimentos na matéria seca e na materia natural. Esses dados vêm de livros, onde se pode encontrar as referências bibliográficas por esse LINK.<br> Para visualizar informações sobre o alimento
-                        basta escolher um:<br><br>
-                    </p>
-                </div>
-                <div class="formulacao__img">
-                    <select onchange="MostraDados(this)" id="InfoAlimento" class="contact__input">
-                        <option value="0"></option>
-                    </select>
-                </div>
-            </div>
-        </section>
-
-        <!--===== Mostra Alimentos =====-->
-        <section class="formulacao" id="alimentos">
-            <div class="mostra_alimentos__container bd-grid">
-                <div>
-                    <h2 class="formulacao__subtitle">Valor Nutricional na Matéria Natural</h2>
-                    <table class="table">
-                        <thead>
-                            <th>Nutriente</th>
-                            <th>Medida</th>
-                        </thead>
-                        <tbody id="table_alimentos_mn">
-                        </tbody>
-                    </table>
-                </div>
-                <div>
-                    <h2 class="formulacao__subtitle">Valor Nutricional na Matéria Seca</h2>
-                    <table class="table">
-                        <thead>
-                            <th>Nutriente</th>
-                            <th>Medida</th>
-                        </thead>
-                        <tbody id="table_alimentos_ms">
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </section>
-
-        <!--===== Contato =====-->
-        <section class="contact section" id="contato">
-            <h2 class="section-title">Contato</h2>
-            <br>
-            <div class="formulacao__container bd-grid">
-                <div>
-                    <p class="formulacao__text ">Tem alguma dúvida ou sugestão para nosso site? Entre em contato com a gente. Te responderemos via e-mail em no máximo 72 horas.</p>
-                    <br>
-                </div>
-                <div class="contact__container bd-grid ">
-                    <form action="" class="contact__form " method="get" target="_blank" id="contatoForm">
-                        <input type="text " placeholder="Nome " class="contact__input " name="Nome">
-                        <input type="mail " placeholder="Email " class="contact__input " name="email" id="email">
-                        <input type="text " placeholder="Assunto " class="contact__input " name="Subject" id="subject">
-                        <textarea name="Body" placeholder="Mensagem " id="myText" cols="0 " rows="10 " class="contact__input "></textarea>
-                        <input type="button" value="Enviar " class="contact__button button ">
-                    </form>
                 </div>
             </div>
         </section>
