@@ -2,7 +2,7 @@
 var alimentosmn = [
     {
       Id: "1",
-      Alimentos: "Abacate   cru",
+      Alimento: "Abacate   cru",
       Energia: "96",
       Umidade: "83.8",
       MS: "16.200000000000004",
@@ -26,7 +26,7 @@ var alimentosmn = [
     },
     {
       Id: "2",
-      Alimentos: "Abacaxicru",
+      Alimento: "Abacaxicru",
       Energia: "48",
       Umidade: "86.3",
       MS: "13.700000000000003",
@@ -50,7 +50,7 @@ var alimentosmn = [
     },
     {
       Id: "3",
-      Alimentos: "Abóbora moranga cozida sem casca   sem semente   sem sal sem óleo",
+      Alimento: "Abóbora moranga cozida sem casca   sem semente   sem sal sem óleo",
       Energia: "17",
       Umidade: "94.1",
       MS: "5.900000000000006",
@@ -74,7 +74,7 @@ var alimentosmn = [
     },
     {
       Id: "4",
-      Alimentos: "Abóboramorangacrua",
+      Alimento: "Abóboramorangacrua",
       Energia: "12",
       Umidade: "95.9",
       MS: "4.099999999999994",
@@ -95,7 +95,7 @@ var alimentosmn = [
     },
     {
       Id: "5",
-      Alimentos: "Abóbora moranga refogada",
+      Alimento: "Abóbora moranga refogada",
       Energia: "29",
       Umidade: "92.5",
       MS: "7.5",
@@ -120,7 +120,7 @@ var alimentosmn = [
     },
     {
       Id: "6",
-      Alimentos: "Abóbrinhacozidacomcascacrua",
+      Alimento: "Abóbrinhacozidacomcascacrua",
       Energia: "17",
       Umidade: "94.79",
       MS: "5.209999999999994",
@@ -162,7 +162,7 @@ var alimentosmn = [
     },
     {
       Id: "7",
-      Alimentos: "Abóbrinha italiana com casca sem sal e sem óleo",
+      Alimento: "Abóbrinha italiana com casca sem sal e sem óleo",
       Energia: "14",
       Umidade: "95.5",
       MS: "4.5",
@@ -189,7 +189,7 @@ var alimentosmn = [
     },
     {
       Id: "8",
-      Alimentos: "Abobrinhaitalianacru",
+      Alimento: "Abobrinhaitalianacru",
       Energia: "19",
       Umidade: "93.9",
       MS: "6.099999999999994",
@@ -212,7 +212,7 @@ var alimentosmn = [
     },
     {
       Id: "9",
-      Alimentos: "Acelga crua",
+      Alimento: "Acelga crua",
       Energia: "21",
       Umidade: "93.2",
       MS: "6.799999999999997",
@@ -236,7 +236,7 @@ var alimentosmn = [
     },
     {
       Id: "10",
-      Alimentos: "Acerolacrua",
+      Alimento: "Acerolacrua",
       Energia: "33",
       Umidade: "90.5",
       MS: "9.5",
@@ -260,7 +260,7 @@ var alimentosmn = [
     },
     {
       Id: "11",
-      Alimentos: "Agrião cru",
+      Alimento: "Agrião cru",
       Energia: "17",
       Umidade: "93.9",
       MS: "6.099999999999994",
@@ -286,7 +286,7 @@ var alimentosmn = [
     },
     {
       Id: "12",
-      Alimentos: "Aipo(salsão)",
+      Alimento: "Aipo(salsão)",
       Energia: "19",
       Umidade: "93.8",
       MS: "6.200000000000003",
@@ -309,7 +309,7 @@ var alimentosmn = [
     },
     {
       Id: "13",
-      Alimentos: "Alecrim fresco",
+      Alimento: "Alecrim fresco",
       Energia: "131",
       Umidade: "67.77",
       MS: "32.230000000000007",
@@ -346,7 +346,7 @@ var alimentosmn = [
     },
     {
       Id: "14",
-      Alimentos: "Alfaceamericanacrua",
+      Alimento: "Alfaceamericanacrua",
       Energia: "9",
       Umidade: "97.2",
       MS: "2.799999999999997",
@@ -371,7 +371,7 @@ var alimentosmn = [
     },
     {
       Id: "15",
-      Alimentos: "Almeirão cru",
+      Alimento: "Almeirão cru",
       Energia: "18",
       Umidade: "93.7",
       MS: "6.299999999999997",
@@ -396,7 +396,7 @@ var alimentosmn = [
     },
     {
       Id: "16",
-      Alimentos: "Alpistecru",
+      Alimento: "Alpistecru",
       Energia: "306.08",
       Umidade: "9.14",
       MS: "90.86",
@@ -412,7 +412,7 @@ var alimentosmn = [
     },
     {
       Id: "17",
-      Alimentos: "Alpiste Juréia",
+      Alimento: "Alpiste Juréia",
       Energia: "390.70000000000007",
       Umidade: "10.8",
       MS: "89.2",
@@ -426,7 +426,7 @@ var alimentosmn = [
     },
     {
       Id: "18",
-      Alimentos: "Ameixacrua",
+      Alimento: "Ameixacrua",
       Energia: "53",
       Umidade: "84.8",
       MS: "15.200000000000003",
@@ -449,7 +449,7 @@ var alimentosmn = [
     },
     {
       Id: "19",
-      Alimentos: "Amêndoa",
+      Alimento: "Amêndoa",
       Energia: "589",
       Umidade: "4.43",
       MS: "95.57",
@@ -478,7 +478,7 @@ var alimentosmn = [
     },
     {
       Id: "20",
-      Alimentos: "Amendoimgãocru",
+      Alimento: "Amendoimgãocru",
       Energia: "544",
       Umidade: "6.4",
       MS: "93.6",
@@ -503,7 +503,7 @@ var alimentosmn = [
     },
     {
       Id: "21",
-      Alimentos: "Aminomix",
+      Alimento: "Aminomix",
       Umidade: "0",
       MS: "100",
       His: "0.05",
@@ -541,7 +541,7 @@ var alimentosmn = [
     },
     {
       Id: "22",
-      Alimentos: "Anchova",
+      Alimento: "Anchova",
       Energia: "171.57",
       Umidade: "70.87",
       MS: "29.129999999999997",
@@ -551,7 +551,7 @@ var alimentosmn = [
     },
     {
       Id: "23",
-      Alimentos: "Anchova (Potamonus saltatrix)",
+      Alimento: "Anchova (Potamonus saltatrix)",
       Energia: "179.07",
       Umidade: "69.38",
       MS: "30.620000000000006",
@@ -561,7 +561,7 @@ var alimentosmn = [
     },
     {
       Id: "24",
-      Alimentos: "Anchovafiléfesco",
+      Alimento: "Anchovafiléfesco",
       Energia: "179",
       Umidade: "69.4",
       MS: "30.599999999999996",
@@ -583,7 +583,7 @@ var alimentosmn = [
     },
     {
       Id: "25",
-      Alimentos: "Angu",
+      Alimento: "Angu",
       Energia: "92",
       Umidade: "76.3",
       MS: "23.700000000000004",
@@ -603,7 +603,7 @@ var alimentosmn = [
     },
     {
       Id: "26",
-      Alimentos: "ArenqueComum(Clupeaharengus)",
+      Alimento: "ArenqueComum(Clupeaharengus)",
       Energia: "137.2",
       Umidade: "73.9",
       MS: "26.099999999999996",
@@ -613,7 +613,7 @@ var alimentosmn = [
     },
     {
       Id: "27",
-      Alimentos: "Arroz branco grão curto cozido",
+      Alimento: "Arroz branco grão curto cozido",
       Energia: "130",
       Umidade: "68.53",
       MS: "31.47",
@@ -649,7 +649,7 @@ var alimentosmn = [
     },
     {
       Id: "28",
-      Alimentos: "Arrozbrancotipo1cozido",
+      Alimento: "Arrozbrancotipo1cozido",
       Energia: "128",
       Umidade: "69.1",
       MS: "30.900000000000007",
@@ -671,7 +671,7 @@ var alimentosmn = [
     },
     {
       Id: "29",
-      Alimentos: "Arroz integral cozido",
+      Alimento: "Arroz integral cozido",
       Energia: "124",
       Umidade: "70.1",
       MS: "29.900000000000007",
@@ -694,7 +694,7 @@ var alimentosmn = [
     },
     {
       Id: "30",
-      Alimentos: "Arrozintegralcozidosemsaleóleo",
+      Alimento: "Arrozintegralcozidosemsaleóleo",
       Energia: "107",
       Umidade: "72.8",
       MS: "27.200000000000004",
@@ -718,7 +718,7 @@ var alimentosmn = [
     },
     {
       Id: "31",
-      Alimentos: "Arroz integral grão médio cozido",
+      Alimento: "Arroz integral grão médio cozido",
       Energia: "112",
       Umidade: "72.96",
       MS: "27.040000000000008",
@@ -755,7 +755,7 @@ var alimentosmn = [
     },
     {
       Id: "32",
-      Alimentos: "Arroztipo1cozido",
+      Alimento: "Arroztipo1cozido",
       Energia: "128",
       Umidade: "69.1",
       MS: "30.900000000000007",
@@ -776,7 +776,7 @@ var alimentosmn = [
     },
     {
       Id: "33",
-      Alimentos: "Artêmia sp.",
+      Alimento: "Artêmia sp.",
       Energia: "314.77",
       Umidade: "10.8",
       MS: "89.2",
@@ -788,7 +788,7 @@ var alimentosmn = [
     },
     {
       Id: "34",
-      Alimentos: "AveiaDescascadaJuréia",
+      Alimento: "AveiaDescascadaJuréia",
       Energia: "321",
       Umidade: "11",
       MS: "89",
@@ -802,7 +802,7 @@ var alimentosmn = [
     },
     {
       Id: "35",
-      Alimentos: "Aveia farelo cozida sem tempero",
+      Alimento: "Aveia farelo cozida sem tempero",
       Energia: "94",
       Umidade: "76.7",
       MS: "23.299999999999998",
@@ -827,7 +827,7 @@ var alimentosmn = [
     },
     {
       Id: "36",
-      Alimentos: "Bananananicacrua",
+      Alimento: "Bananananicacrua",
       Energia: "92",
       Umidade: "73.8",
       MS: "26.200000000000004",
@@ -851,7 +851,7 @@ var alimentosmn = [
     },
     {
       Id: "37",
-      Alimentos: "Banha suína",
+      Alimento: "Banha suína",
       Energia: "900",
       Umidade: "0",
       MS: "100",
@@ -861,7 +861,7 @@ var alimentosmn = [
     },
     {
       Id: "38",
-      Alimentos: "Banhasuína",
+      Alimento: "Banhasuína",
       Energia: "900",
       Umidade: "0",
       MS: "100",
@@ -873,28 +873,28 @@ var alimentosmn = [
     },
     {
       Id: "39",
-      Alimentos: "Barata-gigante (E.distanti) Adulta",
+      Alimento: "Barata-gigante (E.distanti) Adulta",
       Energia: "173.8",
       Umidade: "56.55",
       MS: "43.45"
     },
     {
       Id: "40",
-      Alimentos: "Barata-gigante(E.distanti)Grande",
+      Alimento: "Barata-gigante(E.distanti)Grande",
       Energia: "171.12",
       Umidade: "57.22",
       MS: "42.78"
     },
     {
       Id: "41",
-      Alimentos: "Barata-gigante (E.distanti) Pequena",
+      Alimento: "Barata-gigante (E.distanti) Pequena",
       Energia: "196.88",
       Umidade: "50.78",
       MS: "49.22"
     },
     {
       Id: "42",
-      Alimentos: "Batatabaroacozida",
+      Alimento: "Batatabaroacozida",
       Energia: "80",
       Umidade: "79.3",
       MS: "20.700000000000004",
@@ -918,7 +918,7 @@ var alimentosmn = [
     },
     {
       Id: "43",
-      Alimentos: "Batata baroa cozida sem casca sem sal sem óleo",
+      Alimento: "Batata baroa cozida sem casca sem sal sem óleo",
       Energia: "77",
       Umidade: "79.3",
       MS: "20.700000000000004",
@@ -945,7 +945,7 @@ var alimentosmn = [
     },
     {
       Id: "44",
-      Alimentos: "Batatadocecozida",
+      Alimento: "Batatadocecozida",
       Energia: "77",
       Umidade: "80.4",
       MS: "19.599999999999996",
@@ -970,7 +970,7 @@ var alimentosmn = [
     },
     {
       Id: "45",
-      Alimentos: "Batata doce cru",
+      Alimento: "Batata doce cru",
       Energia: "118",
       Umidade: "69.5",
       MS: "30.5",
@@ -995,7 +995,7 @@ var alimentosmn = [
     },
     {
       Id: "46",
-      Alimentos: "Batatadocesemcascacozidasemsalsemóleo",
+      Alimento: "Batatadocesemcascacozidasemsalsemóleo",
       Energia: "91",
       Umidade: "75.4",
       MS: "24.599999999999996",
@@ -1023,7 +1023,7 @@ var alimentosmn = [
     },
     {
       Id: "47",
-      Alimentos: "Batata inglesa cozida",
+      Alimento: "Batata inglesa cozida",
       Energia: "52",
       Umidade: "86.4",
       MS: "13.599999999999995",
@@ -1046,7 +1046,7 @@ var alimentosmn = [
     },
     {
       Id: "48",
-      Alimentos: "Batatainglesasemcascacozidasemsalsemóleo",
+      Alimento: "Batatainglesasemcascacozidasemsalsemóleo",
       Energia: "51",
       Umidade: "85.9",
       MS: "14.099999999999995",
@@ -1071,7 +1071,7 @@ var alimentosmn = [
     },
     {
       Id: "49",
-      Alimentos: "Berbigão",
+      Alimento: "Berbigão",
       Energia: "79",
       Umidade: "78.8",
       MS: "21.200000000000004",
@@ -1087,7 +1087,7 @@ var alimentosmn = [
     },
     {
       Id: "50",
-      Alimentos: "Berinjelacrua",
+      Alimento: "Berinjelacrua",
       Energia: "20",
       Umidade: "93.8",
       MS: "6.200000000000003",
@@ -1111,7 +1111,7 @@ var alimentosmn = [
     },
     {
       Id: "51",
-      Alimentos: "Betara (Macrodon ancylodon)",
+      Alimento: "Betara (Macrodon ancylodon)",
       Energia: "79.82000000000001",
       Umidade: "80.31",
       MS: "19.689999999999999",
@@ -1121,7 +1121,7 @@ var alimentosmn = [
     },
     {
       Id: "52",
-      Alimentos: "Beterrabacozida",
+      Alimento: "Beterrabacozida",
       Energia: "32",
       Umidade: "90.6",
       MS: "9.400000000000006",
@@ -1145,7 +1145,7 @@ var alimentosmn = [
     },
     {
       Id: "53",
-      Alimentos: "Beterraba cozido drenado sem sal",
+      Alimento: "Beterraba cozido drenado sem sal",
       Energia: "44",
       Umidade: "87.06",
       MS: "12.939999999999998",
@@ -1188,7 +1188,7 @@ var alimentosmn = [
     },
     {
       Id: "54",
-      Alimentos: "Beterrabacrua",
+      Alimento: "Beterrabacrua",
       Energia: "49",
       Umidade: "86",
       MS: "14",
@@ -1212,7 +1212,7 @@ var alimentosmn = [
     },
     {
       Id: "55",
-      Alimentos: "Beterraba sem casca cozida sem sal e sem óleo",
+      Alimento: "Beterraba sem casca cozida sem sal e sem óleo",
       Energia: "26",
       Umidade: "91.8",
       MS: "8.200000000000003",
@@ -1238,7 +1238,7 @@ var alimentosmn = [
     },
     {
       Id: "56",
-      Alimentos: "Bloodworm(Chironomussp.)",
+      Alimento: "Bloodworm(Chironomussp.)",
       Energia: "39.60000000000002",
       Umidade: "90.1",
       MS: "9.9",
@@ -1246,7 +1246,7 @@ var alimentosmn = [
     },
     {
       Id: "57",
-      Alimentos: "Bonito",
+      Alimento: "Bonito",
       Energia: "100.21",
       Umidade: "73.28",
       MS: "26.72",
@@ -1259,7 +1259,7 @@ var alimentosmn = [
     },
     {
       Id: "58",
-      Alimentos: "Brócoliscru",
+      Alimento: "Brócoliscru",
       Energia: "25",
       Umidade: "91.2",
       MS: "8.799999999999998",
@@ -1286,7 +1286,7 @@ var alimentosmn = [
     },
     {
       Id: "59",
-      Alimentos: "Brócolis cozidos sem sal sem óleo",
+      Alimento: "Brócolis cozidos sem sal sem óleo",
       Energia: "26",
       Umidade: "91.7",
       MS: "8.299999999999998",
@@ -1313,7 +1313,7 @@ var alimentosmn = [
     },
     {
       Id: "60",
-      Alimentos: "CalcárioCalcítico",
+      Alimento: "CalcárioCalcítico",
       Umidade: "0",
       MS: "100",
       Ca: "37700",
@@ -1321,7 +1321,7 @@ var alimentosmn = [
     },
     {
       Id: "61",
-      Alimentos: "Cald-d-mix pet",
+      Alimento: "Cald-d-mix pet",
       Umidade: "80",
       MS: "20",
       Ca: "3809",
@@ -1335,7 +1335,7 @@ var alimentosmn = [
     },
     {
       Id: "62",
-      Alimentos: "CamarãoBranco(Vannamei)",
+      Alimento: "CamarãoBranco(Vannamei)",
       Energia: "107",
       Umidade: "76.58",
       MS: "23.419999999999999",
@@ -1349,7 +1349,7 @@ var alimentosmn = [
     },
     {
       Id: "63",
-      Alimentos: "Camarão várias espécies cru",
+      Alimento: "Camarão várias espécies cru",
       Energia: "71",
       Umidade: "83.01",
       MS: "16.989999999999996",
@@ -1395,20 +1395,20 @@ var alimentosmn = [
     },
     {
       Id: "64",
-      Alimentos: "Camundongomaisque10gramas",
+      Alimento: "Camundongomaisque10gramas",
       Umidade: "67.3",
       MS: "32.7"
     },
     {
       Id: "65",
-      Alimentos: "Camundongos",
+      Alimento: "Camundongos",
       Energia: "156",
       Umidade: "66.3",
       MS: "33.7"
     },
     {
       Id: "66",
-      Alimentos: "Capim-elefante(%MS)",
+      Alimento: "Capim-elefante(%MS)",
       Energia: "412",
       Umidade: "78.38",
       MS: "21.620000000000006",
@@ -1430,7 +1430,7 @@ var alimentosmn = [
     },
     {
       Id: "67",
-      Alimentos: "Capim-elefante roxo (%MS)",
+      Alimento: "Capim-elefante roxo (%MS)",
       Energia: "233.57",
       Umidade: "84.95",
       MS: "15.049999999999998",
@@ -1448,7 +1448,7 @@ var alimentosmn = [
     },
     {
       Id: "68",
-      Alimentos: "Cápsulaoleodepeixe",
+      Alimento: "Cápsulaoleodepeixe",
       Umidade: "0",
       MS: "100",
       EE: "100",
@@ -1457,14 +1457,14 @@ var alimentosmn = [
     },
     {
       Id: "69",
-      Alimentos: "Carbonato de cálcio",
+      Alimento: "Carbonato de cálcio",
       Umidade: "0",
       MS: "100",
       Ca: "40000"
     },
     {
       Id: "70",
-      Alimentos: "Carnebovinaacémmoídocru",
+      Alimento: "Carnebovinaacémmoídocru",
       Energia: "137",
       Umidade: "72.7",
       MS: "27.299999999999998",
@@ -1489,7 +1489,7 @@ var alimentosmn = [
     },
     {
       Id: "71",
-      Alimentos: "Carne bovina   costela crua",
+      Alimento: "Carne bovina   costela crua",
       Energia: "358",
       Umidade: "52.7",
       MS: "47.3",
@@ -1505,7 +1505,7 @@ var alimentosmn = [
     },
     {
       Id: "72",
-      Alimentos: "Carnebovinafígadocru",
+      Alimento: "Carnebovinafígadocru",
       Energia: "141",
       Umidade: "71.3",
       MS: "28.700000000000004",
@@ -1530,7 +1530,7 @@ var alimentosmn = [
     },
     {
       Id: "73",
-      Alimentos: "Carne bovina   músculo s/ gordura cru",
+      Alimento: "Carne bovina   músculo s/ gordura cru",
       Energia: "142",
       Umidade: "72.4",
       MS: "27.599999999999996",
@@ -1550,7 +1550,7 @@ var alimentosmn = [
     },
     {
       Id: "74",
-      Alimentos: "Carnebovinapaletacrua",
+      Alimento: "Carnebovinapaletacrua",
       Energia: "159",
       Umidade: "70.6",
       MS: "29.400000000000007",
@@ -1572,7 +1572,7 @@ var alimentosmn = [
     },
     {
       Id: "75",
-      Alimentos: "Carne bovina acém sem gordura cru",
+      Alimento: "Carne bovina acém sem gordura cru",
       Energia: "144",
       Umidade: "71.5",
       MS: "28.5",
@@ -1596,7 +1596,7 @@ var alimentosmn = [
     },
     {
       Id: "76",
-      Alimentos: "Carnebovinalinguacrua",
+      Alimento: "Carnebovinalinguacrua",
       Energia: "215",
       Umidade: "65",
       MS: "35",
@@ -1618,7 +1618,7 @@ var alimentosmn = [
     },
     {
       Id: "77",
-      Alimentos: "Carne bovina magra   crua",
+      Alimento: "Carne bovina magra   crua",
       Energia: "175.2",
       Umidade: "71.4",
       MS: "28.599999999999996",
@@ -1644,7 +1644,7 @@ var alimentosmn = [
     },
     {
       Id: "78",
-      Alimentos: "Carnedeboiacémsemgorduracozidosemsalsemóleo",
+      Alimento: "Carnedeboiacémsemgorduracozidosemsalsemóleo",
       Energia: "209",
       Umidade: "60.4",
       MS: "39.6",
@@ -1670,7 +1670,7 @@ var alimentosmn = [
     },
     {
       Id: "79",
-      Alimentos: "Carne de boi coração cozido fogo baixo",
+      Alimento: "Carne de boi coração cozido fogo baixo",
       Energia: "165",
       Umidade: "65.67",
       MS: "34.33",
@@ -1704,7 +1704,7 @@ var alimentosmn = [
     },
     {
       Id: "80",
-      Alimentos: "Carnedeboicoraçãocozidosemóleosemsal",
+      Alimento: "Carnedeboicoraçãocozidosemóleosemsal",
       Energia: "148",
       Umidade: "65",
       MS: "35",
@@ -1722,7 +1722,7 @@ var alimentosmn = [
     },
     {
       Id: "81",
-      Alimentos: "Carne de boi fígado frito",
+      Alimento: "Carne de boi fígado frito",
       Energia: "175",
       Umidade: "62.01",
       MS: "37.99",
@@ -1767,7 +1767,7 @@ var alimentosmn = [
     },
     {
       Id: "82",
-      Alimentos: "Carnedeboifígadogrelhadosemsalsemóleo",
+      Alimento: "Carnedeboifígadogrelhadosemsalsemóleo",
       Energia: "217",
       Umidade: "55",
       MS: "45",
@@ -1793,7 +1793,7 @@ var alimentosmn = [
     },
     {
       Id: "83",
-      Alimentos: "Carne de boi fraldinha com gordura cozida sem sal",
+      Alimento: "Carne de boi fraldinha com gordura cozida sem sal",
       Energia: "329",
       Umidade: "49.3",
       MS: "50.7",
@@ -1816,7 +1816,7 @@ var alimentosmn = [
     },
     {
       Id: "84",
-      Alimentos: "Carnedeboilinguacozidofogobaixo",
+      Alimento: "Carnedeboilinguacozidofogobaixo",
       Energia: "284",
       Umidade: "57.87",
       MS: "42.13",
@@ -1850,7 +1850,7 @@ var alimentosmn = [
     },
     {
       Id: "85",
-      Alimentos: "Carne de boi músculo sem gordura cozido sem sal sem óleo",
+      Alimento: "Carne de boi músculo sem gordura cozido sem sal sem óleo",
       Energia: "182",
       Umidade: "61.7",
       MS: "38.3",
@@ -1874,7 +1874,7 @@ var alimentosmn = [
     },
     {
       Id: "86",
-      Alimentos: "Carnedefrangopeitosempelecozidasemóleosemsal",
+      Alimento: "Carnedefrangopeitosempelecozidasemóleosemsal",
       Energia: "154",
       Umidade: "65.6",
       MS: "34.400000000000009",
@@ -1898,7 +1898,7 @@ var alimentosmn = [
     },
     {
       Id: "87",
-      Alimentos: "Carne de frango peito sem pele grelhado sem óleo sem sal",
+      Alimento: "Carne de frango peito sem pele grelhado sem óleo sem sal",
       Energia: "150",
       Umidade: "63.8",
       MS: "36.2",
@@ -1922,7 +1922,7 @@ var alimentosmn = [
     },
     {
       Id: "88",
-      Alimentos: "Carnedefrangopeitosempelegrelhadosemsalsemóleo",
+      Alimento: "Carnedefrangopeitosempelegrelhadosemsalsemóleo",
       Energia: "150",
       Umidade: "63.8",
       MS: "36.2",
@@ -1946,7 +1946,7 @@ var alimentosmn = [
     },
     {
       Id: "89",
-      Alimentos: "Carne de porco pernil frita com óleo de soja sem sal",
+      Alimento: "Carne de porco pernil frita com óleo de soja sem sal",
       Energia: "305",
       Umidade: "45.3",
       MS: "54.7",
@@ -1972,7 +1972,7 @@ var alimentosmn = [
     },
     {
       Id: "90",
-      Alimentos: "Carnefrangopeitosempelecozidadrenadasemóleosemsal",
+      Alimento: "Carnefrangopeitosempelecozidadrenadasemóleosemsal",
       Energia: "154",
       Umidade: "65.6",
       MS: "34.400000000000009",
@@ -1996,7 +1996,7 @@ var alimentosmn = [
     },
     {
       Id: "91",
-      Alimentos: "Carne peru coxa s/ pele crua",
+      Alimento: "Carne peru coxa s/ pele crua",
       Energia: "133",
       Umidade: "75",
       MS: "25",
@@ -2018,7 +2018,7 @@ var alimentosmn = [
     },
     {
       Id: "92",
-      Alimentos: "Carneperupeitos/pelocura",
+      Alimento: "Carneperupeitos/pelocura",
       Energia: "103",
       Umidade: "75",
       MS: "25",
@@ -2041,7 +2041,7 @@ var alimentosmn = [
     },
     {
       Id: "93",
-      Alimentos: "Castanha-do-Brasil   crua",
+      Alimento: "Castanha-do-Brasil   crua",
       Energia: "643",
       Umidade: "3.5",
       MS: "96.5",
@@ -2066,7 +2066,7 @@ var alimentosmn = [
     },
     {
       Id: "94",
-      Alimentos: "Catalonhacrua",
+      Alimento: "Catalonhacrua",
       Energia: "24",
       Umidade: "91.8",
       MS: "8.200000000000003",
@@ -2093,7 +2093,7 @@ var alimentosmn = [
     },
     {
       Id: "95",
-      Alimentos: "Cavalinha crua",
+      Alimento: "Cavalinha crua",
       Energia: "189",
       Umidade: "65.73",
       MS: "34.269999999999999",
@@ -2119,7 +2119,7 @@ var alimentosmn = [
     },
     {
       Id: "96",
-      Alimentos: "CC-Albium",
+      Alimento: "CC-Albium",
       Umidade: "12",
       MS: "88",
       PB: "28",
@@ -2132,7 +2132,7 @@ var alimentosmn = [
     },
     {
       Id: "97",
-      Alimentos: "Cebola crua",
+      Alimento: "Cebola crua",
       Energia: "39",
       Umidade: "88.9",
       MS: "11.099999999999995",
@@ -2157,7 +2157,7 @@ var alimentosmn = [
     },
     {
       Id: "98",
-      Alimentos: "Cenouracozida",
+      Alimento: "Cenouracozida",
       Energia: "30",
       Umidade: "91.7",
       MS: "8.299999999999998",
@@ -2183,7 +2183,7 @@ var alimentosmn = [
     },
     {
       Id: "99",
-      Alimentos: "Cenoura cozida solido sem sal",
+      Alimento: "Cenoura cozida solido sem sal",
       Energia: "35",
       Umidade: "90.17",
       MS: "9.829999999999999",
@@ -2226,7 +2226,7 @@ var alimentosmn = [
     },
     {
       Id: "100",
-      Alimentos: "Cenouracrua",
+      Alimento: "Cenouracrua",
       Energia: "34",
       Umidade: "90.1",
       MS: "9.900000000000006",
@@ -2250,7 +2250,7 @@ var alimentosmn = [
     },
     {
       Id: "101",
-      Alimentos: "Cenoura sem casca cozida sem óleo sem sal",
+      Alimento: "Cenoura sem casca cozida sem óleo sem sal",
       Energia: "16",
       Umidade: "94.6",
       MS: "5.400000000000006",
@@ -2277,7 +2277,7 @@ var alimentosmn = [
     },
     {
       Id: "102",
-      Alimentos: "Centeio",
+      Alimento: "Centeio",
       Energia: "335",
       Umidade: "11",
       MS: "89",
@@ -2301,7 +2301,7 @@ var alimentosmn = [
     },
     {
       Id: "103",
-      Alimentos: "Cevada",
+      Alimento: "Cevada",
       Energia: "335",
       Umidade: "9.59",
       MS: "90.41",
@@ -2325,13 +2325,13 @@ var alimentosmn = [
     },
     {
       Id: "104",
-      Alimentos: "Cioba",
+      Alimento: "Cioba",
       Umidade: "75",
       MS: "25"
     },
     {
       Id: "105",
-      Alimentos: "Cladóceros (Daphnia sp.)",
+      Alimento: "Cladóceros (Daphnia sp.)",
       Energia: "366.8",
       Umidade: "8.299999999999998",
       MS: "91.7",
@@ -2339,7 +2339,7 @@ var alimentosmn = [
     },
     {
       Id: "106",
-      Alimentos: "Cococru",
+      Alimento: "Cococru",
       Energia: "406",
       Umidade: "43",
       MS: "57",
@@ -2363,14 +2363,14 @@ var alimentosmn = [
     },
     {
       Id: "107",
-      Alimentos: "Codorna",
+      Alimento: "Codorna",
       Energia: "138.4",
       Umidade: "65.4",
       MS: "34.6"
     },
     {
       Id: "108",
-      Alimentos: "Coelho(cru)",
+      Alimento: "Coelho(cru)",
       Energia: "151.78",
       Umidade: "69.6",
       MS: "30.400000000000007",
@@ -2386,13 +2386,13 @@ var alimentosmn = [
     },
     {
       Id: "109",
-      Alimentos: "Coelho Doméstico Cru",
+      Alimento: "Coelho Doméstico Cru",
       Umidade: "73.8",
       MS: "26.2"
     },
     {
       Id: "110",
-      Alimentos: "Coentrofolhacru",
+      Alimento: "Coentrofolhacru",
       Energia: "22",
       Umidade: "92.2",
       MS: "7.799999999999997",
@@ -2416,7 +2416,7 @@ var alimentosmn = [
     },
     {
       Id: "111",
-      Alimentos: "Coração bovino cru",
+      Alimento: "Coração bovino cru",
       Energia: "108",
       Umidade: "76.3",
       MS: "23.700000000000004",
@@ -2443,7 +2443,7 @@ var alimentosmn = [
     },
     {
       Id: "112",
-      Alimentos: "Cordeirodianteirocru",
+      Alimento: "Cordeirodianteirocru",
       Energia: "120",
       Umidade: "75",
       MS: "25",
@@ -2465,7 +2465,7 @@ var alimentosmn = [
     },
     {
       Id: "113",
-      Alimentos: "Corimba   cru",
+      Alimento: "Corimba   cru",
       Energia: "128",
       Umidade: "75.6",
       MS: "24.400000000000007",
@@ -2488,7 +2488,7 @@ var alimentosmn = [
     },
     {
       Id: "114",
-      Alimentos: "Corimbainteirocru",
+      Alimento: "Corimbainteirocru",
       Energia: "234",
       Umidade: "62",
       MS: "38",
@@ -2509,7 +2509,7 @@ var alimentosmn = [
     },
     {
       Id: "115",
-      Alimentos: "Corvina",
+      Alimento: "Corvina",
       Energia: "87.64",
       Umidade: "79.8",
       MS: "20.200000000000004",
@@ -2519,7 +2519,7 @@ var alimentosmn = [
     },
     {
       Id: "116",
-      Alimentos: "Corvinaáguasalgadacrua",
+      Alimento: "Corvinaáguasalgadacrua",
       Energia: "86",
       Umidade: "79.2",
       MS: "20.799999999999998",
@@ -2541,7 +2541,7 @@ var alimentosmn = [
     },
     {
       Id: "117",
-      Alimentos: "Corvina do mar",
+      Alimento: "Corvina do mar",
       Energia: "185",
       Umidade: "63.8",
       MS: "36.2",
@@ -2566,7 +2566,7 @@ var alimentosmn = [
     },
     {
       Id: "118",
-      Alimentos: "Costelabovinacomosso",
+      Alimento: "Costelabovinacomosso",
       Energia: "239",
       Umidade: "61.7",
       MS: "38.3",
@@ -2585,7 +2585,7 @@ var alimentosmn = [
     },
     {
       Id: "119",
-      Alimentos: "Couve congelada cozida fervida drenado sem sal",
+      Alimento: "Couve congelada cozida fervida drenado sem sal",
       Energia: "30",
       Umidade: "90.5",
       MS: "9.5",
@@ -2629,7 +2629,7 @@ var alimentosmn = [
     },
     {
       Id: "120",
-      Alimentos: "Couvecozidasemóleosemsal",
+      Alimento: "Couvecozidasemóleosemsal",
       Energia: "25",
       Umidade: "91.6",
       MS: "8.400000000000006",
@@ -2658,7 +2658,7 @@ var alimentosmn = [
     },
     {
       Id: "121",
-      Alimentos: "Couve-flor crua",
+      Alimento: "Couve-flor crua",
       Energia: "23",
       Umidade: "92.8",
       MS: "7.200000000000003",
@@ -2683,7 +2683,7 @@ var alimentosmn = [
     },
     {
       Id: "122",
-      Alimentos: "Couve-manteigacrua",
+      Alimento: "Couve-manteigacrua",
       Energia: "27",
       Umidade: "90.9",
       MS: "9.099999999999995",
@@ -2711,7 +2711,7 @@ var alimentosmn = [
     },
     {
       Id: "123",
-      Alimentos: "Creme de leite",
+      Alimento: "Creme de leite",
       Energia: "221",
       Umidade: "70.9",
       MS: "29.099999999999996",
@@ -2734,7 +2734,7 @@ var alimentosmn = [
     },
     {
       Id: "124",
-      Alimentos: "Dourado",
+      Alimento: "Dourado",
       Energia: "80.1",
       Umidade: "79.3",
       MS: "20.700000000000004",
@@ -2744,7 +2744,7 @@ var alimentosmn = [
     },
     {
       Id: "125",
-      Alimentos: "Ensure",
+      Alimento: "Ensure",
       Energia: "428",
       Umidade: "0",
       MS: "100",
@@ -2756,7 +2756,7 @@ var alimentosmn = [
     },
     {
       Id: "126",
-      Alimentos: "Ervilha",
+      Alimento: "Ervilha",
       Energia: "81",
       Umidade: "78.9",
       MS: "21.099999999999996",
@@ -2784,7 +2784,7 @@ var alimentosmn = [
     },
     {
       Id: "127",
-      Alimentos: "Ervilha grão cozida sem sal sem óleo",
+      Alimento: "Ervilha grão cozida sem sal sem óleo",
       Energia: "90",
       Umidade: "73.5",
       MS: "26.5",
@@ -2813,7 +2813,7 @@ var alimentosmn = [
     },
     {
       Id: "128",
-      Alimentos: "Escarola",
+      Alimento: "Escarola",
       Energia: "17",
       Umidade: "93.8",
       MS: "6.200000000000003",
@@ -2840,7 +2840,7 @@ var alimentosmn = [
     },
     {
       Id: "129",
-      Alimentos: "Escarola folha crua",
+      Alimento: "Escarola folha crua",
       Energia: "16",
       Umidade: "94.4",
       MS: "5.599999999999994",
@@ -2867,7 +2867,7 @@ var alimentosmn = [
     },
     {
       Id: "130",
-      Alimentos: "E-S-ESuper",
+      Alimento: "E-S-ESuper",
       Umidade: "0",
       MS: "100",
       Lis: "10",
@@ -2876,7 +2876,7 @@ var alimentosmn = [
     },
     {
       Id: "131",
-      Alimentos: "Espinafre cru",
+      Alimento: "Espinafre cru",
       Energia: "16",
       Umidade: "94",
       MS: "6",
@@ -2902,7 +2902,7 @@ var alimentosmn = [
     },
     {
       Id: "132",
-      Alimentos: "FarinhadaAlconCanários",
+      Alimento: "FarinhadaAlconCanários",
       Energia: "347.5",
       Umidade: "10",
       MS: "90",
@@ -2938,7 +2938,7 @@ var alimentosmn = [
     },
     {
       Id: "133",
-      Alimentos: "Farinhada Alcon Silvestres",
+      Alimento: "Farinhada Alcon Silvestres",
       Energia: "342",
       Umidade: "10",
       MS: "90",
@@ -2974,7 +2974,7 @@ var alimentosmn = [
     },
     {
       Id: "134",
-      Alimentos: "Feijãobrotocru",
+      Alimento: "Feijãobrotocru",
       Energia: "39",
       Umidade: "87.5",
       MS: "12.5",
@@ -2999,7 +2999,7 @@ var alimentosmn = [
     },
     {
       Id: "135",
-      Alimentos: "Feno de ALfafa (%MS)",
+      Alimento: "Feno de ALfafa (%MS)",
       Energia: "422",
       Umidade: "10.68",
       MS: "89.32",
@@ -3026,13 +3026,13 @@ var alimentosmn = [
     },
     {
       Id: "136",
-      Alimentos: "Fenodetifton",
+      Alimento: "Fenodetifton",
       Umidade: "10.480000000000004",
       MS: "89.52"
     },
     {
       Id: "137",
-      Alimentos: "Fibra de maçã",
+      Alimento: "Fibra de maçã",
       Energia: "360",
       Umidade: "10",
       MS: "90",
@@ -3041,7 +3041,7 @@ var alimentosmn = [
     },
     {
       Id: "138",
-      Alimentos: "FlordeHibisco",
+      Alimento: "FlordeHibisco",
       Energia: "16",
       Umidade: "95.98",
       MS: "4.0200000000000009",
@@ -3056,7 +3056,7 @@ var alimentosmn = [
     },
     {
       Id: "139",
-      Alimentos: "Folha de brócolis crua",
+      Alimento: "Folha de brócolis crua",
       Energia: "28",
       Umidade: "90.69",
       MS: "9.310000000000003",
@@ -3098,7 +3098,7 @@ var alimentosmn = [
     },
     {
       Id: "140",
-      Alimentos: "FoodCatAdulto",
+      Alimento: "FoodCatAdulto",
       Energia: "75.6",
       Umidade: "1.3",
       MS: "98.7",
@@ -3135,7 +3135,7 @@ var alimentosmn = [
     },
     {
       Id: "141",
-      Alimentos: "Food dog Adulto Manutenção",
+      Alimento: "Food dog Adulto Manutenção",
       Energia: "41.99999999999998",
       Umidade: "6",
       MS: "94",
@@ -3175,7 +3175,7 @@ var alimentosmn = [
     },
     {
       Id: "142",
-      Alimentos: "FoodDogFitFibras",
+      Alimento: "FoodDogFitFibras",
       Umidade: "4.5",
       MS: "95.5",
       PB: "6",
@@ -3210,7 +3210,7 @@ var alimentosmn = [
     },
     {
       Id: "143",
-      Alimentos: "Fosfato bicálcico",
+      Alimento: "Fosfato bicálcico",
       Umidade: "0",
       MS: "100",
       Ca: "24500",
@@ -3218,7 +3218,7 @@ var alimentosmn = [
     },
     {
       Id: "144",
-      Alimentos: "Frangocoraçãocru",
+      Alimento: "Frangocoraçãocru",
       Energia: "222",
       Umidade: "69.1",
       MS: "30.900000000000007",
@@ -3243,7 +3243,7 @@ var alimentosmn = [
     },
     {
       Id: "145",
-      Alimentos: "Frango   fígado cru",
+      Alimento: "Frango   fígado cru",
       Energia: "106",
       Umidade: "77.8",
       MS: "22.200000000000004",
@@ -3268,7 +3268,7 @@ var alimentosmn = [
     },
     {
       Id: "146",
-      Alimentos: "Frangopeitoc/pelecru",
+      Alimento: "Frangopeitoc/pelecru",
       Energia: "149",
       Umidade: "71.9",
       MS: "28.099999999999996",
@@ -3292,7 +3292,7 @@ var alimentosmn = [
     },
     {
       Id: "147",
-      Alimentos: "Frango   peito s/ pele cru",
+      Alimento: "Frango   peito s/ pele cru",
       Energia: "119",
       Umidade: "74.8",
       MS: "25.200000000000004",
@@ -3315,7 +3315,7 @@ var alimentosmn = [
     },
     {
       Id: "148",
-      Alimentos: "Frangocoxacompelecru",
+      Alimento: "Frangocoxacompelecru",
       Energia: "161",
       Umidade: "72.9",
       MS: "27.099999999999996",
@@ -3337,7 +3337,7 @@ var alimentosmn = [
     },
     {
       Id: "149",
-      Alimentos: "Frango coxa sem pele cru",
+      Alimento: "Frango coxa sem pele cru",
       Energia: "120",
       Umidade: "76.4",
       MS: "23.599999999999996",
@@ -3359,7 +3359,7 @@ var alimentosmn = [
     },
     {
       Id: "150",
-      Alimentos: "Frangointeiroc/pelecru",
+      Alimento: "Frangointeiroc/pelecru",
       Energia: "226",
       Umidade: "66.5",
       MS: "33.5",
@@ -3384,7 +3384,7 @@ var alimentosmn = [
     },
     {
       Id: "151",
-      Alimentos: "Frango inteiro s/ pele cru",
+      Alimento: "Frango inteiro s/ pele cru",
       Energia: "129",
       Umidade: "74.9",
       MS: "25.099999999999996",
@@ -3409,7 +3409,7 @@ var alimentosmn = [
     },
     {
       Id: "152",
-      Alimentos: "Frangosobrecoxacompelecrua",
+      Alimento: "Frangosobrecoxacompelecrua",
       Energia: "234",
       Umidade: "63",
       MS: "37",
@@ -3435,7 +3435,7 @@ var alimentosmn = [
     },
     {
       Id: "153",
-      Alimentos: "Galeto peito so carne pronto pra consumo frito",
+      Alimento: "Galeto peito so carne pronto pra consumo frito",
       Energia: "187",
       Umidade: "60.21",
       MS: "39.79",
@@ -3475,13 +3475,13 @@ var alimentosmn = [
     },
     {
       Id: "154",
-      Alimentos: "GalinhaAdulta",
+      Alimento: "GalinhaAdulta",
       Umidade: "67.5",
       MS: "32.5"
     },
     {
       Id: "155",
-      Alimentos: "Gema de ovo de galinha cru",
+      Alimento: "Gema de ovo de galinha cru",
       Energia: "322",
       Umidade: "52.31",
       MS: "47.69",
@@ -3512,7 +3512,7 @@ var alimentosmn = [
     },
     {
       Id: "156",
-      Alimentos: "Gergelimsemente",
+      Alimento: "Gergelimsemente",
       Energia: "584",
       Umidade: "3.9",
       MS: "96.1",
@@ -3536,7 +3536,7 @@ var alimentosmn = [
     },
     {
       Id: "157",
-      Alimentos: "Girassol Miúdo",
+      Alimento: "Girassol Miúdo",
       Energia: "391.6",
       Umidade: "10.5",
       MS: "89.5",
@@ -3550,7 +3550,7 @@ var alimentosmn = [
     },
     {
       Id: "158",
-      Alimentos: "GlicopanPet",
+      Alimento: "GlicopanPet",
       Umidade: "80",
       MS: "20",
       Arg: "0.238",
@@ -3571,7 +3571,7 @@ var alimentosmn = [
     },
     {
       Id: "159",
-      Alimentos: "Goiaba vermelha   c/ casca   crua",
+      Alimento: "Goiaba vermelha   c/ casca   crua",
       Energia: "54",
       Umidade: "85",
       MS: "15",
@@ -3595,7 +3595,7 @@ var alimentosmn = [
     },
     {
       Id: "160",
-      Alimentos: "Grãodebico",
+      Alimento: "Grãodebico",
       Energia: "364",
       Umidade: "11.5",
       MS: "88.5",
@@ -3624,14 +3624,14 @@ var alimentosmn = [
     },
     {
       Id: "161",
-      Alimentos: "Grilos adultos s/ suplementos",
+      Alimento: "Grilos adultos s/ suplementos",
       Energia: "129",
       Umidade: "73.2",
       MS: "26.799999999999998"
     },
     {
       Id: "162",
-      Alimentos: "GuabiNaturalCãoAdultoPorteGrandeeGiganteFrangoeArrozIntegral",
+      Alimento: "GuabiNaturalCãoAdultoPorteGrandeeGiganteFrangoeArrozIntegral",
       Energia: "256",
       Umidade: "9",
       MS: "91",
@@ -3670,7 +3670,7 @@ var alimentosmn = [
     },
     {
       Id: "163",
-      Alimentos: "Guandu (%MS)",
+      Alimento: "Guandu (%MS)",
       Energia: "452",
       Umidade: "64.54",
       MS: "35.459999999999997",
@@ -3686,7 +3686,7 @@ var alimentosmn = [
     },
     {
       Id: "164",
-      Alimentos: "Guanduparteaérea(%MS)",
+      Alimento: "Guanduparteaérea(%MS)",
       Energia: "139.34",
       Umidade: "64.72",
       MS: "35.28",
@@ -3703,7 +3703,7 @@ var alimentosmn = [
     },
     {
       Id: "165",
-      Alimentos: "Hemolitan Pet",
+      Alimento: "Hemolitan Pet",
       Umidade: "80",
       MS: "20",
       Cu: "50",
@@ -3721,7 +3721,7 @@ var alimentosmn = [
     },
     {
       Id: "166",
-      Alimentos: "Hortelãinnatura",
+      Alimento: "Hortelãinnatura",
       Energia: "39",
       Umidade: "85.6",
       MS: "14.400000000000006",
@@ -3745,7 +3745,7 @@ var alimentosmn = [
     },
     {
       Id: "167",
-      Alimentos: "Inhame cru",
+      Alimento: "Inhame cru",
       Energia: "97",
       Umidade: "73.3",
       MS: "26.700000000000004",
@@ -3768,7 +3768,7 @@ var alimentosmn = [
     },
     {
       Id: "168",
-      Alimentos: "Iorgutenatural",
+      Alimento: "Iorgutenatural",
       Energia: "51",
       Umidade: "90",
       MS: "10",
@@ -3790,7 +3790,7 @@ var alimentosmn = [
     },
     {
       Id: "169",
-      Alimentos: "Jabuticaba   crua",
+      Alimento: "Jabuticaba   crua",
       Energia: "58",
       Umidade: "83.6",
       MS: "16.400000000000007",
@@ -3813,7 +3813,7 @@ var alimentosmn = [
     },
     {
       Id: "170",
-      Alimentos: "Jilócru",
+      Alimento: "Jilócru",
       Energia: "27",
       Umidade: "91.6",
       MS: "8.400000000000006",
@@ -3836,7 +3836,7 @@ var alimentosmn = [
     },
     {
       Id: "171",
-      Alimentos: "Kiwi   cru",
+      Alimento: "Kiwi   cru",
       Energia: "51",
       Umidade: "85.9",
       MS: "14.099999999999995",
@@ -3860,7 +3860,7 @@ var alimentosmn = [
     },
     {
       Id: "172",
-      Alimentos: "Lambaricru",
+      Alimento: "Lambaricru",
       Energia: "149",
       Umidade: "72.2",
       MS: "27.799999999999998",
@@ -3882,7 +3882,7 @@ var alimentosmn = [
     },
     {
       Id: "173",
-      Alimentos: "Laranja lima   crua",
+      Alimento: "Laranja lima   crua",
       Energia: "46",
       Umidade: "87",
       MS: "13",
@@ -3908,7 +3908,7 @@ var alimentosmn = [
     },
     {
       Id: "174",
-      Alimentos: "Laranjapêracrua",
+      Alimento: "Laranjapêracrua",
       Energia: "37",
       Umidade: "89.6",
       MS: "10.400000000000006",
@@ -3933,7 +3933,7 @@ var alimentosmn = [
     },
     {
       Id: "175",
-      Alimentos: "Leite de Soja",
+      Alimento: "Leite de Soja",
       Energia: "54",
       Umidade: "88.05",
       MS: "11.950000000000003",
@@ -3977,7 +3977,7 @@ var alimentosmn = [
     },
     {
       Id: "176",
-      Alimentos: "Leitedevacaintegralempó",
+      Alimento: "Leitedevacaintegralempó",
       Energia: "497",
       Umidade: "2.7",
       MS: "97.3",
@@ -4001,7 +4001,7 @@ var alimentosmn = [
     },
     {
       Id: "177",
-      Alimentos: "Leite de vaca sem lactose",
+      Alimento: "Leite de vaca sem lactose",
       Energia: "63",
       Umidade: "88.1",
       MS: "11.900000000000006",
@@ -4014,7 +4014,7 @@ var alimentosmn = [
     },
     {
       Id: "178",
-      Alimentos: "Línguadevaca",
+      Alimento: "Línguadevaca",
       Energia: "215",
       Umidade: "65",
       MS: "35",
@@ -4038,7 +4038,7 @@ var alimentosmn = [
     },
     {
       Id: "179",
-      Alimentos: "Linhaça semente",
+      Alimento: "Linhaça semente",
       Energia: "495",
       Umidade: "6.7",
       MS: "93.3",
@@ -4061,7 +4061,7 @@ var alimentosmn = [
     },
     {
       Id: "180",
-      Alimentos: "LittleTunny(Euthynnusalletteratus)",
+      Alimento: "LittleTunny(Euthynnusalletteratus)",
       Energia: "189.7",
       Umidade: "64.4",
       MS: "35.599999999999997",
@@ -4071,7 +4071,7 @@ var alimentosmn = [
     },
     {
       Id: "181",
-      Alimentos: "Lula várias espécies cru",
+      Alimento: "Lula várias espécies cru",
       Energia: "87.06",
       Umidade: "78.55",
       MS: "21.450000000000004",
@@ -4116,7 +4116,7 @@ var alimentosmn = [
     },
     {
       Id: "182",
-      Alimentos: "Maçãargentinac/cascacrua",
+      Alimento: "Maçãargentinac/cascacrua",
       Energia: "63",
       Umidade: "82.6",
       MS: "17.400000000000007",
@@ -4140,7 +4140,7 @@ var alimentosmn = [
     },
     {
       Id: "183",
-      Alimentos: "Mamão formosa   cru",
+      Alimento: "Mamão formosa   cru",
       Energia: "45",
       Umidade: "86.9",
       MS: "13.099999999999995",
@@ -4165,7 +4165,7 @@ var alimentosmn = [
     },
     {
       Id: "184",
-      Alimentos: "Mamãopapaiacru",
+      Alimento: "Mamãopapaiacru",
       Energia: "40",
       Umidade: "88.6",
       MS: "11.400000000000006",
@@ -4191,7 +4191,7 @@ var alimentosmn = [
     },
     {
       Id: "185",
-      Alimentos: "Mandioca cozida",
+      Alimento: "Mandioca cozida",
       Energia: "125",
       Umidade: "68.7",
       MS: "31.299999999999998",
@@ -4217,7 +4217,7 @@ var alimentosmn = [
     },
     {
       Id: "186",
-      Alimentos: "Mandiocacru",
+      Alimento: "Mandiocacru",
       Energia: "151",
       Umidade: "61.8",
       MS: "38.2",
@@ -4242,7 +4242,7 @@ var alimentosmn = [
     },
     {
       Id: "187",
-      Alimentos: "Manga Haden   crua",
+      Alimento: "Manga Haden   crua",
       Energia: "64",
       Umidade: "82.3",
       MS: "17.700000000000004",
@@ -4269,7 +4269,7 @@ var alimentosmn = [
     },
     {
       Id: "188",
-      Alimentos: "MangaPalmercrua",
+      Alimento: "MangaPalmercrua",
       Energia: "72",
       Umidade: "79.7",
       MS: "20.299999999999998",
@@ -4303,7 +4303,7 @@ var alimentosmn = [
     },
     {
       Id: "189",
-      Alimentos: "Manjericão cru",
+      Alimento: "Manjericão cru",
       Energia: "21",
       Umidade: "93",
       MS: "7",
@@ -4329,7 +4329,7 @@ var alimentosmn = [
     },
     {
       Id: "190",
-      Alimentos: "Manjubacrua",
+      Alimento: "Manjubacrua",
       Energia: "99",
       Umidade: "76.9",
       MS: "23.099999999999996",
@@ -4346,7 +4346,7 @@ var alimentosmn = [
     },
     {
       Id: "191",
-      Alimentos: "Maria-luísa (Paralonchurus brasiliensis)",
+      Alimento: "Maria-luísa (Paralonchurus brasiliensis)",
       Energia: "67.03",
       Umidade: "82.34",
       MS: "17.659999999999998",
@@ -4356,7 +4356,7 @@ var alimentosmn = [
     },
     {
       Id: "192",
-      Alimentos: "Mariscováriasespéciescru",
+      Alimento: "Mariscováriasespéciescru",
       Energia: "86",
       Umidade: "78.98",
       MS: "21.019999999999997",
@@ -4402,7 +4402,7 @@ var alimentosmn = [
     },
     {
       Id: "193",
-      Alimentos: "Meca (swordfish)",
+      Alimento: "Meca (swordfish)",
       Energia: "144",
       Umidade: "73.8",
       MS: "26.200000000000004",
@@ -4446,7 +4446,7 @@ var alimentosmn = [
     },
     {
       Id: "194",
-      Alimentos: "MegaZooFlamingosFL-32",
+      Alimento: "MegaZooFlamingosFL-32",
       Energia: "182",
       Umidade: "11",
       MS: "89",
@@ -4482,7 +4482,7 @@ var alimentosmn = [
     },
     {
       Id: "195",
-      Alimentos: "MegaZoo Papagaios AM-16",
+      Alimento: "MegaZoo Papagaios AM-16",
       Energia: "109",
       Umidade: "11",
       MS: "89",
@@ -4519,7 +4519,7 @@ var alimentosmn = [
     },
     {
       Id: "196",
-      Alimentos: "MegaZooPequenosPrimatasOnívorosP-25",
+      Alimento: "MegaZooPequenosPrimatasOnívorosP-25",
       Energia: "172",
       Umidade: "11",
       MS: "89",
@@ -4555,7 +4555,7 @@ var alimentosmn = [
     },
     {
       Id: "197",
-      Alimentos: "MegaZoo Primatas P-18",
+      Alimento: "MegaZoo Primatas P-18",
       Energia: "117",
       Umidade: "11",
       MS: "89",
@@ -4592,7 +4592,7 @@ var alimentosmn = [
     },
     {
       Id: "198",
-      Alimentos: "MegaZooTucanosT-19",
+      Alimento: "MegaZooTucanosT-19",
       Energia: "121",
       Umidade: "11",
       MS: "89",
@@ -4627,7 +4627,7 @@ var alimentosmn = [
     },
     {
       Id: "199",
-      Alimentos: "Mel de abelha",
+      Alimento: "Mel de abelha",
       Energia: "309",
       Umidade: "15.8",
       MS: "84.2",
@@ -4647,7 +4647,7 @@ var alimentosmn = [
     },
     {
       Id: "200",
-      Alimentos: "Melado",
+      Alimento: "Melado",
       Energia: "297",
       Umidade: "22.1",
       MS: "77.9",
@@ -4667,7 +4667,7 @@ var alimentosmn = [
     },
     {
       Id: "201",
-      Alimentos: "Melancia   crua",
+      Alimento: "Melancia   crua",
       Energia: "33",
       Umidade: "90.7",
       MS: "9.299999999999998",
@@ -4688,7 +4688,7 @@ var alimentosmn = [
     },
     {
       Id: "202",
-      Alimentos: "Melãocru",
+      Alimento: "Melãocru",
       Energia: "29",
       Umidade: "91.3",
       MS: "8.700000000000003",
@@ -4711,7 +4711,7 @@ var alimentosmn = [
     },
     {
       Id: "203",
-      Alimentos: "Merluza filé   cru",
+      Alimento: "Merluza filé   cru",
       Energia: "89",
       Umidade: "82.1",
       MS: "17.900000000000007",
@@ -4733,7 +4733,7 @@ var alimentosmn = [
     },
     {
       Id: "204",
-      Alimentos: "Mexericamurcotecrua",
+      Alimento: "Mexericamurcotecrua",
       Energia: "58",
       Umidade: "83.7",
       MS: "16.299999999999998",
@@ -4758,7 +4758,7 @@ var alimentosmn = [
     },
     {
       Id: "205",
-      Alimentos: "Milho verde   cozido",
+      Alimento: "Milho verde   cozido",
       Energia: "108",
       Umidade: "69.6",
       MS: "30.400000000000007",
@@ -4788,7 +4788,7 @@ var alimentosmn = [
     },
     {
       Id: "206",
-      Alimentos: "Milhoverdecru",
+      Alimento: "Milhoverdecru",
       Energia: "138",
       Umidade: "63.5",
       MS: "36.5",
@@ -4813,7 +4813,7 @@ var alimentosmn = [
     },
     {
       Id: "207",
-      Alimentos: "Minhoca (Allolobophora calignosa) ",
+      Alimento: "Minhoca (Allolobophora calignosa) ",
       Energia: "80",
       Umidade: "80",
       MS: "20",
@@ -4821,7 +4821,7 @@ var alimentosmn = [
     },
     {
       Id: "208",
-      Alimentos: "MisturadeSementesJuréiaparaPeriquitos",
+      Alimento: "MisturadeSementesJuréiaparaPeriquitos",
       Energia: "337.61",
       Umidade: "11.8",
       MS: "88.2",
@@ -4835,7 +4835,7 @@ var alimentosmn = [
     },
     {
       Id: "209",
-      Alimentos: "Mistura Para Pássaros Livres Juréia",
+      Alimento: "Mistura Para Pássaros Livres Juréia",
       Energia: "330.5",
       Umidade: "13",
       MS: "87",
@@ -4849,7 +4849,7 @@ var alimentosmn = [
     },
     {
       Id: "210",
-      Alimentos: "Molinésiacrua",
+      Alimento: "Molinésiacrua",
       Energia: "113.84",
       Umidade: "74.32",
       MS: "25.680000000000008",
@@ -4859,7 +4859,7 @@ var alimentosmn = [
     },
     {
       Id: "211",
-      Alimentos: "Morango   cru",
+      Alimento: "Morango   cru",
       Energia: "30",
       Umidade: "91.5",
       MS: "8.5",
@@ -4883,7 +4883,7 @@ var alimentosmn = [
     },
     {
       Id: "212",
-      Alimentos: "Mostardacrua",
+      Alimento: "Mostardacrua",
       Energia: "18",
       Umidade: "93.4",
       MS: "6.599999999999994",
@@ -4905,7 +4905,7 @@ var alimentosmn = [
     },
     {
       Id: "213",
-      Alimentos: "Náuplio de artêmia",
+      Alimento: "Náuplio de artêmia",
       Energia: "438.09999999999999",
       Umidade: "4.400000000000006",
       MS: "95.6",
@@ -4916,7 +4916,7 @@ var alimentosmn = [
     },
     {
       Id: "214",
-      Alimentos: "NígerJuréia",
+      Alimento: "NígerJuréia",
       Energia: "515.51",
       Umidade: "3.24",
       MS: "96.76",
@@ -4930,7 +4930,7 @@ var alimentosmn = [
     },
     {
       Id: "215",
-      Alimentos: "Nori alga seca",
+      Alimento: "Nori alga seca",
       Energia: "229",
       Umidade: "8.4",
       MS: "91.6",
@@ -4959,7 +4959,7 @@ var alimentosmn = [
     },
     {
       Id: "216",
-      Alimentos: "Nozcrua",
+      Alimento: "Nozcrua",
       Energia: "620",
       Umidade: "6.2",
       MS: "93.8",
@@ -4985,7 +4985,7 @@ var alimentosmn = [
     },
     {
       Id: "217",
-      Alimentos: "Nutralogic",
+      Alimento: "Nutralogic",
       Umidade: "0",
       MS: "100",
       Arg: "0.28",
@@ -5002,7 +5002,7 @@ var alimentosmn = [
     },
     {
       Id: "218",
-      Alimentos: "NutrópicaAraracomfrutas",
+      Alimento: "NutrópicaAraracomfrutas",
       Energia: "154",
       Umidade: "12",
       MS: "88",
@@ -5017,7 +5017,7 @@ var alimentosmn = [
     },
     {
       Id: "219",
-      Alimentos: "Nutrópica Coelho Adulto",
+      Alimento: "Nutrópica Coelho Adulto",
       Umidade: "12",
       MS: "88",
       PB: "13",
@@ -5031,7 +5031,7 @@ var alimentosmn = [
     },
     {
       Id: "220",
-      Alimentos: "NutrópicaPorquinho-da-Índia",
+      Alimento: "NutrópicaPorquinho-da-Índia",
       Energia: "252",
       Umidade: "12",
       MS: "88",
@@ -5046,7 +5046,7 @@ var alimentosmn = [
     },
     {
       Id: "221",
-      Alimentos: "Nutroplus Manutenção Cães Adultos",
+      Alimento: "Nutroplus Manutenção Cães Adultos",
       Umidade: "0",
       MS: "100",
       Ca: "20000",
@@ -5075,7 +5075,7 @@ var alimentosmn = [
     },
     {
       Id: "222",
-      Alimentos: "Óleodecanola",
+      Alimento: "Óleodecanola",
       Energia: "884",
       Umidade: "0",
       MS: "100",
@@ -5085,7 +5085,7 @@ var alimentosmn = [
     },
     {
       Id: "223",
-      Alimentos: "Óleo de soja",
+      Alimento: "Óleo de soja",
       Energia: "884",
       Umidade: "0",
       MS: "100",
@@ -5095,7 +5095,7 @@ var alimentosmn = [
     },
     {
       Id: "224",
-      Alimentos: "Óleosoja",
+      Alimento: "Óleosoja",
       Energia: "900",
       Umidade: "0",
       MS: "100",
@@ -5107,7 +5107,7 @@ var alimentosmn = [
     },
     {
       Id: "225",
-      Alimentos: "Orégano seco",
+      Alimento: "Orégano seco",
       Energia: "265",
       Umidade: "9.93",
       MS: "90.07",
@@ -5133,7 +5133,7 @@ var alimentosmn = [
     },
     {
       Id: "226",
-      Alimentos: "Organew",
+      Alimento: "Organew",
       Energia: "483.9",
       Umidade: "1.9",
       MS: "98.1",
@@ -5144,7 +5144,7 @@ var alimentosmn = [
     },
     {
       Id: "227",
-      Alimentos: "Organew",
+      Alimento: "Organew",
       Umidade: "7.39",
       MS: "92.61",
       PB: "17.86",
@@ -5168,7 +5168,7 @@ var alimentosmn = [
     },
     {
       Id: "228",
-      Alimentos: "Ovodecodornainteirocozidosemsal",
+      Alimento: "Ovodecodornainteirocozidosemsal",
       Energia: "156",
       Umidade: "73.6",
       MS: "26.400000000000007",
@@ -5188,7 +5188,7 @@ var alimentosmn = [
     },
     {
       Id: "229",
-      Alimentos: "Ovo de galinha com casca   cozido",
+      Alimento: "Ovo de galinha com casca   cozido",
       Energia: "146",
       Umidade: "75.8",
       MS: "24.200000000000004",
@@ -5212,7 +5212,7 @@ var alimentosmn = [
     },
     {
       Id: "230",
-      Alimentos: "Ovodegalinhainteirocozido",
+      Alimento: "Ovodegalinhainteirocozido",
       Energia: "146",
       Umidade: "75.8",
       MS: "24.200000000000004",
@@ -5237,7 +5237,7 @@ var alimentosmn = [
     },
     {
       Id: "231",
-      Alimentos: "Painço cru",
+      Alimento: "Painço cru",
       Energia: "378",
       Umidade: "8.67",
       MS: "91.33",
@@ -5261,7 +5261,7 @@ var alimentosmn = [
     },
     {
       Id: "232",
-      Alimentos: "PainçoJuréia",
+      Alimento: "PainçoJuréia",
       Energia: "315",
       Umidade: "12",
       MS: "88",
@@ -5273,7 +5273,7 @@ var alimentosmn = [
     },
     {
       Id: "233",
-      Alimentos: "Papa-terra (Catostomus commersoni) cru",
+      Alimento: "Papa-terra (Catostomus commersoni) cru",
       Energia: "92",
       Umidade: "79.71",
       MS: "20.290000000000008",
@@ -5313,7 +5313,7 @@ var alimentosmn = [
     },
     {
       Id: "234",
-      Alimentos: "PapinhaAraraNutrópica",
+      Alimento: "PapinhaAraraNutrópica",
       Energia: "371",
       Umidade: "12",
       MS: "88",
@@ -5348,7 +5348,7 @@ var alimentosmn = [
     },
     {
       Id: "235",
-      Alimentos: "Parati",
+      Alimento: "Parati",
       Energia: "132.41",
       Umidade: "75.55",
       MS: "24.450000000000004",
@@ -5360,7 +5360,7 @@ var alimentosmn = [
     },
     {
       Id: "236",
-      Alimentos: "Pargo(Pagruspargo)",
+      Alimento: "Pargo(Pagruspargo)",
       Energia: "0",
       Umidade: "74.9",
       MS: "25.099999999999996",
@@ -5420,7 +5420,7 @@ var alimentosmn = [
     },
     {
       Id: "237",
-      Alimentos: "Pargo cru (Stenotomus chrysops)",
+      Alimento: "Pargo cru (Stenotomus chrysops)",
       Energia: "105",
       Umidade: "75.37",
       MS: "24.629999999999997",
@@ -5465,7 +5465,7 @@ var alimentosmn = [
     },
     {
       Id: "238",
-      Alimentos: "PássaroForteMisturaparaCalopsitaeAgapornis",
+      Alimento: "PássaroForteMisturaparaCalopsitaeAgapornis",
       Umidade: "13",
       MS: "87",
       PB: "12",
@@ -5478,7 +5478,7 @@ var alimentosmn = [
     },
     {
       Id: "239",
-      Alimentos: "Pate ",
+      Alimento: "Pate ",
       Umidade: "81",
       MS: "19",
       PB: "8",
@@ -5489,7 +5489,7 @@ var alimentosmn = [
     },
     {
       Id: "240",
-      Alimentos: "PatêdecarnePrimocão",
+      Alimento: "PatêdecarnePrimocão",
       Umidade: "82",
       MS: "18",
       PB: "8",
@@ -5505,7 +5505,7 @@ var alimentosmn = [
     },
     {
       Id: "241",
-      Alimentos: "Patê Whiskas",
+      Alimento: "Patê Whiskas",
       Energia: "59",
       Umidade: "84",
       MS: "16",
@@ -5519,7 +5519,7 @@ var alimentosmn = [
     },
     {
       Id: "242",
-      Alimentos: "Patos/pelecru",
+      Alimento: "Patos/pelecru",
       Energia: "132",
       Umidade: "74",
       MS: "26",
@@ -5541,7 +5541,7 @@ var alimentosmn = [
     },
     {
       Id: "243",
-      Alimentos: "Pedigree Sache Adultos",
+      Alimento: "Pedigree Sache Adultos",
       Energia: "67",
       Umidade: "82",
       MS: "18",
@@ -5555,7 +5555,7 @@ var alimentosmn = [
     },
     {
       Id: "244",
-      Alimentos: "Peixadeáguasalgadasardinhafilécozidasemsalsemóleo",
+      Alimento: "Peixadeáguasalgadasardinhafilécozidasemsalsemóleo",
       Energia: "121",
       Umidade: "71.9",
       MS: "28.099999999999996",
@@ -5580,7 +5580,7 @@ var alimentosmn = [
     },
     {
       Id: "245",
-      Alimentos: "Peixe água salgada sardinha filé cozido drenado sem óleo sem sal",
+      Alimento: "Peixe água salgada sardinha filé cozido drenado sem óleo sem sal",
       Energia: "121",
       Umidade: "71.9",
       MS: "28.099999999999996",
@@ -5603,7 +5603,7 @@ var alimentosmn = [
     },
     {
       Id: "246",
-      Alimentos: "PeleFoodDog",
+      Alimento: "PeleFoodDog",
       MS: "100",
       PB: "43",
       Lis: "2.2",
@@ -5620,7 +5620,7 @@ var alimentosmn = [
     },
     {
       Id: "247",
-      Alimentos: "Pelotas robalo",
+      Alimento: "Pelotas robalo",
       Energia: "246.67263200000003",
       Umidade: "35.565",
       MS: "64.435",
@@ -5680,7 +5680,7 @@ var alimentosmn = [
     },
     {
       Id: "248",
-      Alimentos: "Pepinocru",
+      Alimento: "Pepinocru",
       Energia: "10",
       Umidade: "96.8",
       MS: "3.200000000000003",
@@ -5701,7 +5701,7 @@ var alimentosmn = [
     },
     {
       Id: "249",
-      Alimentos: "Pêra Park   crua",
+      Alimento: "Pêra Park   crua",
       Energia: "61",
       Umidade: "83.2",
       MS: "16.799999999999998",
@@ -5725,7 +5725,7 @@ var alimentosmn = [
     },
     {
       Id: "250",
-      Alimentos: "PêraWillianscrua",
+      Alimento: "PêraWillianscrua",
       Energia: "53",
       Umidade: "85",
       MS: "15",
@@ -5747,7 +5747,7 @@ var alimentosmn = [
     },
     {
       Id: "251",
-      Alimentos: "Pescada",
+      Alimento: "Pescada",
       Energia: "78.78",
       Umidade: "82.5",
       MS: "17.5",
@@ -5757,7 +5757,7 @@ var alimentosmn = [
     },
     {
       Id: "252",
-      Alimentos: "Pescadafilécru",
+      Alimento: "Pescadafilécru",
       Energia: "107",
       Umidade: "79.5",
       MS: "20.5",
@@ -5780,7 +5780,7 @@ var alimentosmn = [
     },
     {
       Id: "253",
-      Alimentos: "Pescada amarela",
+      Alimento: "Pescada amarela",
       Energia: "130.63",
       Umidade: "74.87",
       MS: "25.129999999999997",
@@ -5791,7 +5791,7 @@ var alimentosmn = [
     },
     {
       Id: "254",
-      Alimentos: "PescadaBicuda(Sphyraenaspp.)",
+      Alimento: "PescadaBicuda(Sphyraenaspp.)",
       Energia: "102.10000000000001",
       Umidade: "76.15",
       MS: "23.85",
@@ -5810,7 +5810,7 @@ var alimentosmn = [
     },
     {
       Id: "255",
-      Alimentos: "Pescada branca crua",
+      Alimento: "Pescada branca crua",
       Energia: "104",
       Umidade: "78.6",
       MS: "21.400000000000007",
@@ -5831,7 +5831,7 @@ var alimentosmn = [
     },
     {
       Id: "256",
-      Alimentos: "Pescoçodefrangocarneapenas",
+      Alimento: "Pescoçodefrangocarneapenas",
       Energia: "154",
       Umidade: "71.2",
       MS: "28.799999999999998",
@@ -5872,7 +5872,7 @@ var alimentosmn = [
     },
     {
       Id: "257",
-      Alimentos: "Pêssego   cru",
+      Alimento: "Pêssego   cru",
       Energia: "36",
       Umidade: "89.3",
       MS: "10.700000000000003",
@@ -5894,7 +5894,7 @@ var alimentosmn = [
     },
     {
       Id: "258",
-      Alimentos: "PetDelíciaSênior",
+      Alimento: "PetDelíciaSênior",
       Energia: "112.5",
       Umidade: "76",
       MS: "24",
@@ -5909,7 +5909,7 @@ var alimentosmn = [
     },
     {
       Id: "259",
-      Alimentos: "Pimentão   amarelo   cru",
+      Alimento: "Pimentão   amarelo   cru",
       Energia: "28",
       Umidade: "91.9",
       MS: "8.099999999999995",
@@ -5934,7 +5934,7 @@ var alimentosmn = [
     },
     {
       Id: "260",
-      Alimentos: "Pimentãoverdecru",
+      Alimento: "Pimentãoverdecru",
       Energia: "21",
       Umidade: "93.5",
       MS: "6.5",
@@ -5956,7 +5956,7 @@ var alimentosmn = [
     },
     {
       Id: "261",
-      Alimentos: "Pimentão   vermelho   cru",
+      Alimento: "Pimentão   vermelho   cru",
       Energia: "23",
       Umidade: "92.9",
       MS: "7.099999999999994",
@@ -5981,7 +5981,7 @@ var alimentosmn = [
     },
     {
       Id: "262",
-      Alimentos: "Pistache",
+      Alimento: "Pistache",
       Energia: "577",
       Umidade: "3.88",
       MS: "96.12",
@@ -6009,7 +6009,7 @@ var alimentosmn = [
     },
     {
       Id: "263",
-      Alimentos: "Polvo comum cru",
+      Alimento: "Polvo comum cru",
       Energia: "82",
       Umidade: "80.25",
       MS: "19.75",
@@ -6055,7 +6055,7 @@ var alimentosmn = [
     },
     {
       Id: "264",
-      Alimentos: "Porcopernilcru",
+      Alimento: "Porcopernilcru",
       Energia: "186",
       Umidade: "67.1",
       MS: "32.900000000000009",
@@ -6079,7 +6079,7 @@ var alimentosmn = [
     },
     {
       Id: "265",
-      Alimentos: "Porco costela crua",
+      Alimento: "Porco costela crua",
       Energia: "256",
       Umidade: "61.2",
       MS: "38.8",
@@ -6099,7 +6099,7 @@ var alimentosmn = [
     },
     {
       Id: "266",
-      Alimentos: "Porcofrescoperniltraseirocarnemagraegorduracozidoassado",
+      Alimento: "Porcofrescoperniltraseirocarnemagraegorduracozidoassado",
       Energia: "209",
       Umidade: "61.92",
       MS: "38.08",
@@ -6140,7 +6140,7 @@ var alimentosmn = [
     },
     {
       Id: "267",
-      Alimentos: "Porco lombo cru",
+      Alimento: "Porco lombo cru",
       Energia: "176",
       Umidade: "67.7",
       MS: "32.3",
@@ -6160,20 +6160,20 @@ var alimentosmn = [
     },
     {
       Id: "268",
-      Alimentos: "PorquinhodaÍndia",
+      Alimento: "PorquinhodaÍndia",
       Umidade: "68.7",
       MS: "31.3"
     },
     {
       Id: "269",
-      Alimentos: "Porquinho-da-índia",
+      Alimento: "Porquinho-da-índia",
       Energia: "125.2",
       Umidade: "68.7",
       MS: "31.3"
     },
     {
       Id: "270",
-      Alimentos: "Pós-LarvadeCamarãoBrancodoPacífico(Litopenaeusvannamei)",
+      Alimento: "Pós-LarvadeCamarãoBrancodoPacífico(Litopenaeusvannamei)",
       Energia: "91.95000000000002",
       Umidade: "75.01",
       MS: "24.989999999999996",
@@ -6184,7 +6184,7 @@ var alimentosmn = [
     },
     {
       Id: "271",
-      Alimentos: "Premix Felinos",
+      Alimento: "Premix Felinos",
       Umidade: "10",
       MS: "90",
       Tau: "4",
@@ -6209,7 +6209,7 @@ var alimentosmn = [
     },
     {
       Id: "272",
-      Alimentos: "PurinaProPlanGatosAdultOptidigest",
+      Alimento: "PurinaProPlanGatosAdultOptidigest",
       Energia: "279",
       Umidade: "12",
       MS: "88",
@@ -6233,7 +6233,7 @@ var alimentosmn = [
     },
     {
       Id: "273",
-      Alimentos: "Rabanete cru",
+      Alimento: "Rabanete cru",
       Energia: "14",
       Umidade: "95.1",
       MS: "4.900000000000006",
@@ -6258,7 +6258,7 @@ var alimentosmn = [
     },
     {
       Id: "274",
-      Alimentos: "RaçãoAlconBottomFish",
+      Alimento: "RaçãoAlconBottomFish",
       Energia: "307.5",
       Umidade: "10",
       MS: "90",
@@ -6293,7 +6293,7 @@ var alimentosmn = [
     },
     {
       Id: "275",
-      Alimentos: "Ração Alcon Exóticos",
+      Alimento: "Ração Alcon Exóticos",
       Energia: "352",
       Umidade: "10",
       MS: "90",
@@ -6328,7 +6328,7 @@ var alimentosmn = [
     },
     {
       Id: "276",
-      Alimentos: "RaçãoAlconMiniBeta",
+      Alimento: "RaçãoAlconMiniBeta",
       Energia: "314.4",
       Umidade: "10",
       MS: "90",
@@ -6363,7 +6363,7 @@ var alimentosmn = [
     },
     {
       Id: "277",
-      Alimentos: "Ração Alcon Monkey Cookies",
+      Alimento: "Ração Alcon Monkey Cookies",
       Energia: "341",
       Umidade: "10",
       MS: "90",
@@ -6398,7 +6398,7 @@ var alimentosmn = [
     },
     {
       Id: "278",
-      Alimentos: "RaçãoAlconPeriquitoeAgapornis",
+      Alimento: "RaçãoAlconPeriquitoeAgapornis",
       Energia: "365",
       Umidade: "10",
       MS: "90",
@@ -6433,7 +6433,7 @@ var alimentosmn = [
     },
     {
       Id: "279",
-      Alimentos: "Ração Alcon Répteis Jabuti",
+      Alimento: "Ração Alcon Répteis Jabuti",
       Energia: "321",
       Umidade: "10",
       MS: "90",
@@ -6447,7 +6447,7 @@ var alimentosmn = [
     },
     {
       Id: "280",
-      Alimentos: "RaçãoAlconSuperTopLife",
+      Alimento: "RaçãoAlconSuperTopLife",
       Energia: "342",
       Umidade: "10",
       MS: "90",
@@ -6482,7 +6482,7 @@ var alimentosmn = [
     },
     {
       Id: "281",
-      Alimentos: "Ração Anatídeos Manutenção (FPZSP)",
+      Alimento: "Ração Anatídeos Manutenção (FPZSP)",
       Energia: "94.24",
       Umidade: "12",
       MS: "88",
@@ -6498,7 +6498,7 @@ var alimentosmn = [
     },
     {
       Id: "282",
-      Alimentos: "RaçãoAqualineSupralevino",
+      Alimento: "RaçãoAqualineSupralevino",
       Energia: "334",
       Umidade: "12",
       MS: "88",
@@ -6528,7 +6528,7 @@ var alimentosmn = [
     },
     {
       Id: "283",
-      Alimentos: "Ração Araras MegaZoo",
+      Alimento: "Ração Araras MegaZoo",
       Energia: "360",
       Umidade: "12",
       MS: "88",
@@ -6564,7 +6564,7 @@ var alimentosmn = [
     },
     {
       Id: "284",
-      Alimentos: "RaçãoAvesdePostura17",
+      Alimento: "RaçãoAvesdePostura17",
       Energia: "276.5",
       Umidade: "10",
       MS: "90",
@@ -6578,7 +6578,7 @@ var alimentosmn = [
     },
     {
       Id: "285",
-      Alimentos: "Ração Aves Nutrimax Postura",
+      Alimento: "Ração Aves Nutrimax Postura",
       Energia: "280.5",
       Umidade: "13",
       MS: "87",
@@ -6592,7 +6592,7 @@ var alimentosmn = [
     },
     {
       Id: "286",
-      Alimentos: "RaçãoCachorroDingoEspecial",
+      Alimento: "RaçãoCachorroDingoEspecial",
       Energia: "333",
       Umidade: "12",
       MS: "88",
@@ -6607,7 +6607,7 @@ var alimentosmn = [
     },
     {
       Id: "287",
-      Alimentos: "Ração Cachorro Especial Dog",
+      Alimento: "Ração Cachorro Especial Dog",
       Energia: "340.3",
       Umidade: "10",
       MS: "90",
@@ -6624,7 +6624,7 @@ var alimentosmn = [
     },
     {
       Id: "288",
-      Alimentos: "RaçãoCachorroMixDog",
+      Alimento: "RaçãoCachorroMixDog",
       Energia: "348",
       Umidade: "12",
       MS: "88",
@@ -6638,7 +6638,7 @@ var alimentosmn = [
     },
     {
       Id: "289",
-      Alimentos: "Ração Cachorro Naturalis Total",
+      Alimento: "Ração Cachorro Naturalis Total",
       Umidade: "12",
       MS: "88",
       PB: "23",
@@ -6652,7 +6652,7 @@ var alimentosmn = [
     },
     {
       Id: "290",
-      Alimentos: "RaçãoCachorroRoyalCaninObesity",
+      Alimento: "RaçãoCachorroRoyalCaninObesity",
       Energia: "200",
       Umidade: "11",
       MS: "89",
@@ -6690,7 +6690,7 @@ var alimentosmn = [
     },
     {
       Id: "291",
-      Alimentos: "Ração Cachorro Royal Canin Renal",
+      Alimento: "Ração Cachorro Royal Canin Renal",
       Energia: "192",
       Umidade: "11",
       MS: "89",
@@ -6730,7 +6730,7 @@ var alimentosmn = [
     },
     {
       Id: "292",
-      Alimentos: "RaçãoCachorroRoyalCaninSatiety",
+      Alimento: "RaçãoCachorroRoyalCaninSatiety",
       Umidade: "11.5",
       MS: "88.5",
       PB: "28",
@@ -6743,7 +6743,7 @@ var alimentosmn = [
     },
     {
       Id: "293",
-      Alimentos: "Ração Calopsita MegaZoo",
+      Alimento: "Ração Calopsita MegaZoo",
       Energia: "328",
       Umidade: "12",
       MS: "88",
@@ -6757,7 +6757,7 @@ var alimentosmn = [
     },
     {
       Id: "294",
-      Alimentos: "RaçãoCoelhoPeletizadaXimango",
+      Alimento: "RaçãoCoelhoPeletizadaXimango",
       Energia: "264",
       Umidade: "13",
       MS: "87",
@@ -6771,7 +6771,7 @@ var alimentosmn = [
     },
     {
       Id: "295",
-      Alimentos: "Ração Coelho Total",
+      Alimento: "Ração Coelho Total",
       Energia: "255",
       Umidade: "13",
       MS: "87",
@@ -6807,7 +6807,7 @@ var alimentosmn = [
     },
     {
       Id: "296",
-      Alimentos: "RaçãoEquinosPresenceCorcelPM",
+      Alimento: "RaçãoEquinosPresenceCorcelPM",
       Energia: "258.5",
       Umidade: "13",
       MS: "87",
@@ -6821,7 +6821,7 @@ var alimentosmn = [
     },
     {
       Id: "297",
-      Alimentos: "Ração Equinos Pró-Equinos 12%",
+      Alimento: "Ração Equinos Pró-Equinos 12%",
       Energia: "290",
       Umidade: "13",
       MS: "87",
@@ -6835,7 +6835,7 @@ var alimentosmn = [
     },
     {
       Id: "298",
-      Alimentos: "RaçãoFarminaN&DCãesFrangoeRomãAdultoMini",
+      Alimento: "RaçãoFarminaN&DCãesFrangoeRomãAdultoMini",
       Energia: "488",
       Umidade: "9",
       MS: "91",
@@ -6849,7 +6849,7 @@ var alimentosmn = [
     },
     {
       Id: "299",
-      Alimentos: "Ração Farmina N&D Cães Frango e Romã Senior Mini",
+      Alimento: "Ração Farmina N&D Cães Frango e Romã Senior Mini",
       Energia: "361.9",
       Umidade: "9",
       MS: "91",
@@ -6863,7 +6863,7 @@ var alimentosmn = [
     },
     {
       Id: "300",
-      Alimentos: "RaçãoFarminaUltraHypoCães",
+      Alimento: "RaçãoFarminaUltraHypoCães",
       Umidade: "9",
       MS: "91",
       PB: "18",
@@ -6876,7 +6876,7 @@ var alimentosmn = [
     },
     {
       Id: "301",
-      Alimentos: "Ração Felino RoyalCanin Gastro Intestinal",
+      Alimento: "Ração Felino RoyalCanin Gastro Intestinal",
       Energia: "404.8",
       Umidade: "8",
       MS: "92",
@@ -6915,7 +6915,7 @@ var alimentosmn = [
     },
     {
       Id: "302",
-      Alimentos: "RaçãoFerretNutrópica",
+      Alimento: "RaçãoFerretNutrópica",
       Energia: "416",
       Umidade: "12",
       MS: "88",
@@ -6932,7 +6932,7 @@ var alimentosmn = [
     },
     {
       Id: "303",
-      Alimentos: "Ração Gato Hills",
+      Alimento: "Ração Gato Hills",
       Energia: "412.7",
       Umidade: "9.5",
       MS: "90.5",
@@ -6972,7 +6972,7 @@ var alimentosmn = [
     },
     {
       Id: "304",
-      Alimentos: "RaçãoGatoMithyCat",
+      Alimento: "RaçãoGatoMithyCat",
       Energia: "356",
       Umidade: "12",
       MS: "88",
@@ -6988,7 +6988,7 @@ var alimentosmn = [
     },
     {
       Id: "305",
-      Alimentos: "Ração Gato Naturalis Total",
+      Alimento: "Ração Gato Naturalis Total",
       Umidade: "10",
       MS: "90",
       PB: "31",
@@ -7006,7 +7006,7 @@ var alimentosmn = [
     },
     {
       Id: "306",
-      Alimentos: "RaçãoHerbívorosManutençãoAltaEnergia(FPZSP)",
+      Alimento: "RaçãoHerbívorosManutençãoAltaEnergia(FPZSP)",
       Energia: "106.54",
       Umidade: "11.43",
       MS: "88.57",
@@ -7020,7 +7020,7 @@ var alimentosmn = [
     },
     {
       Id: "307",
-      Alimentos: "Ração Jabutis Nutricon",
+      Alimento: "Ração Jabutis Nutricon",
       Energia: "299",
       Umidade: "12",
       MS: "88",
@@ -7054,7 +7054,7 @@ var alimentosmn = [
     },
     {
       Id: "308",
-      Alimentos: "RaçãoMegaZooCalopsitascomFrutaseLegumes",
+      Alimento: "RaçãoMegaZooCalopsitascomFrutaseLegumes",
       Energia: "328",
       Umidade: "12",
       MS: "88",
@@ -7069,7 +7069,7 @@ var alimentosmn = [
     },
     {
       Id: "309",
-      Alimentos: "Ração Mini Coelhos Zootkna",
+      Alimento: "Ração Mini Coelhos Zootkna",
       Umidade: "12",
       MS: "88",
       PB: "1.2",
@@ -7080,7 +7080,7 @@ var alimentosmn = [
     },
     {
       Id: "310",
-      Alimentos: "RaçãoNeoviaNutripiscis",
+      Alimento: "RaçãoNeoviaNutripiscis",
       Energia: "340",
       Umidade: "10",
       MS: "90",
@@ -7095,7 +7095,7 @@ var alimentosmn = [
     },
     {
       Id: "311",
-      Alimentos: "Ração Nutricon Marinho dia a dia",
+      Alimento: "Ração Nutricon Marinho dia a dia",
       Energia: "299",
       Umidade: "12",
       MS: "88",
@@ -7128,7 +7128,7 @@ var alimentosmn = [
     },
     {
       Id: "312",
-      Alimentos: "RaçãoNutriconSpirulina",
+      Alimento: "RaçãoNutriconSpirulina",
       Energia: "330",
       Umidade: "12",
       MS: "88",
@@ -7155,7 +7155,7 @@ var alimentosmn = [
     },
     {
       Id: "313",
-      Alimentos: "Ração Nutrimax Coelho",
+      Alimento: "Ração Nutrimax Coelho",
       Energia: "280.5",
       Umidade: "13",
       MS: "87",
@@ -7182,7 +7182,7 @@ var alimentosmn = [
     },
     {
       Id: "314",
-      Alimentos: "RaçãoNutripássarosPapagaios",
+      Alimento: "RaçãoNutripássarosPapagaios",
       Energia: "334",
       Umidade: "12",
       MS: "88",
@@ -7196,7 +7196,7 @@ var alimentosmn = [
     },
     {
       Id: "315",
-      Alimentos: "Ração Nutrópica Calopsita Natural",
+      Alimento: "Ração Nutrópica Calopsita Natural",
       Energia: "349",
       Umidade: "12",
       MS: "88",
@@ -7211,7 +7211,7 @@ var alimentosmn = [
     },
     {
       Id: "316",
-      Alimentos: "RaçãoNutrópicaCoelhosFilhote",
+      Alimento: "RaçãoNutrópicaCoelhosFilhote",
       Energia: "234",
       Umidade: "12",
       MS: "88",
@@ -7245,7 +7245,7 @@ var alimentosmn = [
     },
     {
       Id: "317",
-      Alimentos: "Ração Nutrópica Extrusados",
+      Alimento: "Ração Nutrópica Extrusados",
       Energia: "347",
       Umidade: "12",
       MS: "88",
@@ -7279,7 +7279,7 @@ var alimentosmn = [
     },
     {
       Id: "318",
-      Alimentos: "RaçãoPapagaiosNutripassaros",
+      Alimento: "RaçãoPapagaiosNutripassaros",
       Energia: "362",
       Umidade: "12",
       MS: "88",
@@ -7293,7 +7293,7 @@ var alimentosmn = [
     },
     {
       Id: "319",
-      Alimentos: "Ração Poytara Carnívoros de Fundo",
+      Alimento: "Ração Poytara Carnívoros de Fundo",
       Energia: "322",
       Umidade: "15",
       MS: "85",
@@ -7328,7 +7328,7 @@ var alimentosmn = [
     },
     {
       Id: "320",
-      Alimentos: "RaçãoPoytaraCarnívorosdeSuperfície",
+      Alimento: "RaçãoPoytaraCarnívorosdeSuperfície",
       Energia: "283",
       Umidade: "15",
       MS: "85",
@@ -7362,7 +7362,7 @@ var alimentosmn = [
     },
     {
       Id: "321",
-      Alimentos: "Ração Poytara Carpa 6 x 1",
+      Alimento: "Ração Poytara Carpa 6 x 1",
       Energia: "352.1",
       Umidade: "12",
       MS: "88",
@@ -7399,7 +7399,7 @@ var alimentosmn = [
     },
     {
       Id: "322",
-      Alimentos: "RaçãoPoytaraCiclídeosHerbívoros",
+      Alimento: "RaçãoPoytaraCiclídeosHerbívoros",
       Energia: "328",
       Umidade: "10",
       MS: "90",
@@ -7433,7 +7433,7 @@ var alimentosmn = [
     },
     {
       Id: "323",
-      Alimentos: "Ração Poytara Ciclídeos Onívoros",
+      Alimento: "Ração Poytara Ciclídeos Onívoros",
       Energia: "330",
       Umidade: "12",
       MS: "88",
@@ -7467,7 +7467,7 @@ var alimentosmn = [
     },
     {
       Id: "324",
-      Alimentos: "RaçãoPoytaraDiscoDiaaDia",
+      Alimento: "RaçãoPoytaraDiscoDiaaDia",
       Energia: "334",
       Umidade: "12",
       MS: "88",
@@ -7502,7 +7502,7 @@ var alimentosmn = [
     },
     {
       Id: "325",
-      Alimentos: "Ração Poytara Disco Supra",
+      Alimento: "Ração Poytara Disco Supra",
       Energia: "321",
       Umidade: "15",
       MS: "85",
@@ -7537,7 +7537,7 @@ var alimentosmn = [
     },
     {
       Id: "326",
-      Alimentos: "RaçãoPoytaraHabitat",
+      Alimento: "RaçãoPoytaraHabitat",
       Energia: "333.5",
       Umidade: "10",
       MS: "90",
@@ -7570,7 +7570,7 @@ var alimentosmn = [
     },
     {
       Id: "327",
-      Alimentos: "Ração Poytara Marinhos",
+      Alimento: "Ração Poytara Marinhos",
       Energia: "338",
       Umidade: "10",
       MS: "90",
@@ -7602,7 +7602,7 @@ var alimentosmn = [
     },
     {
       Id: "328",
-      Alimentos: "RaçãoPoytaraMarinhosFlakes",
+      Alimento: "RaçãoPoytaraMarinhosFlakes",
       Energia: "338",
       Umidade: "10",
       MS: "90",
@@ -7634,7 +7634,7 @@ var alimentosmn = [
     },
     {
       Id: "329",
-      Alimentos: "Ração Poytara Peixes de Fundo",
+      Alimento: "Ração Poytara Peixes de Fundo",
       Energia: "341",
       Umidade: "12",
       MS: "88",
@@ -7667,7 +7667,7 @@ var alimentosmn = [
     },
     {
       Id: "330",
-      Alimentos: "RaçãoPoytaraSpirulina",
+      Alimento: "RaçãoPoytaraSpirulina",
       Energia: "354",
       Umidade: "10",
       MS: "90",
@@ -7699,7 +7699,7 @@ var alimentosmn = [
     },
     {
       Id: "331",
-      Alimentos: "Ração Premier",
+      Alimento: "Ração Premier",
       Energia: "354",
       Umidade: "10",
       MS: "90",
@@ -7713,7 +7713,7 @@ var alimentosmn = [
     },
     {
       Id: "332",
-      Alimentos: "RaçãoQuatreeCãesAdultosDermato",
+      Alimento: "RaçãoQuatreeCãesAdultosDermato",
       Energia: "395",
       Umidade: "10",
       MS: "90",
@@ -7734,7 +7734,7 @@ var alimentosmn = [
     },
     {
       Id: "333",
-      Alimentos: "Ração Roedores PicNic",
+      Alimento: "Ração Roedores PicNic",
       Umidade: "11",
       MS: "89",
       PB: "17",
@@ -7747,7 +7747,7 @@ var alimentosmn = [
     },
     {
       Id: "334",
-      Alimentos: "RaçãoRoyalGatosCaninExigent",
+      Alimento: "RaçãoRoyalGatosCaninExigent",
       Energia: "397.2",
       Umidade: "8",
       MS: "92",
@@ -7785,7 +7785,7 @@ var alimentosmn = [
     },
     {
       Id: "335",
-      Alimentos: "Ração Suínos (FPZSP)",
+      Alimento: "Ração Suínos (FPZSP)",
       Energia: "108.42999999999999",
       Umidade: "11",
       MS: "89",
@@ -7801,7 +7801,7 @@ var alimentosmn = [
     },
     {
       Id: "336",
-      Alimentos: "RaçãoSupraAcquaLinePré-Juvenil",
+      Alimento: "RaçãoSupraAcquaLinePré-Juvenil",
       Energia: "324",
       Umidade: "12",
       MS: "88",
@@ -7835,7 +7835,7 @@ var alimentosmn = [
     },
     {
       Id: "337",
-      Alimentos: "Ração Tetra Marine Large Flakes",
+      Alimento: "Ração Tetra Marine Large Flakes",
       Energia: "370.5",
       Umidade: "6",
       MS: "94",
@@ -7851,7 +7851,7 @@ var alimentosmn = [
     },
     {
       Id: "338",
-      Alimentos: "RaçãoTrinca-FerroNutrópica",
+      Alimento: "RaçãoTrinca-FerroNutrópica",
       Energia: "296",
       Umidade: "12",
       MS: "88",
@@ -7880,7 +7880,7 @@ var alimentosmn = [
     },
     {
       Id: "339",
-      Alimentos: "Ração Tucanos MegaZoo",
+      Alimento: "Ração Tucanos MegaZoo",
       Energia: "300",
       Umidade: "11",
       MS: "89",
@@ -7915,7 +7915,7 @@ var alimentosmn = [
     },
     {
       Id: "340",
-      Alimentos: "RaçõesTotalSuínoInicial",
+      Alimento: "RaçõesTotalSuínoInicial",
       Energia: "301.5",
       Umidade: "13",
       MS: "87",
@@ -7929,7 +7929,7 @@ var alimentosmn = [
     },
     {
       Id: "341",
-      Alimentos: "Raffy Vital repteis/herbivoros",
+      Alimento: "Raffy Vital repteis/herbivoros",
       Energia: "302.1",
       Umidade: "5.5",
       MS: "94.5",
@@ -7943,28 +7943,28 @@ var alimentosmn = [
     },
     {
       Id: "342",
-      Alimentos: "Ratinhos",
+      Alimento: "Ratinhos",
       Energia: "71",
       Umidade: "82",
       MS: "18"
     },
     {
       Id: "343",
-      Alimentos: "Rato adulto",
+      Alimento: "Rato adulto",
       Energia: "208",
       Umidade: "64.7",
       MS: "35.3"
     },
     {
       Id: "344",
-      Alimentos: "Ratojovem",
+      Alimento: "Ratojovem",
       Energia: "98",
       Umidade: "79.2",
       MS: "20.799999999999998"
     },
     {
       Id: "345",
-      Alimentos: "Repolho branco cru",
+      Alimento: "Repolho branco cru",
       Energia: "17",
       Umidade: "94.7",
       MS: "5.299999999999997",
@@ -7989,7 +7989,7 @@ var alimentosmn = [
     },
     {
       Id: "346",
-      Alimentos: "Repolhocrespocru",
+      Alimento: "Repolhocrespocru",
       Energia: "27",
       Umidade: "91",
       MS: "9",
@@ -8030,7 +8030,7 @@ var alimentosmn = [
     },
     {
       Id: "347",
-      Alimentos: "Rins bovinos",
+      Alimento: "Rins bovinos",
       Energia: "99",
       Umidade: "77.89",
       MS: "22.11",
@@ -8055,7 +8055,7 @@ var alimentosmn = [
     },
     {
       Id: "348",
-      Alimentos: "Robalo(Dicentrarchuslabrax)",
+      Alimento: "Robalo(Dicentrarchuslabrax)",
       Energia: "95.8",
       Umidade: "77.49",
       MS: "22.510000000000006",
@@ -8074,7 +8074,7 @@ var alimentosmn = [
     },
     {
       Id: "349",
-      Alimentos: "Robalo Riscado (Morone saxatilis)",
+      Alimento: "Robalo Riscado (Morone saxatilis)",
       Energia: "145.8",
       Umidade: "69.9",
       MS: "30.099999999999996",
@@ -8084,7 +8084,7 @@ var alimentosmn = [
     },
     {
       Id: "350",
-      Alimentos: "RoyalCaninRecovery",
+      Alimento: "RoyalCaninRecovery",
       Energia: "105.40000000000004",
       Umidade: "74",
       MS: "26",
@@ -8098,7 +8098,7 @@ var alimentosmn = [
     },
     {
       Id: "351",
-      Alimentos: "Rúcula crua",
+      Alimento: "Rúcula crua",
       Energia: "13",
       Umidade: "94.8",
       MS: "5.200000000000003",
@@ -8122,7 +8122,7 @@ var alimentosmn = [
     },
     {
       Id: "352",
-      Alimentos: "Saldietético",
+      Alimento: "Saldietético",
       Umidade: "0.6",
       MS: "99.4",
       MM: "99.4",
@@ -8132,7 +8132,7 @@ var alimentosmn = [
     },
     {
       Id: "353",
-      Alimentos: "Salmão cru sem pele",
+      Alimento: "Salmão cru sem pele",
       Energia: "167",
       Umidade: "69",
       MS: "31",
@@ -8155,7 +8155,7 @@ var alimentosmn = [
     },
     {
       Id: "354",
-      Alimentos: "Salmãofilégrelhadosemsalsemóleo",
+      Alimento: "Salmãofilégrelhadosemsalsemóleo",
       Energia: "222",
       Umidade: "60.7",
       MS: "39.3",
@@ -8174,7 +8174,7 @@ var alimentosmn = [
     },
     {
       Id: "355",
-      Alimentos: "Sarda (Scomber scombrus)",
+      Alimento: "Sarda (Scomber scombrus)",
       Energia: "184.8",
       Umidade: "69.3",
       MS: "30.700000000000004",
@@ -8184,7 +8184,7 @@ var alimentosmn = [
     },
     {
       Id: "356",
-      Alimentos: "Sardinha",
+      Alimento: "Sardinha",
       Energia: "95.03",
       Umidade: "77.28",
       MS: "22.72",
@@ -8194,7 +8194,7 @@ var alimentosmn = [
     },
     {
       Id: "357",
-      Alimentos: "Sardinha   inteira   crua",
+      Alimento: "Sardinha   inteira   crua",
       Energia: "114",
       Umidade: "76.6",
       MS: "23.400000000000007",
@@ -8221,7 +8221,7 @@ var alimentosmn = [
     },
     {
       Id: "358",
-      Alimentos: "Sementedegirassol",
+      Alimento: "Sementedegirassol",
       Energia: "570",
       Umidade: "5.37",
       MS: "94.63",
@@ -8250,7 +8250,7 @@ var alimentosmn = [
     },
     {
       Id: "359",
-      Alimentos: "Silagem de milho   normal (%MS)",
+      Alimento: "Silagem de milho   normal (%MS)",
       Energia: "275",
       Umidade: "64.9",
       MS: "35.099999999999997",
@@ -8277,7 +8277,7 @@ var alimentosmn = [
     },
     {
       Id: "360",
-      Alimentos: "SilverTrevally(Psdeudocaranxgeorgianus)",
+      Alimento: "SilverTrevally(Psdeudocaranxgeorgianus)",
       Energia: "115.69999999999999",
       Umidade: "74.2",
       MS: "25.799999999999998",
@@ -8287,7 +8287,7 @@ var alimentosmn = [
     },
     {
       Id: "361",
-      Alimentos: "Siri",
+      Alimento: "Siri",
       Energia: "87",
       Umidade: "79.02",
       MS: "20.980000000000005",
@@ -8329,7 +8329,7 @@ var alimentosmn = [
     },
     {
       Id: "362",
-      Alimentos: "Sojaqueijotofu",
+      Alimento: "Sojaqueijotofu",
       Energia: "64",
       Umidade: "86.6",
       MS: "13.400000000000006",
@@ -8354,7 +8354,7 @@ var alimentosmn = [
     },
     {
       Id: "363",
-      Alimentos: "Sororoca (cavala) cru",
+      Alimento: "Sororoca (cavala) cru",
       Energia: "105.8",
       Umidade: "75.58",
       MS: "24.42",
@@ -8388,7 +8388,7 @@ var alimentosmn = [
     },
     {
       Id: "364",
-      Alimentos: "Sororoca(Scomberomorusmaculatus)",
+      Alimento: "Sororoca(Scomberomorusmaculatus)",
       Energia: "199.63",
       Umidade: "62.94",
       MS: "37.06",
@@ -8407,7 +8407,7 @@ var alimentosmn = [
     },
     {
       Id: "365",
-      Alimentos: "Suplemento Equideos Coequi Plus",
+      Alimento: "Suplemento Equideos Coequi Plus",
       MS: "100",
       Ca: "17.5",
       P: "6",
@@ -8424,7 +8424,7 @@ var alimentosmn = [
     },
     {
       Id: "366",
-      Alimentos: "SuplementoNutropluxSenior",
+      Alimento: "SuplementoNutropluxSenior",
       Umidade: "0",
       MS: "100",
       Ca: "21000",
@@ -8453,7 +8453,7 @@ var alimentosmn = [
     },
     {
       Id: "367",
-      Alimentos: "Tainha",
+      Alimento: "Tainha",
       Energia: "105.9",
       Umidade: "78.4",
       MS: "21.599999999999996",
@@ -8463,7 +8463,7 @@ var alimentosmn = [
     },
     {
       Id: "368",
-      Alimentos: "Tainhota(Mugilcephalus)",
+      Alimento: "Tainhota(Mugilcephalus)",
       Energia: "117",
       Umidade: "77",
       MS: "23",
@@ -8498,7 +8498,7 @@ var alimentosmn = [
     },
     {
       Id: "369",
-      Alimentos: "Tainhota (Mugil cephalus) Flórida",
+      Alimento: "Tainhota (Mugil cephalus) Flórida",
       Energia: "373.29999999999998",
       Umidade: "30.5",
       MS: "69.5",
@@ -8508,14 +8508,14 @@ var alimentosmn = [
     },
     {
       Id: "370",
-      Alimentos: "Tenébriomolitor",
+      Alimento: "Tenébriomolitor",
       Energia: "187",
       Umidade: "62.9",
       MS: "37.1"
     },
     {
       Id: "371",
-      Alimentos: "Tilápia filé cru",
+      Alimento: "Tilápia filé cru",
       Energia: "93",
       Umidade: "78.2",
       MS: "21.799999999999998",
@@ -8538,7 +8538,7 @@ var alimentosmn = [
     },
     {
       Id: "372",
-      Alimentos: "Tomatecomsementecru",
+      Alimento: "Tomatecomsementecru",
       Energia: "15",
       Umidade: "95.1",
       MS: "4.900000000000006",
@@ -8563,7 +8563,7 @@ var alimentosmn = [
     },
     {
       Id: "373",
-      Alimentos: "Tomatinho cru",
+      Alimento: "Tomatinho cru",
       Energia: "32",
       Umidade: "91.63",
       MS: "8.370000000000005",
@@ -8597,7 +8597,7 @@ var alimentosmn = [
     },
     {
       Id: "374",
-      Alimentos: "Traírafilécru",
+      Alimento: "Traírafilécru",
       Energia: "102.59999999999998",
       Umidade: "75.08",
       MS: "24.92",
@@ -8608,7 +8608,7 @@ var alimentosmn = [
     },
     {
       Id: "375",
-      Alimentos: "Trigo grão cru",
+      Alimento: "Trigo grão cru",
       Energia: "336",
       Umidade: "10.4",
       MS: "89.6",
@@ -8633,7 +8633,7 @@ var alimentosmn = [
     },
     {
       Id: "376",
-      Alimentos: "Uvaitáliacrua",
+      Alimento: "Uvaitáliacrua",
       Energia: "53",
       Umidade: "85",
       MS: "15",
@@ -8655,7 +8655,7 @@ var alimentosmn = [
     },
     {
       Id: "377",
-      Alimentos: "Uva rubi   crua",
+      Alimento: "Uva rubi   crua",
       Energia: "49",
       Umidade: "86.1",
       MS: "13.900000000000006",
@@ -8679,7 +8679,7 @@ var alimentosmn = [
     },
     {
       Id: "378",
-      Alimentos: "Vagemcrua",
+      Alimento: "Vagemcrua",
       Energia: "25",
       Umidade: "92.2",
       MS: "7.799999999999997",
@@ -8702,7 +8702,7 @@ var alimentosmn = [
     },
     {
       Id: "379",
-      Alimentos: "Vagem cozida sem sal sem óleo",
+      Alimento: "Vagem cozida sem sal sem óleo",
       Energia: "23",
       Umidade: "92.8",
       MS: "7.200000000000003",
@@ -8725,7 +8725,7 @@ var alimentosmn = [
     },
     {
       Id: "380",
-      Alimentos: "Xarelete",
+      Alimento: "Xarelete",
       Energia: "112.72999999999999",
       Umidade: "66.67",
       MS: "33.33",
@@ -8737,7 +8737,7 @@ var alimentosmn = [
     },
     {
       Id: "381",
-      Alimentos: "Xixarro",
+      Alimento: "Xixarro",
       Energia: "83.83999999999999",
       Umidade: "77.8",
       MS: "22.200000000000004",
@@ -8751,7 +8751,7 @@ var alimentosmn = [
 var alimentosms = [
     {
       Id: "1",
-      Alimentos: "Abacate   cru",
+      Alimento: "Abacate   cru",
       Energia: "96",
       Umidade: "83.8",
       MS: "16.200000000000004",
@@ -8775,7 +8775,7 @@ var alimentosms = [
     },
     {
       Id: "2",
-      Alimentos: "Abacaxi   cru",
+      Alimento: "Abacaxi   cru",
       Energia: "48",
       Umidade: "86.3",
       MS: "13.700000000000003",
@@ -8799,7 +8799,7 @@ var alimentosms = [
     },
     {
       Id: "3",
-      Alimentos: "Abóbora moranga cozida sem casca   sem semente   sem sal sem óleo",
+      Alimento: "Abóbora moranga cozida sem casca   sem semente   sem sal sem óleo",
       Energia: "17",
       Umidade: "94.1",
       MS: "5.900000000000006",
@@ -8823,7 +8823,7 @@ var alimentosms = [
     },
     {
       Id: "4",
-      Alimentos: "Abóbora moranga crua",
+      Alimento: "Abóbora moranga crua",
       Energia: "12",
       Umidade: "95.9",
       MS: "4.099999999999994",
@@ -8844,7 +8844,7 @@ var alimentosms = [
     },
     {
       Id: "5",
-      Alimentos: "Abóbora moranga refogada",
+      Alimento: "Abóbora moranga refogada",
       Energia: "29",
       Umidade: "92.5",
       MS: "7.5",
@@ -8869,7 +8869,7 @@ var alimentosms = [
     },
     {
       Id: "6",
-      Alimentos: "Abóbrinha cozida com casca crua",
+      Alimento: "Abóbrinha cozida com casca crua",
       Energia: "17",
       Umidade: "94.79",
       MS: "5.209999999999994",
@@ -8911,7 +8911,7 @@ var alimentosms = [
     },
     {
       Id: "7",
-      Alimentos: "Abóbrinha italiana com casca sem sal e sem óleo",
+      Alimento: "Abóbrinha italiana com casca sem sal e sem óleo",
       Energia: "14",
       Umidade: "95.5",
       MS: "4.5",
@@ -8938,7 +8938,7 @@ var alimentosms = [
     },
     {
       Id: "8",
-      Alimentos: "Abobrinha italiana cru",
+      Alimento: "Abobrinha italiana cru",
       Energia: "19",
       Umidade: "93.9",
       MS: "6.099999999999994",
@@ -8961,7 +8961,7 @@ var alimentosms = [
     },
     {
       Id: "9",
-      Alimentos: "Acelga crua",
+      Alimento: "Acelga crua",
       Energia: "21",
       Umidade: "93.2",
       MS: "6.799999999999997",
@@ -8985,7 +8985,7 @@ var alimentosms = [
     },
     {
       Id: "10",
-      Alimentos: "Acerola   crua",
+      Alimento: "Acerola   crua",
       Energia: "33",
       Umidade: "90.5",
       MS: "9.5",
@@ -9009,7 +9009,7 @@ var alimentosms = [
     },
     {
       Id: "11",
-      Alimentos: "Agrião cru",
+      Alimento: "Agrião cru",
       Energia: "17",
       Umidade: "93.9",
       MS: "6.099999999999994",
@@ -9035,7 +9035,7 @@ var alimentosms = [
     },
     {
       Id: "12",
-      Alimentos: "Aipo (salsão)",
+      Alimento: "Aipo (salsão)",
       Energia: "19",
       Umidade: "93.8",
       MS: "6.200000000000003",
@@ -9058,7 +9058,7 @@ var alimentosms = [
     },
     {
       Id: "13",
-      Alimentos: "Alecrim fresco",
+      Alimento: "Alecrim fresco",
       Energia: "131",
       Umidade: "67.77",
       MS: "32.230000000000007",
@@ -9095,7 +9095,7 @@ var alimentosms = [
     },
     {
       Id: "14",
-      Alimentos: "Alface americana   crua",
+      Alimento: "Alface americana   crua",
       Energia: "9",
       Umidade: "97.2",
       MS: "2.799999999999997",
@@ -9120,7 +9120,7 @@ var alimentosms = [
     },
     {
       Id: "15",
-      Alimentos: "Almeirão cru",
+      Alimento: "Almeirão cru",
       Energia: "18",
       Umidade: "93.7",
       MS: "6.299999999999997",
@@ -9145,7 +9145,7 @@ var alimentosms = [
     },
     {
       Id: "16",
-      Alimentos: "Alpiste cru",
+      Alimento: "Alpiste cru",
       Energia: "306.08",
       Umidade: "9.14",
       MS: "90.86",
@@ -9161,7 +9161,7 @@ var alimentosms = [
     },
     {
       Id: "17",
-      Alimentos: "Alpiste Juréia",
+      Alimento: "Alpiste Juréia",
       Energia: "390.70000000000007",
       Umidade: "10.8",
       MS: "89.2",
@@ -9175,7 +9175,7 @@ var alimentosms = [
     },
     {
       Id: "18",
-      Alimentos: "Ameixa   crua",
+      Alimento: "Ameixa   crua",
       Energia: "53",
       Umidade: "84.8",
       MS: "15.200000000000003",
@@ -9198,7 +9198,7 @@ var alimentosms = [
     },
     {
       Id: "19",
-      Alimentos: "Amêndoa",
+      Alimento: "Amêndoa",
       Energia: "589",
       Umidade: "4.43",
       MS: "95.57",
@@ -9227,7 +9227,7 @@ var alimentosms = [
     },
     {
       Id: "20",
-      Alimentos: "Amendoim   gão cru",
+      Alimento: "Amendoim   gão cru",
       Energia: "544",
       Umidade: "6.4",
       MS: "93.6",
@@ -9252,7 +9252,7 @@ var alimentosms = [
     },
     {
       Id: "21",
-      Alimentos: "Aminomix",
+      Alimento: "Aminomix",
       Umidade: "0",
       MS: "100",
       His: "0.05",
@@ -9290,7 +9290,7 @@ var alimentosms = [
     },
     {
       Id: "22",
-      Alimentos: "Anchova",
+      Alimento: "Anchova",
       Energia: "171.57",
       Umidade: "70.87",
       MS: "29.129999999999997",
@@ -9300,7 +9300,7 @@ var alimentosms = [
     },
     {
       Id: "23",
-      Alimentos: "Anchova (Potamonus saltatrix)",
+      Alimento: "Anchova (Potamonus saltatrix)",
       Energia: "179.07",
       Umidade: "69.38",
       MS: "30.620000000000006",
@@ -9310,7 +9310,7 @@ var alimentosms = [
     },
     {
       Id: "24",
-      Alimentos: "Anchova filé fesco",
+      Alimento: "Anchova filé fesco",
       Energia: "179",
       Umidade: "69.4",
       MS: "30.599999999999996",
@@ -9332,7 +9332,7 @@ var alimentosms = [
     },
     {
       Id: "25",
-      Alimentos: "Angu",
+      Alimento: "Angu",
       Energia: "92",
       Umidade: "76.3",
       MS: "23.700000000000004",
@@ -9352,7 +9352,7 @@ var alimentosms = [
     },
     {
       Id: "26",
-      Alimentos: "Arenque Comum (Clupea harengus)",
+      Alimento: "Arenque Comum (Clupea harengus)",
       Energia: "137.2",
       Umidade: "73.9",
       MS: "26.099999999999996",
@@ -9362,7 +9362,7 @@ var alimentosms = [
     },
     {
       Id: "27",
-      Alimentos: "Arroz branco grão curto cozido",
+      Alimento: "Arroz branco grão curto cozido",
       Energia: "130",
       Umidade: "68.53",
       MS: "31.47",
@@ -9398,7 +9398,7 @@ var alimentosms = [
     },
     {
       Id: "28",
-      Alimentos: "Arroz branco tipo 1 cozido",
+      Alimento: "Arroz branco tipo 1 cozido",
       Energia: "128",
       Umidade: "69.1",
       MS: "30.900000000000007",
@@ -9420,7 +9420,7 @@ var alimentosms = [
     },
     {
       Id: "29",
-      Alimentos: "Arroz integral cozido",
+      Alimento: "Arroz integral cozido",
       Energia: "124",
       Umidade: "70.1",
       MS: "29.900000000000007",
@@ -9443,7 +9443,7 @@ var alimentosms = [
     },
     {
       Id: "30",
-      Alimentos: "Arroz integral cozido sem sal e óleo",
+      Alimento: "Arroz integral cozido sem sal e óleo",
       Energia: "107",
       Umidade: "72.8",
       MS: "27.200000000000004",
@@ -9467,7 +9467,7 @@ var alimentosms = [
     },
     {
       Id: "31",
-      Alimentos: "Arroz integral grão médio cozido",
+      Alimento: "Arroz integral grão médio cozido",
       Energia: "112",
       Umidade: "72.96",
       MS: "27.040000000000008",
@@ -9504,7 +9504,7 @@ var alimentosms = [
     },
     {
       Id: "32",
-      Alimentos: "Arroz tipo 1 cozido",
+      Alimento: "Arroz tipo 1 cozido",
       Energia: "128",
       Umidade: "69.1",
       MS: "30.900000000000007",
@@ -9525,7 +9525,7 @@ var alimentosms = [
     },
     {
       Id: "33",
-      Alimentos: "Artêmia sp.",
+      Alimento: "Artêmia sp.",
       Energia: "314.77",
       Umidade: "10.8",
       MS: "89.2",
@@ -9537,7 +9537,7 @@ var alimentosms = [
     },
     {
       Id: "34",
-      Alimentos: "Aveia Descascada Juréia",
+      Alimento: "Aveia Descascada Juréia",
       Energia: "321",
       Umidade: "11",
       MS: "89",
@@ -9551,7 +9551,7 @@ var alimentosms = [
     },
     {
       Id: "35",
-      Alimentos: "Aveia farelo cozida sem tempero",
+      Alimento: "Aveia farelo cozida sem tempero",
       Energia: "94",
       Umidade: "76.7",
       MS: "23.299999999999998",
@@ -9576,7 +9576,7 @@ var alimentosms = [
     },
     {
       Id: "36",
-      Alimentos: "Banana   nanica   crua",
+      Alimento: "Banana   nanica   crua",
       Energia: "92",
       Umidade: "73.8",
       MS: "26.200000000000004",
@@ -9600,7 +9600,7 @@ var alimentosms = [
     },
     {
       Id: "37",
-      Alimentos: "Banha suína",
+      Alimento: "Banha suína",
       Energia: "900",
       Umidade: "0",
       MS: "100",
@@ -9610,7 +9610,7 @@ var alimentosms = [
     },
     {
       Id: "38",
-      Alimentos: "Banha suína",
+      Alimento: "Banha suína",
       Energia: "900",
       Umidade: "0",
       MS: "100",
@@ -9622,28 +9622,28 @@ var alimentosms = [
     },
     {
       Id: "39",
-      Alimentos: "Barata-gigante (E.distanti) Adulta",
+      Alimento: "Barata-gigante (E.distanti) Adulta",
       Energia: "173.8",
       Umidade: "56.55",
       MS: "43.45"
     },
     {
       Id: "40",
-      Alimentos: "Barata-gigante (E.distanti) Grande",
+      Alimento: "Barata-gigante (E.distanti) Grande",
       Energia: "171.12",
       Umidade: "57.22",
       MS: "42.78"
     },
     {
       Id: "41",
-      Alimentos: "Barata-gigante (E.distanti) Pequena",
+      Alimento: "Barata-gigante (E.distanti) Pequena",
       Energia: "196.88",
       Umidade: "50.78",
       MS: "49.22"
     },
     {
       Id: "42",
-      Alimentos: "Batata baroa cozida",
+      Alimento: "Batata baroa cozida",
       Energia: "80",
       Umidade: "79.3",
       MS: "20.700000000000004",
@@ -9667,7 +9667,7 @@ var alimentosms = [
     },
     {
       Id: "43",
-      Alimentos: "Batata baroa cozida sem casca sem sal sem óleo",
+      Alimento: "Batata baroa cozida sem casca sem sal sem óleo",
       Energia: "77",
       Umidade: "79.3",
       MS: "20.700000000000004",
@@ -9694,7 +9694,7 @@ var alimentosms = [
     },
     {
       Id: "44",
-      Alimentos: "Batata doce cozida",
+      Alimento: "Batata doce cozida",
       Energia: "77",
       Umidade: "80.4",
       MS: "19.599999999999996",
@@ -9719,7 +9719,7 @@ var alimentosms = [
     },
     {
       Id: "45",
-      Alimentos: "Batata doce cru",
+      Alimento: "Batata doce cru",
       Energia: "118",
       Umidade: "69.5",
       MS: "30.5",
@@ -9744,7 +9744,7 @@ var alimentosms = [
     },
     {
       Id: "46",
-      Alimentos: "Batata doce sem casca cozida sem sal sem óleo",
+      Alimento: "Batata doce sem casca cozida sem sal sem óleo",
       Energia: "91",
       Umidade: "75.4",
       MS: "24.599999999999996",
@@ -9772,7 +9772,7 @@ var alimentosms = [
     },
     {
       Id: "47",
-      Alimentos: "Batata inglesa cozida",
+      Alimento: "Batata inglesa cozida",
       Energia: "52",
       Umidade: "86.4",
       MS: "13.599999999999995",
@@ -9795,7 +9795,7 @@ var alimentosms = [
     },
     {
       Id: "48",
-      Alimentos: "Batata inglesa sem casca cozida sem sal sem óleo",
+      Alimento: "Batata inglesa sem casca cozida sem sal sem óleo",
       Energia: "51",
       Umidade: "85.9",
       MS: "14.099999999999995",
@@ -9820,7 +9820,7 @@ var alimentosms = [
     },
     {
       Id: "49",
-      Alimentos: "Berbigão",
+      Alimento: "Berbigão",
       Energia: "79",
       Umidade: "78.8",
       MS: "21.200000000000004",
@@ -9836,7 +9836,7 @@ var alimentosms = [
     },
     {
       Id: "50",
-      Alimentos: "Berinjela crua",
+      Alimento: "Berinjela crua",
       Energia: "20",
       Umidade: "93.8",
       MS: "6.200000000000003",
@@ -9860,7 +9860,7 @@ var alimentosms = [
     },
     {
       Id: "51",
-      Alimentos: "Betara (Macrodon ancylodon)",
+      Alimento: "Betara (Macrodon ancylodon)",
       Energia: "79.82000000000001",
       Umidade: "80.31",
       MS: "19.689999999999999",
@@ -9870,7 +9870,7 @@ var alimentosms = [
     },
     {
       Id: "52",
-      Alimentos: "Beterraba cozida",
+      Alimento: "Beterraba cozida",
       Energia: "32",
       Umidade: "90.6",
       MS: "9.400000000000006",
@@ -9894,7 +9894,7 @@ var alimentosms = [
     },
     {
       Id: "53",
-      Alimentos: "Beterraba cozido drenado sem sal",
+      Alimento: "Beterraba cozido drenado sem sal",
       Energia: "44",
       Umidade: "87.06",
       MS: "12.939999999999998",
@@ -9937,7 +9937,7 @@ var alimentosms = [
     },
     {
       Id: "54",
-      Alimentos: "Beterraba crua",
+      Alimento: "Beterraba crua",
       Energia: "49",
       Umidade: "86",
       MS: "14",
@@ -9961,7 +9961,7 @@ var alimentosms = [
     },
     {
       Id: "55",
-      Alimentos: "Beterraba sem casca cozida sem sal e sem óleo",
+      Alimento: "Beterraba sem casca cozida sem sal e sem óleo",
       Energia: "26",
       Umidade: "91.8",
       MS: "8.200000000000003",
@@ -9987,7 +9987,7 @@ var alimentosms = [
     },
     {
       Id: "56",
-      Alimentos: "Blood worm (Chironomus sp.)",
+      Alimento: "Blood worm (Chironomus sp.)",
       Energia: "39.60000000000002",
       Umidade: "90.1",
       MS: "9.9",
@@ -9995,7 +9995,7 @@ var alimentosms = [
     },
     {
       Id: "57",
-      Alimentos: "Bonito",
+      Alimento: "Bonito",
       Energia: "100.21",
       Umidade: "73.28",
       MS: "26.72",
@@ -10008,7 +10008,7 @@ var alimentosms = [
     },
     {
       Id: "58",
-      Alimentos: "Brócolis   cru",
+      Alimento: "Brócolis   cru",
       Energia: "25",
       Umidade: "91.2",
       MS: "8.799999999999998",
@@ -10035,7 +10035,7 @@ var alimentosms = [
     },
     {
       Id: "59",
-      Alimentos: "Brócolis cozidos sem sal sem óleo",
+      Alimento: "Brócolis cozidos sem sal sem óleo",
       Energia: "26",
       Umidade: "91.7",
       MS: "8.299999999999998",
@@ -10062,7 +10062,7 @@ var alimentosms = [
     },
     {
       Id: "60",
-      Alimentos: "Calcário Calcítico",
+      Alimento: "Calcário Calcítico",
       Umidade: "0",
       MS: "100",
       Ca: "37700",
@@ -10070,7 +10070,7 @@ var alimentosms = [
     },
     {
       Id: "61",
-      Alimentos: "Cald-d-mix pet",
+      Alimento: "Cald-d-mix pet",
       Umidade: "80",
       MS: "20",
       Ca: "3809",
@@ -10084,7 +10084,7 @@ var alimentosms = [
     },
     {
       Id: "62",
-      Alimentos: "Camarão Branco (Vannamei)",
+      Alimento: "Camarão Branco (Vannamei)",
       Energia: "107",
       Umidade: "76.58",
       MS: "23.419999999999999",
@@ -10098,7 +10098,7 @@ var alimentosms = [
     },
     {
       Id: "63",
-      Alimentos: "Camarão várias espécies cru",
+      Alimento: "Camarão várias espécies cru",
       Energia: "71",
       Umidade: "83.01",
       MS: "16.989999999999996",
@@ -10144,20 +10144,20 @@ var alimentosms = [
     },
     {
       Id: "64",
-      Alimentos: "Camundongo   mais que 10 gramas",
+      Alimento: "Camundongo   mais que 10 gramas",
       Umidade: "67.3",
       MS: "32.7"
     },
     {
       Id: "65",
-      Alimentos: "Camundongos",
+      Alimento: "Camundongos",
       Energia: "156",
       Umidade: "66.3",
       MS: "33.7"
     },
     {
       Id: "66",
-      Alimentos: "Capim-elefante (%MS)",
+      Alimento: "Capim-elefante (%MS)",
       Energia: "412",
       Umidade: "78.38",
       MS: "21.620000000000006",
@@ -10179,7 +10179,7 @@ var alimentosms = [
     },
     {
       Id: "67",
-      Alimentos: "Capim-elefante roxo (%MS)",
+      Alimento: "Capim-elefante roxo (%MS)",
       Energia: "233.57",
       Umidade: "84.95",
       MS: "15.049999999999998",
@@ -10197,7 +10197,7 @@ var alimentosms = [
     },
     {
       Id: "68",
-      Alimentos: "Cápsula oleo de peixe",
+      Alimento: "Cápsula oleo de peixe",
       Umidade: "0",
       MS: "100",
       EE: "100",
@@ -10206,14 +10206,14 @@ var alimentosms = [
     },
     {
       Id: "69",
-      Alimentos: "Carbonato de cálcio",
+      Alimento: "Carbonato de cálcio",
       Umidade: "0",
       MS: "100",
       Ca: "40000"
     },
     {
       Id: "70",
-      Alimentos: "Carne bovina   acém moído   cru",
+      Alimento: "Carne bovina   acém moído   cru",
       Energia: "137",
       Umidade: "72.7",
       MS: "27.299999999999998",
@@ -10238,7 +10238,7 @@ var alimentosms = [
     },
     {
       Id: "71",
-      Alimentos: "Carne bovina   costela crua",
+      Alimento: "Carne bovina   costela crua",
       Energia: "358",
       Umidade: "52.7",
       MS: "47.3",
@@ -10254,7 +10254,7 @@ var alimentosms = [
     },
     {
       Id: "72",
-      Alimentos: "Carne bovina   fígado cru",
+      Alimento: "Carne bovina   fígado cru",
       Energia: "141",
       Umidade: "71.3",
       MS: "28.700000000000004",
@@ -10279,7 +10279,7 @@ var alimentosms = [
     },
     {
       Id: "73",
-      Alimentos: "Carne bovina   músculo s/ gordura cru",
+      Alimento: "Carne bovina   músculo s/ gordura cru",
       Energia: "142",
       Umidade: "72.4",
       MS: "27.599999999999996",
@@ -10299,7 +10299,7 @@ var alimentosms = [
     },
     {
       Id: "74",
-      Alimentos: "Carne bovina   paleta crua",
+      Alimento: "Carne bovina   paleta crua",
       Energia: "159",
       Umidade: "70.6",
       MS: "29.400000000000007",
@@ -10321,7 +10321,7 @@ var alimentosms = [
     },
     {
       Id: "75",
-      Alimentos: "Carne bovina acém sem gordura cru",
+      Alimento: "Carne bovina acém sem gordura cru",
       Energia: "144",
       Umidade: "71.5",
       MS: "28.5",
@@ -10345,7 +10345,7 @@ var alimentosms = [
     },
     {
       Id: "76",
-      Alimentos: "Carne bovina lingua crua",
+      Alimento: "Carne bovina lingua crua",
       Energia: "215",
       Umidade: "65",
       MS: "35",
@@ -10367,7 +10367,7 @@ var alimentosms = [
     },
     {
       Id: "77",
-      Alimentos: "Carne bovina magra   crua",
+      Alimento: "Carne bovina magra   crua",
       Energia: "175.2",
       Umidade: "71.4",
       MS: "28.599999999999996",
@@ -10393,7 +10393,7 @@ var alimentosms = [
     },
     {
       Id: "78",
-      Alimentos: "Carne de boi acém sem gordura cozido sem sal sem óleo",
+      Alimento: "Carne de boi acém sem gordura cozido sem sal sem óleo",
       Energia: "209",
       Umidade: "60.4",
       MS: "39.6",
@@ -10419,7 +10419,7 @@ var alimentosms = [
     },
     {
       Id: "79",
-      Alimentos: "Carne de boi coração cozido fogo baixo",
+      Alimento: "Carne de boi coração cozido fogo baixo",
       Energia: "165",
       Umidade: "65.67",
       MS: "34.33",
@@ -10453,7 +10453,7 @@ var alimentosms = [
     },
     {
       Id: "80",
-      Alimentos: "Carne de boi coração cozido sem óleo sem sal",
+      Alimento: "Carne de boi coração cozido sem óleo sem sal",
       Energia: "148",
       Umidade: "65",
       MS: "35",
@@ -10471,7 +10471,7 @@ var alimentosms = [
     },
     {
       Id: "81",
-      Alimentos: "Carne de boi fígado frito",
+      Alimento: "Carne de boi fígado frito",
       Energia: "175",
       Umidade: "62.01",
       MS: "37.99",
@@ -10516,7 +10516,7 @@ var alimentosms = [
     },
     {
       Id: "82",
-      Alimentos: "Carne de boi fígado grelhado sem sal sem óleo",
+      Alimento: "Carne de boi fígado grelhado sem sal sem óleo",
       Energia: "217",
       Umidade: "55",
       MS: "45",
@@ -10542,7 +10542,7 @@ var alimentosms = [
     },
     {
       Id: "83",
-      Alimentos: "Carne de boi fraldinha com gordura cozida sem sal",
+      Alimento: "Carne de boi fraldinha com gordura cozida sem sal",
       Energia: "329",
       Umidade: "49.3",
       MS: "50.7",
@@ -10565,7 +10565,7 @@ var alimentosms = [
     },
     {
       Id: "84",
-      Alimentos: "Carne de boi lingua cozido fogo baixo",
+      Alimento: "Carne de boi lingua cozido fogo baixo",
       Energia: "284",
       Umidade: "57.87",
       MS: "42.13",
@@ -10599,7 +10599,7 @@ var alimentosms = [
     },
     {
       Id: "85",
-      Alimentos: "Carne de boi músculo sem gordura cozido sem sal sem óleo",
+      Alimento: "Carne de boi músculo sem gordura cozido sem sal sem óleo",
       Energia: "182",
       Umidade: "61.7",
       MS: "38.3",
@@ -10623,7 +10623,7 @@ var alimentosms = [
     },
     {
       Id: "86",
-      Alimentos: "Carne de frango peito sem pele cozida sem óleo sem sal ",
+      Alimento: "Carne de frango peito sem pele cozida sem óleo sem sal ",
       Energia: "154",
       Umidade: "65.6",
       MS: "34.400000000000009",
@@ -10647,7 +10647,7 @@ var alimentosms = [
     },
     {
       Id: "87",
-      Alimentos: "Carne de frango peito sem pele grelhado sem óleo sem sal",
+      Alimento: "Carne de frango peito sem pele grelhado sem óleo sem sal",
       Energia: "150",
       Umidade: "63.8",
       MS: "36.2",
@@ -10671,7 +10671,7 @@ var alimentosms = [
     },
     {
       Id: "88",
-      Alimentos: "Carne de frango peito sem pele grelhado sem sal sem óleo",
+      Alimento: "Carne de frango peito sem pele grelhado sem sal sem óleo",
       Energia: "150",
       Umidade: "63.8",
       MS: "36.2",
@@ -10695,7 +10695,7 @@ var alimentosms = [
     },
     {
       Id: "89",
-      Alimentos: "Carne de porco pernil frita com óleo de soja sem sal",
+      Alimento: "Carne de porco pernil frita com óleo de soja sem sal",
       Energia: "305",
       Umidade: "45.3",
       MS: "54.7",
@@ -10721,7 +10721,7 @@ var alimentosms = [
     },
     {
       Id: "90",
-      Alimentos: "Carne frango peito sem pele cozida drenada sem óleo sem sal",
+      Alimento: "Carne frango peito sem pele cozida drenada sem óleo sem sal",
       Energia: "154",
       Umidade: "65.6",
       MS: "34.400000000000009",
@@ -10745,7 +10745,7 @@ var alimentosms = [
     },
     {
       Id: "91",
-      Alimentos: "Carne peru coxa s/ pele crua",
+      Alimento: "Carne peru coxa s/ pele crua",
       Energia: "133",
       Umidade: "75",
       MS: "25",
@@ -10767,7 +10767,7 @@ var alimentosms = [
     },
     {
       Id: "92",
-      Alimentos: "Carne peru peito s/ pelo cura",
+      Alimento: "Carne peru peito s/ pelo cura",
       Energia: "103",
       Umidade: "75",
       MS: "25",
@@ -10790,7 +10790,7 @@ var alimentosms = [
     },
     {
       Id: "93",
-      Alimentos: "Castanha-do-Brasil   crua",
+      Alimento: "Castanha-do-Brasil   crua",
       Energia: "643",
       Umidade: "3.5",
       MS: "96.5",
@@ -10815,7 +10815,7 @@ var alimentosms = [
     },
     {
       Id: "94",
-      Alimentos: "Catalonha crua",
+      Alimento: "Catalonha crua",
       Energia: "24",
       Umidade: "91.8",
       MS: "8.200000000000003",
@@ -10842,7 +10842,7 @@ var alimentosms = [
     },
     {
       Id: "95",
-      Alimentos: "Cavalinha crua",
+      Alimento: "Cavalinha crua",
       Energia: "189",
       Umidade: "65.73",
       MS: "34.269999999999999",
@@ -10868,7 +10868,7 @@ var alimentosms = [
     },
     {
       Id: "96",
-      Alimentos: "CC- Albium",
+      Alimento: "CC- Albium",
       Umidade: "12",
       MS: "88",
       PB: "28",
@@ -10881,7 +10881,7 @@ var alimentosms = [
     },
     {
       Id: "97",
-      Alimentos: "Cebola crua",
+      Alimento: "Cebola crua",
       Energia: "39",
       Umidade: "88.9",
       MS: "11.099999999999995",
@@ -10906,7 +10906,7 @@ var alimentosms = [
     },
     {
       Id: "98",
-      Alimentos: "Cenoura cozida",
+      Alimento: "Cenoura cozida",
       Energia: "30",
       Umidade: "91.7",
       MS: "8.299999999999998",
@@ -10932,7 +10932,7 @@ var alimentosms = [
     },
     {
       Id: "99",
-      Alimentos: "Cenoura cozida solido sem sal",
+      Alimento: "Cenoura cozida solido sem sal",
       Energia: "35",
       Umidade: "90.17",
       MS: "9.829999999999999",
@@ -10975,7 +10975,7 @@ var alimentosms = [
     },
     {
       Id: "100",
-      Alimentos: "Cenoura crua",
+      Alimento: "Cenoura crua",
       Energia: "34",
       Umidade: "90.1",
       MS: "9.900000000000006",
@@ -10999,7 +10999,7 @@ var alimentosms = [
     },
     {
       Id: "101",
-      Alimentos: "Cenoura sem casca cozida sem óleo sem sal",
+      Alimento: "Cenoura sem casca cozida sem óleo sem sal",
       Energia: "16",
       Umidade: "94.6",
       MS: "5.400000000000006",
@@ -11026,7 +11026,7 @@ var alimentosms = [
     },
     {
       Id: "102",
-      Alimentos: "Centeio",
+      Alimento: "Centeio",
       Energia: "335",
       Umidade: "11",
       MS: "89",
@@ -11050,7 +11050,7 @@ var alimentosms = [
     },
     {
       Id: "103",
-      Alimentos: "Cevada",
+      Alimento: "Cevada",
       Energia: "335",
       Umidade: "9.59",
       MS: "90.41",
@@ -11074,13 +11074,13 @@ var alimentosms = [
     },
     {
       Id: "104",
-      Alimentos: "Cioba",
+      Alimento: "Cioba",
       Umidade: "75",
       MS: "25"
     },
     {
       Id: "105",
-      Alimentos: "Cladóceros (Daphnia sp.)",
+      Alimento: "Cladóceros (Daphnia sp.)",
       Energia: "366.8",
       Umidade: "8.299999999999998",
       MS: "91.7",
@@ -11088,7 +11088,7 @@ var alimentosms = [
     },
     {
       Id: "106",
-      Alimentos: "Coco   cru",
+      Alimento: "Coco   cru",
       Energia: "406",
       Umidade: "43",
       MS: "57",
@@ -11112,14 +11112,14 @@ var alimentosms = [
     },
     {
       Id: "107",
-      Alimentos: "Codorna",
+      Alimento: "Codorna",
       Energia: "138.4",
       Umidade: "65.4",
       MS: "34.6"
     },
     {
       Id: "108",
-      Alimentos: "Coelho (cru)",
+      Alimento: "Coelho (cru)",
       Energia: "151.78",
       Umidade: "69.6",
       MS: "30.400000000000007",
@@ -11135,13 +11135,13 @@ var alimentosms = [
     },
     {
       Id: "109",
-      Alimentos: "Coelho Doméstico Cru",
+      Alimento: "Coelho Doméstico Cru",
       Umidade: "73.8",
       MS: "26.2"
     },
     {
       Id: "110",
-      Alimentos: "Coentro folha cru",
+      Alimento: "Coentro folha cru",
       Energia: "22",
       Umidade: "92.2",
       MS: "7.799999999999997",
@@ -11165,7 +11165,7 @@ var alimentosms = [
     },
     {
       Id: "111",
-      Alimentos: "Coração bovino cru",
+      Alimento: "Coração bovino cru",
       Energia: "108",
       Umidade: "76.3",
       MS: "23.700000000000004",
@@ -11192,7 +11192,7 @@ var alimentosms = [
     },
     {
       Id: "112",
-      Alimentos: "Cordeiro dianteiro cru",
+      Alimento: "Cordeiro dianteiro cru",
       Energia: "120",
       Umidade: "75",
       MS: "25",
@@ -11214,7 +11214,7 @@ var alimentosms = [
     },
     {
       Id: "113",
-      Alimentos: "Corimba   cru",
+      Alimento: "Corimba   cru",
       Energia: "128",
       Umidade: "75.6",
       MS: "24.400000000000007",
@@ -11237,7 +11237,7 @@ var alimentosms = [
     },
     {
       Id: "114",
-      Alimentos: "Corimba inteiro cru",
+      Alimento: "Corimba inteiro cru",
       Energia: "234",
       Umidade: "62",
       MS: "38",
@@ -11258,7 +11258,7 @@ var alimentosms = [
     },
     {
       Id: "115",
-      Alimentos: "Corvina",
+      Alimento: "Corvina",
       Energia: "87.64",
       Umidade: "79.8",
       MS: "20.200000000000004",
@@ -11268,7 +11268,7 @@ var alimentosms = [
     },
     {
       Id: "116",
-      Alimentos: "Corvina   água salgada   crua",
+      Alimento: "Corvina   água salgada   crua",
       Energia: "86",
       Umidade: "79.2",
       MS: "20.799999999999998",
@@ -11290,7 +11290,7 @@ var alimentosms = [
     },
     {
       Id: "117",
-      Alimentos: "Corvina do mar",
+      Alimento: "Corvina do mar",
       Energia: "185",
       Umidade: "63.8",
       MS: "36.2",
@@ -11315,7 +11315,7 @@ var alimentosms = [
     },
     {
       Id: "118",
-      Alimentos: "Costela bovina com osso",
+      Alimento: "Costela bovina com osso",
       Energia: "239",
       Umidade: "61.7",
       MS: "38.3",
@@ -11334,7 +11334,7 @@ var alimentosms = [
     },
     {
       Id: "119",
-      Alimentos: "Couve congelada cozida fervida drenado sem sal",
+      Alimento: "Couve congelada cozida fervida drenado sem sal",
       Energia: "30",
       Umidade: "90.5",
       MS: "9.5",
@@ -11378,7 +11378,7 @@ var alimentosms = [
     },
     {
       Id: "120",
-      Alimentos: "Couve cozida sem óleo sem sal",
+      Alimento: "Couve cozida sem óleo sem sal",
       Energia: "25",
       Umidade: "91.6",
       MS: "8.400000000000006",
@@ -11407,7 +11407,7 @@ var alimentosms = [
     },
     {
       Id: "121",
-      Alimentos: "Couve-flor crua",
+      Alimento: "Couve-flor crua",
       Energia: "23",
       Umidade: "92.8",
       MS: "7.200000000000003",
@@ -11432,7 +11432,7 @@ var alimentosms = [
     },
     {
       Id: "122",
-      Alimentos: "Couve-manteiga crua",
+      Alimento: "Couve-manteiga crua",
       Energia: "27",
       Umidade: "90.9",
       MS: "9.099999999999995",
@@ -11460,7 +11460,7 @@ var alimentosms = [
     },
     {
       Id: "123",
-      Alimentos: "Creme de leite",
+      Alimento: "Creme de leite",
       Energia: "221",
       Umidade: "70.9",
       MS: "29.099999999999996",
@@ -11483,7 +11483,7 @@ var alimentosms = [
     },
     {
       Id: "124",
-      Alimentos: "Dourado",
+      Alimento: "Dourado",
       Energia: "80.1",
       Umidade: "79.3",
       MS: "20.700000000000004",
@@ -11493,7 +11493,7 @@ var alimentosms = [
     },
     {
       Id: "125",
-      Alimentos: "Ensure",
+      Alimento: "Ensure",
       Energia: "428",
       Umidade: "0",
       MS: "100",
@@ -11505,7 +11505,7 @@ var alimentosms = [
     },
     {
       Id: "126",
-      Alimentos: "Ervilha",
+      Alimento: "Ervilha",
       Energia: "81",
       Umidade: "78.9",
       MS: "21.099999999999996",
@@ -11533,7 +11533,7 @@ var alimentosms = [
     },
     {
       Id: "127",
-      Alimentos: "Ervilha grão cozida sem sal sem óleo",
+      Alimento: "Ervilha grão cozida sem sal sem óleo",
       Energia: "90",
       Umidade: "73.5",
       MS: "26.5",
@@ -11562,7 +11562,7 @@ var alimentosms = [
     },
     {
       Id: "128",
-      Alimentos: "Escarola",
+      Alimento: "Escarola",
       Energia: "17",
       Umidade: "93.8",
       MS: "6.200000000000003",
@@ -11589,7 +11589,7 @@ var alimentosms = [
     },
     {
       Id: "129",
-      Alimentos: "Escarola folha crua",
+      Alimento: "Escarola folha crua",
       Energia: "16",
       Umidade: "94.4",
       MS: "5.599999999999994",
@@ -11616,7 +11616,7 @@ var alimentosms = [
     },
     {
       Id: "130",
-      Alimentos: "E-S-E Super ",
+      Alimento: "E-S-E Super ",
       Umidade: "0",
       MS: "100",
       Lis: "10",
@@ -11625,7 +11625,7 @@ var alimentosms = [
     },
     {
       Id: "131",
-      Alimentos: "Espinafre cru",
+      Alimento: "Espinafre cru",
       Energia: "16",
       Umidade: "94",
       MS: "6",
@@ -11651,7 +11651,7 @@ var alimentosms = [
     },
     {
       Id: "132",
-      Alimentos: "Farinhada Alcon Canários",
+      Alimento: "Farinhada Alcon Canários",
       Energia: "347.5",
       Umidade: "10",
       MS: "90",
@@ -11687,7 +11687,7 @@ var alimentosms = [
     },
     {
       Id: "133",
-      Alimentos: "Farinhada Alcon Silvestres",
+      Alimento: "Farinhada Alcon Silvestres",
       Energia: "342",
       Umidade: "10",
       MS: "90",
@@ -11723,7 +11723,7 @@ var alimentosms = [
     },
     {
       Id: "134",
-      Alimentos: "Feijão   broto   cru",
+      Alimento: "Feijão   broto   cru",
       Energia: "39",
       Umidade: "87.5",
       MS: "12.5",
@@ -11748,7 +11748,7 @@ var alimentosms = [
     },
     {
       Id: "135",
-      Alimentos: "Feno de ALfafa (%MS)",
+      Alimento: "Feno de ALfafa (%MS)",
       Energia: "422",
       Umidade: "10.68",
       MS: "89.32",
@@ -11775,13 +11775,13 @@ var alimentosms = [
     },
     {
       Id: "136",
-      Alimentos: "Feno de tifton",
+      Alimento: "Feno de tifton",
       Umidade: "10.480000000000004",
       MS: "89.52"
     },
     {
       Id: "137",
-      Alimentos: "Fibra de maçã",
+      Alimento: "Fibra de maçã",
       Energia: "360",
       Umidade: "10",
       MS: "90",
@@ -11790,7 +11790,7 @@ var alimentosms = [
     },
     {
       Id: "138",
-      Alimentos: "Flor de Hibisco",
+      Alimento: "Flor de Hibisco",
       Energia: "16",
       Umidade: "95.98",
       MS: "4.0200000000000009",
@@ -11805,7 +11805,7 @@ var alimentosms = [
     },
     {
       Id: "139",
-      Alimentos: "Folha de brócolis crua",
+      Alimento: "Folha de brócolis crua",
       Energia: "28",
       Umidade: "90.69",
       MS: "9.310000000000003",
@@ -11847,7 +11847,7 @@ var alimentosms = [
     },
     {
       Id: "140",
-      Alimentos: "Food Cat Adulto",
+      Alimento: "Food Cat Adulto",
       Energia: "75.6",
       Umidade: "1.3",
       MS: "98.7",
@@ -11884,7 +11884,7 @@ var alimentosms = [
     },
     {
       Id: "141",
-      Alimentos: "Food dog Adulto Manutenção",
+      Alimento: "Food dog Adulto Manutenção",
       Energia: "41.99999999999998",
       Umidade: "6",
       MS: "94",
@@ -11924,7 +11924,7 @@ var alimentosms = [
     },
     {
       Id: "142",
-      Alimentos: "Food Dog Fit Fibras",
+      Alimento: "Food Dog Fit Fibras",
       Umidade: "4.5",
       MS: "95.5",
       PB: "6",
@@ -11959,7 +11959,7 @@ var alimentosms = [
     },
     {
       Id: "143",
-      Alimentos: "Fosfato bicálcico",
+      Alimento: "Fosfato bicálcico",
       Umidade: "0",
       MS: "100",
       Ca: "24500",
@@ -11967,7 +11967,7 @@ var alimentosms = [
     },
     {
       Id: "144",
-      Alimentos: "Frango   coração cru",
+      Alimento: "Frango   coração cru",
       Energia: "222",
       Umidade: "69.1",
       MS: "30.900000000000007",
@@ -11992,7 +11992,7 @@ var alimentosms = [
     },
     {
       Id: "145",
-      Alimentos: "Frango   fígado cru",
+      Alimento: "Frango   fígado cru",
       Energia: "106",
       Umidade: "77.8",
       MS: "22.200000000000004",
@@ -12017,7 +12017,7 @@ var alimentosms = [
     },
     {
       Id: "146",
-      Alimentos: "Frango   peito c/pele cru",
+      Alimento: "Frango   peito c/pele cru",
       Energia: "149",
       Umidade: "71.9",
       MS: "28.099999999999996",
@@ -12041,7 +12041,7 @@ var alimentosms = [
     },
     {
       Id: "147",
-      Alimentos: "Frango   peito s/ pele cru",
+      Alimento: "Frango   peito s/ pele cru",
       Energia: "119",
       Umidade: "74.8",
       MS: "25.200000000000004",
@@ -12064,7 +12064,7 @@ var alimentosms = [
     },
     {
       Id: "148",
-      Alimentos: "Frango coxa com pele cru",
+      Alimento: "Frango coxa com pele cru",
       Energia: "161",
       Umidade: "72.9",
       MS: "27.099999999999996",
@@ -12086,7 +12086,7 @@ var alimentosms = [
     },
     {
       Id: "149",
-      Alimentos: "Frango coxa sem pele cru",
+      Alimento: "Frango coxa sem pele cru",
       Energia: "120",
       Umidade: "76.4",
       MS: "23.599999999999996",
@@ -12108,7 +12108,7 @@ var alimentosms = [
     },
     {
       Id: "150",
-      Alimentos: "Frango inteiro c/pele cru",
+      Alimento: "Frango inteiro c/pele cru",
       Energia: "226",
       Umidade: "66.5",
       MS: "33.5",
@@ -12133,7 +12133,7 @@ var alimentosms = [
     },
     {
       Id: "151",
-      Alimentos: "Frango inteiro s/ pele cru",
+      Alimento: "Frango inteiro s/ pele cru",
       Energia: "129",
       Umidade: "74.9",
       MS: "25.099999999999996",
@@ -12158,7 +12158,7 @@ var alimentosms = [
     },
     {
       Id: "152",
-      Alimentos: "Frango sobrecoxa com pele crua",
+      Alimento: "Frango sobrecoxa com pele crua",
       Energia: "234",
       Umidade: "63",
       MS: "37",
@@ -12184,7 +12184,7 @@ var alimentosms = [
     },
     {
       Id: "153",
-      Alimentos: "Galeto peito so carne pronto pra consumo frito",
+      Alimento: "Galeto peito so carne pronto pra consumo frito",
       Energia: "187",
       Umidade: "60.21",
       MS: "39.79",
@@ -12224,13 +12224,13 @@ var alimentosms = [
     },
     {
       Id: "154",
-      Alimentos: "Galinha Adulta",
+      Alimento: "Galinha Adulta",
       Umidade: "67.5",
       MS: "32.5"
     },
     {
       Id: "155",
-      Alimentos: "Gema de ovo de galinha cru",
+      Alimento: "Gema de ovo de galinha cru",
       Energia: "322",
       Umidade: "52.31",
       MS: "47.69",
@@ -12261,7 +12261,7 @@ var alimentosms = [
     },
     {
       Id: "156",
-      Alimentos: "Gergelim semente",
+      Alimento: "Gergelim semente",
       Energia: "584",
       Umidade: "3.9",
       MS: "96.1",
@@ -12285,7 +12285,7 @@ var alimentosms = [
     },
     {
       Id: "157",
-      Alimentos: "Girassol Miúdo",
+      Alimento: "Girassol Miúdo",
       Energia: "391.6",
       Umidade: "10.5",
       MS: "89.5",
@@ -12299,7 +12299,7 @@ var alimentosms = [
     },
     {
       Id: "158",
-      Alimentos: "Glicopan Pet",
+      Alimento: "Glicopan Pet",
       Umidade: "80",
       MS: "20",
       Arg: "0.238",
@@ -12320,7 +12320,7 @@ var alimentosms = [
     },
     {
       Id: "159",
-      Alimentos: "Goiaba vermelha   c/ casca   crua",
+      Alimento: "Goiaba vermelha   c/ casca   crua",
       Energia: "54",
       Umidade: "85",
       MS: "15",
@@ -12344,7 +12344,7 @@ var alimentosms = [
     },
     {
       Id: "160",
-      Alimentos: "Grão de bico",
+      Alimento: "Grão de bico",
       Energia: "364",
       Umidade: "11.5",
       MS: "88.5",
@@ -12373,14 +12373,14 @@ var alimentosms = [
     },
     {
       Id: "161",
-      Alimentos: "Grilos adultos s/ suplementos",
+      Alimento: "Grilos adultos s/ suplementos",
       Energia: "129",
       Umidade: "73.2",
       MS: "26.799999999999998"
     },
     {
       Id: "162",
-      Alimentos: "Guabi Natural Cão Adulto Porte Grande e Gigante Frango e Arroz Integral",
+      Alimento: "Guabi Natural Cão Adulto Porte Grande e Gigante Frango e Arroz Integral",
       Energia: "256",
       Umidade: "9",
       MS: "91",
@@ -12419,7 +12419,7 @@ var alimentosms = [
     },
     {
       Id: "163",
-      Alimentos: "Guandu (%MS)",
+      Alimento: "Guandu (%MS)",
       Energia: "452",
       Umidade: "64.54",
       MS: "35.459999999999997",
@@ -12435,7 +12435,7 @@ var alimentosms = [
     },
     {
       Id: "164",
-      Alimentos: "Guandu parte aérea (%MS)",
+      Alimento: "Guandu parte aérea (%MS)",
       Energia: "139.34",
       Umidade: "64.72",
       MS: "35.28",
@@ -12452,7 +12452,7 @@ var alimentosms = [
     },
     {
       Id: "165",
-      Alimentos: "Hemolitan Pet",
+      Alimento: "Hemolitan Pet",
       Umidade: "80",
       MS: "20",
       Cu: "50",
@@ -12470,7 +12470,7 @@ var alimentosms = [
     },
     {
       Id: "166",
-      Alimentos: "Hortelã in natura",
+      Alimento: "Hortelã in natura",
       Energia: "39",
       Umidade: "85.6",
       MS: "14.400000000000006",
@@ -12494,7 +12494,7 @@ var alimentosms = [
     },
     {
       Id: "167",
-      Alimentos: "Inhame cru",
+      Alimento: "Inhame cru",
       Energia: "97",
       Umidade: "73.3",
       MS: "26.700000000000004",
@@ -12517,7 +12517,7 @@ var alimentosms = [
     },
     {
       Id: "168",
-      Alimentos: "Iorgute natural",
+      Alimento: "Iorgute natural",
       Energia: "51",
       Umidade: "90",
       MS: "10",
@@ -12539,7 +12539,7 @@ var alimentosms = [
     },
     {
       Id: "169",
-      Alimentos: "Jabuticaba   crua",
+      Alimento: "Jabuticaba   crua",
       Energia: "58",
       Umidade: "83.6",
       MS: "16.400000000000007",
@@ -12562,7 +12562,7 @@ var alimentosms = [
     },
     {
       Id: "170",
-      Alimentos: "Jiló cru",
+      Alimento: "Jiló cru",
       Energia: "27",
       Umidade: "91.6",
       MS: "8.400000000000006",
@@ -12585,7 +12585,7 @@ var alimentosms = [
     },
     {
       Id: "171",
-      Alimentos: "Kiwi   cru",
+      Alimento: "Kiwi   cru",
       Energia: "51",
       Umidade: "85.9",
       MS: "14.099999999999995",
@@ -12609,7 +12609,7 @@ var alimentosms = [
     },
     {
       Id: "172",
-      Alimentos: "Lambari cru",
+      Alimento: "Lambari cru",
       Energia: "149",
       Umidade: "72.2",
       MS: "27.799999999999998",
@@ -12631,7 +12631,7 @@ var alimentosms = [
     },
     {
       Id: "173",
-      Alimentos: "Laranja lima   crua",
+      Alimento: "Laranja lima   crua",
       Energia: "46",
       Umidade: "87",
       MS: "13",
@@ -12657,7 +12657,7 @@ var alimentosms = [
     },
     {
       Id: "174",
-      Alimentos: "Laranja pêra   crua",
+      Alimento: "Laranja pêra   crua",
       Energia: "37",
       Umidade: "89.6",
       MS: "10.400000000000006",
@@ -12682,7 +12682,7 @@ var alimentosms = [
     },
     {
       Id: "175",
-      Alimentos: "Leite de Soja",
+      Alimento: "Leite de Soja",
       Energia: "54",
       Umidade: "88.05",
       MS: "11.950000000000003",
@@ -12726,7 +12726,7 @@ var alimentosms = [
     },
     {
       Id: "176",
-      Alimentos: "Leite de vaca integral em pó",
+      Alimento: "Leite de vaca integral em pó",
       Energia: "497",
       Umidade: "2.7",
       MS: "97.3",
@@ -12750,7 +12750,7 @@ var alimentosms = [
     },
     {
       Id: "177",
-      Alimentos: "Leite de vaca sem lactose",
+      Alimento: "Leite de vaca sem lactose",
       Energia: "63",
       Umidade: "88.1",
       MS: "11.900000000000006",
@@ -12763,7 +12763,7 @@ var alimentosms = [
     },
     {
       Id: "178",
-      Alimentos: "Língua de vaca",
+      Alimento: "Língua de vaca",
       Energia: "215",
       Umidade: "65",
       MS: "35",
@@ -12787,7 +12787,7 @@ var alimentosms = [
     },
     {
       Id: "179",
-      Alimentos: "Linhaça semente",
+      Alimento: "Linhaça semente",
       Energia: "495",
       Umidade: "6.7",
       MS: "93.3",
@@ -12810,7 +12810,7 @@ var alimentosms = [
     },
     {
       Id: "180",
-      Alimentos: "Little Tunny (Euthynnus alletteratus)",
+      Alimento: "Little Tunny (Euthynnus alletteratus)",
       Energia: "189.7",
       Umidade: "64.4",
       MS: "35.599999999999997",
@@ -12820,7 +12820,7 @@ var alimentosms = [
     },
     {
       Id: "181",
-      Alimentos: "Lula várias espécies cru",
+      Alimento: "Lula várias espécies cru",
       Energia: "87.06",
       Umidade: "78.55",
       MS: "21.450000000000004",
@@ -12865,7 +12865,7 @@ var alimentosms = [
     },
     {
       Id: "182",
-      Alimentos: "Maçã argentina   c/ casca   crua",
+      Alimento: "Maçã argentina   c/ casca   crua",
       Energia: "63",
       Umidade: "82.6",
       MS: "17.400000000000007",
@@ -12889,7 +12889,7 @@ var alimentosms = [
     },
     {
       Id: "183",
-      Alimentos: "Mamão formosa   cru",
+      Alimento: "Mamão formosa   cru",
       Energia: "45",
       Umidade: "86.9",
       MS: "13.099999999999995",
@@ -12914,7 +12914,7 @@ var alimentosms = [
     },
     {
       Id: "184",
-      Alimentos: "Mamão papaia   cru",
+      Alimento: "Mamão papaia   cru",
       Energia: "40",
       Umidade: "88.6",
       MS: "11.400000000000006",
@@ -12940,7 +12940,7 @@ var alimentosms = [
     },
     {
       Id: "185",
-      Alimentos: "Mandioca cozida",
+      Alimento: "Mandioca cozida",
       Energia: "125",
       Umidade: "68.7",
       MS: "31.299999999999998",
@@ -12966,7 +12966,7 @@ var alimentosms = [
     },
     {
       Id: "186",
-      Alimentos: "Mandioca cru",
+      Alimento: "Mandioca cru",
       Energia: "151",
       Umidade: "61.8",
       MS: "38.2",
@@ -12991,7 +12991,7 @@ var alimentosms = [
     },
     {
       Id: "187",
-      Alimentos: "Manga Haden   crua",
+      Alimento: "Manga Haden   crua",
       Energia: "64",
       Umidade: "82.3",
       MS: "17.700000000000004",
@@ -13018,7 +13018,7 @@ var alimentosms = [
     },
     {
       Id: "188",
-      Alimentos: "Manga Palmer   crua",
+      Alimento: "Manga Palmer   crua",
       Energia: "72",
       Umidade: "79.7",
       MS: "20.299999999999998",
@@ -13052,7 +13052,7 @@ var alimentosms = [
     },
     {
       Id: "189",
-      Alimentos: "Manjericão cru",
+      Alimento: "Manjericão cru",
       Energia: "21",
       Umidade: "93",
       MS: "7",
@@ -13078,7 +13078,7 @@ var alimentosms = [
     },
     {
       Id: "190",
-      Alimentos: "Manjuba   crua",
+      Alimento: "Manjuba   crua",
       Energia: "99",
       Umidade: "76.9",
       MS: "23.099999999999996",
@@ -13095,7 +13095,7 @@ var alimentosms = [
     },
     {
       Id: "191",
-      Alimentos: "Maria-luísa (Paralonchurus brasiliensis)",
+      Alimento: "Maria-luísa (Paralonchurus brasiliensis)",
       Energia: "67.03",
       Umidade: "82.34",
       MS: "17.659999999999998",
@@ -13105,7 +13105,7 @@ var alimentosms = [
     },
     {
       Id: "192",
-      Alimentos: "Marisco várias espécies cru",
+      Alimento: "Marisco várias espécies cru",
       Energia: "86",
       Umidade: "78.98",
       MS: "21.019999999999997",
@@ -13151,7 +13151,7 @@ var alimentosms = [
     },
     {
       Id: "193",
-      Alimentos: "Meca (swordfish)",
+      Alimento: "Meca (swordfish)",
       Energia: "144",
       Umidade: "73.8",
       MS: "26.200000000000004",
@@ -13195,7 +13195,7 @@ var alimentosms = [
     },
     {
       Id: "194",
-      Alimentos: "MegaZoo Flamingos FL-32",
+      Alimento: "MegaZoo Flamingos FL-32",
       Energia: "182",
       Umidade: "11",
       MS: "89",
@@ -13231,7 +13231,7 @@ var alimentosms = [
     },
     {
       Id: "195",
-      Alimentos: "MegaZoo Papagaios AM-16",
+      Alimento: "MegaZoo Papagaios AM-16",
       Energia: "109",
       Umidade: "11",
       MS: "89",
@@ -13268,7 +13268,7 @@ var alimentosms = [
     },
     {
       Id: "196",
-      Alimentos: "MegaZoo Pequenos Primatas Onívoros P-25",
+      Alimento: "MegaZoo Pequenos Primatas Onívoros P-25",
       Energia: "172",
       Umidade: "11",
       MS: "89",
@@ -13304,7 +13304,7 @@ var alimentosms = [
     },
     {
       Id: "197",
-      Alimentos: "MegaZoo Primatas P-18",
+      Alimento: "MegaZoo Primatas P-18",
       Energia: "117",
       Umidade: "11",
       MS: "89",
@@ -13341,7 +13341,7 @@ var alimentosms = [
     },
     {
       Id: "198",
-      Alimentos: "MegaZoo Tucanos T-19",
+      Alimento: "MegaZoo Tucanos T-19",
       Energia: "121",
       Umidade: "11",
       MS: "89",
@@ -13376,7 +13376,7 @@ var alimentosms = [
     },
     {
       Id: "199",
-      Alimentos: "Mel de abelha",
+      Alimento: "Mel de abelha",
       Energia: "309",
       Umidade: "15.8",
       MS: "84.2",
@@ -13396,7 +13396,7 @@ var alimentosms = [
     },
     {
       Id: "200",
-      Alimentos: "Melado",
+      Alimento: "Melado",
       Energia: "297",
       Umidade: "22.1",
       MS: "77.9",
@@ -13416,7 +13416,7 @@ var alimentosms = [
     },
     {
       Id: "201",
-      Alimentos: "Melancia   crua",
+      Alimento: "Melancia   crua",
       Energia: "33",
       Umidade: "90.7",
       MS: "9.299999999999998",
@@ -13437,7 +13437,7 @@ var alimentosms = [
     },
     {
       Id: "202",
-      Alimentos: "Melão   cru",
+      Alimento: "Melão   cru",
       Energia: "29",
       Umidade: "91.3",
       MS: "8.700000000000003",
@@ -13460,7 +13460,7 @@ var alimentosms = [
     },
     {
       Id: "203",
-      Alimentos: "Merluza filé   cru",
+      Alimento: "Merluza filé   cru",
       Energia: "89",
       Umidade: "82.1",
       MS: "17.900000000000007",
@@ -13482,7 +13482,7 @@ var alimentosms = [
     },
     {
       Id: "204",
-      Alimentos: "Mexerica murcote   crua",
+      Alimento: "Mexerica murcote   crua",
       Energia: "58",
       Umidade: "83.7",
       MS: "16.299999999999998",
@@ -13507,7 +13507,7 @@ var alimentosms = [
     },
     {
       Id: "205",
-      Alimentos: "Milho verde   cozido",
+      Alimento: "Milho verde   cozido",
       Energia: "108",
       Umidade: "69.6",
       MS: "30.400000000000007",
@@ -13537,7 +13537,7 @@ var alimentosms = [
     },
     {
       Id: "206",
-      Alimentos: "Milho verde   cru",
+      Alimento: "Milho verde   cru",
       Energia: "138",
       Umidade: "63.5",
       MS: "36.5",
@@ -13562,7 +13562,7 @@ var alimentosms = [
     },
     {
       Id: "207",
-      Alimentos: "Minhoca (Allolobophora calignosa) ",
+      Alimento: "Minhoca (Allolobophora calignosa) ",
       Energia: "80",
       Umidade: "80",
       MS: "20",
@@ -13570,7 +13570,7 @@ var alimentosms = [
     },
     {
       Id: "208",
-      Alimentos: "Mistura de Sementes Juréia para Periquitos",
+      Alimento: "Mistura de Sementes Juréia para Periquitos",
       Energia: "337.61",
       Umidade: "11.8",
       MS: "88.2",
@@ -13584,7 +13584,7 @@ var alimentosms = [
     },
     {
       Id: "209",
-      Alimentos: "Mistura Para Pássaros Livres Juréia",
+      Alimento: "Mistura Para Pássaros Livres Juréia",
       Energia: "330.5",
       Umidade: "13",
       MS: "87",
@@ -13598,7 +13598,7 @@ var alimentosms = [
     },
     {
       Id: "210",
-      Alimentos: "Molinésia crua",
+      Alimento: "Molinésia crua",
       Energia: "113.84",
       Umidade: "74.32",
       MS: "25.680000000000008",
@@ -13608,7 +13608,7 @@ var alimentosms = [
     },
     {
       Id: "211",
-      Alimentos: "Morango   cru",
+      Alimento: "Morango   cru",
       Energia: "30",
       Umidade: "91.5",
       MS: "8.5",
@@ -13632,7 +13632,7 @@ var alimentosms = [
     },
     {
       Id: "212",
-      Alimentos: "Mostarda crua",
+      Alimento: "Mostarda crua",
       Energia: "18",
       Umidade: "93.4",
       MS: "6.599999999999994",
@@ -13654,7 +13654,7 @@ var alimentosms = [
     },
     {
       Id: "213",
-      Alimentos: "Náuplio de artêmia",
+      Alimento: "Náuplio de artêmia",
       Energia: "438.09999999999999",
       Umidade: "4.400000000000006",
       MS: "95.6",
@@ -13665,7 +13665,7 @@ var alimentosms = [
     },
     {
       Id: "214",
-      Alimentos: "Níger Juréia",
+      Alimento: "Níger Juréia",
       Energia: "515.51",
       Umidade: "3.24",
       MS: "96.76",
@@ -13679,7 +13679,7 @@ var alimentosms = [
     },
     {
       Id: "215",
-      Alimentos: "Nori alga seca",
+      Alimento: "Nori alga seca",
       Energia: "229",
       Umidade: "8.4",
       MS: "91.6",
@@ -13708,7 +13708,7 @@ var alimentosms = [
     },
     {
       Id: "216",
-      Alimentos: "Noz crua",
+      Alimento: "Noz crua",
       Energia: "620",
       Umidade: "6.2",
       MS: "93.8",
@@ -13734,7 +13734,7 @@ var alimentosms = [
     },
     {
       Id: "217",
-      Alimentos: "Nutralogic",
+      Alimento: "Nutralogic",
       Umidade: "0",
       MS: "100",
       Arg: "0.28",
@@ -13751,7 +13751,7 @@ var alimentosms = [
     },
     {
       Id: "218",
-      Alimentos: "Nutrópica Arara com frutas",
+      Alimento: "Nutrópica Arara com frutas",
       Energia: "154",
       Umidade: "12",
       MS: "88",
@@ -13766,7 +13766,7 @@ var alimentosms = [
     },
     {
       Id: "219",
-      Alimentos: "Nutrópica Coelho Adulto",
+      Alimento: "Nutrópica Coelho Adulto",
       Umidade: "12",
       MS: "88",
       PB: "13",
@@ -13780,7 +13780,7 @@ var alimentosms = [
     },
     {
       Id: "220",
-      Alimentos: "Nutrópica Porquinho-da-Índia",
+      Alimento: "Nutrópica Porquinho-da-Índia",
       Energia: "252",
       Umidade: "12",
       MS: "88",
@@ -13795,7 +13795,7 @@ var alimentosms = [
     },
     {
       Id: "221",
-      Alimentos: "Nutroplus Manutenção Cães Adultos",
+      Alimento: "Nutroplus Manutenção Cães Adultos",
       Umidade: "0",
       MS: "100",
       Ca: "20000",
@@ -13824,7 +13824,7 @@ var alimentosms = [
     },
     {
       Id: "222",
-      Alimentos: "Óleo de canola",
+      Alimento: "Óleo de canola",
       Energia: "884",
       Umidade: "0",
       MS: "100",
@@ -13834,7 +13834,7 @@ var alimentosms = [
     },
     {
       Id: "223",
-      Alimentos: "Óleo de soja",
+      Alimento: "Óleo de soja",
       Energia: "884",
       Umidade: "0",
       MS: "100",
@@ -13844,7 +13844,7 @@ var alimentosms = [
     },
     {
       Id: "224",
-      Alimentos: "Óleo soja",
+      Alimento: "Óleo soja",
       Energia: "900",
       Umidade: "0",
       MS: "100",
@@ -13856,7 +13856,7 @@ var alimentosms = [
     },
     {
       Id: "225",
-      Alimentos: "Orégano seco",
+      Alimento: "Orégano seco",
       Energia: "265",
       Umidade: "9.93",
       MS: "90.07",
@@ -13882,7 +13882,7 @@ var alimentosms = [
     },
     {
       Id: "226",
-      Alimentos: "Organew",
+      Alimento: "Organew",
       Energia: "483.9",
       Umidade: "1.9",
       MS: "98.1",
@@ -13893,7 +13893,7 @@ var alimentosms = [
     },
     {
       Id: "227",
-      Alimentos: "Organew",
+      Alimento: "Organew",
       Umidade: "7.39",
       MS: "92.61",
       PB: "17.86",
@@ -13917,7 +13917,7 @@ var alimentosms = [
     },
     {
       Id: "228",
-      Alimentos: "Ovo de codorna inteiro cozido sem sal",
+      Alimento: "Ovo de codorna inteiro cozido sem sal",
       Energia: "156",
       Umidade: "73.6",
       MS: "26.400000000000007",
@@ -13937,7 +13937,7 @@ var alimentosms = [
     },
     {
       Id: "229",
-      Alimentos: "Ovo de galinha com casca   cozido",
+      Alimento: "Ovo de galinha com casca   cozido",
       Energia: "146",
       Umidade: "75.8",
       MS: "24.200000000000004",
@@ -13961,7 +13961,7 @@ var alimentosms = [
     },
     {
       Id: "230",
-      Alimentos: "Ovo de galinha inteiro   cozido",
+      Alimento: "Ovo de galinha inteiro   cozido",
       Energia: "146",
       Umidade: "75.8",
       MS: "24.200000000000004",
@@ -13986,7 +13986,7 @@ var alimentosms = [
     },
     {
       Id: "231",
-      Alimentos: "Painço cru",
+      Alimento: "Painço cru",
       Energia: "378",
       Umidade: "8.67",
       MS: "91.33",
@@ -14010,7 +14010,7 @@ var alimentosms = [
     },
     {
       Id: "232",
-      Alimentos: "Painço Juréia",
+      Alimento: "Painço Juréia",
       Energia: "315",
       Umidade: "12",
       MS: "88",
@@ -14022,7 +14022,7 @@ var alimentosms = [
     },
     {
       Id: "233",
-      Alimentos: "Papa-terra (Catostomus commersoni) cru",
+      Alimento: "Papa-terra (Catostomus commersoni) cru",
       Energia: "92",
       Umidade: "79.71",
       MS: "20.290000000000008",
@@ -14062,7 +14062,7 @@ var alimentosms = [
     },
     {
       Id: "234",
-      Alimentos: "Papinha Arara Nutrópica",
+      Alimento: "Papinha Arara Nutrópica",
       Energia: "371",
       Umidade: "12",
       MS: "88",
@@ -14097,7 +14097,7 @@ var alimentosms = [
     },
     {
       Id: "235",
-      Alimentos: "Parati",
+      Alimento: "Parati",
       Energia: "132.41",
       Umidade: "75.55",
       MS: "24.450000000000004",
@@ -14109,7 +14109,7 @@ var alimentosms = [
     },
     {
       Id: "236",
-      Alimentos: "Pargo (Pagrus pargo)",
+      Alimento: "Pargo (Pagrus pargo)",
       Energia: "0",
       Umidade: "74.9",
       MS: "25.099999999999996",
@@ -14169,7 +14169,7 @@ var alimentosms = [
     },
     {
       Id: "237",
-      Alimentos: "Pargo cru (Stenotomus chrysops)",
+      Alimento: "Pargo cru (Stenotomus chrysops)",
       Energia: "105",
       Umidade: "75.37",
       MS: "24.629999999999997",
@@ -14214,7 +14214,7 @@ var alimentosms = [
     },
     {
       Id: "238",
-      Alimentos: "Pássaro Forte Mistura para Calopsita e Agapornis",
+      Alimento: "Pássaro Forte Mistura para Calopsita e Agapornis",
       Umidade: "13",
       MS: "87",
       PB: "12",
@@ -14227,7 +14227,7 @@ var alimentosms = [
     },
     {
       Id: "239",
-      Alimentos: "Pate ",
+      Alimento: "Pate ",
       Umidade: "81",
       MS: "19",
       PB: "8",
@@ -14238,7 +14238,7 @@ var alimentosms = [
     },
     {
       Id: "240",
-      Alimentos: "Patê de carne Primocão",
+      Alimento: "Patê de carne Primocão",
       Umidade: "82",
       MS: "18",
       PB: "8",
@@ -14254,7 +14254,7 @@ var alimentosms = [
     },
     {
       Id: "241",
-      Alimentos: "Patê Whiskas",
+      Alimento: "Patê Whiskas",
       Energia: "59",
       Umidade: "84",
       MS: "16",
@@ -14268,7 +14268,7 @@ var alimentosms = [
     },
     {
       Id: "242",
-      Alimentos: "Pato s/pele cru",
+      Alimento: "Pato s/pele cru",
       Energia: "132",
       Umidade: "74",
       MS: "26",
@@ -14290,7 +14290,7 @@ var alimentosms = [
     },
     {
       Id: "243",
-      Alimentos: "Pedigree Sache Adultos",
+      Alimento: "Pedigree Sache Adultos",
       Energia: "67",
       Umidade: "82",
       MS: "18",
@@ -14304,7 +14304,7 @@ var alimentosms = [
     },
     {
       Id: "244",
-      Alimentos: "Peixa de água salgada sardinha filé cozida sem sal sem óleo",
+      Alimento: "Peixa de água salgada sardinha filé cozida sem sal sem óleo",
       Energia: "121",
       Umidade: "71.9",
       MS: "28.099999999999996",
@@ -14329,7 +14329,7 @@ var alimentosms = [
     },
     {
       Id: "245",
-      Alimentos: "Peixe água salgada sardinha filé cozido drenado sem óleo sem sal",
+      Alimento: "Peixe água salgada sardinha filé cozido drenado sem óleo sem sal",
       Energia: "121",
       Umidade: "71.9",
       MS: "28.099999999999996",
@@ -14352,7 +14352,7 @@ var alimentosms = [
     },
     {
       Id: "246",
-      Alimentos: "PeleFood Dog",
+      Alimento: "PeleFood Dog",
       MS: "100",
       PB: "43",
       Lis: "2.2",
@@ -14369,7 +14369,7 @@ var alimentosms = [
     },
     {
       Id: "247",
-      Alimentos: "Pelotas robalo",
+      Alimento: "Pelotas robalo",
       Energia: "246.67263200000003",
       Umidade: "35.565",
       MS: "64.435",
@@ -14429,7 +14429,7 @@ var alimentosms = [
     },
     {
       Id: "248",
-      Alimentos: "Pepino cru",
+      Alimento: "Pepino cru",
       Energia: "10",
       Umidade: "96.8",
       MS: "3.200000000000003",
@@ -14450,7 +14450,7 @@ var alimentosms = [
     },
     {
       Id: "249",
-      Alimentos: "Pêra Park   crua",
+      Alimento: "Pêra Park   crua",
       Energia: "61",
       Umidade: "83.2",
       MS: "16.799999999999998",
@@ -14474,7 +14474,7 @@ var alimentosms = [
     },
     {
       Id: "250",
-      Alimentos: "Pêra Willians   crua",
+      Alimento: "Pêra Willians   crua",
       Energia: "53",
       Umidade: "85",
       MS: "15",
@@ -14496,7 +14496,7 @@ var alimentosms = [
     },
     {
       Id: "251",
-      Alimentos: "Pescada",
+      Alimento: "Pescada",
       Energia: "78.78",
       Umidade: "82.5",
       MS: "17.5",
@@ -14506,7 +14506,7 @@ var alimentosms = [
     },
     {
       Id: "252",
-      Alimentos: "Pescada   filé   cru",
+      Alimento: "Pescada   filé   cru",
       Energia: "107",
       Umidade: "79.5",
       MS: "20.5",
@@ -14529,7 +14529,7 @@ var alimentosms = [
     },
     {
       Id: "253",
-      Alimentos: "Pescada amarela",
+      Alimento: "Pescada amarela",
       Energia: "130.63",
       Umidade: "74.87",
       MS: "25.129999999999997",
@@ -14540,7 +14540,7 @@ var alimentosms = [
     },
     {
       Id: "254",
-      Alimentos: "Pescada Bicuda (Sphyraena spp.)",
+      Alimento: "Pescada Bicuda (Sphyraena spp.)",
       Energia: "102.10000000000001",
       Umidade: "76.15",
       MS: "23.85",
@@ -14559,7 +14559,7 @@ var alimentosms = [
     },
     {
       Id: "255",
-      Alimentos: "Pescada branca crua",
+      Alimento: "Pescada branca crua",
       Energia: "104",
       Umidade: "78.6",
       MS: "21.400000000000007",
@@ -14580,7 +14580,7 @@ var alimentosms = [
     },
     {
       Id: "256",
-      Alimentos: "Pescoço de frango   carne apenas",
+      Alimento: "Pescoço de frango   carne apenas",
       Energia: "154",
       Umidade: "71.2",
       MS: "28.799999999999998",
@@ -14621,7 +14621,7 @@ var alimentosms = [
     },
     {
       Id: "257",
-      Alimentos: "Pêssego   cru",
+      Alimento: "Pêssego   cru",
       Energia: "36",
       Umidade: "89.3",
       MS: "10.700000000000003",
@@ -14643,7 +14643,7 @@ var alimentosms = [
     },
     {
       Id: "258",
-      Alimentos: "Pet Delícia Sênior",
+      Alimento: "Pet Delícia Sênior",
       Energia: "112.5",
       Umidade: "76",
       MS: "24",
@@ -14658,7 +14658,7 @@ var alimentosms = [
     },
     {
       Id: "259",
-      Alimentos: "Pimentão   amarelo   cru",
+      Alimento: "Pimentão   amarelo   cru",
       Energia: "28",
       Umidade: "91.9",
       MS: "8.099999999999995",
@@ -14683,7 +14683,7 @@ var alimentosms = [
     },
     {
       Id: "260",
-      Alimentos: "Pimentão   verde   cru",
+      Alimento: "Pimentão   verde   cru",
       Energia: "21",
       Umidade: "93.5",
       MS: "6.5",
@@ -14705,7 +14705,7 @@ var alimentosms = [
     },
     {
       Id: "261",
-      Alimentos: "Pimentão   vermelho   cru",
+      Alimento: "Pimentão   vermelho   cru",
       Energia: "23",
       Umidade: "92.9",
       MS: "7.099999999999994",
@@ -14730,7 +14730,7 @@ var alimentosms = [
     },
     {
       Id: "262",
-      Alimentos: "Pistache",
+      Alimento: "Pistache",
       Energia: "577",
       Umidade: "3.88",
       MS: "96.12",
@@ -14758,7 +14758,7 @@ var alimentosms = [
     },
     {
       Id: "263",
-      Alimentos: "Polvo comum cru",
+      Alimento: "Polvo comum cru",
       Energia: "82",
       Umidade: "80.25",
       MS: "19.75",
@@ -14804,7 +14804,7 @@ var alimentosms = [
     },
     {
       Id: "264",
-      Alimentos: "Porco   pernil cru",
+      Alimento: "Porco   pernil cru",
       Energia: "186",
       Umidade: "67.1",
       MS: "32.900000000000009",
@@ -14828,7 +14828,7 @@ var alimentosms = [
     },
     {
       Id: "265",
-      Alimentos: "Porco costela crua",
+      Alimento: "Porco costela crua",
       Energia: "256",
       Umidade: "61.2",
       MS: "38.8",
@@ -14848,7 +14848,7 @@ var alimentosms = [
     },
     {
       Id: "266",
-      Alimentos: "Porco fresco pernil traseiro carne magra e gordura cozido assado",
+      Alimento: "Porco fresco pernil traseiro carne magra e gordura cozido assado",
       Energia: "209",
       Umidade: "61.92",
       MS: "38.08",
@@ -14889,7 +14889,7 @@ var alimentosms = [
     },
     {
       Id: "267",
-      Alimentos: "Porco lombo cru",
+      Alimento: "Porco lombo cru",
       Energia: "176",
       Umidade: "67.7",
       MS: "32.3",
@@ -14909,20 +14909,20 @@ var alimentosms = [
     },
     {
       Id: "268",
-      Alimentos: "Porquinho da Índia",
+      Alimento: "Porquinho da Índia",
       Umidade: "68.7",
       MS: "31.3"
     },
     {
       Id: "269",
-      Alimentos: "Porquinho-da-índia",
+      Alimento: "Porquinho-da-índia",
       Energia: "125.2",
       Umidade: "68.7",
       MS: "31.3"
     },
     {
       Id: "270",
-      Alimentos: "Pós-Larva de Camarão Branco do Pacífico (Litopenaeus vannamei)",
+      Alimento: "Pós-Larva de Camarão Branco do Pacífico (Litopenaeus vannamei)",
       Energia: "91.95000000000002",
       Umidade: "75.01",
       MS: "24.989999999999996",
@@ -14933,7 +14933,7 @@ var alimentosms = [
     },
     {
       Id: "271",
-      Alimentos: "Premix Felinos",
+      Alimento: "Premix Felinos",
       Umidade: "10",
       MS: "90",
       Tau: "4",
@@ -14958,7 +14958,7 @@ var alimentosms = [
     },
     {
       Id: "272",
-      Alimentos: "Purina ProPlan Gatos Adult Optidigest",
+      Alimento: "Purina ProPlan Gatos Adult Optidigest",
       Energia: "279",
       Umidade: "12",
       MS: "88",
@@ -14982,7 +14982,7 @@ var alimentosms = [
     },
     {
       Id: "273",
-      Alimentos: "Rabanete cru",
+      Alimento: "Rabanete cru",
       Energia: "14",
       Umidade: "95.1",
       MS: "4.900000000000006",
@@ -15007,7 +15007,7 @@ var alimentosms = [
     },
     {
       Id: "274",
-      Alimentos: "Ração Alcon Bottom Fish",
+      Alimento: "Ração Alcon Bottom Fish",
       Energia: "307.5",
       Umidade: "10",
       MS: "90",
@@ -15042,7 +15042,7 @@ var alimentosms = [
     },
     {
       Id: "275",
-      Alimentos: "Ração Alcon Exóticos",
+      Alimento: "Ração Alcon Exóticos",
       Energia: "352",
       Umidade: "10",
       MS: "90",
@@ -15077,7 +15077,7 @@ var alimentosms = [
     },
     {
       Id: "276",
-      Alimentos: "Ração Alcon Mini Beta",
+      Alimento: "Ração Alcon Mini Beta",
       Energia: "314.4",
       Umidade: "10",
       MS: "90",
@@ -15112,7 +15112,7 @@ var alimentosms = [
     },
     {
       Id: "277",
-      Alimentos: "Ração Alcon Monkey Cookies",
+      Alimento: "Ração Alcon Monkey Cookies",
       Energia: "341",
       Umidade: "10",
       MS: "90",
@@ -15147,7 +15147,7 @@ var alimentosms = [
     },
     {
       Id: "278",
-      Alimentos: "Ração Alcon Periquito e Agapornis",
+      Alimento: "Ração Alcon Periquito e Agapornis",
       Energia: "365",
       Umidade: "10",
       MS: "90",
@@ -15182,7 +15182,7 @@ var alimentosms = [
     },
     {
       Id: "279",
-      Alimentos: "Ração Alcon Répteis Jabuti",
+      Alimento: "Ração Alcon Répteis Jabuti",
       Energia: "321",
       Umidade: "10",
       MS: "90",
@@ -15196,7 +15196,7 @@ var alimentosms = [
     },
     {
       Id: "280",
-      Alimentos: "Ração Alcon Super Top Life",
+      Alimento: "Ração Alcon Super Top Life",
       Energia: "342",
       Umidade: "10",
       MS: "90",
@@ -15231,7 +15231,7 @@ var alimentosms = [
     },
     {
       Id: "281",
-      Alimentos: "Ração Anatídeos Manutenção (FPZSP)",
+      Alimento: "Ração Anatídeos Manutenção (FPZSP)",
       Energia: "94.24",
       Umidade: "12",
       MS: "88",
@@ -15247,7 +15247,7 @@ var alimentosms = [
     },
     {
       Id: "282",
-      Alimentos: "Ração Aqua line Supralevino",
+      Alimento: "Ração Aqua line Supralevino",
       Energia: "334",
       Umidade: "12",
       MS: "88",
@@ -15277,7 +15277,7 @@ var alimentosms = [
     },
     {
       Id: "283",
-      Alimentos: "Ração Araras MegaZoo",
+      Alimento: "Ração Araras MegaZoo",
       Energia: "360",
       Umidade: "12",
       MS: "88",
@@ -15313,7 +15313,7 @@ var alimentosms = [
     },
     {
       Id: "284",
-      Alimentos: "Ração Aves de Postura 17",
+      Alimento: "Ração Aves de Postura 17",
       Energia: "276.5",
       Umidade: "10",
       MS: "90",
@@ -15327,7 +15327,7 @@ var alimentosms = [
     },
     {
       Id: "285",
-      Alimentos: "Ração Aves Nutrimax Postura",
+      Alimento: "Ração Aves Nutrimax Postura",
       Energia: "280.5",
       Umidade: "13",
       MS: "87",
@@ -15341,7 +15341,7 @@ var alimentosms = [
     },
     {
       Id: "286",
-      Alimentos: "Ração Cachorro Dingo Especial",
+      Alimento: "Ração Cachorro Dingo Especial",
       Energia: "333",
       Umidade: "12",
       MS: "88",
@@ -15356,7 +15356,7 @@ var alimentosms = [
     },
     {
       Id: "287",
-      Alimentos: "Ração Cachorro Especial Dog",
+      Alimento: "Ração Cachorro Especial Dog",
       Energia: "340.3",
       Umidade: "10",
       MS: "90",
@@ -15373,7 +15373,7 @@ var alimentosms = [
     },
     {
       Id: "288",
-      Alimentos: "Ração Cachorro MixDog",
+      Alimento: "Ração Cachorro MixDog",
       Energia: "348",
       Umidade: "12",
       MS: "88",
@@ -15387,7 +15387,7 @@ var alimentosms = [
     },
     {
       Id: "289",
-      Alimentos: "Ração Cachorro Naturalis Total",
+      Alimento: "Ração Cachorro Naturalis Total",
       Umidade: "12",
       MS: "88",
       PB: "23",
@@ -15401,7 +15401,7 @@ var alimentosms = [
     },
     {
       Id: "290",
-      Alimentos: "Ração Cachorro Royal Canin Obesity",
+      Alimento: "Ração Cachorro Royal Canin Obesity",
       Energia: "200",
       Umidade: "11",
       MS: "89",
@@ -15439,7 +15439,7 @@ var alimentosms = [
     },
     {
       Id: "291",
-      Alimentos: "Ração Cachorro Royal Canin Renal",
+      Alimento: "Ração Cachorro Royal Canin Renal",
       Energia: "192",
       Umidade: "11",
       MS: "89",
@@ -15479,7 +15479,7 @@ var alimentosms = [
     },
     {
       Id: "292",
-      Alimentos: "Ração Cachorro Royal Canin Satiety",
+      Alimento: "Ração Cachorro Royal Canin Satiety",
       Umidade: "11.5",
       MS: "88.5",
       PB: "28",
@@ -15492,7 +15492,7 @@ var alimentosms = [
     },
     {
       Id: "293",
-      Alimentos: "Ração Calopsita MegaZoo",
+      Alimento: "Ração Calopsita MegaZoo",
       Energia: "328",
       Umidade: "12",
       MS: "88",
@@ -15506,7 +15506,7 @@ var alimentosms = [
     },
     {
       Id: "294",
-      Alimentos: "Ração Coelho Peletizada Ximango",
+      Alimento: "Ração Coelho Peletizada Ximango",
       Energia: "264",
       Umidade: "13",
       MS: "87",
@@ -15520,7 +15520,7 @@ var alimentosms = [
     },
     {
       Id: "295",
-      Alimentos: "Ração Coelho Total",
+      Alimento: "Ração Coelho Total",
       Energia: "255",
       Umidade: "13",
       MS: "87",
@@ -15556,7 +15556,7 @@ var alimentosms = [
     },
     {
       Id: "296",
-      Alimentos: "Ração Equinos Presence Corcel PM",
+      Alimento: "Ração Equinos Presence Corcel PM",
       Energia: "258.5",
       Umidade: "13",
       MS: "87",
@@ -15570,7 +15570,7 @@ var alimentosms = [
     },
     {
       Id: "297",
-      Alimentos: "Ração Equinos Pró-Equinos 12%",
+      Alimento: "Ração Equinos Pró-Equinos 12%",
       Energia: "290",
       Umidade: "13",
       MS: "87",
@@ -15584,7 +15584,7 @@ var alimentosms = [
     },
     {
       Id: "298",
-      Alimentos: "Ração Farmina N&D Cães Frango e Romã Adulto Mini",
+      Alimento: "Ração Farmina N&D Cães Frango e Romã Adulto Mini",
       Energia: "488",
       Umidade: "9",
       MS: "91",
@@ -15598,7 +15598,7 @@ var alimentosms = [
     },
     {
       Id: "299",
-      Alimentos: "Ração Farmina N&D Cães Frango e Romã Senior Mini",
+      Alimento: "Ração Farmina N&D Cães Frango e Romã Senior Mini",
       Energia: "361.9",
       Umidade: "9",
       MS: "91",
@@ -15612,7 +15612,7 @@ var alimentosms = [
     },
     {
       Id: "300",
-      Alimentos: "Ração Farmina UltraHypo Cães",
+      Alimento: "Ração Farmina UltraHypo Cães",
       Umidade: "9",
       MS: "91",
       PB: "18",
@@ -15625,7 +15625,7 @@ var alimentosms = [
     },
     {
       Id: "301",
-      Alimentos: "Ração Felino RoyalCanin Gastro Intestinal",
+      Alimento: "Ração Felino RoyalCanin Gastro Intestinal",
       Energia: "404.8",
       Umidade: "8",
       MS: "92",
@@ -15664,7 +15664,7 @@ var alimentosms = [
     },
     {
       Id: "302",
-      Alimentos: "Ração Ferret Nutrópica",
+      Alimento: "Ração Ferret Nutrópica",
       Energia: "416",
       Umidade: "12",
       MS: "88",
@@ -15681,7 +15681,7 @@ var alimentosms = [
     },
     {
       Id: "303",
-      Alimentos: "Ração Gato Hills",
+      Alimento: "Ração Gato Hills",
       Energia: "412.7",
       Umidade: "9.5",
       MS: "90.5",
@@ -15721,7 +15721,7 @@ var alimentosms = [
     },
     {
       Id: "304",
-      Alimentos: "Ração Gato Mithy Cat",
+      Alimento: "Ração Gato Mithy Cat",
       Energia: "356",
       Umidade: "12",
       MS: "88",
@@ -15737,7 +15737,7 @@ var alimentosms = [
     },
     {
       Id: "305",
-      Alimentos: "Ração Gato Naturalis Total",
+      Alimento: "Ração Gato Naturalis Total",
       Umidade: "10",
       MS: "90",
       PB: "31",
@@ -15755,7 +15755,7 @@ var alimentosms = [
     },
     {
       Id: "306",
-      Alimentos: "Ração Herbívoros Manutenção Alta Energia (FPZSP)",
+      Alimento: "Ração Herbívoros Manutenção Alta Energia (FPZSP)",
       Energia: "106.54",
       Umidade: "11.43",
       MS: "88.57",
@@ -15769,7 +15769,7 @@ var alimentosms = [
     },
     {
       Id: "307",
-      Alimentos: "Ração Jabutis Nutricon",
+      Alimento: "Ração Jabutis Nutricon",
       Energia: "299",
       Umidade: "12",
       MS: "88",
@@ -15803,7 +15803,7 @@ var alimentosms = [
     },
     {
       Id: "308",
-      Alimentos: "Ração MegaZoo Calopsitas com Frutas e Legumes",
+      Alimento: "Ração MegaZoo Calopsitas com Frutas e Legumes",
       Energia: "328",
       Umidade: "12",
       MS: "88",
@@ -15818,7 +15818,7 @@ var alimentosms = [
     },
     {
       Id: "309",
-      Alimentos: "Ração Mini Coelhos Zootkna",
+      Alimento: "Ração Mini Coelhos Zootkna",
       Umidade: "12",
       MS: "88",
       PB: "1.2",
@@ -15829,7 +15829,7 @@ var alimentosms = [
     },
     {
       Id: "310",
-      Alimentos: "Ração Neovia Nutripiscis",
+      Alimento: "Ração Neovia Nutripiscis",
       Energia: "340",
       Umidade: "10",
       MS: "90",
@@ -15844,7 +15844,7 @@ var alimentosms = [
     },
     {
       Id: "311",
-      Alimentos: "Ração Nutricon Marinho dia a dia",
+      Alimento: "Ração Nutricon Marinho dia a dia",
       Energia: "299",
       Umidade: "12",
       MS: "88",
@@ -15877,7 +15877,7 @@ var alimentosms = [
     },
     {
       Id: "312",
-      Alimentos: "Ração Nutricon Spirulina",
+      Alimento: "Ração Nutricon Spirulina",
       Energia: "330",
       Umidade: "12",
       MS: "88",
@@ -15904,7 +15904,7 @@ var alimentosms = [
     },
     {
       Id: "313",
-      Alimentos: "Ração Nutrimax Coelho",
+      Alimento: "Ração Nutrimax Coelho",
       Energia: "280.5",
       Umidade: "13",
       MS: "87",
@@ -15931,7 +15931,7 @@ var alimentosms = [
     },
     {
       Id: "314",
-      Alimentos: "Ração Nutripássaros Papagaios",
+      Alimento: "Ração Nutripássaros Papagaios",
       Energia: "334",
       Umidade: "12",
       MS: "88",
@@ -15945,7 +15945,7 @@ var alimentosms = [
     },
     {
       Id: "315",
-      Alimentos: "Ração Nutrópica Calopsita Natural",
+      Alimento: "Ração Nutrópica Calopsita Natural",
       Energia: "349",
       Umidade: "12",
       MS: "88",
@@ -15960,7 +15960,7 @@ var alimentosms = [
     },
     {
       Id: "316",
-      Alimentos: "Ração Nutrópica Coelhos Filhote",
+      Alimento: "Ração Nutrópica Coelhos Filhote",
       Energia: "234",
       Umidade: "12",
       MS: "88",
@@ -15994,7 +15994,7 @@ var alimentosms = [
     },
     {
       Id: "317",
-      Alimentos: "Ração Nutrópica Extrusados",
+      Alimento: "Ração Nutrópica Extrusados",
       Energia: "347",
       Umidade: "12",
       MS: "88",
@@ -16028,7 +16028,7 @@ var alimentosms = [
     },
     {
       Id: "318",
-      Alimentos: "Ração Papagaios Nutripassaros",
+      Alimento: "Ração Papagaios Nutripassaros",
       Energia: "362",
       Umidade: "12",
       MS: "88",
@@ -16042,7 +16042,7 @@ var alimentosms = [
     },
     {
       Id: "319",
-      Alimentos: "Ração Poytara Carnívoros de Fundo",
+      Alimento: "Ração Poytara Carnívoros de Fundo",
       Energia: "322",
       Umidade: "15",
       MS: "85",
@@ -16077,7 +16077,7 @@ var alimentosms = [
     },
     {
       Id: "320",
-      Alimentos: "Ração Poytara Carnívoros de Superfície",
+      Alimento: "Ração Poytara Carnívoros de Superfície",
       Energia: "283",
       Umidade: "15",
       MS: "85",
@@ -16111,7 +16111,7 @@ var alimentosms = [
     },
     {
       Id: "321",
-      Alimentos: "Ração Poytara Carpa 6 x 1",
+      Alimento: "Ração Poytara Carpa 6 x 1",
       Energia: "352.1",
       Umidade: "12",
       MS: "88",
@@ -16148,7 +16148,7 @@ var alimentosms = [
     },
     {
       Id: "322",
-      Alimentos: "Ração Poytara Ciclídeos Herbívoros",
+      Alimento: "Ração Poytara Ciclídeos Herbívoros",
       Energia: "328",
       Umidade: "10",
       MS: "90",
@@ -16182,7 +16182,7 @@ var alimentosms = [
     },
     {
       Id: "323",
-      Alimentos: "Ração Poytara Ciclídeos Onívoros",
+      Alimento: "Ração Poytara Ciclídeos Onívoros",
       Energia: "330",
       Umidade: "12",
       MS: "88",
@@ -16216,7 +16216,7 @@ var alimentosms = [
     },
     {
       Id: "324",
-      Alimentos: "Ração Poytara Disco Dia a Dia",
+      Alimento: "Ração Poytara Disco Dia a Dia",
       Energia: "334",
       Umidade: "12",
       MS: "88",
@@ -16251,7 +16251,7 @@ var alimentosms = [
     },
     {
       Id: "325",
-      Alimentos: "Ração Poytara Disco Supra",
+      Alimento: "Ração Poytara Disco Supra",
       Energia: "321",
       Umidade: "15",
       MS: "85",
@@ -16286,7 +16286,7 @@ var alimentosms = [
     },
     {
       Id: "326",
-      Alimentos: "Ração Poytara Habitat",
+      Alimento: "Ração Poytara Habitat",
       Energia: "333.5",
       Umidade: "10",
       MS: "90",
@@ -16319,7 +16319,7 @@ var alimentosms = [
     },
     {
       Id: "327",
-      Alimentos: "Ração Poytara Marinhos",
+      Alimento: "Ração Poytara Marinhos",
       Energia: "338",
       Umidade: "10",
       MS: "90",
@@ -16351,7 +16351,7 @@ var alimentosms = [
     },
     {
       Id: "328",
-      Alimentos: "Ração Poytara Marinhos Flakes",
+      Alimento: "Ração Poytara Marinhos Flakes",
       Energia: "338",
       Umidade: "10",
       MS: "90",
@@ -16383,7 +16383,7 @@ var alimentosms = [
     },
     {
       Id: "329",
-      Alimentos: "Ração Poytara Peixes de Fundo",
+      Alimento: "Ração Poytara Peixes de Fundo",
       Energia: "341",
       Umidade: "12",
       MS: "88",
@@ -16416,7 +16416,7 @@ var alimentosms = [
     },
     {
       Id: "330",
-      Alimentos: "Ração Poytara Spirulina",
+      Alimento: "Ração Poytara Spirulina",
       Energia: "354",
       Umidade: "10",
       MS: "90",
@@ -16448,7 +16448,7 @@ var alimentosms = [
     },
     {
       Id: "331",
-      Alimentos: "Ração Premier",
+      Alimento: "Ração Premier",
       Energia: "354",
       Umidade: "10",
       MS: "90",
@@ -16462,7 +16462,7 @@ var alimentosms = [
     },
     {
       Id: "332",
-      Alimentos: "Ração Quatree Cães Adultos Dermato",
+      Alimento: "Ração Quatree Cães Adultos Dermato",
       Energia: "395",
       Umidade: "10",
       MS: "90",
@@ -16483,7 +16483,7 @@ var alimentosms = [
     },
     {
       Id: "333",
-      Alimentos: "Ração Roedores PicNic",
+      Alimento: "Ração Roedores PicNic",
       Umidade: "11",
       MS: "89",
       PB: "17",
@@ -16496,7 +16496,7 @@ var alimentosms = [
     },
     {
       Id: "334",
-      Alimentos: "Ração Royal Gatos Canin Exigent ",
+      Alimento: "Ração Royal Gatos Canin Exigent ",
       Energia: "397.2",
       Umidade: "8",
       MS: "92",
@@ -16534,7 +16534,7 @@ var alimentosms = [
     },
     {
       Id: "335",
-      Alimentos: "Ração Suínos (FPZSP)",
+      Alimento: "Ração Suínos (FPZSP)",
       Energia: "108.42999999999999",
       Umidade: "11",
       MS: "89",
@@ -16550,7 +16550,7 @@ var alimentosms = [
     },
     {
       Id: "336",
-      Alimentos: "Ração Supra Acqua Line Pré-Juvenil",
+      Alimento: "Ração Supra Acqua Line Pré-Juvenil",
       Energia: "324",
       Umidade: "12",
       MS: "88",
@@ -16584,7 +16584,7 @@ var alimentosms = [
     },
     {
       Id: "337",
-      Alimentos: "Ração Tetra Marine Large Flakes",
+      Alimento: "Ração Tetra Marine Large Flakes",
       Energia: "370.5",
       Umidade: "6",
       MS: "94",
@@ -16600,7 +16600,7 @@ var alimentosms = [
     },
     {
       Id: "338",
-      Alimentos: "Ração Trinca-Ferro Nutrópica",
+      Alimento: "Ração Trinca-Ferro Nutrópica",
       Energia: "296",
       Umidade: "12",
       MS: "88",
@@ -16629,7 +16629,7 @@ var alimentosms = [
     },
     {
       Id: "339",
-      Alimentos: "Ração Tucanos MegaZoo",
+      Alimento: "Ração Tucanos MegaZoo",
       Energia: "300",
       Umidade: "11",
       MS: "89",
@@ -16664,7 +16664,7 @@ var alimentosms = [
     },
     {
       Id: "340",
-      Alimentos: "Rações Total Suíno Inicial",
+      Alimento: "Rações Total Suíno Inicial",
       Energia: "301.5",
       Umidade: "13",
       MS: "87",
@@ -16678,7 +16678,7 @@ var alimentosms = [
     },
     {
       Id: "341",
-      Alimentos: "Raffy Vital repteis/herbivoros",
+      Alimento: "Raffy Vital repteis/herbivoros",
       Energia: "302.1",
       Umidade: "5.5",
       MS: "94.5",
@@ -16692,28 +16692,28 @@ var alimentosms = [
     },
     {
       Id: "342",
-      Alimentos: "Ratinhos",
+      Alimento: "Ratinhos",
       Energia: "71",
       Umidade: "82",
       MS: "18"
     },
     {
       Id: "343",
-      Alimentos: "Rato adulto",
+      Alimento: "Rato adulto",
       Energia: "208",
       Umidade: "64.7",
       MS: "35.3"
     },
     {
       Id: "344",
-      Alimentos: "Rato jovem",
+      Alimento: "Rato jovem",
       Energia: "98",
       Umidade: "79.2",
       MS: "20.799999999999998"
     },
     {
       Id: "345",
-      Alimentos: "Repolho branco cru",
+      Alimento: "Repolho branco cru",
       Energia: "17",
       Umidade: "94.7",
       MS: "5.299999999999997",
@@ -16738,7 +16738,7 @@ var alimentosms = [
     },
     {
       Id: "346",
-      Alimentos: "Repolho crespo cru",
+      Alimento: "Repolho crespo cru",
       Energia: "27",
       Umidade: "91",
       MS: "9",
@@ -16779,7 +16779,7 @@ var alimentosms = [
     },
     {
       Id: "347",
-      Alimentos: "Rins bovinos",
+      Alimento: "Rins bovinos",
       Energia: "99",
       Umidade: "77.89",
       MS: "22.11",
@@ -16804,7 +16804,7 @@ var alimentosms = [
     },
     {
       Id: "348",
-      Alimentos: "Robalo (Dicentrarchus labrax)",
+      Alimento: "Robalo (Dicentrarchus labrax)",
       Energia: "95.8",
       Umidade: "77.49",
       MS: "22.510000000000006",
@@ -16823,7 +16823,7 @@ var alimentosms = [
     },
     {
       Id: "349",
-      Alimentos: "Robalo Riscado (Morone saxatilis)",
+      Alimento: "Robalo Riscado (Morone saxatilis)",
       Energia: "145.8",
       Umidade: "69.9",
       MS: "30.099999999999996",
@@ -16833,7 +16833,7 @@ var alimentosms = [
     },
     {
       Id: "350",
-      Alimentos: "Royal Canin Recovery",
+      Alimento: "Royal Canin Recovery",
       Energia: "105.40000000000004",
       Umidade: "74",
       MS: "26",
@@ -16847,7 +16847,7 @@ var alimentosms = [
     },
     {
       Id: "351",
-      Alimentos: "Rúcula crua",
+      Alimento: "Rúcula crua",
       Energia: "13",
       Umidade: "94.8",
       MS: "5.200000000000003",
@@ -16871,7 +16871,7 @@ var alimentosms = [
     },
     {
       Id: "352",
-      Alimentos: "Sal dietético",
+      Alimento: "Sal dietético",
       Umidade: "0.6",
       MS: "99.4",
       MM: "99.4",
@@ -16881,7 +16881,7 @@ var alimentosms = [
     },
     {
       Id: "353",
-      Alimentos: "Salmão cru sem pele",
+      Alimento: "Salmão cru sem pele",
       Energia: "167",
       Umidade: "69",
       MS: "31",
@@ -16904,7 +16904,7 @@ var alimentosms = [
     },
     {
       Id: "354",
-      Alimentos: "Salmão filé grelhado sem sal sem óleo",
+      Alimento: "Salmão filé grelhado sem sal sem óleo",
       Energia: "222",
       Umidade: "60.7",
       MS: "39.3",
@@ -16923,7 +16923,7 @@ var alimentosms = [
     },
     {
       Id: "355",
-      Alimentos: "Sarda (Scomber scombrus)",
+      Alimento: "Sarda (Scomber scombrus)",
       Energia: "184.8",
       Umidade: "69.3",
       MS: "30.700000000000004",
@@ -16933,7 +16933,7 @@ var alimentosms = [
     },
     {
       Id: "356",
-      Alimentos: "Sardinha",
+      Alimento: "Sardinha",
       Energia: "95.03",
       Umidade: "77.28",
       MS: "22.72",
@@ -16943,7 +16943,7 @@ var alimentosms = [
     },
     {
       Id: "357",
-      Alimentos: "Sardinha   inteira   crua",
+      Alimento: "Sardinha   inteira   crua",
       Energia: "114",
       Umidade: "76.6",
       MS: "23.400000000000007",
@@ -16970,7 +16970,7 @@ var alimentosms = [
     },
     {
       Id: "358",
-      Alimentos: "Semente de girassol",
+      Alimento: "Semente de girassol",
       Energia: "570",
       Umidade: "5.37",
       MS: "94.63",
@@ -16999,7 +16999,7 @@ var alimentosms = [
     },
     {
       Id: "359",
-      Alimentos: "Silagem de milho   normal (%MS)",
+      Alimento: "Silagem de milho   normal (%MS)",
       Energia: "275",
       Umidade: "64.9",
       MS: "35.099999999999997",
@@ -17026,7 +17026,7 @@ var alimentosms = [
     },
     {
       Id: "360",
-      Alimentos: "Silver Trevally (Psdeudocaranx georgianus)",
+      Alimento: "Silver Trevally (Psdeudocaranx georgianus)",
       Energia: "115.69999999999999",
       Umidade: "74.2",
       MS: "25.799999999999998",
@@ -17036,7 +17036,7 @@ var alimentosms = [
     },
     {
       Id: "361",
-      Alimentos: "Siri",
+      Alimento: "Siri",
       Energia: "87",
       Umidade: "79.02",
       MS: "20.980000000000005",
@@ -17078,7 +17078,7 @@ var alimentosms = [
     },
     {
       Id: "362",
-      Alimentos: "Soja   queijo   tofu",
+      Alimento: "Soja   queijo   tofu",
       Energia: "64",
       Umidade: "86.6",
       MS: "13.400000000000006",
@@ -17103,7 +17103,7 @@ var alimentosms = [
     },
     {
       Id: "363",
-      Alimentos: "Sororoca (cavala) cru",
+      Alimento: "Sororoca (cavala) cru",
       Energia: "105.8",
       Umidade: "75.58",
       MS: "24.42",
@@ -17137,7 +17137,7 @@ var alimentosms = [
     },
     {
       Id: "364",
-      Alimentos: "Sororoca (Scomberomorus maculatus)",
+      Alimento: "Sororoca (Scomberomorus maculatus)",
       Energia: "199.63",
       Umidade: "62.94",
       MS: "37.06",
@@ -17156,7 +17156,7 @@ var alimentosms = [
     },
     {
       Id: "365",
-      Alimentos: "Suplemento Equideos Coequi Plus",
+      Alimento: "Suplemento Equideos Coequi Plus",
       MS: "100",
       Ca: "17.5",
       P: "6",
@@ -17173,7 +17173,7 @@ var alimentosms = [
     },
     {
       Id: "366",
-      Alimentos: "Suplemento Nutroplux Senior",
+      Alimento: "Suplemento Nutroplux Senior",
       Umidade: "0",
       MS: "100",
       Ca: "21000",
@@ -17202,7 +17202,7 @@ var alimentosms = [
     },
     {
       Id: "367",
-      Alimentos: "Tainha",
+      Alimento: "Tainha",
       Energia: "105.9",
       Umidade: "78.4",
       MS: "21.599999999999996",
@@ -17212,7 +17212,7 @@ var alimentosms = [
     },
     {
       Id: "368",
-      Alimentos: "Tainhota (Mugil cephalus)",
+      Alimento: "Tainhota (Mugil cephalus)",
       Energia: "117",
       Umidade: "77",
       MS: "23",
@@ -17247,7 +17247,7 @@ var alimentosms = [
     },
     {
       Id: "369",
-      Alimentos: "Tainhota (Mugil cephalus) Flórida",
+      Alimento: "Tainhota (Mugil cephalus) Flórida",
       Energia: "373.29999999999998",
       Umidade: "30.5",
       MS: "69.5",
@@ -17257,14 +17257,14 @@ var alimentosms = [
     },
     {
       Id: "370",
-      Alimentos: "Tenébrio molitor",
+      Alimento: "Tenébrio molitor",
       Energia: "187",
       Umidade: "62.9",
       MS: "37.1"
     },
     {
       Id: "371",
-      Alimentos: "Tilápia filé cru",
+      Alimento: "Tilápia filé cru",
       Energia: "93",
       Umidade: "78.2",
       MS: "21.799999999999998",
@@ -17287,7 +17287,7 @@ var alimentosms = [
     },
     {
       Id: "372",
-      Alimentos: "Tomate   com semente   cru",
+      Alimento: "Tomate   com semente   cru",
       Energia: "15",
       Umidade: "95.1",
       MS: "4.900000000000006",
@@ -17312,7 +17312,7 @@ var alimentosms = [
     },
     {
       Id: "373",
-      Alimentos: "Tomatinho cru",
+      Alimento: "Tomatinho cru",
       Energia: "32",
       Umidade: "91.63",
       MS: "8.370000000000005",
@@ -17346,7 +17346,7 @@ var alimentosms = [
     },
     {
       Id: "374",
-      Alimentos: "Traíra filé cru",
+      Alimento: "Traíra filé cru",
       Energia: "102.59999999999998",
       Umidade: "75.08",
       MS: "24.92",
@@ -17357,7 +17357,7 @@ var alimentosms = [
     },
     {
       Id: "375",
-      Alimentos: "Trigo grão cru",
+      Alimento: "Trigo grão cru",
       Energia: "336",
       Umidade: "10.4",
       MS: "89.6",
@@ -17382,7 +17382,7 @@ var alimentosms = [
     },
     {
       Id: "376",
-      Alimentos: "Uva itália   crua",
+      Alimento: "Uva itália   crua",
       Energia: "53",
       Umidade: "85",
       MS: "15",
@@ -17404,7 +17404,7 @@ var alimentosms = [
     },
     {
       Id: "377",
-      Alimentos: "Uva rubi   crua",
+      Alimento: "Uva rubi   crua",
       Energia: "49",
       Umidade: "86.1",
       MS: "13.900000000000006",
@@ -17428,7 +17428,7 @@ var alimentosms = [
     },
     {
       Id: "378",
-      Alimentos: "Vagem   crua",
+      Alimento: "Vagem   crua",
       Energia: "25",
       Umidade: "92.2",
       MS: "7.799999999999997",
@@ -17451,7 +17451,7 @@ var alimentosms = [
     },
     {
       Id: "379",
-      Alimentos: "Vagem cozida sem sal sem óleo",
+      Alimento: "Vagem cozida sem sal sem óleo",
       Energia: "23",
       Umidade: "92.8",
       MS: "7.200000000000003",
@@ -17474,7 +17474,7 @@ var alimentosms = [
     },
     {
       Id: "380",
-      Alimentos: "Xarelete",
+      Alimento: "Xarelete",
       Energia: "112.72999999999999",
       Umidade: "66.67",
       MS: "33.33",
@@ -17486,7 +17486,7 @@ var alimentosms = [
     },
     {
       Id: "381",
-      Alimentos: "Xixarro",
+      Alimento: "Xixarro",
       Energia: "83.83999999999999",
       Umidade: "77.8",
       MS: "22.200000000000004",
