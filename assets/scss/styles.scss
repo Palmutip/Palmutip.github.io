@@ -350,6 +350,15 @@ img {
     &__img {
         border-radius: .5rem;
     }
+    &__java {
+        width: 70%;
+    }
+    &__github {
+        width: 80%;
+    }
+    &__whatsapp {
+        width: 95%;
+    }
 }
 
 
@@ -499,7 +508,7 @@ img {
     .work {
         &__container {
             grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 1fr);
+            grid-template-rows: repeat(1, 1fr);
             column-gap: 2rem;
         }
     }

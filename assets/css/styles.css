@@ -379,23 +379,31 @@ img {
 }
 
 .skills__csharp {
-    width: 95%;
+    width: 99%;
 }
 
 .skills__html {
-    width: 85%;
+    width: 75%;
 }
 
 .skills__css {
-    width: 65%;
+    width: 55%;
 }
 
 .skills__js {
-    width: 35%;
+    width: 55%;
 }
 
-.skills__ux {
-    width: 85%;
+.skills__java {
+    width: 70%;
+}
+
+.skills__whatsapp {
+    width: 95%;
+}
+
+.skills__github {
+    width: 80%;
 }
 
 .skills__img {
@@ -570,11 +578,11 @@ img {
     }
     .work__container {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
         column-gap: 2rem;
     }
     .contact__form {
-        width: 360px;
+        width: 800px;
     }
     .contact__container {
         justify-items: center;
