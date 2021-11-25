@@ -22,9 +22,10 @@
 
 :root {
     --body-font: 'Poppins', sans-serif;
-    --big-font-size: 2rem;
+    --big-font-size: 1.45rem;
     --h2-font-size: 1.25rem;
     --normal-font-size: 0.938rem;
+    --h1-font-size:1.45rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -257,6 +258,7 @@ img {
 }
 
 .home__title {
+    font-size: 40px;
     font-size: var(--big-font-size);
     margin-bottom: var(--mb-5);
 }
@@ -508,6 +510,99 @@ img {
     background-color: #f5f5f5;
 }
 
+/*========== CARD NEON ==========*/
+.neon,
+.neon__container{
+    display: grid;
+    align-items: center;
+}
+
+.neon {
+    padding: 2.5rem 0;
+}
+
+.neon__container {
+    grid-template-columns: repeat(auto-fit, minmax(312px, 1fr));
+    row-gap: 3.5rem;
+    column-gap: 2.5rem;
+}
+
+.neon__card {
+    background: rgba(255, 255, 255, 0.01);
+    color: var(--text-color-light);
+    box-shadow: var(--box-shadow-inset);
+    backdrop-filter: var(--filter-blur);
+    padding: 3.5rem 1.5rem 2rem;
+    border-radius: 3rem;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+.neon__icon {
+    width: 120px;
+    fill: var(--text-color-light);
+    filter: drop-shadow(var(--drop-shadow));
+    margin-bottom: .25rem;
+}
+
+.neon__title, .neon__description {
+    text-shadow: var(--text-shadow);  
+}
+
+.neon__title {
+    font-size: var(--biggest-font-size);
+    margin-bottom: .25rem;
+}
+
+.neon__description {
+    text-align: initial;
+    margin-bottom: 1.5rem;
+}
+
+.neon__button-icon {
+    width: 1.2rem;
+    margin-left: .5rem;
+    fill: var(--text-color-light);
+    filter: drop-shadow(var(--drop-shadow));
+}
+
+.neon__button {
+    box-shadow: var(--box-shadow-inset-button);
+    color: var(--text-color-light);
+    text-shadow: var(--text-shadow);
+    display: flex;
+    justify-content: center;
+    padding: 1.25rem;
+    border-radius: 1rem;
+}
+
+.neon__button:hover {
+    box-shadow: var(--box-shadow-inset-button-hover);
+}
+
+/* Card neon hover */
+.neon__card:hover {
+    box-shadow: var(--box-shadow-inset-hover);
+}
+
+.neon__card:hover .neon__icon {
+    filter: drop-shadow(var(--drop-shadow-hover));
+}
+
+.neon__card:hover .neon__title,
+.neon__card:hover .neon__description {
+    text-shadow: var(--text-shadow-hover);
+}
+
+.neon__card, 
+.neon__icon, 
+.neon__title, 
+.neon__description, 
+.neon__button {
+    transition: .3s;
+}
+
 
 /* ===== MEDIA QUERIES=====*/
 
@@ -597,6 +692,9 @@ img {
     .home__img {
         right: 10%;
     }
+    .neon {
+        height: 100vh;
+    }
 }
 
 @media(max-width: 500px) {
@@ -627,5 +725,31 @@ img {
         padding-left: 15px;
         font-size: 15px;
         font-weight: bold;
+    }
+    .neon__container {
+        grid-template-columns: 1fr;
+    }
+    .neon__card {
+        padding: 2rem 1rem 1.5rem;
+        border-radius: 2rem;
+        align-items: center;
+    align-content: center;
+    }
+    .neon__icon {
+        width: 80px;
+    }
+    .neon__title {
+        font-size: var(--h1-font-size);
+    }
+    .neon__description {
+        font-size: var(--smaller-font-size);
+    }
+    .neon__button {
+        padding: 1rem;
+        font-size: var(--smaller-font-size);
+        border-radius: .6rem;
+    }
+    .neon__button-icon {
+        width: 1rem;
     }
 }
