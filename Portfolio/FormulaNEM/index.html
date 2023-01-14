@@ -1,258 +1,1386 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<!-- 
-	Author: Pedro Palmuti
-	Year: 2021
- -->
+
+<!--
+        Ano: 2023
+
+        Autores:
+        - Pedro Henrique Palmuti Freitas
+        - David Lucas Vitor
+
+        Contato:
+        (35) 9 9250-7665
+    -->
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FormulaNEM</title>
-    <link rel="icon" type="image/ico" href="favicon.ico" />
 
-    <!-- =====BOX ICONS===== -->
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <!--Titulo do Site-->
+    <title>Formula NEM</title>
+
+    <!-- Habilitando acentos, cedilha, entre outros -->
+    <meta charset="utf-8" />
+
+    <!-- ////////////////////// -->
+    <!-- ///// Referências///// -->
+    <!-- ////////////////////// -->
 
     <!-- ===== CSS ===== -->
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="Recursos/css/style.css">
+    <link rel="stylesheet" href="Recursos/css/Componentes.css">
+    <link rel="stylesheet" href="Recursos/css/StormSoftware.min.css">
+    <link rel="stylesheet" href="Recursos/Icons/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Recursos/Icons/css/font-awesome.css">
 
-    <!--===== MAIN JS =====-->
-    <script src="assets/js/main.js "></script>
+    <!--===== JAVASCRIPT =====-->
+    <script src="Recursos/js/javascript.js"></script>
+    <script src="Recursos/js/ControlaSecoes.js"></script>
+    <script src="Recursos/js/ChamadasAPI.js"></script>
+    <script src="Recursos/js/StormSoftware.min.js"></script>
 
-    <!-- ===== FUNCOES JS ===== -->
-    <script type="text/javascript" src="../../js/funcoes.js"></script>
-
-    <!--===== GSAP =====-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js "></script>
-
-    <!--===== SCROLL REVEAL =====-->
-    <!--script src="https://unpkg.com/scrollreveal"></script-->
 </head>
 
-<body onload="carregaCombos()">
+<!-- Validar Autenticacao ao carregar a pagina. -->
+<body onload="InicializarSistema()">
 
-    <!--===== HEADER =====-->
-    <header class="l-header">
-        <nav class="nav bd-grid">
-            <div>
-                <a href="#" class="nav__logo">FormulaNEM</a>
-            </div>
-
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
-            </div>
-            <div class="nav__menu" id="nav-menu">
-                <div class="nav__close" id="nav-close">
-                    <i class='bx bx-x'></i>
-                </div>
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                    <li class="nav__item"><a href="Formulacao.html" class="nav__link">Formular</a></li>
-                    <li class="nav__item"><a href="Avaliacao.html" class="nav__link">Avaliação</a></li>
-                    <li class="nav__item"><a href="#alimentos" class="nav__link">Alimentos Cadastrados</a></li>
-                    <li class="nav__item"><a href="#contato" class="nav__link">Fale Conosco</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <main class="l-main">
-        <!--===== HOME =====-->
-        <section class="home" id="home">
-            <div class="home__container bd-grid">
-                <div class="home__img">
-                    <img src="assets/img/img1.png" alt="" data-speed="-2" class="move">
-                </div>
-
-                <div class="home__data">
-                    <h1 class="home__title">FormulaNEM</h1>
-                    <p class="home__description">Formulação e Fornecimento <br> para animais domésticos e silvestres.</p>
-                    <a href="#formular" class="home__button">Criar Dieta</a>
-                </div>
-            </div>
-        </section>
-
-        <!--===== Formular =====-->
-        <section class="formulacao" id="formular">
-            <h2 class="section-title">Formulação e Fornecimento</h2>
-            <div class="formulacao__container bd-grid">
-                <div>
-                    <h2 class="formulacao__subtitle">Necessidade Energética de Manutenção</h2>
-                    <p class="formulacao__text">Coloque o peso do animal em quilos e em seguida escolha a espécie ou grupo de espécies desejado. Após isso escolha o ajuste para a NEM ser calculada automaticamente. Selecione os alimentos desejados e sua porcentagem de inclusão na
-                        matéria seca dentro da dieta. Lembrando que a soma deve fechar em 100%.
-                    </p>
-                    <br>
-                    <input onchange="calculaNEM(this)" type="number" step=".01" placeholder="Peso do Animal (Kg)" class="contact__input" id="peso_animal">
-                    <select onchange="calculaNEM(this)" id="Requerimento" class="contact__input">
-                        <option value="0">NEM</option>
-                    </select>
-                    <select onchange="calculaNEM(this)" id="Ajuste" class="contact__input"> 
-                        <option value="0">Ajuste</option>
-                    </select>
-                    <h4 class="formulacao__text">Necessidade Energética de Manutenção = <span id="NemCalculada"></span> (kcal)</h4>
-                </div>
-                <div>
-                    <div>
-                        <table class="table">
-                            <thead>
-                                <th>Id</th>
-                                <th>Alimento</th>
-                                <th>% Inclusão</th>
-                            </thead>
-                            <tbody id="table_body" class="table__body">
-                                <tr>
-                                    <td data-label="Id"><b>1</b></td>
-                                    <td data-label="Alimento">
-                                        <select onchange="funcaoChange(this)" id="AlimentosMN0" class="contact__input">
-                                        <option value="0"></option>
-                                    </select>
-                                    </td>
-                                    <td data-label="% Inclusão">
-                                        <input onchange="somaInclusao(this)" type="number" step=".01" placeholder="%" class="contact__input" id="val_inclusao0">
-                                        <p id="ProximosAlimentos"></p>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <h3 class="formulacao__text">Total = <span id="Total_Inclusao"></span>%</h3>
-                    </div>
-                    <div class="formulacao__container button-grid">
-                        <div>
-                            <a onclick="calculaNutrientes()" class="mostra__button button">Calcular</a>
-                        </div>
-
-                        <div>
-                            <a onclick="LimpaDados()" class="mostra__button button">Limpar</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--===== Resultados Formulação =====-->
-        <section class="resultados" id="resultados">
-            <br>
-            <h2 class="section-title">Valor Nutricional da Dieta</h2>
-            <br>
-            <div class="resultados__container bd-grid">
-                <table class="table">
-                    <thead>
-                        <th>Nutriente</th>
-                        <th>Medida</th>
-                    </thead>
-                    <tbody id="table_resultados">
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-        <!--===== Resultados Finais =====-->
-        <section class="resultados" id="resultadosfinais">
-            <div class="formulacao__container bd-grid">
-                <div>
-                    <h2 class="formulacao__subtitle">Transformação de MS para MN direta</h2>
-                    <p class="formulacao__text">Essa tabela serve para descobrirmos quanto de cada ingrediente o animal deve consumir em matéria seca, e depois em matéria natural. Então ela tem duas regras de três. A primeira é na coluna Q. Essa conta é uma regra de três com a quantidade
-                        que o animal deve ingerir de matéria seca (na tabela anterior) com as porcentagens de inclusão do alimento. No caso, a quantidade que o animal deve ingerir é 100%, e a porcentagem de inclusão de tal alimento é X. E assim funciona
-                        para todos os alimentos escolhidos e suas porcentagens de inclusão na dieta.
-                    </p>
-                </div>
-                <div>
-                    <br><br>
-                    <table class="table">
-                        <thead>
-                            <th>Id</th>
-                            <th>Alimento</th>
-                            <th>Qtd. MS (g)</th>
-                        </thead>
-                        <tbody id="table_dieta" class="table__body">
-                        </tbody>
-                    </table>
-                    <h3 class="formulacao__text">Total = <span id="Total_Inclusao"></span>(g)</h3>
-                </div>
-            </div>
-        </section>
-
-        <!--===== Alimentos Cadastrados =====-->
-        <section class="formulacao" id="alimentos">
-            <h2 class="section-title">Alimentos Cadastrados</h2>
-            <div class="formulacao__container bd-grid">
-                <div>
-                    <h2 class="formulacao__subtitle">Nutrientes e Medidas</h2>
-                    <p class="formulacao__text">Nosso site provém um banco de dados de alimentos na matéria seca e na materia natural. Esses dados vêm de livros, onde se pode encontrar as referências bibliográficas por esse LINK.<br> Para visualizar informações sobre o alimento
-                        basta escolher um:<br><br>
-                    </p>
-                </div>
-                <div class="formulacao__img">
-                    <select onchange="MostraDados(this)" id="InfoAlimento" class="contact__input">
-                        <option value="0"></option>
-                    </select>
-                </div>
-            </div>
-        </section>
-
-        <!--===== Mostra Alimentos =====-->
-        <section class="formulacao" id="alimentos">
-            <div class="mostra_alimentos__container bd-grid">
-                <div>
-                    <h2 class="formulacao__subtitle">Valor Nutricional na Matéria Natural</h2>
-                    <table class="table">
-                        <thead>
-                            <th>Nutriente</th>
-                            <th>Medida</th>
-                        </thead>
-                        <tbody id="table_alimentos_mn">
-                        </tbody>
-                    </table>
-                </div>
-                <div>
-                    <h2 class="formulacao__subtitle">Valor Nutricional na Matéria Seca</h2>
-                    <table class="table">
-                        <thead>
-                            <th>Nutriente</th>
-                            <th>Medida</th>
-                        </thead>
-                        <tbody id="table_alimentos_ms">
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </section>
-
-        <!--===== Contato =====-->
-        <section class="contact section" id="contato">
-            <h2 class="section-title">Contato</h2>
-            <br>
-            <div class="formulacao__container bd-grid">
-                <div>
-                    <p class="formulacao__text ">Tem alguma dúvida ou sugestão para nosso site? Entre em contato com a gente. Te responderemos via e-mail em no máximo 72 horas.</p>
-                    <br>
-                </div>
-                <div class="contact__container bd-grid ">
-                    <form action="" class="contact__form " method="get" target="_blank" id="contatoForm">
-                        <input type="text " placeholder="Nome " class="contact__input " name="Nome">
-                        <input type="mail " placeholder="Email " class="contact__input " name="email" id="email">
-                        <input type="text " placeholder="Assunto " class="contact__input " name="Subject" id="subject">
-                        <textarea name="Body" placeholder="Mensagem " id="myText" cols="0 " rows="10 " class="contact__input "></textarea>
-                        <input type="button" value="Enviar " class="contact__button button ">
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!--===== FOOTER =====-->
-    <footer class="footer ">
-        <p class="footer__title ">Pedro Palmuti</p>
-        <div class="footer__social ">
-            <a href="https://www.facebook.com/palmutip/ " target="_blank " class="footer__icon "><i class='bx bxl-facebook' ></i></a>
-            <a href="https://www.instagram.com/palmutip/ " target="_blank " class="footer__icon "><i class='bx bxl-instagram' ></i></a>
-            <a href="https://wa.me/5535992507665" target="_blank" class="footer__icon"><i class='bx bxl-whatsapp' ></i></a>
+    <!--Cabecalho-->
+    <div class="DivCabecalho">
+        <div>
+            <img class="Divlogoimagem" src="Recursos/img/Logo2.png">
         </div>
-        <p>Celular / Whatsapp : +55 (35) 99250-7665</p>
-        <br>
-        <p>&#169; 2021 copyright all right reserved</p>
-    </footer>
+        <div class="DivNome">
+            <div class="DivCentralizarNome">
+                <span>David Lucas Vitor</span>
+            </div>
+            <div>
+                <img src="Recursos/img/cof.png">
+            </div>
+        </div>
+        <!--Fim Grid-->
+    </div>
+
+    <!--Div Dividindo menu lateral do resto da tela -->
+    <div class="DivMenuLateralEConteudo">
+
+        <!--Menu Lateral-->
+        <div id="DivMenuLateral">
+            <div class="DivMenuLateral">
+
+                <!-- Opções ancoradas no cabeçalho -->
+                <div class="DivOpcoes">
+
+                    <div class="DivInicio" id="BtnInicio" onclick="BtnInicio_OnClick()">
+                        <img src="Recursos/img/home.png" style="height: inherit;padding-top: 8px; padding-bottom: 8px;">
+                        <div class="LblInicio">
+                            <span>Inicio</span>
+                        </div>
+                    </div>
+
+                    <div class="DivInicio" id="BtnAlimentos" onclick="BtnAlimentos_OnClick()">
+                        <img src="Recursos/img/fruit.png" style="height: inherit; padding-top: 8px; padding-bottom: 8px;">
+                        <div class="LblInicio">
+                            <span>Alimentos</span>
+                        </div>
+                    </div>
+                    <div class="DivInicio" id="BtnDietas" onclick="BtnDietas_OnClick()">
+                        <img src="Recursos/img/calendar.png" style="height: inherit; padding-top: 8px; padding-bottom: 8px;">
+                        <div class="LblInicio">
+                            <span>Dietas</span>
+                        </div>
+                    </div>
+                    <div class="DivInicio" id="BtnEspecies" onclick="BtnEspecies_OnClick()">
+                        <img src="Recursos/img/horse.png" style="height: inherit; padding-top: 8px; padding-bottom: 8px;">
+                        <div class="LblInicio">
+                            <span>Especies</span>
+                        </div>
+                    </div>
+                    <div class="DivInicio" id="BtnAvaliar" onclick="BtnAvaliar_OnClick()">
+                        <img src="Recursos/img/Prancheta.png" style="height: inherit; padding-top: 8px; padding-bottom: 8px;">
+                        <div class="LblInicio">
+                            <span>Avaliar</span>
+                        </div>
+                    </div>
+                    <div class="DivInicio" id="BtnFormular" onclick="BtnFormular_OnClick()">
+                        <img src="Recursos/img/calculator.png" style="height: inherit; padding-top: 8px; padding-bottom: 8px;">
+                        <div class="LblInicio">
+                            <span>Formular</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Opções ancoradas no rodapé -->
+                <div class="DivConfiguracao">
+                    <div class="Configuracao" id="BtnConfiguracao" onclick="BtnConfiguracao_OnClick()">
+                        <div class="DivInicio">
+                            <img src="Recursos/img/engrenagem.png" style="height: inherit; padding-top: 8px; padding-bottom: 8px;">
+                        </div>
+                        <div class="LblInicio">
+                            <span>Configuracoes</span>
+                        </div>
+                    </div>
+                    <div class="Configuracao" onclick="BtnSair_OnClick()">
+                        <div class="DivInicio">
+                            <img src="Recursos/img/exit.png" style="height: inherit; padding-top: 8px; padding-bottom: 8px;">
+                        </div>
+                        <div class="LblInicio">
+                            <span>Sair</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Resto da tela -->
+        <div id="DivConteudoSistema">
+
+            <!-- /////////////////////////////////////////// -->
+            <!-- ///// Seções conforme escolha do Menu ///// -->
+            <!-- /////////////////////////////////////////// -->
+
+            <!-- Seção Inicio -->
+            <div class="Esconder" id="SecaoInicio">
+                <div class="col-md-12">
+                    <h1 style="color: #35A14E;text-align: center;">
+                        FORMULANEM
+                    </h1>
+                    <div class="col-md-3">
+                        <div>
+                            <div class="wes-tile">
+                                <a class="dashboard-stat wes-default-tile dashboard-stat-v2 tilecolor blue-hoki">
+                                    <div class="visual">
+                                        <i class="fa fa-book"></i>
+                                    </div>
+                                    <div class="details">
+                                        <div class="number">
+                                            <span class="tilevalue">
+                                                <span id="LblTotalAlimentosMNCadastrados">0</span>
+                                            </span>
+                                        </div>
+                                        <div class="desc tiledescription">Total de Alimentos Cadastrados</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div>
+                            <div class="wes-tile">
+                                <a class="dashboard-stat dashboard-stat-v2 wes-default-tile tilecolor blue-ebonyclay">
+                                    <div class="visual">
+                                        <i class="fa fa-users"></i>
+                                    </div>
+                                    <div class="details">
+                                        <div class="number">
+                                            <span class="tilevalue">
+                                                <span id="LblTotalDeEspeciesCadastrados">0</span>
+                                            </span>
+                                        </div>
+                                        <div class="desc tiledescription">Total de Requerimentos Cadastrados</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div>
+                            <div class="wes-tile">
+                                <a class="dashboard-stat dashboard-stat-v2 wes-default-tile tilecolor blue-steel">
+                                    <div class="visual">
+                                        <i class="fa fa-bar-chart"></i>
+                                    </div>
+                                    <div class="details">
+                                        <div class="number">
+                                            <span class="tilevalue">
+                                                <span id="LblTotalDeAjustesNemCadastrados">0</span>
+                                            </span>
+                                        </div>
+                                        <div class="desc tiledescription">Total de Ajustes de Ajustes Fisiologicos Cadastrados</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div>
+                            <div class="wes-tile">
+                                <a class="dashboard-stat dashboard-stat-v2 wes-default-tile tilecolor blue">
+                                    <div class="visual">
+                                        <i class="fa fa-calendar"></i>
+                                    </div>
+                                    <div class="details">
+                                        <div class="number">
+                                            <span class="tilevalue">
+                                                <span id="LblTotalDeDietasCadastrados">0</span>
+                                            </span>
+                                        </div>
+                                        <div class="desc tiledescription">Total de Dietas em Cadastradas</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h1 style="color: #35A14E;text-align: center;visibility:hidden;">
+                        FORMULAQUÍ!
+                    </h1>
+
+                    <div style="color: #35A14E;display:grid; grid-template-columns: 50% 50%;">
+                        <div width="100%" style="text-align: center;">
+                            <h4>
+                                <b>
+                                    Introdução.
+                                </b>
+                            </h4>
+                            <p style="text-align: justify;">
+                                <span>
+                                    O FormulaNEM é uma plataforma online de formulação de dietas para animais visando a saúde, longevidade e bem-estar animal. Por aqui é possível formular dietas de forma prática, rápida, funcional e organizada para animais selvagens e domésticos.
+                                </span>
+                            </p>
+                        </div>
+                        <div class="ContainerShape4" style="text-align:center;">
+                            <img src="Recursos/img/Home/dog.jpg" width="300" height="200" />
+                        </div>
+                    </div>
+
+                    <h2 style="color: #35A14E;text-align: center;">VANTAGENS</h2>
+
+                    <div style="color: #35A14E;display:grid; grid-template-columns: 50% 50%;">
+                        <div width="100%" style="text-align: center;">
+                            <div class="ContainerShape4">
+                                <img src="Recursos/img/Home/Tigers.jpg" width="300" height="200" />
+                            </div><br>
+                            <span>+ 1000 alimentos comumente utilizados como alimentos para animais.</span>
+                        </div>
+                        <div style="align-self: center;">
+                            <span>+ 100 requerimentos cadastrados para Diversas espécies e estados fisiológicos.</span>
+                        </div>
+                    </div>
+                    <div style="color: #35A14E;display:grid; grid-template-columns: 50% 50%;">
+                        <div width="100%" style="text-align: center;">
+
+                        </div>
+                        <div style="text-align:center;">
+                            <div class="ContainerShape4">
+                                <img src="Recursos/img/Home/food-vegetals.jpg" width="300" height="200" />
+                            </div>
+                            <br />
+                            <span>
+                                + 20 requerimentos energéticos de diferentes espécies, com seus ajustes fisiológicos.
+                            </span>
+                        </div>
+                    </div>
+                    <div style="color: #35A14E;display:grid; grid-template-columns: 50% 50%;">
+                        <div width="100%" style="text-align: center;">
+                            <div class="ContainerShape3">
+                                <img src="Recursos/img/Home/monkeys.jpg" width="300" height="200" />
+                            </div>
+                            <span>
+                                Salve e gerencie suas dietas.
+                                Cadastre mais alimentos, requerimentos nutricionais e energéticos
+                            </span>
+                        </div>
+                        <div class="ContainerShape3" style="text-align:center;">
+                            <img src="Recursos/img/Home/coding.jpg" width="300" height="200" />
+                        </div>
+                    </div>
+                    <br /><br /><br /><br />
+
+                </div>
+
+            </div>
+
+            <!-- Seção Alimentos -->
+            <div class="Esconder" id="SecaoAlimento">
+
+                <div class="col-md-12 form-control" style="height:100%;">
+
+                    <!-- Tela para listar os dados do alimento -->
+                    <div class="DivAlimentosConteudo" id="DivAlimentosConteudo">
+                        <div style="padding: 32px;">
+                            <div class="row">
+                                <div onclick="BtnAlimentosMateriaNatural_OnClick(true)" class="btn command-action blue" style="display: inline-block;">
+                                    <i id="" class="fa fa-check btn-action" href=""></i> Alimentos Materia Natural
+                                </div>
+                                <div onclick="BtnAlimentosMateriaSeca_OnClick(true)" class="btn command-action blue" style="display: inline-block;">
+                                    <i id="" class="fa fa-check btn-action" href=""></i> Alimentos Materia Seca
+                                </div>
+                            </div>
+
+                            <p>
+                                <span>
+                                    Nosso site provém um banco de dados de alimentos na matéria seca e na materia natural.
+                                </span>
+                            </p>
+
+                            <p>
+                                <span>
+                                    Esses dados vêm de livros, onde se pode encontrar as referências bibliográficas por esse LINK.
+                                    <br>
+                                    Para visualizar informações sobre o alimento basta escolher um:
+                                </span>
+                            </p>
+
+                            <span> Alimentos Cadastrados:</span>
+                            <br />
+                            <select class="form-control" style="width: 100%;" onchange="CmdInfoAlimento_OnChange(this)" id="CmdInfoAlimento">
+                                <option value="0"></option>
+                            </select>
+
+                            <h2 class="formulacao__subtitle">Valor Nutricional na Matéria Natural</h2>
+
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Nutriente</th>
+                                        <th>Medida</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="table_alimentos_mn">
+                                </tbody>
+                            </table>
+
+                            <h2 class="formulacao__subtitle">Valor Nutricional na Matéria Seca</h2>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Nutriente</th>
+                                        <th>Medida</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="table_alimentos_ms">
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+
+                    <!-- Formulario de Alimentos na Materia Seca -->
+                    <div class="Esconder" id="DivAlimentosMateriaSeca" style="padding: 32px;">
+                        <!-- Botão de voltar -->
+                        <div onclick="BtnAlimentosMateriaSeca_OnClick(false)" class="btn command-action default" style="display: inline-block;">
+                            <i id="" class="fa fa-chevron-circle-left btn-action" href=""></i> Voltar
+                        </div>
+
+                        <!-- Botões de ação da tabela -->
+                            <input type="button" class="btnSAVnut_alimentosms" id="BtnSAVnut_alimentosms"
+                                   value="Salvar Registro(s)" onclick="BtnSAVnut_alimentosms_OnClick()">
+                            <input type="button" class="btnDELnut_alimentosms" id="BtnDELnut_alimentosms"
+                                   value="Remover Registro(s)" onclick="BtnDELnut_alimentosms_OnClick()">
+                            <input type="button" class="btnGETnut_alimentosms" id="BtnGETnut_alimentosms"
+                                   value="Buscar Registro(s)" onclick="BtnGETnut_alimentosms_OnClick()"><br><br>
+
+                        <!-- Grid Handle e Alimento-->
+                        <div class="DivHandleAlimento">
+                            <div class="LblHandleAlimento">
+                                <span class="LblHandle" id="LblHandleMS">handle</span>
+                            </div>
+                            <div class="TxtHandle">
+                                <input type="text" class="TxtHandle" id="TxtHandleMS" style="width: 90%; height: 20px;">
+                            </div>
+                            <div class="LblHandleAlimento">
+                                <span class="Lblalimento" id="LblalimentoMS">alimento</span>
+                            </div>
+                            <div>
+                                <input type="text" class="Txtalimento" id="TxtalimentoMS" style="width: 90%; height: 20px;">
+                            </div>
+                        </div>
+
+                        <div class="DivColuna4x4">
+                            <!-- Grid campo 1-->
+                            <div class="LblEnergia">
+                                <div>
+                                    <span class="Lblenergia" id="LblenergiaMS">energia</span>
+                                </div>
+                                <div>
+                                    <input type="text" class="Txtenergia" id="TxtenergiaMS">
+                                </div>
+                                <div>
+                                    <span class="Lblumidade" id="Lblumidade">umidade</span>
+                                </div>
+                                <div>
+                                    <input type="text" class="Txtumidade" id="TxtumidadeMS">
+                                </div>
+                                <div>
+                                    <span class="Lblmateriaseca" id="Lblmateriaseca">materiaseca</span>
+                                </div>
+                                <div>
+                                    <input type="text" class="Txtmateriaseca" id="TxtmateriasecaMS">
+                                </div>
+                                <div>
+                                    <span class="Lblproteinabruta" id="Lblproteinabruta">proteinabruta</span>
+                                </div>
+                                <div>
+                                    <input type="text" class="Txtproteinabruta" id="TxtproteinabrutaMS">
+                                </div>
+                                <div class="DivEnergia">
+                                    <span class="Lblextratoetereo" id="Lblextratoetereo">extratoetereo</span>
+                                </div>
+                                <div>
+                                    <input type="text" class="Txtextratoetereo" id="TxtextratoetereoMS">
+                                </div>
+                                <div>
+                                    <span class="Lblac_linoleico6" id="Lblac_linoleico6">ac_linoleico6</span>
+                                </div>
+                                <div>
+                                    <input type="text" class="Txtac_linoleico6" id="Txtac_linoleico6MS">
+                                </div>
+                                <div>
+                                    <span class="Lblac_linoleico6" id="Lblac_linoleico6">ac_linoleico6</span>
+                                </div>
+                                <div>
+                                    <input type="text" class="Txtac_linoleico6" id="Txtac_linoleico6MS">
+                                </div>
+                                <div>
+                                    <span class="Lblmateriamineral" id="Lblmateriamineral">materiamineral</span>
+                                </div>
+                                <div>
+                                    <input type="text" class="Txtmateriamineral" id="TxtmateriamineralMS">
+                                </div>
+                                <div>
+                                    <span class="Lblcalcio" id="Lblcalcio">calcio</span>
+                                </div>
+                                <div>
+                                    <input type="text" class="Txtcalcio" id="TxtcalcioMS">
+                                </div>
+                                <div>
+                                    <span class="Lblfosforo" id="Lblfosforo">fosforo</span>
+                                </div>
+                                <div>
+                                    <input type="text" class="Txtfosforo" id="TxtfosforoMS">
+                                </div>
+
+
+
+                            </div>
+
+                            <!-- Grid campo 2-->
+                            <div class="LblEnergia">
+                                <div>
+                                    <span class="Lblleu" id="Lblleu">leu</span>
+                                </div>
+                                <div>
+                                    <input type="text" class="Txtleu" id="TxtleuMS">
+                                </div>
+                                <div>
+                                    <span class="Lbllis" id="Lbllis">lis</span>
+                                </div>
+                                <div>
+                                    <input type="text" class="Txtlis" id="TxtlisMS">
+                                </div>
+                                <div>
+                                    <span class="Lblmet" id="Lblmet">met</span>
+                                </div>
+                                <div>
+                                    <input type="text" class="Txtmet" id="TxtmetMS">
+                                </div>
+                                <div>
+                                    <span class="Lblfen" id="Lblfen">fen</span>
+                                </div>
+                                <div>
+                                    <input type="text" class="Txtfen" id="TxtfenMS">
+                                </div>
+                                <div>
+                                    <span class="Lbltreo" id="Lbltreo">treo</span>
+                                </div>
+                                <div>
+                                    <input type="text" class="Txttreo" id="TxttreoMS">
+                                </div>
+                                <div>
+                                    <span class="Lbltri" id="Lbltri">tri</span>
+                                </div>
+                                <div>
+                                    <input type="text" class="Txttri" id="TxttriMS">
+                                </div>
+                                <div>
+                                    <span class="Lblval" id="Lblval">val</span>
+                                </div>
+                                <div>
+                                    <input type="text" class="Txtval" id="TxtvalMS">
+                                </div>
+                                <div>
+                                    <span class="Lblac_araquidonico" id="Lblac_araquidonico">ac_araquidonico</span>
+                                </div>
+                                <div>
+                                    <input type="text" class="Txtac_araquidonico" id="Txtac_araquidonicoMS">
+                                </div>
+                                <div>
+                                    <span class="Lblac_pantotenico" id="Lblac_pantotenico">ac_pantotenico</span>
+                                </div>
+                                <div>
+                                    <input type="text" class="Txtac_pantotenico" id="Txtac_pantotenicoMS">
+                                </div>
+                                <div>
+                                    <span class="Lblniacina" id="Lblniacina">niacina</span>
+                                </div>
+                                <div>
+                                    <input type="text" class="Txtniacina" id="TxtniacinaMS">
+                                </div>
+                            </div>
+
+                            <!-- Grid campo 3-->
+                            <div class="LblEnergia">
+                                <div>
+                                    <span class="Lblmanganes" id="Lblmanganes">manganes</span>
+                                </div>
+                                <div>
+                                    <input type="text" class="Txtmanganes" id="TxtmanganesMS">
+                                </div>
+                                <div>
+                                    <span class="Lblzinco" id="Lblzinco">zinco</span>
+                                </div>
+                                <div>
+                                    <input type="text" class="Txtzinco" id="TxtzincoMS">
+                                </div>
+                                <div>
+                                    <span class="Lblvitd" id="Lblvitd">vitd</span>
+                                </div>
+                                <div>
+                                    <input type="text" class="Txtvitd" id="TxtvitdMS">
+                                </div>
+                                <div>
+                                    <span class="Lblvit_b12" id="Lblvit_b12">vit_b12</span>
+                                </div>
+                                <div>
+                                    <input type="text" class="Txtvit_b12" id="Txtvit_b12MS">
+                                </div>
+                                <div>
+                                    <span class="Lblbiotina" id="Lblbiotina">biotina</span>
+                                </div>
+                                <div>
+                                    <input type="text" class="Txtbiotina" id="TxtbiotinaMS">
+                                </div>
+                                <div>
+                                    <span class="Lblarg" id="Lblarg">arg</span>
+                                </div>
+                                <div>
+                                    <input type="text" class="Txtarg" id="TxtargMS">
+                                </div>
+                                <div>
+                                    <span class="Lblac_linolenico3" id="Lblac_linolenico3">ac_linolenico3</span>
+                                </div>
+                                <div>
+                                    <input type="text" class="Txtac_linolenico3" id="Txtac_linolenico3MS">
+                                </div>
+                                <div>
+                                    <span class="Lblepa_dha" id="Lblepa_dha">epa_dha</span>
+                                </div>
+                                <div>
+                                    <input type="text" class="Txtepa_dha" id="Txtepa_dhaMS">
+                                </div>
+                                <div>
+                                    <span class="Lblfdn" id="Lblfdn">fdn</span>
+                                </div>
+                                <div>
+                                    <input type="text" class="Txtfdn" id="TxtfdnMS">
+                                </div>
+                                <div>
+                                    <span class="Lblfda" id="Lblfda">fda</span>
+                                </div>
+                                <div>
+                                    <input type="text" class="Txtfda" id="TxtfdaMS">
+                                </div>
+                            </div>
+
+
+                            <!-- Grid campo 4-->
+                            <div class="LblEnergia">
+                                <div>
+                                    <span class="Lblcolina" id="Lblcolina">colina</span>
+                                </div>
+                                <div>
+                                    <input type="text" class="Txtcolina" id="TxtcolinaMS">
+                                </div>
+                                <div>
+                                    <span class="Lbliodo" id="Lbliodo">iodo</span>
+                                </div>
+                                <div>
+                                    <input type="text" class="Txtiodo" id="TxtiodoMS">
+                                </div>
+                                <div>
+                                    <span class="Lbltau" id="Lbltau">tau</span>
+                                </div>
+                                <div>
+                                    <input type="text" class="Txttau" id="TxttauMS">
+                                </div>
+                                <div>
+                                    <span class="Lblenxofre" id="Lblenxofre">enxofre</span>
+                                </div>
+                                <div>
+                                    <input type="text" class="Txtenxofre" id="TxtenxofreMS">
+                                </div>
+                                <div>
+                                    <span class="Lblpotassio" id="Lblpotassio">potassio</span>
+                                </div>
+                                <div>
+                                    <input type="text" class="Txtpotassio" id="TxtpotassioMS">
+                                </div>
+                                <div>
+                                    <span class="Lblmagnesio" id="Lblmagnesio">magnesio</span>
+                                </div>
+                                <div>
+                                    <input type="text" class="Txtmagnesio" id="TxtmagnesioMS">
+                                </div>
+                                <div>
+                                    <span class="Lblcobre" id="Lblcobre">cobre</span>
+                                </div>
+                                <div>
+                                    <input type="text" class="Txtcobre" id="TxtcobreMS">
+                                </div>
+                                <div>
+                                    <span class="Lblferro" id="Lblferro">ferro</span>
+                                </div>
+                                <div>
+                                    <input type="text" class="Txtferro" id="TxtferroMS">
+                                </div>
+                                <div>
+                                    <span class="Lblcnf" id="Lblcnf">cnf</span>
+                                </div>
+                                <div>
+                                    <input type="text" class="Txtcnf" id="TxtcnfMS">
+                                </div>
+                                <div>
+                                    <span class="Lblcarboidratos" id="Lblcarboidratos">carboidratos</span><br>
+                                </div>
+                                <div>
+                                    <input type="text" class="Txtcarboidratos" id="TxtcarboidratosMS">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Espaço para receber os resultados da API -->
+                        <span class="LblOutputDTODados" id="LblOutputDTODados2">Dados</span>
+
+                    </div>
+
+                    <!-- Formulario de Alimentos na Materia Natural -->
+                    <div class="Esconder" id="DivAlimentosMateriaNatural">
+
+                        <div class="row portlet" style="padding: 32px;">
+
+                            <!-- Lista de Comandos -->
+                            <div class="TxtCancelarIvi">
+
+                                <!-- Botão de voltar -->
+                                <div onclick="BtnAlimentosMateriaNatural_OnClick(false)" class="btn command-action default" style="display: inline-block;">
+                                    <i id="" class="fa fa-chevron-circle-left btn-action" href=""></i> Voltar
+                                </div>
+
+                                <!-- Botão de Cadastrar Alimento -->
+                                <div id="BtnGETnut_CadastrarAlimento" onclick="BtnGETnut_CadastrarAlimento_OnClick()" class="btn command-action blue" style="display: inline-block;">
+                                    <i class="fa fa-plus btn-action" href=""></i> Cadastrar Novo
+                                </div>
+
+                                <!-- Botão para Salvar Registros -->
+                                <div id="BtnSAVnut_AlimentosMN" onclick="BtnSAVnut_AlimentosMN_OnClick()" class="btn command-action blue" style="display: none;">
+                                    <i class="fa fa-floppy-o btn-action" href=""></i> <span id="TxtSAVnut_AlimentosMN">Salvar Registro(s)</span>
+                                </div>
+
+                                <!-- Botão para Deletar Registros -->
+                                <div id="BtnDELnut_AlimentosMN" onclick="BtnDELnut_AlimentosMN_OnClick()" class="btn command-action red" style="display: none;">
+                                    <i class="fa fa-minus btn-action" href=""></i> <span id="TxtDELnut_AlimentosMN">Remover Registro(s)</span>
+                                </div>
+
+                                <!-- Botão de Cancelar Ação -->
+                                <div id="BtnCancelarAcao" onclick="BtnCancelarAcaoMN_OnClick()" class="btn command-action default" style="display: none;">
+                                    <i class="fa fa-times btn-action" href=""></i> Cancelar
+                                </div>
+
+                                <!--Botão para Limpar o Formulário -->
+                                <div id="BtnLimparFormularioMN" onclick="BtnLimparFormularioMN_OnClick()" class="btn command-action default BtnBotaoInvisivel" style="display: inline-block;">
+                                    <i class="btn-action" href=""></i> Limpar Dados
+                                </div>
+
+                            </div>
+
+                            <!-- Input de texto para filtrar o alimento -->
+                            <div style="padding-top: 16px; padding-bottom: 32px;">
+
+                                <span style="font-size: 14px;">Filtro</span><span style="color: red;"> * </span>
+                                <br />
+
+                                <div style="display:grid; grid-template-columns: 15% 80% 5%;">
+
+                                    <select class="form-control" id="CmbNutrientes" style="width: 100%;">
+                                        <!--Tabela1-->
+                                        <option value="0">Handle</option>
+                                        <option value="1">Alimentos</option>
+                                        <option value="2">Energia</option>
+                                        <option value="3">Umidade</option>
+                                        <option value="4">MateriaSeca</option>
+                                        <option value="5">ProteinaBruta</option>
+                                        <option value="6">Extratoetereo</option>
+                                        <option value="7">Ac_linoleico6</option>
+                                        <option value="8">Materiamineral</option>
+                                        <option value="9">Calcio</option>
+                                        <option value="10">Fosforo</option>
+                                        <option value="11">Fibrabruta</option>
+                                        <option value="12">Enn</option>
+                                        <option value="13">Riboflavina</option>
+                                        <option value="14">Fen_Tir</option>
+                                        <option value="15">Vit_K</option>
+
+                                        <!--Tabela2-->
+                                        <option value="16">Leu</option>
+                                        <option value="17">Lis</option>
+                                        <option value="18">Met</option>
+                                        <option value="19">Fen</option>
+                                        <option value="20">Treo</option>
+                                        <option value="21">Tri</option>
+                                        <option value="22">Val</option>
+                                        <option value="23">Ac_Araquidonico</option>
+                                        <option value="24">Ac_Pantotenico</option>
+                                        <option value="25">Niacina</option>
+                                        <option value="26">Vit_c</option>
+                                        <option value="27">Tiamina</option>
+                                        <option value="28">Selenio</option>
+                                        <option value="29">Met_cis</option>
+                                        <option value="30">Cloro</option>
+
+                                        <!--Tabela3-->
+                                        <option value="31">Mangnes</option>
+                                        <option value="32">Zinco</option>
+                                        <option value="33">Vitd</option>
+                                        <option value="34">Vit_b12</option>
+                                        <option value="35">Biotina</option>
+                                        <option value="36">Ac_linoenico3</option>
+                                        <option value="37">Epa_Dha</option>
+                                        <option value="38">Fdn</option>
+                                        <option value="39">Fda</option>
+                                        <option value="40">Vita</option>
+                                        <option value="41">Vite</option>
+                                        <option value="42">Vit_b6</option>
+                                        <option value="43">Ac_folico</option>
+                                        <option value="44">Sodio</option>
+
+                                        <!--Tabela4-->
+                                        <option value="45">Colina</option>
+                                        <option value="46">Iodo</option>
+                                        <option value="47">Tau</option>
+                                        <option value="48">Enxofre</option>
+                                        <option value="49">Potassio</option>
+                                        <option value="50">Magnesio</option>
+                                        <option value="51">Cobre</option>
+                                        <option value="52">Ferro</option>
+                                        <option value="53">Cnf</option>
+                                        <option value="54">Carboidatos</option>
+                                        <option value="55">His</option>
+                                        <option value="56">Iso</option>
+                                    </select>
+
+                                    <input id="Txtfiltro" class="TxtFiltro form-control" type="text" style="width: 100%;">
+
+                                    <!-- Botão de Pesquisar Alimento -->
+                                    <div id="BtnGETnut_AlimentosMN" onclick="BtnGETnut_AlimentosMN_OnClick()" class="btn command-action green" style="display: inline-block;">
+                                        <i class="fa fa-search btn-action"></i>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- Grid Handle e Alimento-->
+                            <div style="padding-inline: 8px;">
+                                <div style="text-align: center;">
+                                    <div class="LblHandleAlimento">
+                                        <span style="font-size: 14px;" class="Lblalimento" id="Lblalimento"><b>Nome</b></span>
+                                    </div>
+                                    <div>
+                                        <input disabled type="text" class="Txtalimento form-control" id="Txtalimento" style="width: 100%;">
+                                    </div>
+                                </div>
+                                <div style="display:none;">
+                                    <div class="LblHandleAlimento">
+                                        <span class="LblHandle" id="LblHandle">handle</span>
+                                    </div>
+                                    <div class="TxtHandle">
+                                        <input type="text" class="TxtHandle form-control" id="TxtHandle" style="width: 90%; height: 20px;">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Formulário 4x4  dos nutrientes -->
+                            <div class="DivColuna4x4">
+                                <!-- Grid campo 1-->
+                                <div class="LblEnergia">
+                                    <div>
+                                        <span class="Lblenergia" id="Lblenergia">energia</span>
+                                    </div>
+                                    <div>
+                                        <input disabled type="text" class=" form-control Txtenergia" id="Txtenergia">
+                                    </div>
+                                    <div>
+                                        <span class="Lblumidade" id="Lblumidade">umidade</span>
+                                    </div>
+                                    <div>
+                                        <input disabled type="text" class=" form-control Txtumidade" id="Txtumidade">
+                                    </div>
+                                    <div>
+                                        <span class="Lblmateriaseca" id="Lblmateriaseca">materiaseca</span>
+                                    </div>
+                                    <div>
+                                        <input disabled type="text" class=" form-control Txtmateriaseca" id="Txtmateriaseca">
+                                    </div>
+                                    <div>
+                                        <span class="Lblproteinabruta" id="Lblproteinabruta">proteinabruta</span>
+                                    </div>
+                                    <div>
+                                        <input disabled type="text" class=" form-control Txtproteinabruta" id="Txtproteinabruta">
+                                    </div>
+                                    <div>
+                                        <span class="Lblextratoetereo" id="Lblextratoetereo">extratoetereo</span>
+                                    </div>
+                                    <div>
+                                        <input disabled type="text" class=" form-control Txtextratoetereo" id="Txtextratoetereo">
+                                    </div>
+                                    <div>
+                                        <span class="Lblac_linoleico6" id="Lblac_linoleico6">ac_linoleico6</span>
+                                    </div>
+                                    <div>
+                                        <input disabled type="text" class=" form-control Txtac_linoleico6" id="Txtac_linoleico6">
+                                    </div>
+                                    <div>
+                                        <span class="Lblmateriamineral" id="Lblmateriamineral">materiamineral</span>
+                                    </div>
+                                    <div>
+                                        <input disabled type="text" class=" form-control Txtmateriamineral" id="Txtmateriamineral">
+                                    </div>
+                                    <div>
+                                        <span class="Lblcalcio" id="Lblcalcio">calcio</span>
+                                    </div>
+                                    <div>
+                                        <input disabled type="text" class=" form-control Txtcalcio" id="Txtcalcio">
+                                    </div>
+                                    <div>
+                                        <span class="Lblfosforo" id="Lblfosforo">fosforo</span>
+                                    </div>
+                                    <div>
+                                        <input disabled type="text" class=" form-control Txtfosforo" id="Txtfosforo">
+                                    </div>
+                                    <div>
+                                        <span class="Lblfibrabruta" id="Lblfibrabruta">fibrabruta</span>
+                                    </div>
+                                    <div>
+                                        <input disabled type="text" class=" form-control Txtfibrabruta" id="Txtfibrabruta">
+                                    </div>
+                                    <div>
+                                        <span class="Lblenn" id="Lblenn">enn</span>
+
+                                    </div>
+                                    <div>
+                                        <input disabled type="text" class=" form-control Txtenn" id="Txtenn">
+                                    </div>
+                                    <div>
+                                        <span class="Lblriboflavina" id="Lblriboflavina">riboflavina</span>
+                                    </div>
+                                    <div>
+                                        <input disabled type="text" class=" form-control Txtriboflavina" id="Txtriboflavina">
+                                    </div>
+                                    <div>
+                                        <span class="Lblfen_tir" id="Lblfen_tir">fen_tir</span>
+                                        <input disabled type="text" class=" form-control Txtfen_tir" id="Txtfen_tir">
+                                    </div>
+                                    <div>
+                                        <span class="Lblvit_k" id="Lblvit_k">vit_k</span>
+                                        <input disabled type="text" class=" form-control Txtvit_k" id="Txtvit_k">
+
+
+                                    </div>
+                                </div>
+
+                                <!-- Grid campo 2-->
+                                <div class="LblEnergia">
+                                    <div>
+                                        <span class="Lblleu" id="Lblleu">leu</span>
+                                    </div>
+                                    <div>
+                                        <input disabled type="text" class=" form-control Txtleu" id="Txtleu">
+                                    </div>
+                                    <div>
+                                        <span class="Lbllis" id="Lbllis">lis</span>
+                                    </div>
+                                    <div>
+                                        <input disabled type="text" class=" form-control Txtlis" id="Txtlis">
+                                    </div>
+                                    <div>
+                                        <span class="Lblmet" id="Lblmet">met</span>
+                                    </div>
+                                    <div>
+                                        <input disabled type="text" class=" form-control Txtmet" id="Txtmet">
+                                    </div>
+                                    <div>
+                                        <span class="Lblfen" id="Lblfen">fen</span>
+                                    </div>
+                                    <div>
+                                        <input disabled type="text" class=" form-control Txtfen" id="Txtfen">
+                                    </div>
+                                    <div>
+                                        <span class="Lbltreo" id="Lbltreo">treo</span>
+                                    </div>
+                                    <div>
+                                        <input disabled type="text" class=" form-control Txttreo" id="Txttreo">
+                                    </div>
+                                    <div>
+                                        <span class="Lbltri" id="Lbltri">tri</span>
+                                    </div>
+                                    <div>
+                                        <input disabled type="text" class=" form-control Txttri" id="Txttri">
+                                    </div>
+                                    <div>
+                                        <span class="Lblval" id="Lblval">val</span>
+                                    </div>
+                                    <div>
+                                        <input disabled type="text" class=" form-control Txtval" id="Txtval">
+                                    </div>
+                                    <div>
+                                        <span class="Lblac_araquidonico" id="Lblac_araquidonico">ac_araquidonico</span>
+                                    </div>
+                                    <div>
+                                        <input disabled type="text" class=" form-control Txtac_araquidonico" id="Txtac_araquidonico">
+                                    </div>
+                                    <div>
+                                        <span class="Lblac_pantotenico" id="Lblac_pantotenico">ac_pantotenico</span>
+                                    </div>
+                                    <div>
+                                        <input disabled type="text" class=" form-control Txtac_pantotenico" id="Txtac_pantotenico">
+                                    </div>
+                                    <div>
+                                        <span class="Lblniacina" id="Lblniacina">niacina</span>
+                                    </div>
+                                    <div>
+                                        <input disabled type="text" class=" form-control Txtniacina" id="Txtniacina">
+                                    </div>
+
+                                    <div>
+                                        <span class="Lblvit_c" id="Lblvit_c">vit_c</span>
+
+                                    </div>
+                                    <div>
+                                        <input disabled type="text" class=" form-control Txtvit_c" id="Txtvit_c">
+
+
+                                    </div>
+                                    <div>
+                                        <span class="Lbltiamina" id="Lbltiamina">tiamina</span>
+
+                                    </div>
+                                    <div>
+                                        <input disabled type="text" class=" form-control Txttiamina" id="Txttiamina">
+
+
+                                    </div>
+                                    <div>
+                                        <span class="Lblselenio" id="Lblselenio">selenio</span>
+                                        <input disabled type="text" class=" form-control Txtselenio" id="Txtselenio">
+
+
+                                    </div>
+                                    <div>
+                                        <span class="Lblmet_cis" id="Lblmet_cis">met_cis</span>
+                                        <input disabled type="text" class=" form-control Txtmet_cis" id="Txtmet_cis">
+
+
+                                    </div>
+                                    <div>
+                                        <span class="Lblcloro" id="Lblcloro">cloro</span>
+                                        <input disabled type="text" class=" form-control Txtcloro" id="Txtcloro">
+                                    </div>
+                                </div>
+
+                                <!-- Grid campo 3-->
+                                <div class="LblEnergia">
+                                    <div>
+                                        <span class="Lblmanganes" id="Lblmanganes">manganes</span>
+                                    </div>
+                                    <div>
+                                        <input disabled type="text" class=" form-control Txtmanganes" id="Txtmanganes">
+                                    </div>
+                                    <div>
+                                        <span class="Lblzinco" id="Lblzinco">zinco</span>
+                                    </div>
+                                    <div>
+                                        <input disabled type="text" class=" form-control Txtzinco" id="Txtzinco">
+                                    </div>
+                                    <div>
+                                        <span class="Lblvitd" id="Lblvitd">vitd</span>
+                                    </div>
+                                    <div>
+                                        <input disabled type="text" class=" form-control Txtvitd" id="Txtvitd">
+                                    </div>
+                                    <div>
+                                        <span class="Lblvit_b12" id="Lblvit_b12">vit_b12</span>
+                                    </div>
+                                    <div>
+                                        <input disabled type="text" class=" form-control Txtvit_b12" id="Txtvit_b12">
+                                    </div>
+                                    <div>
+                                        <span class="Lblbiotina" id="Lblbiotina">biotina</span>
+                                    </div>
+                                    <div>
+                                        <input disabled type="text" class=" form-control Txtbiotina" id="Txtbiotina">
+                                    </div>
+                                    <div>
+                                        <span class="Lblarg" id="Lblarg">arg</span>
+                                    </div>
+                                    <div>
+                                        <input disabled type="text" class=" form-control Txtarg" id="Txtarg">
+                                    </div>
+                                    <div>
+                                        <span class="Lblac_linolenico3" id="Lblac_linolenico3">ac_linolenico3</span>
+                                    </div>
+                                    <div>
+                                        <input disabled type="text" class=" form-control Txtac_linolenico3" id="Txtac_linolenico3">
+                                    </div>
+                                    <div>
+                                        <span class="Lblepa_dha" id="Lblepa_dha">epa_dha</span>
+                                    </div>
+
+                                    <div>
+                                        <input disabled type="text" class=" form-control Txtepa_dha" id="Txtepa_dha">
+                                    </div>
+                                    <div>
+                                        <span class="Lblfdn" id="Lblfdn">fdn</span>
+                                    </div>
+                                    <div>
+                                        <input disabled type="text" class=" form-control Txtfdn" id="Txtfdn">
+                                    </div>
+                                    <div>
+                                        <span class="Lblfda" id="Lblfda">fda</span>
+                                    </div>
+                                    <div>
+                                        <input disabled type="text" class=" form-control Txtfda" id="Txtfda">
+                                    </div>
+                                    <div>
+                                        <span class="Lblvita" id="Lblvita">vita</span>
+                                        <input disabled type="text" class=" form-control Txtvita" id="Txtvita">
+
+                                        <span class="Lblvite" id="Lblvite">vite</span>
+                                        <input disabled type="text" class=" form-control Txtvite" id="Txtvite">
+
+                                        <span class="Lblvit_b6" id="Lblvit_b6">vit_b6</span>
+                                        <input disabled type="text" class=" form-control Txtvit_b6" id="Txtvit_b6">
+
+                                        <span class="Lblac_folico" id="Lblac_folico">ac_folico</span>
+                                        <input disabled type="text" class=" form-control Txtac_folico" id="Txtac_folico">
+
+                                        <span class="Lblsodio" id="Lblsodio">sodio</span>
+                                        <input disabled type="text" class=" form-control Txtsodio" id="Txtsodio">
+
+
+                                    </div>
+                                </div>
+
+                                <!-- Grid campo 4-->
+                                <div class="LblEnergia">
+
+                                    <div>
+
+                                        <span class="Lblcolina" id="Lblcolina">colina</span>
+                                    </div>
+                                    <div>
+                                        <input disabled type="text" class=" form-control Txtcolina" id="Txtcolina">
+                                    </div>
+                                    <div>
+
+                                        <span class="Lbliodo" id="Lbliodo">iodo</span>
+                                    </div>
+                                    <div>
+                                        <input disabled type="text" class=" form-control Txtiodo" id="Txtiodo">
+                                    </div>
+                                    <div>
+
+                                        <span class="Lbltau" id="Lbltau">tau</span>
+                                    </div>
+                                    <div>
+                                        <input disabled type="text" class=" form-control Txttau" id="Txttau">
+                                    </div>
+                                    <div>
+
+                                        <span class="Lblenxofre" id="Lblenxofre">enxofre</span>
+                                    </div>
+                                    <div>
+                                        <input disabled type="text" class=" form-control Txtenxofre" id="Txtenxofre">
+
+                                    </div>
+                                    <div>
+
+                                        <span class="Lblpotassio" id="Lblpotassio">potassio</span>
+                                    </div>
+                                    <div>
+                                        <input disabled type="text" class=" form-control Txtpotassio" id="Txtpotassio">
+                                    </div>
+                                    <div>
+
+
+                                        <span class="Lblmagnesio" id="Lblmagnesio">magnesio</span>
+                                    </div>
+                                    <div>
+                                        <input disabled type="text" class=" form-control Txtmagnesio" id="Txtmagnesio">
+                                    </div>
+                                    <div>
+
+                                        <span class="Lblcobre" id="Lblcobre">cobre</span>
+                                    </div>
+                                    <div>
+                                        <input disabled type="text" class=" form-control Txtcobre" id="Txtcobre">
+                                    </div>
+                                    <div>
+
+                                        <span class="Lblferro" id="Lblferro">ferro</span>
+                                    </div>
+                                    <div>
+                                        <input disabled type="text" class=" form-control Txtferro" id="Txtferro">
+                                    </div>
+                                    <div>
+
+                                        <span class="Lblcnf" id="Lblcnf">cnf</span>
+                                    </div>
+                                    <div>
+                                        <input disabled type="text" class=" form-control Txtcnf" id="Txtcnf">
+                                    </div>
+                                    <div>
+                                        <span class="Lblcarboidratos" id="Lblcarboidratos">carboidratos</span>
+                                    </div>
+                                    <div>
+                                        <input disabled type="text" class=" form-control Txtcarboidratos" id="Txtcarboidratos">
+                                    </div>
+                                    <div>
+                                        <span class="Lblhis" id="Lblhis">his</span>
+                                        <input disabled type="text" class=" form-control Txthis" id="Txthis">
+
+                                        <span class="Lbliso" id="Lbliso">iso</span>
+                                        <input disabled type="text" class=" form-control Txtiso" id="Txtiso">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Espaço para receber os resultados da API -->
+                            <span class="LblOutputDTODados" id="LblOutputDTODados" style="display: none;">Dados</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Seção Dietas -->
+            <div class="Esconder" id="SecaoDietas">
+                <div class="col-md-12">
+                    <br><br><br><br><br><br><br><br><br><br><br>
+                    <br><br><br><br><br><br><br><br><br><br><br>
+                    <br><br><br><br><br><br><br><br><br><br><br>
+                    <br><br><br><br><br><br><br><br><br><br><br>
+                </div>
+            </div>
+
+            <!-- Seção Especies -->
+            <div class="Esconder" id="SecaoEspecies">
+                <div class="col-md-12">
+                    <h3>NEM</h3>
+                    <br />
+                    <div>
+                        <span class="Lblnome" id="Lblnome">nome</span><br>
+                        <input type="text" class="Txtnome" id="Txtnome"><br>
+                        <span class="Lblformula" id="Lblformula">formula</span><br>
+                        <input type="text" class="Txtformula" id="Txtformula"><br>
+                        <span class="LblHandle" id="LblHandle">handle</span><br>
+                        <input type="text" class="TxtHandle" id="TxtHandle"><br>
+
+                        <!-- Botões de ação da tabela -->
+                        <input type="button" class="BtntnSAVnut_nem" id="BtnSAVnut_nem" value="Salvar Registro(s)" onclick="BtnSAVnut_nem_OnClick()">
+                        <input type="button" class="BtnDELnut_nem" id="BtnDELnut_nem" value="Remover Registro(s)" onclick="BtnDELnut_nem_OnClick()">
+                        <input type="button" class="BtnGETnut_nem" id="BtnGETnut_nem" value="Buscar Registro(s)" onclick="BtnGETnut_nem_OnClick()">
+                        <br><br>
+
+                        <!-- Espaço para receber os resultados da API -->
+                        <span id="LblOutputDTODadosNEM">Dados</span>
+                    </div>
+                    <h3>Ajuste NEM</h3>
+                    <br />
+                    <div>
+                        <span class="Lblnome" id="Lblnome">nome</span><br>
+                        <input type="text" class="Txtnome" id="Txtnome"><br>
+                        <span class="Lblformula" id="Lblformula">formula</span><br>
+                        <input type="text" class="Txtformula" id="Txtformula"><br>
+                        <span class="LblHandle" id="LblHandle">handle</span><br>
+                        <input type="text" class="TxtHandle" id="TxtHandle"><br>
+
+                        <!-- Botões de ação da tabela -->
+                        <input type="button" class="BtnSAVnut_nemajuste" id="BtnSAVnut_nemajuste" value="Salvar Registro(s)" onclick="BtnSAVnut_nemajuste_OnClick()">
+                        <input type="button" class="BtnDELnut_nemajuste" id="BtnDELnut_nemajuste" value="Remover Registro(s)" onclick="BtnDELnut_nemajuste_OnClick()">
+                        <input type="button" class="BtnGETnut_nemajuste" id="BtnGETnut_nemajuste" value="Buscar Registro(s)" onclick="BtnGETnut_nemajuste_OnClick()"><br /><br />
+
+
+                        <span class="LblOutputDTODados" id="LblOutputDTODadosAjuste">Dados</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Seção Avaliar -->
+            <div class="Esconder" id="SecaoAvaliar">
+                <div class="col-md-12">
+                    <br><br><br><br><br><br><br><br><br><br><br>
+                    <br><br><br><br><br><br><br><br><br><br><br>
+                    <br><br><br><br><br><br><br><br><br><br><br>
+                    <br><br><br><br><br><br><br><br><br><br><br>
+                </div>
+            </div>
+
+            <!-- Seção Formular -->
+            <div class="Esconder" id="SecaoFormular">
+
+                <div class="col-md-12 form-control" style="height:100%; padding-bottom: 16px;">
+
+                    <div id="DivEntradasFormulacao">
+                        <!--===== Formular =====-->
+                        <h2><b>Formulação e Fornecimento</b></h2>
+                        <div id="DivEntradasFormulcao">
+
+                            <div class="form" id="DivEntradasIniciaisFormulacao">
+                                <div class="col-md-4 col-sm-4">
+                                    <input class="form-control" type="number" step=".01" placeholder="Peso do Animal (Kg)" id="peso_animal">
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <select class="form-control" id="Requerimento">
+                                        <option disabled selected value="0">Espécie/grupo da espécie:</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <select class="form-control" id="Ajuste">
+                                        <option disabled selected value="0">Estado fisiológico/enfermidade:</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+                            <div class="DivBotoesDeAcao" style="padding-top: 8px; padding-bottom: 8px;">
+                                <div id="BtnCalculaNutrientes" onclick="BtnCalculaNutrientes_OnClick()" class="btn command-action yellow-haze" style="display: inline-block; color: black;">
+                                    <i class="fa fa-calculator btn-action" href=""></i> <span style="color: black;">Calcular</span>
+                                </div>
+                                <div id="BtnLimpaCalculoFormulacao" onclick="BtnLimpaCalculoFormulacao_OnClick()" class="btn command-action yellow-saffron" style="display: inline-block; color:black;">
+                                    <i class="fa fa-eraser btn-action" href=""></i> <span style="color: black;">Limpar</span>
+                                </div>
+                            </div>
+
+                            <div id="DivTabelaInclusaoAlimentosFormulacao">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Id</th>
+                                            <th>Alimento</th>
+                                            <th>% Inclusão</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="table_body" class="table__body">
+                                        <tr>
+                                            <td data-label="Id"><b>1</b></td>
+                                            <td data-label="Alimento">
+                                                <select onchange="CmdAlimentosMN_OnChange(this)" id="CmdAlimentosMN0">
+                                                    <option value="0"></option>
+                                                </select>
+                                            </td>
+                                            <td data-label="% Inclusão">
+                                                <input type="number" step=".01" placeholder="%" id="val_inclusao0">
+                                                <p id="ProximosAlimentos"></p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <h3>Total = <span id="Total_Inclusao"></span>%</h3>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div id="DivResultadosFormulacao">
+
+                        <!--===== Valor Nutricional da Dieta =====-->
+                        <section class="resultados" id="resultados" style="display: none;">
+                            <h2>Valor Nutricional da Dieta</h2>
+                            <br>
+                            <div>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Nutriente</th>
+                                            <th>Medida</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="table_resultados">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+
+                        <!--===== Resultados Finais =====-->
+                        <section class="resultados" id="resultadosfinais" style="display: none;">
+                            <div>
+                                <div>
+                                    <br>
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Id</th>
+                                                <th>Alimento</th>
+                                                <th>Qtd. MS (g)</th>
+                                                <th>Qtd. MN (g)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="table_dieta" class="table__body">
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                            <div style="width: 100%; text-align: center;" class="col-md-12 col-sm-12">
+                                <div class="col-md-4 col-sm-4">
+                                    <h3 class="formulacao__text">
+                                        Necessidade Energética de Manutenção = <span id="NemCalculada"></span>(kcal)
+                                    </h3>
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <h3 class="formulacao__text">
+                                        Ingestão em Matéria Seca = <span id="Total_IngestaoMS"></span>(g)
+                                    </h3>
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <h3 class="formulacao__text">
+                                        Ingestão em Matéria Natural  = <span id="Total_IngestaoMN"></span>(g)
+                                    </h3>
+                                </div>
+                            </div>
+                            <div style="margin-top:16px;">
+                                <h4>Deseja Salvar o calculo realizado para dietas futuras?</h4>
+                                <div class="btn command-action blue" style="display: inline-block;">
+                                    <i id="" class="fa fa-check btn-action" href=""></i> Salvar
+                                </div>
+                            </div>
+                            <br /><br /><br />
+                        </section>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Seção Configuração -->
+            <div class="Esconder" id="SecaoConfiguracao">
+                <div class="col-md-12">
+                    <br><br><br><br><br><br><br><br><br><br><br>
+                    <br><br><br><br><br><br><br><br><br><br><br>
+                    <br><br><br><br><br><br><br><br><br><br><br>
+                    <br><br><br><br><br><br><br><br><br><br><br>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
 </body>
 
 </html>

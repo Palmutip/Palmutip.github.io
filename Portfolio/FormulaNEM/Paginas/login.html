@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html>
+<!--
+        Ano: 2022
+
+        Autor: David Lucas Vitor
+
+        Contato:
+        (35) 9 9250-7665
+    -->
+<head>
+    <script src="../Recursos/js/ControlaSecoes.js"></script>
+</head>
+
+<body>
+    <!--Tela1-->
+    <!--Campo100x100-->
+    <Div class="DivCampo100x1002" id="DivLoguin">
+
+        <!--Usuario e Senha-->
+        <Div class="DivCampo50x50">
+            <Div class="DivUsuarioSenha">
+                <span id="LblRetornoLogin" class="LblRetornoLogin"></span>
+                <span class="LblUsuarioSenha">Usuario</span><br>
+                <input class="TxtUsuarioSenha" type="text" id="TxtUsuario"><br>
+                <span class="LblUsuarioSenha">Senha</span><br>
+                <input class="TxtUsuarioSenha" type="text" id="TxtSenha"><br><br>
+            </Div>
+            <!--Botao-->
+            <Div class="DivBotao" onclick="Login()">
+                <input class="DivBtnEntrar" type="button" value="Entrar">
+            </Div>
+            <br>
+            <Div class="DivBotao">
+                <input class="DivBtnEntrar" type="button" value="Cadastrar-se" onclick="mostraCadastro()">
+            </Div>
+        </Div>
+    </Div>
+    <!--Fim da tela 1-->
+
+    <!--TelaCadastro-->
+    <!--Campo100x100-->
+    <Div class="DivEsconder" id="DivCadastro">
+
+        <!--Usuario e Senha-->
+        <Div class="DivCampo50x50">
+            <Div class="DivUsuarioSenha">
+                <span id="LblRetornoLogin" class="LblRetornoLogin"></span>
+                <span class="LblUsuarioSenha">Usuario</span><br>
+                <input class="TxtUsuarioSenha" type="text" id="TxtUsuarioCadastro"><br>
+                <span class="LblUsuarioSenha">Senha</span><br>
+                <input class="TxtUsuarioSenha" type="text" id="TxtSenhaCadastro"><br>
+                <span class="LblUsuarioSenha">Confirmar Senha</span><br>
+                <input class="TxtUsuarioSenha" type="text" id="TxtConfirmarSenha"><br>
+                <span id="retornoCadastro" style="color: red;"></span><br><br>
+            </Div>
+            <!--Botao-->
+            <Div class="DivBotao" onclick="Cadastrar()">
+                <input class="DivBtnEntrar" type="button" value="Entrar">
+            </Div>
+        </Div>
+    </Div>
+    <!--Fim da tela 1-->
+
+    <!--Tela2-->
+    <Div class="DivEsconder" id="DivHome">
+
+        <!--Cabecalho-->
+        <Div class="Div15x100">
+            <Div>
+                <span class="LblDietas">Dietas</span>
+            </Div>
+            <Div>
+                <span class="LblDietas">Formular Dieta</span>
+            </Div>
+            <Div>
+                <span class="LblDietas">Avaliar Dieta</span>
+            </Div>
+            <Div>
+                <span class="LblDietas">Alimentos</span>
+            </Div>
+            <Div>
+                <span class="LblDietas">Requerimentos</span>
+            </Div>
+        </Div>
+        <Div class="campo75x100"></Div>
+    </Div>
+    <!--Fim da tela 2-->
+
+    <!--Tela3-->
+    <Div class="DivEsconder">
+        <!--Cabecalho-->
+        <Div class="Div15x100">
+            <Div>
+                <span class="LblDietas">Dietas</span>
+            </Div>
+            <Div>
+                <span class="LblDietas">Formular Dieta</span>
+            </Div>
+            <Div>
+                <span class="LblDietas">Avaliar Dieta</span>
+            </Div>
+            <Div>
+                <span class="LblDietas">Alimentos</span>
+            </Div>
+            <Div>
+                <span class="LblDietas">Requerimentos</span>
+            </Div>
+
+        </Div>
+        <!--Tabela-->
+        <Div class="campo75x100">
+            <Div class="dviCampotabela">
+                <span class="Lblnome">Nome:</span>
+                <input class="TxtNome" type="text"><br><br>
+                <span class="Lblnome">Especie:</span>
+                <input class="TxtEspecie" type="text"><br><br>
+                <span class="Lblnome">Peso (Kg):</span>
+                <input class="TxtPeso" type="text"><br><br>
+                <span class="Lblnome">Equacao Utilizada:</span>
+                <input class="TxtEguacao" type="text"><br><br>
+                <span class="Lblnome">Ajuste:</span>
+                <input class="TxtAjuste" type="text"><br><br>
+                <span class="Lblnome">Nem (Kcal):</span>
+                <input class="TxtNem" type="text"><br>
+            </Div>
+        </Div>
+
+    </Div>
+    <!--Fim da tela 3-->
+
+    <!--tela 4-->
+    <Div class="DivEsconder">
+        <Div class="Div15x100">
+            <Div>
+                <span class="LblDietas">Dietas</span>
+            </Div>
+            <Div>
+                <span class="LblDietas">Formular Dieta</span>
+            </Div>
+            <Div>
+                <span class="LblDietas">Avaliar Dieta</span>
+            </Div>
+            <Div>
+                <span class="LblDietas">Alimentos</span>
+            </Div>
+            <Div>
+                <span class="LblDietas">Requerimentos</span>
+            </Div>
+
+        </Div>
+
+
+
+
+        <Div class="campo80x70">
+
+            <!--tela 1-->
+            <Div class="campoalimento">
+                <!--Campo total Campoalomento -->
+
+                <!--grid Alimento e %-->
+                <Div class="espacoAlimento">
+                    <Div class="TxtAlimentos">
+                        <span class="LblespacoAlimento">Alimento</span>
+                    </Div>
+
+                    <Div class="TxtAlimentos2">
+                        <Div>
+                            <span class="LblespacoAlimento">%</span>
+                        </Div>
+                    </Div>
+                </Div>
+
+                <!-- Fim grid Alimento e %-->
+
+                <Div class="campo60x15">
+
+
+                    <!--Grid campo 1 -->
+
+                    <Div>
+                        <input class="TxtAlimentos" type="text">
+                    </Div>
+                    <Div>
+                        <input class="TxtAlimentos2" type="text">
+                    </Div>
+                    <Div>
+                        <input class="TxtAlimentos" type="text">
+                    </Div>
+                    <Div>
+                        <input class="TxtAlimentos2" type="text">
+                    </Div>
+                    <Div>
+                        <input class="TxtAlimentos" type="text">
+                    </Div>
+                    <Div>
+                        <input class="TxtAlimentos2" type="text">
+                    </Div>
+                    <Div>
+                        <input class="TxtAlimentos" type="text">
+                    </Div>
+                    <Div>
+                        <input class="TxtAlimentos2" type="text">
+                    </Div>
+
+
+
+                    <Div>
+                        <input class="TxtAlimentos" type="text">
+                    </Div>
+                    <Div>
+                        <input class="TxtAlimentos2" type="text">
+                    </Div>
+                    <Div>
+                        <input class="TxtAlimentos" type="text">
+                    </Div>
+                    <Div>
+                        <input class="TxtAlimentos2" type="text">
+                    </Div>
+                    <Div>
+                        <input class="TxtAlimentos" type="text">
+                    </Div>
+                    <Div>
+                        <input class="TxtAlimentos2" type="text">
+                    </Div>
+                    <Div>
+                        <input class="TxtAlimentos" type="text">
+                    </Div>
+                    <Div>
+                        <input class="TxtAlimentos2" type="text">
+                    </Div>
+
+                    <!--fim Grid campo 1 -->
+
+
+                </Div>
+
+
+
+
+
+            </Div>
+
+
+            <Div class="Div30x30">
+                <!--Espaçamento do meio-->
+            </Div>
+
+
+
+
+            <Div class="campoalimento">
+                <Div style="text-align: center;">
+
+                    <span class="LblNiveisNutricionais">Niveis Nutricionais %MS</span>
+                </Div>
+
+                <Div class="campo60x15">
+
+
+                    <!--Grid campo 2 -->
+
+
+
+
+                    <Div>
+                        <span class="LblspanAlimentos">Proteina Bruta</span>
+                    </Div>
+                    <Div>
+                        <input class="TxtAlimentos2" type="text">
+                    </Div>
+                    <Div>
+                        <span class="LblspanAlimentos">Extrato Etereo</span>
+                    </Div>
+                    <Div>
+                        <input class="TxtAlimentos2" type="text">
+                    </Div>
+                    <Div>
+                        <span class="LblspanAlimentos">Material Mineral</span>
+                    </Div>
+                    <Div>
+                        <input class="TxtAlimentos2" type="text">
+                    </Div>
+                    <Div>
+                        <span class="LblspanAlimentos">Fibra Bruta</span>
+                    </Div>
+                    <Div>
+                        <input class="TxtAlimentos2" type="text">
+                    </Div>
+
+
+
+                    <Div>
+                        <span class="LblspanAlimentos">Calcio</span>
+                    </Div>
+                    <Div>
+                        <input class="TxtAlimentos2" type="text">
+                    </Div>
+                    <Div>
+                        <span class="LblspanAlimentos">Fosforo</span>
+                    </Div>
+                    <Div>
+                        <input class="TxtAlimentos2" type="text">
+                    </Div>
+                    <Div>
+                        <span class="LblspanAlimentos">ENN</span>
+                    </Div>
+                    <Div>
+                        <input class="TxtAlimentos2" type="text">
+                    </Div>
+                    <Div>
+                        <span class="LblspanAlimentos">Energia (Kcal)</span>
+                    </Div>
+                    <Div>
+                        <input class="TxtAlimentos2" type="text">
+                    </Div>
+
+
+
+
+                </Div>
+                <!--fim Grid campo 2 -->
+            </Div>
+
+
+        </Div>
+        <!--Fim da tela 3-->
+
+    </Div>
+
+    <!--tela 5-->
+    <Div class="DivEsconder">
+        <Div class="Div15x100">
+            <Div>
+                <span class="LblDietas">Dietas</span>
+            </Div>
+            <Div>
+                <span class="LblDietas">Formular Dieta</span>
+            </Div>
+            <Div>
+                <span class="LblDietas">Avaliar Dieta</span>
+            </Div>
+            <Div>
+                <span class="LblDietas">Alimentos</span>
+            </Div>
+            <Div>
+                <span class="LblDietas">Requerimentos</span>
+            </Div>
+
+        </Div>
+
+
+
+
+        <Div class="campo80x702">
+
+            <!--tela 1-->
+            <Div class="campoalimento">
+                <!--Campo total Campoalomento -->
+
+                <!--grid Alimento e G-->
+                <Div class="espacoAlimento">
+                    <Div class="TxtAlimentos">
+                        <span class="LblespacoAlimento">Alimento</span>
+                    </Div>
+
+                    <Div class="TxtAlimentos2">
+                        <Div>
+                            <span class="LblespacoAlimento">G</span>
+                        </Div>
+                    </Div>
+                </Div>
+
+                <!-- Fim grid Alimento e G-->
+
+                <Div class="campo60x15">
+
+
+                    <!--Grid campo 1 -->
+
+                    <Div>
+                        <input class="TxtAlimentos" type="text">
+                    </Div>
+                    <Div>
+                        <input class="TxtAlimentos2" type="text">
+                    </Div>
+                    <Div>
+                        <input class="TxtAlimentos" type="text">
+                    </Div>
+                    <Div>
+                        <input class="TxtAlimentos2" type="text">
+                    </Div>
+                    <Div>
+                        <input class="TxtAlimentos" type="text">
+                    </Div>
+                    <Div>
+                        <input class="TxtAlimentos2" type="text">
+                    </Div>
+                    <Div>
+                        <input class="TxtAlimentos" type="text">
+                    </Div>
+                    <Div>
+                        <input class="TxtAlimentos2" type="text">
+                    </Div>
+
+
+
+                    <Div>
+                        <input class="TxtAlimentos" type="text">
+                    </Div>
+                    <Div>
+                        <input class="TxtAlimentos2" type="text">
+                    </Div>
+                    <Div>
+                        <input class="TxtAlimentos" type="text">
+                    </Div>
+                    <Div>
+                        <input class="TxtAlimentos2" type="text">
+                    </Div>
+                    <Div>
+                        <input class="TxtAlimentos" type="text">
+                    </Div>
+                    <Div>
+                        <input class="TxtAlimentos2" type="text">
+                    </Div>
+                    <Div>
+                        <input class="TxtAlimentos" type="text">
+                    </Div>
+                    <Div>
+                        <input class="TxtAlimentos2" type="text">
+                    </Div>
+
+                    <!--fim Grid campo 1 -->
+
+
+                </Div>
+
+
+
+
+
+
+            </Div>
+        </Div>
+    </Div>
+
+    <style>
+        /*Resetes*/
+
+body {
+    margin: 0;
+}
+
+h2 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+h4 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+   font-family:'Inter'; 
+}
+
+
+
+span {
+    font-size: 1.5rem;
+}
+
+
+
+
+input[type=button] {
+  border-width: 0;
+  margin: 0;
+}
+
+/*Tela1*/
+/*Campo100x100*/
+.DivCampo100x100 {
+    
+    width: 100%;
+    height: 100%;
+}
+
+.DivCampo100x1002 {
+  
+    width: 100%;
+    height: 80%;
+}
+.DivCampo50x50 {
+    background-color: #3AB2F6;
+    width: 50vw;
+    height: 50vh;
+    margin-top: 10%;
+    margin-left: 25%;
+}
+
+/*Usuario e Senha*/
+.DivUsuarioSenha {
+    padding-top: 12%;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.TxtUsuarioSenha {
+    width: 40vw;
+    height: 5vh;
+}
+
+.LblUsuarioSenha {
+    font-family: 'Inter';
+   
+    font-weight: 400;
+    font-size: 3vh;
+}
+
+/*Botao*/
+
+.DivBotao {
+    background-color: #85F180; 
+    cursor: pointer;
+    margin-left: 10vw;
+    width: 30vw;
+    height: 5vh;
+    text-align: center;
+
+}
+    
+
+.DivBtnEntrar {  
+    cursor: pointer;
+    height: 5vh;
+    color: #020202 ;
+    font-family: 'Inter';
+    font-size: 3vh;
+    font-weight: 400;
+    text-align: center;
+    background-color: #85F180;
+    
+    
+    /*fIN tela 1*/
+    
+}
+/*Tela2*/
+/*Campo20x100*/
+/*Grid*/
+.Div15x100{
+    height: 10vh;
+    width: 100%;
+    background-color: #3AB2F6;
+    display: grid;
+    grid-template-columns:  20%  20%  20%  20%  20%  ;
+    text-align: left;
+    
+    
+}
+.LblDietas{   
+    font-family: 'Inter';
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 3vh;
+    margin-top: 35%;
+    padding-left: 15%;
+    
+    /*fIN tela 2*/
+    
+}
+/*Tela3*/
+/*campointerno*/
+.campo75x100{
+    width: 50vw;
+    height: 50vh;
+    background-color: #75DFEE;
+    margin-left:  25%;
+    margin-top: 5%;
+    
+}
+/*css da Tabela*/
+.Lblnome{
+    height: 10vh;
+    font-family: 'Inter';
+    color: #000000;  
+    font-weight: 400;
+    font-size: 3vh; 
+    padding-left: 5vh;
+    
+    
+}
+.TxtNome{   
+     width: 37vw;
+    height: 5vh;
+    text-align: left;  
+}
+.LblEspecie{
+    width: 30vw;
+    height: 5vh;
+    padding-left: 5vw;
+}
+
+.TxtEspecie{
+    width: 36vw;
+    height: 5vh;
+}
+.TxtPeso{
+    width: 34.6vw;
+    height: 5vh;
+
+}
+.TxtEguacao{
+    width: 29.7vw;
+    height: 5vh;  
+}
+.TxtAjuste{
+    width: 36.7vw;
+    height: 5vh;
+    
+}
+.TxtNem{
+    width: 33.5vw;
+    height: 5vh; 
+}
+
+.dviCampotabela{
+    width: 100%;
+    height: 45vh;
+    padding-top: 5vh;
+}
+/*fIN tela 3*/
+/*Tela4*/
+.campo80x70{
+    height: 80vh;
+    width: 30vw;
+    background-color: #75DFEE;
+    margin-top: 5vh;
+    margin-left: 14vw;
+    display: grid;
+    grid-template-columns: 100% 30% 100%;
+    position: relative;
+}
+.campo60x15{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    height: 70vh;
+    padding-top: 5vh;
+}
+
+.LblspanAlimentos{
+    
+    font-family: 'Inter';
+    color: #000000;  
+    font-weight: 400;
+    font-size: 3vh; 
+    text-align: center;
+padding-left: 5%;
+}
+.campoalimento{
+    height: 80vh;
+    width: 100%;
+    background-color: #75DFEE;
+   
+}
+.TxtAlimentos{
+    
+    
+    margin-left: 3vh;
+    width: 60%;
+    height: 5vh;
+}
+
+.TxtAlimentos2{
+    
+    width: 78%;
+    height: 5vh;
+}
+.Lblalimentos3{
+    text-align: center;
+    height: 3vh;
+}
+.lvlNiveisNutricionais{
+    padding-top: 5vh;
+    height: 3vh;
+}
+.espacoAlimento{
+    width: 100%;
+    height: 5vh;
+    display:grid ;
+    grid-template-columns: 70% 30%;
+    text-align: center;
+}
+.LblespacoAlimento{
+    font-family: 'Inter';
+    color: #000000;  
+    font-weight: 400;
+    font-size: 3vh; 
+    width: 50%;
+}
+.LblespacoAlimento2{
+    text-align: right;
+    font-family: 'Inter';
+    color: #000000;  
+    font-weight: 400;
+    font-size: 3vh;
+    text-align: center;
+    padding-right: 5%;
+}
+.LblNiveisNutricionais{
+    font-family: 'Inter';
+    color: #000000;  
+    font-weight: 400;
+    font-size: 3vh; 
+    width: 50%;
+    text-align: center;
+    
+
+}
+/*fIN tela 4*/
+
+.campo80x702{
+    height: 80vh;
+    width: 30vw;
+    background-color: #75DFEE;
+    margin-top: 5vh;
+    margin-left: 14vw;
+    display: grid;
+    grid-template-columns: 100%;
+    position: center;
+}
+
+.DivEsconder{
+    display: none;
+}
+    </style>
+
+
+</body>
+
+</html>

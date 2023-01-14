@@ -1,0 +1,273 @@
+/*Esconder Elemento*/
+.Esconder {
+    display: none;
+}
+
+/*Cabecalho*/
+.DivCabecalho {
+    width: 100%;
+    height: 75px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 8px;
+    background-color: #7da453;
+}
+
+.Divlogoimagem {
+    padding-left: 20px;
+}
+
+.DivNome {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 56px;
+}
+
+.DivCentralizarNome {
+    padding-top: 8px;
+    padding-right: 16px;
+}
+
+/*Menu Lateral*/
+.DivMenuLateralEConteudo {
+    display: grid;
+    grid-template-columns: 200px auto;
+    height: fit-content;
+    width: 100%;
+}
+
+.DivMenuLateral {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 32px;
+    background-color: #aed681;
+}
+
+.DivOpcoes {
+    height: inherit;
+}
+
+.DivBtnVoltar {
+    width: 100%;
+    height: 20px;
+    background-color: coral;
+    cursor: pointer;
+    text-align: center;
+}
+
+.DivSelecionado {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    height: 50px;
+    padding-left: 5px;
+    padding-top: 5px;
+    place-items: center;
+    cursor: pointer;
+    background-color: #7da453;
+}
+
+.DivInicio {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    height: 50px;
+    padding-left: 5px;
+    padding-top: 5px;
+    place-items: center;
+    cursor: pointer;
+}
+
+.LblInicio {
+    margin-top: 10%;
+    font-style: normal;
+    font-weight: 400;
+    width: 100%;
+    text-align: left;
+}
+
+.DivConfiguracao {
+    margin-top: -75px;
+}
+
+.Configuracao {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    height: 50px;
+    padding-left: 5px;
+    place-items: center;
+    cursor: pointer;
+}
+
+/*Nomes das Secoes*/
+.SecaoInicio {
+    width: inherit;
+    height: 100%;
+    background-color: #FCF8F8;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 32px;
+}
+
+.SecaoAlimento {
+    width: inherit;
+    height: 100%;
+    background-color: #FCF8F8;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 32px;
+}
+
+.SecaoDietas {
+    width: inherit;
+    height: 100%;
+    background-color: #FCF8F8;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 32px;
+}
+
+.SecaoEspecies {
+    width: inherit;
+    height: 100%;
+    background-color: #FCF8F8;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 32px;
+}
+
+.SecaoAvaliar {
+    width: inherit;
+    height: 100%;
+    background-color: #FCF8F8;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 32px;
+}
+
+.SecaoFormular {
+    width: inherit;
+    height: 100%;
+    background-color: #FCF8F8;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 32px;
+    padding-bottom: 64px;
+}
+
+.SecaoConfiguracao {
+    width: inherit;
+    height: 100%;
+    background-color: #FCF8F8;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 32px;
+}
+
+.DivBotoesDeAcao {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    text-align: center;
+    width: fit-content;
+}
+
+.BtnAcaoFormular {
+    padding: 16px;
+    cursor: pointer;
+    width: inherit;
+    background-color: #7f8054;
+    border-radius: 1.25rem;
+}
+
+/*Grid Handle e Alimento*/
+.TxtHandle {
+    width: 100%;
+    display: none;
+    visibility: hidden;
+}
+
+.LblHandle {
+    text-align: center;
+    visibility: hidden;
+    display: none;
+}
+
+/*Grid Restante do campo*/
+.LblEnergia {
+    text-align: -webkit-center;
+    padding-inline: 8px;
+}
+
+.DivColuna4x4 {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    line-height: 24.5px;
+}
+
+.TxtEnergia {
+    width: 50%;
+    padding-top: 10px;
+}
+
+.DivFiltro {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    padding-top: 10px;
+}
+
+.TxtFiltro {
+    width: 95%;
+    padding-left: 5px;
+}
+
+/*botoes salvar buscar limpar remover*/
+.BtnSAVnut_AlimentosMN {
+    visibility: hidden;
+}
+
+.BtnBotaoVisivel {
+    visibility: visible;
+}
+
+.BtnBotaoInvisivel {
+    visibility: hidden;
+}
+
+.BtnDELnut_AlimentosMN {
+    visibility: hidden;
+}
+
+.TxtBtnLimparFormularioMN {
+    visibility: hidden;
+}
+
+.TxtCancelarIvi {
+    width: 100%;
+    display: block;
+}
+
+.LblRetornoLogin {
+    color: red;
+}
+
+.ContainerShape4 {
+    -webkit-mask-image: url("../img/Home/shape4.svg");
+    mask-image: url("../img/Home/shape4.svg");
+    -webkit-mask-position: center center;
+    mask-position: center center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+
+.ContainerShape3 {
+    -webkit-mask-image: url("../img/Home/shape3.svg");
+    mask-image: url("../img/Home/shape4.svg");
+    -webkit-mask-position: center center;
+    mask-position: center center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
