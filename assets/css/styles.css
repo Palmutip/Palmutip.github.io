@@ -380,31 +380,23 @@ img {
     z-index: var(--z-back);
 }
 
-.skills__csharp {
-    width: 99%;
+.skills__hundred {
+    width: 100%;
 }
 
-.skills__html {
-    width: 75%;
-}
-
-.skills__css {
-    width: 55%;
-}
-
-.skills__js {
-    width: 55%;
-}
-
-.skills__java {
-    width: 70%;
-}
-
-.skills__whatsapp {
+.skills__ninetyfive {
     width: 95%;
 }
 
-.skills__github {
+.skills__ninety {
+    width: 90%;
+}
+
+.skills__eightyfive {
+    width: 85%;
+}
+
+.skills__eighty {
     width: 80%;
 }
 
@@ -522,9 +514,9 @@ img {
 }
 
 .neon__container {
-    grid-template-columns: repeat(auto-fit, minmax(312px, 1fr));
+    grid-template-columns: repeat(4, minmax(312px, 1fr));
     row-gap: 3.5rem;
-    column-gap: 2.5rem;
+    column-gap: 2rem;
 }
 
 .neon__card {
@@ -672,7 +664,7 @@ img {
         width: 300px;
     }
     .work__container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(1, 1fr);
         column-gap: 2rem;
     }
@@ -681,6 +673,12 @@ img {
     }
     .contact__container {
         justify-items: center;
+    }
+
+    .footer__container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        column-gap: 2rem;
     }
 }
 
@@ -753,3 +751,19 @@ img {
         width: 1rem;
     }
 }
+
+.owl-carousel .neon__card {
+    height: 400px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .neon__card > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  

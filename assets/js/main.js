@@ -57,3 +57,22 @@ sr.reveal('.work__img', { interval: 200 });
 
 /*SCROLL CONTACT*/
 sr.reveal('.contact__input', { interval: 200 });
+
+$(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+      loop:true,
+      margin:10,
+      nav:true,
+      responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:2
+          },
+          1000:{
+              items:3
+          }
+      }
+    })
+});
