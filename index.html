@@ -6,27 +6,34 @@
  -->
 
 <head>
+
+    <!-- ===== Tag para definir o formato de codificação de caracteres ===== -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- ===== icone/miniatura da página ===== -->
     <link rel="icon" type="image/ico" href="favicon.ico" />
 
-    <!-- =====BOX ICONS===== -->
+    <!-- ===== Folha de estilas própria ===== -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- ===== BOX ICONS ===== -->
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-    <!-- =====Folha de estilo CSS do Owl Carousel===== -->
+    <!-- ===== Folha de estilo CSS do Owl Carousel ===== -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
-    <!-- =====Script do jQuery===== -->
+    <!-- ===== jQuery ===== -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <!-- =====Script do Owl Carousel===== -->
+    <!-- ===== Owl Carousel ===== -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
+    <!-- ===== Nome/Título da página ===== -->
     <title>Portfolio Pedro Palmuti</title>
+
 </head>
 
 <body>
@@ -41,8 +48,9 @@
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">Sobre</a></li>
-                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Competências</a></li>
                     <li class="nav__item"><a href="#work" class="nav__link">Portfolio</a></li>
+                    <li class="nav__item"><a href="#clientes" class="nav__link">Clientes</a></li>
                 </ul>
             </div>
 
@@ -52,8 +60,10 @@
         </nav>
     </header>
 
+    <!-- ===== Corpo principal da página para dividir o conteúdo em seções <section> ===== -->
     <main class="l-main">
-        <!--===== HOME =====-->
+
+        <!--===== Home =====-->
         <section class="home bd-grid" id="home">
             <div class="home__data">
                 <h1 class="home__title">Olá,<br>Eu sou <span class="home__title-color">Pedro Palmuti</span><br>
@@ -74,7 +84,7 @@
 
             <div class="home__img ">
                 <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" >
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
                     <mask id="mask0" mask-type="alpha">
                         <path
                             d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z">
@@ -82,7 +92,8 @@
                     </mask>
                     <g mask="url(#mask0)">
                         <path
-                            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" style="fill: #4070F4;">
+                            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
+                            style="fill: #4070F4;">
                         </path>
                         <image class="home__blob-img" x="50" y="60" href="assets/img/EuSemFundo.png"></image>
                     </g>
@@ -128,9 +139,9 @@
             </div>
         </section>
 
-        <!--===== SKILLS =====-->
+        <!--===== Competências =====-->
         <section class="skills section" id="skills">
-            <h2 class="section-title">Skills</h2>
+            <h2 class="section-title">Competências</h2>
             <div class="skills__container bd-grid">
                 <div>
                     <div class="skills__data">
@@ -257,18 +268,14 @@
             <h2 class="section-title">Portfolio</h2>
 
             <div class="work__container bd-grid">
-                <div class="work__img">
-                    <a href="https://crm.benner.com.br/CRM" target="_blank"><img
-                            src="assets/img/Print_Dashboard_CRM.png" alt="Web site: CRM - Benner"></a>
+                <div class="work__img" id="DivCrmBenner">
+                    <img src="assets/img/Print_Dashboard_CRM.png" alt="Web site: CRM - Benner">
                 </div>
-                <div class="work__img">
-                    <a href="https://jcpaiva.com.br" target="_blank"><img src="assets/img/JeraSystem.PNG"
-                            alt="Freela de Desenvolvimento: Software Contábil - Jera System"></a>
+                <div class="work__img" id="DivJera">
+                    <img src="assets/img/JeraSystem.PNG" alt="Freela de Desenvolvimento: Software Contábil - Jera System">
                 </div>
-                <div class="work__img">
-                    <a href="https://drive.google.com/file/d/1ENdRrbCRz2QDFokMp7yCP9p4jdoPUeGj/view"
-                        target="_blank"><img src="assets/img/MysolarERP.png"
-                            alt="Vídeo Demonstrativo: Software Mysolar"></a>
+                <div class="work__img" id="DivCentraliza">
+                    <img src="assets/img/MysolarERP.png" alt="Vídeo Demonstrativo: Software Mysolar">
                 </div>
                 <div class="work__img">
                     <a href="./Portfolio/FormulaNEM/index.html" target="_blank"><img
@@ -283,57 +290,68 @@
                             alt="Web site: Mysolar Energia Fotovoltaica"></a>
                 </div>
             </div>
+        </section>
 
-            <!--===== Clientes =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Clientes</h2>
-                <div style="margin-left: 3rem; margin-right: 3rem;">
-                    <div class="owl-carousel" style="cursor: pointer; ">
-                        <div class="neon__card">
-                            <div>
-                                <div class="neon__icon">
-                                    <img src="images/sminas.jpg">
-                                </div>
-                                <h1 class="neon__title">Sminas</h1>
-                                <p class="neon__description">Desenvolvimento de CRM através dos Sistemas Benner</p>
+        <!--===== Clientes =====-->
+        <section class="work section" id="clientes">
+            <h2 class="section-title">Clientes</h2>
+            <div style="margin-left: 3rem; margin-right: 3rem;">
+                <div class="owl-carousel" style="cursor: grab; ">
+                    <div class="neon__card">
+                        <div>
+                            <div class="neon__icon" style="width: 100%;">
+                                <img src="images/sinck.png" >
                             </div>
+                            <h1 class="neon__title">Sinck - Soluções</h1>
+                            <p class="neon__description">Desenvolvimento de CRM através dos Sistemas Benner</p>
                         </div>
-                        <div class="neon__card">
-                            <div>
-                                <div class="neon__icon" style="width: 100%;">
-                                    <img src="images/jcpaiva.png">
-                                </div>
-                                <h1 class="neon__title">JCPaiva - Advogados</h1>
-                                <p class="neon__description">Desenvolvimento de Software contábil customizado sob
-                                    medida</p>
+                    </div>
+                    <div class="neon__card">
+                        <div>
+                            <div class="neon__icon" style="width: 100%;">
+                                <img src="images/jcpaiva.png">
                             </div>
+                            <h1 class="neon__title">JCPaiva - Advogados</h1>
+                            <p class="neon__description">Desenvolvimento de Software contábil customizado sob
+                                medida</p>
                         </div>
-                        <div class="neon__card">
-                            <div>
-                                <div class="neon__icon">
-                                    <img src="images/digisul.jpg">
-                                </div>
-                                <h1 class="neon__title">Digisul</h1>
-                                <p class="neon__description">Desenvolvido WMS web com API SOAP pelo .NET Framework
-                                    (C#) e Vue (js)</p>
+                    </div>
+                    <div class="neon__card">
+                        <div>
+                            <div class="neon__icon">
+                                <img src="images/digisul.jpg">
                             </div>
+                            <h1 class="neon__title">Digisul</h1>
+                            <p class="neon__description">Desenvolvido WMS web com API SOAP pelo .NET Framework
+                                (C#) e Vue (js)</p>
                         </div>
-                        <div class="neon__card">
-                            <div>
-                                <div class="neon__icon">
-                                    <img src="images/mysolar.png">
-                                </div>
-                                <h1 class="neon__title">Mysolar Energia</h1>
-                                <p class="neon__description">Desenvolvido CRM desktop utilizando a tecnologia
-                                    Windows Forms (C#)</p>
+                    </div>
+                    <div class="neon__card">
+                        <div>
+                            <div class="neon__icon">
+                                <img src="images/mysolar.png">
                             </div>
+                            <h1 class="neon__title">Mysolar Energia</h1>
+                            <p class="neon__description">Desenvolvido CRM desktop utilizando a tecnologia
+                                Windows Forms (C#)</p>
+                        </div>
+                    </div>
+                    <div class="neon__card">
+                        <div>
+                            <div class="neon__icon">
+                                <img src="images/visao360.png" >
+                            </div>
+                            <h1 class="neon__title">Visão 360 World</h1>
+                            <p class="neon__description">Desenvolvimento de sites institucionais com Wordpress</p>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
+
     </main>
 
-    <!--===== FOOTER =====-->
+    <!--===== Rodapé =====-->
     <footer class="footer">
         <div class="footer__container bd-grid">
             <div>
@@ -357,11 +375,31 @@
     </footer>
 
 
+        <div width="100%" id="modal-crm">
+            <div>
+                <button id="fechar-modal-crm">X</button>
+                <img src="assets/img/Prints_CRM.png">
+            </div>
+        </div>
+        <div width="100%" id="modal-jera">
+            <div>
+                <button id="fechar-modal-jera">X</button>
+                <img src="assets/img/Prints_JeraSystem.png">
+            </div>
+        </div>
+        <div width="100%" id="modal-centraliza">
+            <div>
+                <button id="fechar-modal-centraliza">X</button>
+                <img src="assets/img/Prints_Centraliza.png">
+            </div>
+        </div>
+
     <!--===== SCROLL REVEAL =====-->
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <!--===== MAIN JS =====-->
     <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
