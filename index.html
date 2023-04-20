@@ -37,19 +37,25 @@
 
 <body>
     <!--===== HEADER =====-->
-    <header class="l-header">
+    <header class="l-header" id="header">
         <nav class="nav bd-grid">
             <div>
-                <a href="#" class="nav__logo">Pedro Palmuti</a>
+                <a href="#" class="nav__logo" id="navLogo">Pedro Palmuti</a>
             </div>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">Sobre</a></li>
-                    <li class="nav__item"><a href="#skills" class="nav__link">Competências</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">Portfolio</a></li>
-                    <li class="nav__item"><a href="#clientes" class="nav__link">Clientes</a></li>
+                    <li class="nav__item"><a href="#home" class="nav__link active" id="navHome">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link" id="navSobre">Sobre</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link" id="navCompetencias">Competências</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link" id="navPortfolio">Portfolio</a></li>
+                    <li class="nav__item"><a href="#clientes" class="nav__link" id="navClientes">Clientes</a></li>
+                    <li class="nav__item">
+                        <label class="switch">
+                            <input type="checkbox" id="toggle-theme" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </li>
                 </ul>
             </div>
 
@@ -75,10 +81,10 @@
             </div>
 
             <div class="home__social">
-                <a href="https://www.linkedin.com/in/palmutip/" target="_blank" class="home__social-icon"><i
+                <a href="https://www.linkedin.com/in/palmutip/" target="_blank" class="home__social-icon" id="linkedinHome"><i
                         class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/Palmutip" target="_blank" class="home__social-icon"><i class='bx bxl-github'></i></a>
-                <a href="https://wa.me/5535992507665" target="_blank" class="home__social-icon"><i class='bx bxl-whatsapp'></i></a>
+                <a href="https://github.com/Palmutip" target="_blank" class="home__social-icon" id="githubHome"><i class='bx bxl-github'></i></a>
+                <a href="https://wa.me/5535992507665" target="_blank" class="home__social-icon" id="whatsappHome"><i class='bx bxl-whatsapp'></i></a>
             </div>
         </section>
 
@@ -138,7 +144,7 @@
             <h2 class="section-title">Competências</h2>
             <div class="skills__container bd-grid">
                 <div>
-                    <div class="skills__data">
+                    <div class="skills__data" id="skillCsharp">
                         <div class="skills__names">
                             <span class="skills__name">C#</span>
                         </div>
@@ -149,7 +155,7 @@
                             <span class="skills__percentage"></span>
                         </div>
                     </div>
-                    <div class="skills__data">
+                    <div class="skills__data" id="skillNet">
                         <div class="skills__names">
                             <span class="skills__name">.NET&nbsp;FRAMEWORK&nbsp;4.5&nbsp;>=</span>
                         </div>
@@ -160,7 +166,7 @@
                             <span class="skills__percentage"></span>
                         </div>
                     </div>
-                    <div class="skills__data">
+                    <div class="skills__data" id="skillApi">
                         <div class="skills__names">
                             <span class="skills__name">
                                 <div>API&nbsp;REST&nbsp;E&nbsp;SOAP</div>
@@ -173,7 +179,7 @@
                             <span class="skills__percentage"></span>
                         </div>
                     </div>
-                    <div class="skills__data">
+                    <div class="skills__data" id="skillAsp">
                         <div class="skills__names">
                             <span class="skills__name">ASP&nbsp;.NET&nbsp;MVC</span>
                         </div>
@@ -184,7 +190,7 @@
                             <span class="skills__percentage"></span>
                         </div>
                     </div>
-                    <div class="skills__data">
+                    <div class="skills__data" id="skillXamarin">
                         <div class="skills__names">
                             <span class="skills__name">XAMARIN</span>
                         </div>
@@ -198,7 +204,7 @@
 
                 </div>
                 <div>
-                    <div class="skills__data">
+                    <div class="skills__data" id="skillMySQL">
                         <div class="skills__names">
                             <span class="skills__name">MYSQL</span>
                         </div>
@@ -209,7 +215,7 @@
                             <span class="skills__percentage"></span>
                         </div>
                     </div>
-                    <div class="skills__data">
+                    <div class="skills__data" id="skillSqlServer">
                         <div class="skills__names">
                             <span class="skills__name">SQL&nbsp;SERVER</span>
                         </div>
@@ -220,7 +226,7 @@
                             <span class="skills__percentage"></span>
                         </div>
                     </div>
-                    <div class="skills__data">
+                    <div class="skills__data" id="skillOracle">
                         <div class="skills__names">
                             <span class="skills__name">ORACLE</span>
                         </div>
@@ -231,7 +237,7 @@
                             <span class="skills__percentage"></span>
                         </div>
                     </div>
-                    <div class="skills__data">
+                    <div class="skills__data" id="skillWeb">
                         <div class="skills__names">
                             <span class="skills__name">WEB&nbsp;(HTML+CSS+JS)</span>
                         </div>
@@ -242,7 +248,7 @@
                             <span class="skills__percentage"></span>
                         </div>
                     </div>
-                    <div class="skills__data">
+                    <div class="skills__data" id="skillWp">
                         <div class="skills__names">
                             <span class="skills__name">WORDPRESS</span>
                         </div>
@@ -291,36 +297,36 @@
             <h2 class="section-title">Clientes</h2>
             <div style="margin-left: 3rem; margin-right: 3rem;">
                 <div class="owl-carousel" style="cursor: grab; ">
-                    <div class="neon__card">
+                    <div class="neon__card" id="cardSinck">
                         <div>
                             <div class="neon__icon" style="width: 100%;">
-                                <img src="images/sinck.png" >
+                                <img src="images/sinck.png" id="imgSinck">
                             </div>
                             <h1 class="neon__title">Sinck - Soluções</h1>
                             <p class="neon__description">Desenvolvimento de CRM através dos Sistemas Benner</p>
                         </div>
                     </div>
-                    <div class="neon__card">
+                    <div class="neon__card" id="cardJcPaiva">
                         <div>
                             <div class="neon__icon" style="width: 100%;">
-                                <img src="images/jcpaiva.png">
+                                <img src="images/jcpaiva.png" id="imgJcPaiva">
                             </div>
                             <h1 class="neon__title">JCPaiva - Advogados</h1>
                             <p class="neon__description">Desenvolvimento de Software contábil customizado sob
                                 medida</p>
                         </div>
                     </div>
-                    <div class="neon__card">
+                    <div class="neon__card" id="cardDigisul">
                         <div>
                             <div class="neon__icon">
-                                <img src="images/digisul.jpg">
+                                <img src="images/DigisulBG.png">
                             </div>
                             <h1 class="neon__title">Digisul</h1>
                             <p class="neon__description">Desenvolvido WMS web com API SOAP pelo .NET Framework
                                 (C#) e Vue (js)</p>
                         </div>
                     </div>
-                    <div class="neon__card">
+                    <div class="neon__card" id="cardMySplar">
                         <div>
                             <div class="neon__icon">
                                 <img src="images/mysolar.png">
@@ -330,10 +336,10 @@
                                 Windows Forms (C#)</p>
                         </div>
                     </div>
-                    <div class="neon__card">
+                    <div class="neon__card" id="cardVisao">
                         <div>
                             <div class="neon__icon">
-                                <img src="images/visao360.png" >
+                                <img src="images/visao360B.png" id="imgVisao">
                             </div>
                             <h1 class="neon__title">Visão 360 World</h1>
                             <p class="neon__description">Desenvolvimento de sites institucionais com Wordpress</p>
