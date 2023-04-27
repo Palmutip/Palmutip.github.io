@@ -177,19 +177,19 @@ const imgJcPaiva = document.getElementById('imgJcPaiva');
 toggleButton.addEventListener('click', function () {
 
     if (cardVisao.classList.contains('dark-mode')) {
-        imgVisao.src = "images/visao360B.png"; // se tiver a classe, troca a imagem
+        imgVisao.src = "assets/img/visao360B.png"; // se tiver a classe, troca a imagem
     } else {
-        imgVisao.src = "images/visao360W.png"; // se não tiver a classe, volta a imagem original
+        imgVisao.src = "assets/img/visao360W.png"; // se não tiver a classe, volta a imagem original
     }
     if (cardSinck.classList.contains('dark-mode')) {
-        imgSinck.src = "images/sinck.png"; 
+        imgSinck.src = "assets/img/sinck.png"; 
     } else {
-        imgSinck.src = "images/sinckW.png"; 
+        imgSinck.src = "assets/img/sinckW.png"; 
     }
     if (cardJcPaiva.classList.contains('dark-mode')) {
-        imgJcPaiva.src = "images/jcpaiva.png"; // se tiver a classe, troca a imagem
+        imgJcPaiva.src = "assets/img/jcpaiva.png"; // se tiver a classe, troca a imagem
     } else {
-        imgJcPaiva.src = "images/jcpaivaW.png"; // se não tiver a classe, volta a imagem original
+        imgJcPaiva.src = "assets/img/jcpaivaW.png"; // se não tiver a classe, volta a imagem original
     }
 
     body.classList.toggle('dark-mode');
@@ -218,8 +218,6 @@ toggleButton.addEventListener('click', function () {
     cardJcPaiva.classList.toggle('dark-mode');
     cardDigisul.classList.toggle('dark-mode');
     cardMySplar.classList.toggle('dark-mode');
-    //imgVisao.src = "images/visao360W.png";
-    //imgSinck.src = "images/sinckW.png";
 });
 
 //#endregion
