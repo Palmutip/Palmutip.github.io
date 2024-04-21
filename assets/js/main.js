@@ -1,6 +1,5 @@
 //#region  Animações de Scroll e CSS
 
-/*===== MENU SHOW =====*/
 const showMenu = (toggleId, navId) => {
     const toggle = document.getElementById(toggleId),
         nav = document.getElementById(navId)
@@ -9,25 +8,23 @@ const showMenu = (toggleId, navId) => {
     if (toggle && nav) {
         toggle.addEventListener('click', () => {
             nav.classList.toggle('show')
+            nav.style = nav.classList.length == 1 ? "display: none;" : "";
         })
     }
 }
-showMenu('nav-toggle', 'nav-menu')
+showMenu('nav-toggle', 'nav-menu-mobile')
 
-/*===== ACTIVE AND REMOVE MENU =====*/
 const navLink = document.querySelectorAll('.nav__link');
 
 function linkAction() {
-    /*Active link*/
     navLink.forEach(n => n.classList.remove('active'));
     this.classList.add('active');
-    /*Remove menu mobile*/
-    const navMenu = document.getElementById('nav-menu')
-    navMenu.classList.remove('show')
+    const navMenu = document.getElementById('nav-menu-mobile')
+    navMenu.classList.remove('show');
+    navMenu.style = "display: none;";
 }
-navLink.forEach(n => n.addEventListener('click', linkAction)); /**/
+navLink.forEach(n => n.addEventListener('click', linkAction));
 
-/*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
     origin: 'top',
     distance: '80px',
@@ -35,27 +32,22 @@ const sr = ScrollReveal({
     reset: true
 });
 
-/*SCROLL HOME*/
 sr.reveal('.home__title', {});
 sr.reveal('.button', { delay: 200 });
 sr.reveal('.home__img', { delay: 400 });
 sr.reveal('.home__social-icon', { interval: 200 });
 
-/*SCROLL ABOUT*/
 sr.reveal('.about__img', {});
 sr.reveal('.about__subtitle', { delay: 400 });
 sr.reveal('.about__text', { delay: 400 });
 
-/*SCROLL SKILLS*/
 sr.reveal('.skills__subtitle', {});
 sr.reveal('.skills__text', {});
 sr.reveal('.skills__data', { interval: 200 });
 sr.reveal('.skills__img', { delay: 600 });
 
-/*SCROLL WORK*/
 sr.reveal('.work__img', { interval: 200 });
 
-/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
 
 function scrollActive() {
@@ -73,11 +65,12 @@ function scrollActive() {
         }
     })
 }
+
 window.addEventListener('scroll', scrollActive)
 
 //#endregion
 
-//#region Carrossel com owlCarousel e JQuery
+//#region Document Ready / Loaded
 
 $(document).ready(function () {
     $('.owl-carousel').owlCarousel({
@@ -86,8 +79,6 @@ $(document).ready(function () {
         nav: true,
         mouseDrag: false,
         touchDrag: false,
-        /*autoplay: true,
-        autoplayTimeout: 5000,*/ // tempo em milissegundos
         responsive: {
             0: {
                 items: 1
@@ -103,121 +94,146 @@ $(document).ready(function () {
 
 });
 
-//#endregion
+document.addEventListener('DOMContentLoaded', function () {
+    getPageElements();
 
-//#region  Funções para abrir modal na seção de portfólio
+    toggleButtonMobile.addEventListener('touchend', function(){
+        ControlaTema(this);
+    });
+    toggleButton.addEventListener('click', function(){
+        ControlaTema(this);
+    });
+    divCrmBenner.addEventListener('click', () => {
+        modalcrm.style = "display: flex; justify-content: center;";
+    });
+    fecharModalcrm.addEventListener('click', () => {
+        modalcrm.style.display = 'none';
+    });
+    
+    divJera.addEventListener('click', () => {
+        modaljera.style = "display: flex; justify-content: center;";
+    });
+    fecharModaljera.addEventListener('click', () => {
+        modaljera.style.display = 'none';
+    });
+    
+    divCentraliza.addEventListener('click', () => {
+        modalcentraliza.style = "display: flex; justify-content: center;";
+    });
+    fecharModalcentraliza.addEventListener('click', () => {
+        modalcentraliza.style.display = 'none';
+    });
 
-const divCrmBenner = document.getElementById('DivCrmBenner');
-const modalcrm = document.getElementById('modal-crm');
-const fecharModalcrm = document.getElementById('fechar-modal-crm');
-
-const divJera = document.getElementById('DivJera');
-const modaljera = document.getElementById('modal-jera');
-const fecharModaljera = document.getElementById('fechar-modal-jera');
-
-const divCentraliza = document.getElementById('DivCentraliza');
-const modalcentraliza = document.getElementById('modal-centraliza');
-const fecharModalcentraliza = document.getElementById('fechar-modal-centraliza');
-
-divCrmBenner.addEventListener('click', () => {
-    modalcrm.style = "display: flex; justify-content: center;";
+    translate();
 });
-fecharModalcrm.addEventListener('click', () => {
-    modalcrm.style.display = 'none';
-});
 
-divJera.addEventListener('click', () => {
-    modaljera.style = "display: flex; justify-content: center;";
-});
-fecharModaljera.addEventListener('click', () => {
-    modaljera.style.display = 'none';
-});
-
-divCentraliza.addEventListener('click', () => {
-    modalcentraliza.style = "display: flex; justify-content: center;";
-});
-fecharModalcentraliza.addEventListener('click', () => {
-    modalcentraliza.style.display = 'none';
-});
-//#endregion
-
-//#region Alterar o Tema da página
-
-const toggleButton = document.getElementById('toggle-theme');
-const body = document.body;
-const header = document.getElementById('header');
-const logo = document.getElementById('navLogo');
-const home = document.getElementById('navHome');
-const sobre = document.getElementById('navSobre');
-const competencias = document.getElementById('navCompetencias');
-const portfolio = document.getElementById('navPortfolio');
-const clientes = document.getElementById('navClientes');
-const linkedinHome = document.getElementById('linkedinHome');
-const githubHome = document.getElementById('githubHome');
-const whatsappHome = document.getElementById('whatsappHome');
-const skillNet = document.getElementById('skillNet');
-const skillApi = document.getElementById('skillApi');
-const skillAsp = document.getElementById('skillAsp');
-const skillXamarin = document.getElementById('skillXamarin');
-const skillCsharp = document.getElementById('skillCsharp');
-const skillMySQL = document.getElementById('skillMySQL');
-const skillSqlServer = document.getElementById('skillSqlServer');
-const skillOracle = document.getElementById('skillOracle');
-const skillWeb = document.getElementById('skillWeb');
-const skillWp = document.getElementById('skillWp');
-const cardVisao = document.getElementById('cardVisao');
-const cardSinck = document.getElementById('cardSinck');
-const cardJcPaiva = document.getElementById('cardJcPaiva');
-const cardDigisul = document.getElementById('cardDigisul');
-const cardMySplar = document.getElementById('cardMySplar');
-const imgVisao = document.getElementById('imgVisao');
-const imgSinck = document.getElementById('imgSinck');
-const imgJcPaiva = document.getElementById('imgJcPaiva');
-
-toggleButton.addEventListener('click', function () {
-
-    if (cardVisao.classList.contains('dark-mode')) {
-        imgVisao.src = "assets/img/visao360B.png"; // se tiver a classe, troca a imagem
-    } else {
-        imgVisao.src = "assets/img/visao360W.png"; // se não tiver a classe, volta a imagem original
-    }
-    if (cardSinck.classList.contains('dark-mode')) {
-        imgSinck.src = "assets/img/sinck.png"; 
-    } else {
-        imgSinck.src = "assets/img/sinckW.png"; 
-    }
-    if (cardJcPaiva.classList.contains('dark-mode')) {
-        imgJcPaiva.src = "assets/img/jcpaiva.png"; // se tiver a classe, troca a imagem
-    } else {
-        imgJcPaiva.src = "assets/img/jcpaivaW.png"; // se não tiver a classe, volta a imagem original
+function getURLParameters() {
+    const url = window.location.href;
+    const parameters = {};
+    if (url.indexOf('?') !== -1) {
+        const queryString = url.split('?')[1];
+        const pairs = queryString.split('&');
+        pairs.forEach(pair => {
+            const [key, value] = pair.split('=');
+            const decodedValue = decodeURIComponent(value);
+            parameters[key] = decodedValue;
+        });
     }
 
-    body.classList.toggle('dark-mode');
-    header.classList.toggle('dark-mode');
-    logo.classList.toggle('dark-mode');
-    home.classList.toggle('dark-mode');
-    sobre.classList.toggle('dark-mode');
-    competencias.classList.toggle('dark-mode');
-    portfolio.classList.toggle('dark-mode');
-    clientes.classList.toggle('dark-mode');
-    linkedinHome.classList.toggle('dark-mode');
-    githubHome.classList.toggle('dark-mode');
-    whatsappHome.classList.toggle('dark-mode');
-    skillCsharp.classList.toggle('dark-mode');
-    skillNet.classList.toggle('dark-mode');
-    skillApi.classList.toggle('dark-mode');
-    skillAsp.classList.toggle('dark-mode');
-    skillXamarin.classList.toggle('dark-mode');
-    skillMySQL.classList.toggle('dark-mode');
-    skillSqlServer.classList.toggle('dark-mode');
-    skillOracle.classList.toggle('dark-mode');
-    skillWeb.classList.toggle('dark-mode');
-    skillWp.classList.toggle('dark-mode');
-    cardVisao.classList.toggle('dark-mode');
-    cardSinck.classList.toggle('dark-mode');
-    cardJcPaiva.classList.toggle('dark-mode');
-    cardDigisul.classList.toggle('dark-mode');
-    cardMySplar.classList.toggle('dark-mode');
-});
+    if (parameters["locale"] != null) {
+
+        if (parameters["locale"] == "pt_BR") {
+            navPtBr.classList.add('active');
+            navEnUs.classList.remove('modal-open');
+            navPtBrMobile.classList.add('active');
+            navEnUsMobile.classList.remove('modal-open');
+        }
+        if (parameters["locale"] == "en_US") {
+            navEnUs.classList.add('active');
+            navPtBr.classList.remove('modal-open');
+            navEnUsMobile.classList.add('active');
+            navPtBrMobile.classList.remove('modal-open');
+        }
+    }
+
+    return parameters;
+}
+
+function getPageElements(){
+    //navLink = document.querySelectorAll('.nav__link');
+    //sections = document.querySelectorAll('section[id]');
+
+    navPtBr = document.getElementById('navPtBr');
+    navEnUs = document.getElementById('navEnUs');
+    navPtBrMobile = document.getElementById('navPtBrMobile');
+    navEnUsMobile = document.getElementById('navEnUsMobile');
+    LblThemeName = document.getElementById('LblThemeName');
+    LblLanguage = document.getElementById('LblLanguage');
+
+    LblHomeTitle = document.getElementById('LblHomeTitle');
+    BtnMyCv = document.getElementById('BtnMyCv');
+    BtnMyTeam = document.getElementById('BtnMyTeam');
+    LblTitleAbout = document.getElementById('LblTitleAbout');
+    LblSubtitleAbout = document.getElementById('LblSubtitleAbout');
+    LblAboutPart1 = document.getElementById('LblAboutPart1');
+    LblAboutPart2 = document.getElementById('LblAboutPart2');
+    LblAboutPart3 = document.getElementById('LblAboutPart3');
+    LblTitleSkills = document.getElementById('LblTitleSkills');
+    LblSkills1 = document.getElementById('LblSkills1');
+    LblSkills2 = document.getElementById('LblSkills2');
+    LblTitleClients = document.getElementById('LblTitleClients');
+    LblSinckDescription = document.getElementById('LblSinckDescription');
+    LblJCPaivaDescription = document.getElementById('LblJCPaivaDescription');
+    LblDigisulDescription = document.getElementById('LblDigisulDescription');
+    LblMysolarDescription = document.getElementById('LblMysolarDescription');
+    LblVisaoDescription = document.getElementById('LblVisaoDescription');
+    LblCopyRights = document.getElementById('LblCopyRights');
+    LblPhone = document.getElementById('LblPhone');
+
+    toggleButton = document.getElementById('toggle-theme');
+    toggleButtonMobile = document.getElementById('toggle-theme-Mobile');
+    body = document.body;
+    header = document.getElementById('header');
+    logo = document.getElementById('navLogo');
+    home = document.getElementById('navHome');
+    sobre = document.getElementById('navSobre');
+    competencias = document.getElementById('navCompetencias');
+    portfolio = document.getElementById('navPortfolio');
+    clientes = document.getElementById('navClientes');
+    homeMobile = document.getElementById('navHomeMobile');
+    sobreMobile = document.getElementById('navSobreMobile');
+    competenciasMobile = document.getElementById('navCompetenciasMobile');
+    portfolioMobile = document.getElementById('navPortfolioMobile');
+    clientesMobile = document.getElementById('navClientesMobile');
+    linkedinHome = document.getElementById('linkedinHome');
+    githubHome = document.getElementById('githubHome');
+    whatsappHome = document.getElementById('whatsappHome');
+    skillNet = document.getElementById('skillNet');
+    skillXamarin = document.getElementById('skillXamarin');
+    skillCsharp = document.getElementById('skillCsharp');
+    skillMySQL = document.getElementById('skillMySQL');
+    skillSqlServer = document.getElementById('skillSqlServer');
+    skillOracle = document.getElementById('skillOracle');
+    skillWp = document.getElementById('skillWp');
+    cardVisao = document.getElementById('cardVisao');
+    cardSinck = document.getElementById('cardSinck');
+    cardJcPaiva = document.getElementById('cardJcPaiva');
+    cardDigisul = document.getElementById('cardDigisul');
+    cardMySplar = document.getElementById('cardMySplar');
+    imgVisao = document.getElementById('imgVisao');
+    imgSinck = document.getElementById('imgSinck');
+    imgJcPaiva = document.getElementById('imgJcPaiva');
+
+    divCrmBenner = document.getElementById('DivCrmBenner');
+    modalcrm = document.getElementById('modal-crm');
+    fecharModalcrm = document.getElementById('fechar-modal-crm');
+    divJera = document.getElementById('DivJera');
+    modaljera = document.getElementById('modal-jera');
+    fecharModaljera = document.getElementById('fechar-modal-jera');
+    divCentraliza = document.getElementById('DivCentraliza');
+    modalcentraliza = document.getElementById('modal-centraliza');
+    fecharModalcentraliza = document.getElementById('fechar-modal-centraliza');
+}
 
 //#endregion
+
