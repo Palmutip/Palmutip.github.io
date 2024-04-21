@@ -207,6 +207,7 @@ function getPageElements(){
     clientesMobile = document.getElementById('navClientesMobile');
     linkedinHome = document.getElementById('linkedinHome');
     githubHome = document.getElementById('githubHome');
+    globeHome = document.getElementById('globeHome');
     whatsappHome = document.getElementById('whatsappHome');
     skillNet = document.getElementById('skillNet');
     skillXamarin = document.getElementById('skillXamarin');

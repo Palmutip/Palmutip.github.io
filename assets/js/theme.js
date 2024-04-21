@@ -15,6 +15,7 @@ var portfolioMobile = document.getElementById('navPortfolioMobile');
 var clientesMobile = document.getElementById('navClientesMobile');
 var linkedinHome = document.getElementById('linkedinHome');
 var githubHome = document.getElementById('githubHome');
+var globeHome = document.getElementById('globeHome');
 var whatsappHome = document.getElementById('whatsappHome');
 var skillNet = document.getElementById('skillNet');
 var skillXamarin = document.getElementById('skillXamarin');
@@ -70,6 +71,7 @@ function ControlaTema(elemento) {
 
     linkedinHome.classList.toggle('dark-mode');
     githubHome.classList.toggle('dark-mode');
+    globeHome.classList.toggle('dark-mode');
     whatsappHome.classList.toggle('dark-mode');
     skillCsharp.classList.toggle('dark-mode');
     skillNet.classList.toggle('dark-mode');
